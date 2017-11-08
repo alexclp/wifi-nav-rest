@@ -14,12 +14,13 @@ import App
 /// this should setup all the routes and special
 /// features of our app
 ///
-/// .run() runs the Droplet's commands, 
+/// .run() runs the Droplet's commands,
 /// if no command is given, it will default to "serve"
 let config = try Config()
 try config.setup()
 
 let drop = try Droplet(config)
+drop.commands.append(Generate(console: drop.console))
 try drop.setup()
 
 try drop.run()
