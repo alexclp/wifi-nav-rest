@@ -3,7 +3,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "VaporApp",
+    name: "Wi-Fi Navigation REST",
     products: [
         .library(name: "App", targets: ["App"]),
         .executable(name: "Run", targets: ["Run"])
