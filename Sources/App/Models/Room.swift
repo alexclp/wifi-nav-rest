@@ -35,10 +35,12 @@ final class Room: Model {
     }
 }
 
-extension Location: Preparation {
+extension Room: Preparation {
     static func prepare(_ database: Database) throws {
         try database.create(self) { rooms in
             rooms.id()
+            rooms.custom("locations", type: "array")
+            rooms.custom("map", type: "array")
         }
     }
 

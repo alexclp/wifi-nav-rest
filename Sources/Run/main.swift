@@ -20,7 +20,6 @@ let config = try Config()
 try config.setup()
 
 let drop = try Droplet(config)
-drop.commands.append(Generate(console: drop.console))
 try drop.setup()
 
 try drop.run()
