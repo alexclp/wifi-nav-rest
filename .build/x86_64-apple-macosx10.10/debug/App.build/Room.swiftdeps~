@@ -3,10 +3,8 @@ provides-top-level:
 - "Room"
 provides-nominal:
 - "3App4RoomC"
-- "3App8LocationC"
 provides-member:
 - ["3App4RoomC", ""]
-- ["3App8LocationC", ""]
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
@@ -73,6 +71,8 @@ depends-member:
 - ["6Fluent6EntityP", "makeRow"]
 - !private ["6Fluent6EntityP", "map"]
 - ["6Fluent6EntityP", "name"]
+- ["6Fluent6EntityP", "prepare"]
+- ["6Fluent6EntityP", "revert"]
 - ["6Fluent6EntityP", "storage"]
 - ["6Fluent6EntityP", "uniqueSlug"]
 - ["6Fluent6EntityP", "willCreate"]
@@ -118,10 +118,6 @@ depends-member:
 - !private ["4Node14FuzzyConverterP", "set"]
 - !private ["s8HashableP", "init"]
 - ["6Fluent14IdentifierTypeO", "uuid"]
-- ["3App8LocationC", "Database"]
-- !private ["3App8LocationC", "deinit"]
-- ["3App8LocationC", "prepare"]
-- ["3App8LocationC", "revert"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["14FluentProvider5ModelP", "Location"]
@@ -144,6 +140,8 @@ depends-member:
 - ["14FluentProvider5ModelP", "makeRow"]
 - !private ["14FluentProvider5ModelP", "map"]
 - ["14FluentProvider5ModelP", "name"]
+- ["14FluentProvider5ModelP", "prepare"]
+- ["14FluentProvider5ModelP", "revert"]
 - ["14FluentProvider5ModelP", "storage"]
 - ["14FluentProvider5ModelP", "uniqueSlug"]
 - ["14FluentProvider5ModelP", "willCreate"]
@@ -188,6 +186,8 @@ depends-member:
 - ["7Routing15ParameterizableP", "makeRow"]
 - !private ["7Routing15ParameterizableP", "map"]
 - ["7Routing15ParameterizableP", "name"]
+- ["7Routing15ParameterizableP", "prepare"]
+- ["7Routing15ParameterizableP", "revert"]
 - ["7Routing15ParameterizableP", "storage"]
 - ["7Routing15ParameterizableP", "uniqueSlug"]
 - ["7Routing15ParameterizableP", "willCreate"]
@@ -198,6 +198,34 @@ depends-member:
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "set"]
 - !private ["13PathIndexable0A7IndexerP", "init"]
+- !private ["6Fluent11PreparationP", "Location"]
+- !private ["6Fluent11PreparationP", "Row"]
+- ["6Fluent11PreparationP", "Storage"]
+- ["6Fluent11PreparationP", "computedFields"]
+- ["6Fluent11PreparationP", "didCreate"]
+- ["6Fluent11PreparationP", "didDelete"]
+- ["6Fluent11PreparationP", "didUpdate"]
+- ["6Fluent11PreparationP", "entity"]
+- ["6Fluent11PreparationP", "foreignIdKey"]
+- ["6Fluent11PreparationP", "id"]
+- ["6Fluent11PreparationP", "idKey"]
+- ["6Fluent11PreparationP", "idType"]
+- ["6Fluent11PreparationP", "identifier"]
+- ["6Fluent11PreparationP", "init"]
+- ["6Fluent11PreparationP", "keyNamingConvention"]
+- !private ["6Fluent11PreparationP", "locations"]
+- ["6Fluent11PreparationP", "make"]
+- ["6Fluent11PreparationP", "makeRow"]
+- !private ["6Fluent11PreparationP", "map"]
+- ["6Fluent11PreparationP", "name"]
+- ["6Fluent11PreparationP", "prepare"]
+- ["6Fluent11PreparationP", "revert"]
+- ["6Fluent11PreparationP", "storage"]
+- ["6Fluent11PreparationP", "uniqueSlug"]
+- ["6Fluent11PreparationP", "willCreate"]
+- ["6Fluent11PreparationP", "willDelete"]
+- ["6Fluent11PreparationP", "willUpdate"]
+- ["6Fluent11PreparationP", ""]
 - !private ["6Fluent11QueryLoggerP", "create"]
 - !private ["6Fluent11QueryLoggerP", "delete"]
 - !private ["s22RandomAccessCollectionP", "append"]
@@ -206,6 +234,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
+- ["3App4RoomC", "Database"]
 - ["3App4RoomC", "IdentifierType"]
 - ["3App4RoomC", "Location"]
 - ["3App4RoomC", "Row"]
@@ -230,6 +259,8 @@ depends-member:
 - ["3App4RoomC", "makeRow"]
 - ["3App4RoomC", "map"]
 - ["3App4RoomC", "name"]
+- ["3App4RoomC", "prepare"]
+- ["3App4RoomC", "revert"]
 - ["3App4RoomC", "storage"]
 - ["3App4RoomC", "uniqueSlug"]
 - ["3App4RoomC", "willCreate"]
@@ -258,6 +289,8 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "makeRow"]
 - !private ["6Fluent14RowConvertibleP", "map"]
 - ["6Fluent14RowConvertibleP", "name"]
+- ["6Fluent14RowConvertibleP", "prepare"]
+- ["6Fluent14RowConvertibleP", "revert"]
 - ["6Fluent14RowConvertibleP", "storage"]
 - ["6Fluent14RowConvertibleP", "uniqueSlug"]
 - ["6Fluent14RowConvertibleP", "willCreate"]
@@ -284,6 +317,8 @@ depends-member:
 - ["6Fluent16RowInitializableP", "makeRow"]
 - !private ["6Fluent16RowInitializableP", "map"]
 - ["6Fluent16RowInitializableP", "name"]
+- ["6Fluent16RowInitializableP", "prepare"]
+- ["6Fluent16RowInitializableP", "revert"]
 - ["6Fluent16RowInitializableP", "storage"]
 - ["6Fluent16RowInitializableP", "uniqueSlug"]
 - ["6Fluent16RowInitializableP", "willCreate"]
@@ -310,6 +345,8 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "makeRow"]
 - !private ["6Fluent16RowRepresentableP", "map"]
 - ["6Fluent16RowRepresentableP", "name"]
+- ["6Fluent16RowRepresentableP", "prepare"]
+- ["6Fluent16RowRepresentableP", "revert"]
 - ["6Fluent16RowRepresentableP", "storage"]
 - ["6Fluent16RowRepresentableP", "uniqueSlug"]
 - ["6Fluent16RowRepresentableP", "willCreate"]
@@ -338,6 +375,8 @@ depends-member:
 - ["6Fluent8StorableP", "makeRow"]
 - !private ["6Fluent8StorableP", "map"]
 - ["6Fluent8StorableP", "name"]
+- ["6Fluent8StorableP", "prepare"]
+- ["6Fluent8StorableP", "revert"]
 - ["6Fluent8StorableP", "storage"]
 - ["6Fluent8StorableP", "uniqueSlug"]
 - ["6Fluent8StorableP", "willCreate"]
@@ -416,7 +455,6 @@ depends-nominal:
 - !private "4Node14FuzzyConverterP"
 - !private "s8HashableP"
 - "6Fluent14IdentifierTypeO"
-- "3App8LocationC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "14FluentProvider5ModelP"
@@ -434,6 +472,7 @@ depends-nominal:
 - "7Routing15ParameterizableP"
 - !private "13PathIndexableAAP"
 - !private "13PathIndexable0A7IndexerP"
+- "6Fluent11PreparationP"
 - !private "6Fluent11QueryLoggerP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
@@ -522,4 +561,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "ad500e65acc4ac9eda7a4d1e6a15d948"
+interface-hash: "db79b852a3c6b87a0c869b9aa34b1db0"

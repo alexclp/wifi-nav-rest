@@ -1,11 +1,13 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "f58f427e161e4fbacb4571cb13a1f4fb"
-build_time: [1510242746, 975158000]
+build_time: [1510254679, 930277000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/PostController.swift": [1507237346, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": [1510241839, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Post.swift": [1507237346, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1510242739, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Routes/Routes.swift": [1507237346, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationController.swift": [1510254667, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/PostController.swift": [1510252081, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/RoomController.swift": [1510252384, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": [1510253553, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Post.swift": [1510245490, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1510247848, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Routes/Routes.swift": [1510251552, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/Config+Setup.swift": [1510163645, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/Droplet+Setup.swift": [1507237346, 0]

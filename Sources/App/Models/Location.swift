@@ -10,6 +10,13 @@ final class Location: Model {
     var longitude: Double
     var pressure: Double
 
+    struct Keys {
+        static let id = "id"
+        static let latitude = "latitude"
+        static let longitude = "longitude"
+        static let pressure = "pressure"
+    }
+
     init(row: Row) throws {
         latitude = try row.get("latitude")
         longitude = try row.get("longitude")
@@ -43,5 +50,29 @@ extension Location: Preparation {
 
     static func revert(_ database: Database) throws {
         try database.delete(self)
+    }
+}
+
+extension Location: ResponseRepresentable { }
+
+extension Location: JSONConvertible {
+    func makeJSON() throws -> JSON {
+        var toReturn = JSON()
+
+        try toReturn.set(Location.Keys.id, id)
+        try toReturn.set(Location.Keys.latitude, latitude)
+        try toReturn.set(Location.Keys.longitude, longitude)
+        try toReturn.set(Location.Keys.pressure, pressure)
+
+        return toReturn
+    }
+}
+
+extension Location: JSONInitializable {
+    convenience init(json: JSON) throws {
+        let latitude: Double = try json.get(Location.Keys.latitude)
+        let longitude: Double = try json.get(Location.Keys.longitude)
+        let pressure: Double = try json.get(Location.Keys.pressure)
+        self.init(latitude: latitude, longitude: longitude, pressure: pressure)
     }
 }

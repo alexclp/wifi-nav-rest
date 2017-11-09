@@ -204,6 +204,7 @@ depends-member:
 - !private ["3App4PostC", "deinit"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["3App4RoomC", "deinit"]
 - !private ["s8SequenceP", "append"]
 - !private ["4Node21StructuredDataWrapperP", "FluentProvider"]
 - !private ["4Node21StructuredDataWrapperP", "JSON"]
@@ -257,6 +258,7 @@ depends-nominal:
 - !private "3App4PostC"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
+- !private "3App4RoomC"
 - !private "s8SequenceP"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s14_ArrayProtocolP"
