@@ -1,7 +1,0 @@
-version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
-options: "091967047d8ce05d4845591f8f44696c"
-build_time: [1510254816, 313154000]
-inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Tests/AppTests/PostControllerTests.swift": [1507237346, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Tests/AppTests/RouteTests.swift": [1507237346, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Tests/AppTests/Utilities.swift": [1507237346, 0]
