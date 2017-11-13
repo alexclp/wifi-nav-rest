@@ -48,3 +48,9 @@ extension Room: Preparation {
         try database.delete(self)
     }
 }
+
+extension Room: JSONInitializable {
+    convenience init(json: JSON) throws {
+
+    }
+}
