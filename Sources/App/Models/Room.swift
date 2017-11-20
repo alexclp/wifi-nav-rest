@@ -25,11 +25,6 @@ final class Room: Model {
         self.locations = [Location]()
     }
 
-    init(name: String, locations: [Location]) {
-        self.name = name
-        self.locations = locations
-    }
-
     func addLocation(location: Location) {
         locations.append(location)
     }
@@ -72,7 +67,6 @@ extension Room: JSONConvertible {
 extension Room: JSONInitializable {
     convenience init(json: JSON) throws {
         let name: String = try json.get(Room.Keys.name)
-        let locations: [Location] = try json.get(Room.Keys.locations)
-        self.init(name: name, locations: locations)
+        self.init(name: name)
     }
 }
