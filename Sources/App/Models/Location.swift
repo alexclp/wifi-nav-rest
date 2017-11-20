@@ -9,24 +9,28 @@ final class Location: Model {
     var latitude: Double
     var longitude: Double
     var pressure: Double
+    var accessPoint: WiFiAP
 
     struct Keys {
         static let id = "id"
         static let latitude = "latitude"
         static let longitude = "longitude"
         static let pressure = "pressure"
+        static let accessPoint = "accessPoint"
     }
 
     init(row: Row) throws {
         latitude = try row.get("latitude")
         longitude = try row.get("longitude")
         pressure = try row.get("pressure")
+        accessPoint = try row.get("accessPoint")
     }
 
-    init(latitude: Double, longitude: Double, pressure: Double) {
+    init(latitude: Double, longitude: Double, pressure: Double, accessPoint: WiFiAP) {
         self.latitude = latitude
         self.longitude = longitude
         self.pressure = pressure
+        self.accessPoint = accessPoint
     }
 
     func makeRow() throws -> Row {
@@ -63,6 +67,7 @@ extension Location: JSONConvertible {
         try toReturn.set(Location.Keys.latitude, latitude)
         try toReturn.set(Location.Keys.longitude, longitude)
         try toReturn.set(Location.Keys.pressure, pressure)
+        try toReturn.set(Location.Keys.accessPoint, accessPoint)
 
         return toReturn
     }
@@ -73,6 +78,7 @@ extension Location: JSONInitializable {
         let latitude: Double = try json.get(Location.Keys.latitude)
         let longitude: Double = try json.get(Location.Keys.longitude)
         let pressure: Double = try json.get(Location.Keys.pressure)
-        self.init(latitude: latitude, longitude: longitude, pressure: pressure)
+        let accessPoint: WiFiAP = try json.get(Location.Keys.accessPoint)
+        self.init(latitude: latitude, longitude: longitude, pressure: pressure, accessPoint: accessPoint)
     }
 }

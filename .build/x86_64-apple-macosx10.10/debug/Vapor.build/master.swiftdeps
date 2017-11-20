@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "1f1d56688047989d3f484e679463ee3e"
-build_time: [1510317468, 318248000]
+build_time: [1511185474, 790136000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Vapor/CORS/CORSConfiguration.swift": [1510317415, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Vapor/CORS/CORSMiddleware.swift": [1510317415, 0]

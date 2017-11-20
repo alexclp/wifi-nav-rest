@@ -8,18 +8,26 @@ final class Room: Model {
     static let idType: IdentifierType = .uuid
     var name: String
     var locations: [Location]
-    var map: [[Location]]
+
+    struct Keys {
+        static let id = "id"
+        static let name = "name"
+        static let locations = "locations"
+    }
 
     init(row: Row) throws {
         name = try row.get("name")
         locations = try row.get("locations")
-        map =  try row.get("map")
     }
 
     init(name: String) {
         self.name = name
         self.locations = [Location]()
-        self.map = [[Location]]()
+    }
+
+    init(name: String, locations: [Location]) {
+        self.name = name
+        self.locations = locations
     }
 
     func addLocation(location: Location) {
@@ -30,7 +38,6 @@ final class Room: Model {
         var row = Row()
         try row.set("name", name)
         try row.set("locations", locations)
-        try row.set("map", map)
         return row
     }
 }
@@ -40,7 +47,6 @@ extension Room: Preparation {
         try database.create(self) { rooms in
             rooms.id()
             rooms.custom("locations", type: "array")
-            rooms.custom("map", type: "array")
         }
     }
 
@@ -49,8 +55,24 @@ extension Room: Preparation {
     }
 }
 
+extension Room: ResponseRepresentable { }
+
+extension Room: JSONConvertible {
+    func makeJSON() throws -> JSON {
+        var toReturn = JSON()
+
+        try toReturn.set(Room.Keys.id, id)
+        try toReturn.set(Room.Keys.name, name)
+        try toReturn.set(Room.Keys.locations, locations)
+
+        return toReturn
+    }
+}
+
 extension Room: JSONInitializable {
     convenience init(json: JSON) throws {
-
+        let name: String = try json.get(Room.Keys.name)
+        let locations: [Location] = try json.get(Room.Keys.locations)
+        self.init(name: name, locations: locations)
     }
 }

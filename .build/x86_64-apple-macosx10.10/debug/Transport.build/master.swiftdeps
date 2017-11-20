@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "4a6106a0a5b35bbf2d324fb5c35a507c"
-build_time: [1510317440, 383677000]
+build_time: [1511185467, 715358000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Exports.swift": [1510317416, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/ClientStream.swift": [1510317416, 0]

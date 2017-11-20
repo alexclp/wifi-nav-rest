@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "2654d2b3aecf63949260b81405024a1c"
-build_time: [1510317433, 223498000]
+build_time: [1511185466, 284451000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bits.git-9196587591774126515/Sources/Bits/Aliases.swift": [1510317419, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bits.git-9196587591774126515/Sources/Bits/Base64Encoder.swift": [1510317419, 0]

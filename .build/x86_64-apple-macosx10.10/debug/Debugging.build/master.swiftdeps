@@ -1,5 +1,5 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "aea7137fcfc9b4454cf43cf257097864"
-build_time: [1510317433, 206898000]
+build_time: [1511185466, 282989000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/debugging.git-4365319567167379684/Sources/Debugging/Debuggable.swift": [1510317417, 0]

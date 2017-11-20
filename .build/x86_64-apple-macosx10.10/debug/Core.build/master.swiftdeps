@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
 options: "ef539c76e913f54f9f95f13a359a1f45"
-build_time: [1510317438, 583789000]
+build_time: [1511185467, 25915000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/core.git-9210800844849382486/Sources/Core/Array.swift": [1510317415, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/core.git-9210800844849382486/Sources/Core/Bits.swift": [1510317415, 0]
