@@ -22,5 +22,6 @@ extension Droplet {
 
         try resource("posts", PostController.self)
         try resource("locations", LocationController.self)
+        try resource("rooms", RoomController.self)
     }
 }

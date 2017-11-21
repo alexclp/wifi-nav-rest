@@ -9,28 +9,28 @@ final class Location: Model {
     var latitude: Double
     var longitude: Double
     var pressure: Double
-    var accessPoint: WiFiAP
+    var roomID: Identifier
 
     struct Keys {
         static let id = "id"
         static let latitude = "latitude"
         static let longitude = "longitude"
         static let pressure = "pressure"
-        static let accessPoint = "accessPoint"
+        static let roomID = "roomID"
     }
 
     init(row: Row) throws {
         latitude = try row.get("latitude")
         longitude = try row.get("longitude")
         pressure = try row.get("pressure")
-        accessPoint = try row.get("accessPoint")
+        roomID = try row.get("roomID")
     }
 
-    init(latitude: Double, longitude: Double, pressure: Double, accessPoint: WiFiAP) {
+    init(latitude: Double, longitude: Double, pressure: Double, roomID: Identifier) {
         self.latitude = latitude
         self.longitude = longitude
         self.pressure = pressure
-        self.accessPoint = accessPoint
+        self.roomID = roomID
     }
 
     func makeRow() throws -> Row {
@@ -38,7 +38,18 @@ final class Location: Model {
         try row.set("latitude", latitude)
         try row.set("longitude", latitude)
         try row.set("pressure", pressure)
+        try row.set("roomID", roomID)
         return row
+    }
+}
+
+extension Location {
+    var room: Parent<Location, Room> {
+        return parent(id: roomID)
+    }
+
+    var measurements: Children<Location, Measurement> {
+        return children()
     }
 }
 
@@ -49,6 +60,7 @@ extension Location: Preparation {
             locations.double("latitude")
             locations.double("longitude")
             locations.double("pressure")
+            locations.foreignId(for: Room.self, optional: false, unique: true, foreignIdKey: "roomID", foreignKeyName: "roomID")
         }
     }
 
@@ -67,7 +79,7 @@ extension Location: JSONConvertible {
         try toReturn.set(Location.Keys.latitude, latitude)
         try toReturn.set(Location.Keys.longitude, longitude)
         try toReturn.set(Location.Keys.pressure, pressure)
-        try toReturn.set(Location.Keys.accessPoint, accessPoint)
+        try toReturn.set(Location.Keys.roomID, roomID)
 
         return toReturn
     }
@@ -78,7 +90,7 @@ extension Location: JSONInitializable {
         let latitude: Double = try json.get(Location.Keys.latitude)
         let longitude: Double = try json.get(Location.Keys.longitude)
         let pressure: Double = try json.get(Location.Keys.pressure)
-        let accessPoint: WiFiAP = try json.get(Location.Keys.accessPoint)
-        self.init(latitude: latitude, longitude: longitude, pressure: pressure, accessPoint: accessPoint)
+        let roomID: Identifier = try json.get(Location.Keys.roomID)
+        self.init(latitude: latitude, longitude: longitude, pressure: pressure, roomID: roomID)
     }
 }
