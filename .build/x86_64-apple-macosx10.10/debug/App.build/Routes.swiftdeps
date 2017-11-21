@@ -10,6 +10,7 @@ depends-top-level:
 - !private "JSON"
 - !private "LocationController"
 - !private "PostController"
+- !private "RoomController"
 - !private "StringLiteralType"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
@@ -33,6 +34,7 @@ depends-member:
 - !private ["5Vapor7DropletC", "JSON"]
 - !private ["5Vapor7DropletC", "LocationController"]
 - !private ["5Vapor7DropletC", "PostController"]
+- !private ["5Vapor7DropletC", "RoomController"]
 - !private ["5Vapor7DropletC", "get"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
@@ -94,13 +96,16 @@ depends-member:
 - !private ["4HTTP9ResponderP", "JSON"]
 - !private ["4HTTP9ResponderP", "LocationController"]
 - !private ["4HTTP9ResponderP", "PostController"]
+- !private ["4HTTP9ResponderP", "RoomController"]
 - !private ["4HTTP9ResponderP", "get"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
+- !private ["3App14RoomControllerC", "deinit"]
 - !private ["7Routing12RouteBuilderP", "JSON"]
 - !private ["7Routing12RouteBuilderP", "LocationController"]
 - !private ["7Routing12RouteBuilderP", "PostController"]
+- !private ["7Routing12RouteBuilderP", "RoomController"]
 - !private ["7Routing12RouteBuilderP", "get"]
 - !private ["7Routing12RouteBuilderP", "resource"]
 - !private ["s8SequenceP", "init"]
@@ -178,6 +183,7 @@ depends-nominal:
 - !private "5Vapor23RequestContentSubscriptP"
 - !private "4HTTP9ResponderP"
 - !private "4HTTP21ResponseRepresentableP"
+- !private "3App14RoomControllerC"
 - !private "7Routing12RouteBuilderP"
 - !private "s8SequenceP"
 - !private "SS"

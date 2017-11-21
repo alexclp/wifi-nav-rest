@@ -26,6 +26,12 @@
     "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Location~partial.swiftmodule",
     "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Location.swiftdeps"
   },
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Measurement.swift": {
+    "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Measurement.d",
+    "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Models/Measurement.swift.o",
+    "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Measurement~partial.swiftmodule",
+    "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Measurement.swiftdeps"
+  },
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Post.swift": {
     "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Post.d",
     "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Models/Post.swift.o",
