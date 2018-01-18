@@ -49,6 +49,8 @@ extension WiFiAP: Preparation {
     }
 }
 
+extension WiFiAP: ResponseRepresentable { }
+
 extension WiFiAP: JSONConvertible {
     func makeJSON() throws -> JSON {
         var toReturn = JSON()
