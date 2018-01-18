@@ -11,6 +11,7 @@ final class Measurement: Model {
     var locationID: Identifier
 
     struct Keys {
+        static let id = "id"
         static let signalStrength = "signalStrength"
         static let apID = "apID"
         static let locationID = "locationID"
@@ -39,6 +40,8 @@ final class Measurement: Model {
     }
 }
 
+extension Measurement: ResponseRepresentable { }
+
 extension Measurement: Preparation {
     static func prepare(_ database: Database) throws {
         try database.create(self) { measurements in
@@ -61,5 +64,27 @@ extension Measurement {
 
     var location: Parent<Measurement, Location> {
         return parent(id: locationID)
+    }
+}
+
+extension Measurement: JSONConvertible {
+    func makeJSON() throws -> JSON {
+        var toReturn = JSON()
+
+        try toReturn.set(Measurement.Keys.id, id)
+        try toReturn.set(Measurement.Keys.signalStrength, signalStrength)
+        try toReturn.set(Measurement.Keys.locationID, locationID)
+        try toReturn.set(Measurement.Keys.apID, apID)
+
+        return toReturn
+    }
+}
+
+extension Measurement: JSONInitializable {
+    convenience init(json: JSON) throws {
+        let signalStrength: Int = try json.get(Measurement.Keys.signalStrength)
+        let apID: Identifier = try json.get(Measurement.Keys.apID)
+        let locationID: Identifier = try json.get(Measurement.Keys.locationID)
+        self.init(signalStrength: signalStrength, apID: apID, locationID: locationID)
     }
 }

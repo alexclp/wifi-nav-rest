@@ -2,7 +2,7 @@
 43124d2d6041f29696ff8a859791da90d23510fc refs/heads/102
 c1640238cb6136d8548dc5dc87a526a59af03c8f refs/heads/beta
 8f7f3a7ea05868ed4332933317d59578ed2388aa refs/heads/future-type-async
-cb9d78aca2540c1a6b45b0ab43e5b0c50f29d216 refs/heads/master
+04b804da01f4fe38acd0dd8e0018c3c7900e3c19 refs/heads/master
 523307769b9c50a4a0a4ea7d60af544d063d98d8 refs/heads/multi-slug-102
 0a5d9b1e8900d89a5b69b2eca78d848ced00076b refs/pull/10/head
 729f0e016b159e44fb93ddcb8fa2002bde78e50f refs/pull/11/head
@@ -26,6 +26,8 @@ c1640238cb6136d8548dc5dc87a526a59af03c8f refs/pull/28/head
 9710336bd7e89003162b04579e969db28244fd5b refs/pull/29/merge
 3d68a30bf19f21fd43fbbcb08dfb895e12cc2fdb refs/pull/3/head
 1a8cebd29162cacbda96e015a10b269c74182b15 refs/pull/31/head
+e1694a6bc901e1b2a2cabe79fc3cd27de816ed41 refs/pull/32/head
+2e8ca25f2a58800c2a904d5c0cfc43c9fa15d91b refs/pull/33/head
 f5b2220a82e74a031175c6761feea8b7df9b88b3 refs/pull/4/head
 f9797fe1dc156e3ead94e7fc40b5488804d82118 refs/pull/5/head
 523307769b9c50a4a0a4ea7d60af544d063d98d8 refs/pull/6/head
@@ -53,3 +55,4 @@ a0708ae91dcd03584e85d04b11f286553d7e308f refs/tags/2.0.0-beta.5
 6f1aa19f9161e4e1a496a88a2e1e0f336e9e9917 refs/tags/2.0.1
 66750975f5e5abaacf4bfa4d37ec85dd20c89312 refs/tags/2.1.0
 cb9d78aca2540c1a6b45b0ab43e5b0c50f29d216 refs/tags/2.2.0
+e950f3d56fb2eab6a64dafcfdb89ac98866045b8 refs/tags/2.2.1

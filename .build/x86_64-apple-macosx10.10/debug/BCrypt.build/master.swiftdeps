@@ -1,13 +1,13 @@
-version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "91ed3006f4e16eb05f7a02fab98ce4af"
-build_time: [1511204060, 837981000]
+build_time: [1516289923, 176370000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/BCryptError.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Base64.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Convenience.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Export.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Hash.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Keys.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Parser.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Salt.swift": [1511204034, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Serializer.swift": [1511204034, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/BCryptError.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Base64.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Convenience.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Export.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Hash.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Keys.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Parser.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Salt.swift": [1516289898, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Serializer.swift": [1516289898, 0]

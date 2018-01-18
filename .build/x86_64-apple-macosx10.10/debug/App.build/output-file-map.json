@@ -8,6 +8,12 @@
     "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/LocationController~partial.swiftmodule",
     "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/LocationController.swiftdeps"
   },
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/MeasurementController.swift": {
+    "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/MeasurementController.d",
+    "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Controllers/MeasurementController.swift.o",
+    "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/MeasurementController~partial.swiftmodule",
+    "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/MeasurementController.swiftdeps"
+  },
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/PostController.swift": {
     "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/PostController.d",
     "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Controllers/PostController.swift.o",
@@ -19,6 +25,12 @@
     "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Controllers/RoomController.swift.o",
     "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/RoomController~partial.swiftmodule",
     "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/RoomController.swiftdeps"
+  },
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/WiFiAPController.swift": {
+    "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/WiFiAPController.d",
+    "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Controllers/WiFiAPController.swift.o",
+    "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/WiFiAPController~partial.swiftmodule",
+    "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/WiFiAPController.swiftdeps"
   },
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": {
     "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Location.d",

@@ -9,9 +9,11 @@ depends-top-level:
 - "Droplet"
 - !private "JSON"
 - !private "LocationController"
+- !private "MeasurementController"
 - !private "PostController"
 - !private "RoomController"
 - !private "StringLiteralType"
+- !private "WiFiAPController"
 depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "init"]
@@ -33,8 +35,10 @@ depends-member:
 - !private ["s9DecodableP", "init"]
 - !private ["5Vapor7DropletC", "JSON"]
 - !private ["5Vapor7DropletC", "LocationController"]
+- !private ["5Vapor7DropletC", "MeasurementController"]
 - !private ["5Vapor7DropletC", "PostController"]
 - !private ["5Vapor7DropletC", "RoomController"]
+- !private ["5Vapor7DropletC", "WiFiAPController"]
 - !private ["5Vapor7DropletC", "get"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
@@ -70,6 +74,7 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "set"]
 - !private ["3App18LocationControllerC", "deinit"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["3App21MeasurementControllerC", "deinit"]
 - !private ["4HTTP7MessageP", "description"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "init"]
@@ -95,8 +100,10 @@ depends-member:
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP9ResponderP", "JSON"]
 - !private ["4HTTP9ResponderP", "LocationController"]
+- !private ["4HTTP9ResponderP", "MeasurementController"]
 - !private ["4HTTP9ResponderP", "PostController"]
 - !private ["4HTTP9ResponderP", "RoomController"]
+- !private ["4HTTP9ResponderP", "WiFiAPController"]
 - !private ["4HTTP9ResponderP", "get"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
@@ -104,8 +111,10 @@ depends-member:
 - !private ["3App14RoomControllerC", "deinit"]
 - !private ["7Routing12RouteBuilderP", "JSON"]
 - !private ["7Routing12RouteBuilderP", "LocationController"]
+- !private ["7Routing12RouteBuilderP", "MeasurementController"]
 - !private ["7Routing12RouteBuilderP", "PostController"]
 - !private ["7Routing12RouteBuilderP", "RoomController"]
+- !private ["7Routing12RouteBuilderP", "WiFiAPController"]
 - !private ["7Routing12RouteBuilderP", "get"]
 - !private ["7Routing12RouteBuilderP", "resource"]
 - !private ["s8SequenceP", "init"]
@@ -115,6 +124,7 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "set"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["3App16WiFiAPControllerC", "deinit"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -162,6 +172,7 @@ depends-nominal:
 - !private "4JSON17JSONRepresentableP"
 - !private "3App18LocationControllerC"
 - !private "s25LosslessStringConvertibleP"
+- !private "3App21MeasurementControllerC"
 - !private "4HTTP7MessageP"
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
@@ -191,6 +202,7 @@ depends-nominal:
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "3App16WiFiAPControllerC"
 - !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"

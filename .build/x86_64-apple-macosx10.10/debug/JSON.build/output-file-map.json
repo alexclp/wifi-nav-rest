@@ -8,12 +8,6 @@
     "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Bytes~partial.swiftmodule",
     "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Bytes.swiftdeps"
   },
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Equatable.swift": {
-    "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Equatable.d",
-    "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Equatable.swift.o",
-    "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Equatable~partial.swiftmodule",
-    "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Equatable.swiftdeps"
-  },
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Fuzzy.swift": {
     "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Fuzzy.d",
     "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.build/JSON+Fuzzy.swift.o",

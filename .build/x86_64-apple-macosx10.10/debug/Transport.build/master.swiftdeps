@@ -1,14 +1,14 @@
-version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "4a6106a0a5b35bbf2d324fb5c35a507c"
-build_time: [1511204058, 277445000]
+build_time: [1516289920, 684703000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Exports.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/ClientStream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/InternetStream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/Port.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/ServerStream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/FoundationStream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/ReadableStream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/Stream.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/StreamError.swift": [1511204030, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/WriteableStream.swift": [1511204030, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Exports.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/ClientStream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/InternetStream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/Port.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Internet/ServerStream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/FoundationStream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/ReadableStream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/Stream.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/StreamError.swift": [1516289893, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Transport/Streams/WriteableStream.swift": [1516289893, 0]

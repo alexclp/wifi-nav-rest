@@ -21,5 +21,7 @@ extension Config {
         preparations.append(Post.self)
         preparations.append(Location.self)
         preparations.append(Room.self)
+        preparations.append(Measurement.self)
+        preparations.append(WiFiAP.self)
     }
 }
