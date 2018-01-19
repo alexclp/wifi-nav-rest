@@ -5,7 +5,7 @@ import HTTP
 final class Location: Model {
     let storage = Storage()
 
-    static let idType: IdentifierType = .uuid
+    static let idType: IdentifierType = .int
     var latitude: Double
     var longitude: Double
     var pressure: Double

@@ -1,10 +1,10 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "d3e0bbfeb758ec2cf9e895a32b3fc149"
-build_time: [1516289946, 123417000]
+build_time: [1516368400, 818407000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/BoundaryParser.swift": [1516289894, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/HeaderParser.swift": [1516289894, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Multipart+BytesConvertible.swift": [1516289894, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Parser.swift": [1516289894, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Part.swift": [1516289894, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Serializer.swift": [1516289894, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/BoundaryParser.swift": [1516368329, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/HeaderParser.swift": [1516368329, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Multipart+BytesConvertible.swift": [1516368329, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Parser.swift": [1516368329, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Part.swift": [1516368329, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/multipart.git-4210556629793786970/Sources/Multipart/Serializer.swift": [1516368329, 0]

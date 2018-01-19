@@ -90,8 +90,8 @@ depends-member:
 - ["6Fluent6EntityP", ""]
 - !private ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
+- ["s9EquatableP", "int"]
 - !private ["s9EquatableP", "set"]
-- ["s9EquatableP", "uuid"]
 - !private ["6Fluent8ExecutorP", "create"]
 - !private ["6Fluent8ExecutorP", "delete"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
@@ -125,7 +125,7 @@ depends-member:
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
 - ["s8HashableP", "init"]
-- ["6Fluent14IdentifierTypeO", "uuid"]
+- ["6Fluent14IdentifierTypeO", "int"]
 - !private ["4JSONAAV", "get"]
 - !private ["4JSONAAV", "init"]
 - !private ["4JSONAAV", "set"]
@@ -707,4 +707,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "17cef8168c1aa6f47ab8280071c2bff8"
+interface-hash: "476387cd7d95722e73161733da7a45da"

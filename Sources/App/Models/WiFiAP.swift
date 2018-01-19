@@ -5,9 +5,9 @@ import HTTP
 final class WiFiAP: Model {
     let storage = Storage()
 
-    static let idType: IdentifierType = .uuid
     var name: String
     var macAddress: String
+    static let idType: IdentifierType = .int
 
     struct Keys {
         static let id = "id"
