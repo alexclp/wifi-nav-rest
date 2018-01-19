@@ -5,7 +5,7 @@ import HTTP
 final class Room: Model {
     let storage = Storage()
 
-    static let idType: IdentifierType = .uuid
+    static let idType: IdentifierType = .int
     var name: String
 
     struct Keys {

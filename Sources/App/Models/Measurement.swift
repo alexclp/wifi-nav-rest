@@ -5,7 +5,7 @@ import FluentProvider
 final class Measurement: Model {
     let storage = Storage()
 
-    static let idType: IdentifierType = .uuid
+    static let idType: IdentifierType = .int
     var signalStrength: Int
     var apID: Identifier
     var locationID: Identifier
