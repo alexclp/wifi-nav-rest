@@ -6,6 +6,7 @@ provides-member:
 - ["5Vapor7DropletC", "setupRoutes"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "Abort"
 - "Droplet"
 - !private "JSON"
 - !private "LocationController"
@@ -13,8 +14,14 @@ depends-top-level:
 - !private "PostController"
 - !private "RoomController"
 - !private "StringLiteralType"
+- !private "WiFiAP"
 - !private "WiFiAPController"
+- !private "print"
 depends-member:
+- !private ["5Vapor5AbortV", "badRequest"]
+- !private ["5Vapor5AbortV", "notFound"]
+- !private ["5Vapor10AbortErrorP", "badRequest"]
+- !private ["5Vapor10AbortErrorP", "notFound"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
@@ -27,56 +34,101 @@ depends-member:
 - !private ["s7CVarArgP", "init"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["6Fluent6FilterV10ComparisonO", "equals"]
+- !private ["s28CustomDebugStringConvertibleP", "badRequest"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "notFound"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "parameters"]
+- !private ["9Debugging10DebuggableP", "badRequest"]
+- !private ["9Debugging10DebuggableP", "notFound"]
 - !private ["s9DecodableP", "init"]
+- !private ["5Vapor7DropletC", "Abort"]
 - !private ["5Vapor7DropletC", "JSON"]
 - !private ["5Vapor7DropletC", "LocationController"]
 - !private ["5Vapor7DropletC", "MeasurementController"]
 - !private ["5Vapor7DropletC", "PostController"]
 - !private ["5Vapor7DropletC", "RoomController"]
+- !private ["5Vapor7DropletC", "WiFiAP"]
 - !private ["5Vapor7DropletC", "WiFiAPController"]
 - !private ["5Vapor7DropletC", "get"]
+- !private ["5Vapor7DropletC", "print"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
 - !private ["4SMTP22EmailBodyRepresentableP", "init"]
 - !private ["s9EncodableP", "init"]
+- !private ["6Fluent6EntityP", "makeJSON"]
+- !private ["6Fluent6EntityP", "makeQuery"]
+- !private ["s9EquatableP", "equals"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "set"]
+- !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s5ErrorP", "badRequest"]
+- !private ["s5ErrorP", "notFound"]
+- !private ["6Fluent21ExecutorRepresentableP", "filter"]
+- !private ["6Fluent21ExecutorRepresentableP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
+- !private ["s25ExpressibleByArrayLiteralP", "string"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "set"]
+- !private ["s27ExpressibleByBooleanLiteralP", "string"]
+- !private ["s27ExpressibleByBooleanLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "set"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "string"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "set"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "string"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "subscript"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "set"]
+- !private ["s25ExpressibleByFloatLiteralP", "string"]
+- !private ["s25ExpressibleByFloatLiteralP", "subscript"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "set"]
+- !private ["s27ExpressibleByIntegerLiteralP", "string"]
+- !private ["s27ExpressibleByIntegerLiteralP", "subscript"]
 - !private ["s23ExpressibleByNilLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "set"]
+- !private ["s23ExpressibleByNilLiteralP", "string"]
+- !private ["s23ExpressibleByNilLiteralP", "subscript"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "set"]
+- !private ["s26ExpressibleByStringLiteralP", "string"]
+- !private ["s26ExpressibleByStringLiteralP", "subscript"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "set"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "string"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
 - !private ["s8HashableP", "init"]
 - !private ["4JSONAAV", "init"]
 - !private ["4JSONAAV", "set"]
+- !private ["4JSON15JSONConvertibleP", "makeJSON"]
+- !private ["4JSON15JSONConvertibleP", "makeQuery"]
+- !private ["4JSON17JSONInitializableP", "makeJSON"]
+- !private ["4JSON17JSONInitializableP", "makeQuery"]
 - !private ["4JSON17JSONRepresentableP", "init"]
+- !private ["4JSON17JSONRepresentableP", "makeJSON"]
+- !private ["4JSON17JSONRepresentableP", "makeQuery"]
 - !private ["4JSON17JSONRepresentableP", "set"]
 - !private ["3App18LocationControllerC", "deinit"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["3App21MeasurementControllerC", "deinit"]
 - !private ["4HTTP7MessageP", "description"]
+- !private ["4HTTP7MessageP", "parameters"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["14FluentProvider5ModelP", "makeJSON"]
+- !private ["14FluentProvider5ModelP", "makeQuery"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -87,43 +139,82 @@ depends-member:
 - !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "set"]
+- !private ["4Node0A13InitializableP", "string"]
+- !private ["4Node0A13InitializableP", "subscript"]
 - !private ["4Node0A13RepresentableP", "description"]
 - !private ["4Node0A13RepresentableP", "init"]
+- !private ["4Node0A13RepresentableP", "parameters"]
 - !private ["4Node0A13RepresentableP", "set"]
+- !private ["4Node0A13RepresentableP", "string"]
+- !private ["4Node0A13RepresentableP", "subscript"]
 - !private ["7Routing15ParameterizableP", "init"]
+- !private ["7Routing15ParameterizableP", "makeJSON"]
+- !private ["7Routing15ParameterizableP", "makeQuery"]
+- !private ["7Routing10ParametersV", "string"]
+- !private ["7Routing10ParametersV", "subscript"]
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "set"]
+- !private ["13PathIndexableAAP", "string"]
+- !private ["13PathIndexableAAP", "subscript"]
 - !private ["13PathIndexable0A7IndexerP", "init"]
 - !private ["3App14PostControllerC", "deinit"]
+- !private ["6Fluent11PreparationP", "makeJSON"]
+- !private ["6Fluent11PreparationP", "makeQuery"]
+- !private ["6Fluent5QueryC", "filter"]
+- !private ["6Fluent5QueryC", "first"]
+- !private ["6Fluent18QueryRepresentableP", "filter"]
+- !private ["6Fluent18QueryRepresentableP", "first"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["4HTTP7RequestC", "description"]
+- !private ["4HTTP7RequestC", "parameters"]
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
+- !private ["4HTTP9ResponderP", "Abort"]
 - !private ["4HTTP9ResponderP", "JSON"]
 - !private ["4HTTP9ResponderP", "LocationController"]
 - !private ["4HTTP9ResponderP", "MeasurementController"]
 - !private ["4HTTP9ResponderP", "PostController"]
 - !private ["4HTTP9ResponderP", "RoomController"]
+- !private ["4HTTP9ResponderP", "WiFiAP"]
 - !private ["4HTTP9ResponderP", "WiFiAPController"]
 - !private ["4HTTP9ResponderP", "get"]
+- !private ["4HTTP9ResponderP", "print"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
+- !private ["4HTTP21ResponseRepresentableP", "makeJSON"]
+- !private ["4HTTP21ResponseRepresentableP", "makeQuery"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
 - !private ["3App14RoomControllerC", "deinit"]
+- !private ["7Routing12RouteBuilderP", "Abort"]
 - !private ["7Routing12RouteBuilderP", "JSON"]
 - !private ["7Routing12RouteBuilderP", "LocationController"]
 - !private ["7Routing12RouteBuilderP", "MeasurementController"]
 - !private ["7Routing12RouteBuilderP", "PostController"]
 - !private ["7Routing12RouteBuilderP", "RoomController"]
+- !private ["7Routing12RouteBuilderP", "WiFiAP"]
 - !private ["7Routing12RouteBuilderP", "WiFiAPController"]
 - !private ["7Routing12RouteBuilderP", "get"]
+- !private ["7Routing12RouteBuilderP", "print"]
 - !private ["7Routing12RouteBuilderP", "resource"]
+- !private ["6Fluent14RowConvertibleP", "makeJSON"]
+- !private ["6Fluent14RowConvertibleP", "makeQuery"]
+- !private ["6Fluent16RowInitializableP", "makeJSON"]
+- !private ["6Fluent16RowInitializableP", "makeQuery"]
+- !private ["6Fluent16RowRepresentableP", "makeJSON"]
+- !private ["6Fluent16RowRepresentableP", "makeQuery"]
 - !private ["s8SequenceP", "init"]
+- !private ["6Fluent8StorableP", "makeJSON"]
+- !private ["6Fluent8StorableP", "makeQuery"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["4Node21StructuredDataWrapperP", "init"]
 - !private ["4Node21StructuredDataWrapperP", "set"]
+- !private ["4Node21StructuredDataWrapperP", "string"]
+- !private ["4Node21StructuredDataWrapperP", "subscript"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["3App6WiFiAPC", "deinit"]
+- !private ["3App6WiFiAPC", "makeJSON"]
+- !private ["3App6WiFiAPC", "makeQuery"]
 - !private ["3App16WiFiAPControllerC", "deinit"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -139,6 +230,8 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "5Vapor5AbortV"
+- !private "5Vapor10AbortErrorP"
 - !private "s23BidirectionalCollectionP"
 - !private "4HTTP17BodyRepresentableP"
 - !private "4Bits16BytesConvertibleP"
@@ -147,16 +240,21 @@ depends-nominal:
 - !private "s7CVarArgP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
+- !private "6Fluent6FilterV10ComparisonO"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
+- !private "9Debugging10DebuggableP"
 - !private "s9DecodableP"
 - "5Vapor7DropletC"
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"
 - !private "s9EncodableP"
+- !private "6Fluent6EntityP"
 - !private "s9EquatableP"
+- !private "s5ErrorP"
+- !private "6Fluent21ExecutorRepresentableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
@@ -169,12 +267,15 @@ depends-nominal:
 - !private "4Node14FuzzyConverterP"
 - !private "s8HashableP"
 - !private "4JSONAAV"
+- !private "4JSON15JSONConvertibleP"
+- !private "4JSON17JSONInitializableP"
 - !private "4JSON17JSONRepresentableP"
 - !private "3App18LocationControllerC"
 - !private "s25LosslessStringConvertibleP"
 - !private "3App21MeasurementControllerC"
 - !private "4HTTP7MessageP"
 - !private "s10MirrorPathP"
+- !private "14FluentProvider5ModelP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So21NSItemProviderReadingP"
@@ -186,9 +287,13 @@ depends-nominal:
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "7Routing15ParameterizableP"
+- !private "7Routing10ParametersV"
 - !private "13PathIndexableAAP"
 - !private "13PathIndexable0A7IndexerP"
 - !private "3App14PostControllerC"
+- !private "6Fluent11PreparationP"
+- !private "6Fluent5QueryC"
+- !private "6Fluent18QueryRepresentableP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "4HTTP7RequestC"
 - !private "5Vapor23RequestContentSubscriptP"
@@ -196,12 +301,17 @@ depends-nominal:
 - !private "4HTTP21ResponseRepresentableP"
 - !private "3App14RoomControllerC"
 - !private "7Routing12RouteBuilderP"
+- !private "6Fluent14RowConvertibleP"
+- !private "6Fluent16RowInitializableP"
+- !private "6Fluent16RowRepresentableP"
 - !private "s8SequenceP"
+- !private "6Fluent8StorableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "3App6WiFiAPC"
 - !private "3App16WiFiAPControllerC"
 - !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"

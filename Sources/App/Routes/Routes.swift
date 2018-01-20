@@ -20,6 +20,12 @@ extension Droplet {
 
         get("description") { req in return req.description }
 
+        get("accessPoints", "address", ":macAddress") { request in
+            guard let macAddress = request.parameters["macAddress"]?.string else { throw Abort.badRequest }
+            guard let ap = try WiFiAP.makeQuery().filter("macAddress", .equals, macAddress).first() else { throw Abort.notFound }
+            return try ap.makeJSON()
+        }
+
         try resource("posts", PostController.self)
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
