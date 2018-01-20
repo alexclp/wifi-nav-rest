@@ -47,8 +47,8 @@ extension Measurement: Preparation {
         try database.create(self) { measurements in
             measurements.id()
             measurements.int("signalStrength")
-            measurements.foreignId(for: WiFiAP.self, optional: false, unique: true, foreignIdKey: "apID", foreignKeyName: "apID")
-            measurements.foreignId(for: Location.self, optional: false, unique: true, foreignIdKey: "locationID", foreignKeyName: "locationID")
+            measurements.foreignId(for: WiFiAP.self, optional: false, unique: false, foreignIdKey: "apID", foreignKeyName: "apID")
+            measurements.foreignId(for: Location.self, optional: false, unique: false, foreignIdKey: "locationID", foreignKeyName: "locationID")
         }
     }
 
