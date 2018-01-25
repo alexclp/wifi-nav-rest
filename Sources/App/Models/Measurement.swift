@@ -19,7 +19,7 @@ final class Measurement: Model {
 
     init(row: Row) throws {
         signalStrength = try row.get("signalStrength")
-        apID = try row.get("signalStrength")
+        apID = try row.get("apID")
         locationID = try row.get("locationID")
     }
 
