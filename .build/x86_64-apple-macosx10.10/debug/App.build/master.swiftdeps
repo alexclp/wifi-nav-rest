@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "f58f427e161e4fbacb4571cb13a1f4fb"
-build_time: [1516473011, 974448000]
+build_time: [1516906879, 832938000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationController.swift": [1510932884, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/MeasurementController.swift": [1516370012, 0]
@@ -10,7 +10,7 @@ inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": [1516368228, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Measurement.swift": [1516462569, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Post.swift": [1510257728, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1516368216, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1516889374, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/WiFiAP.swift": [1516369016, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Routes/Routes.swift": [1516462651, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/Config+Setup.swift": [1516290538, 0]
