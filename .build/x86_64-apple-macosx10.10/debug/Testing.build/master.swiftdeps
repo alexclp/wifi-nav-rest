@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "3e04ad5a466c4ac1d0b60dc07d233535"
-build_time: [1516910698, 708303000]
+build_time: [1517248893, 166236000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Testing/Bytes.swift": [1516910618, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Testing/Exports.swift": [1516910618, 0]

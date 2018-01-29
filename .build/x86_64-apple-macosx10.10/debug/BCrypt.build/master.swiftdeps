@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "91ed3006f4e16eb05f7a02fab98ce4af"
-build_time: [1516910654, 826548000]
+build_time: [1517248890, 422909000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/BCryptError.swift": [1516910625, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/bcrypt.git-6177224099894028443/Sources/BCrypt/Base64.swift": [1516910625, 0]

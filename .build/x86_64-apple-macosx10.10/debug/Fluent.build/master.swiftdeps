@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "f7020ac3cd3bed9cea3270590e591f5a"
-build_time: [1516910668, 34603000]
+build_time: [1517248892, 476888000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/fluent.git-6251908308727715749/Sources/Fluent/Database/Connection.swift": [1516910623, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/fluent.git-6251908308727715749/Sources/Fluent/Database/Database.swift": [1516910623, 0]

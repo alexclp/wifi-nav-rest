@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "d5474c1da826a5064fbf78e357044449"
-build_time: [1516910662, 921661000]
+build_time: [1517248890, 966685000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Certificates.swift": [1516910626, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ClientSocket.swift": [1516910626, 0]
