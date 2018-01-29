@@ -14,7 +14,6 @@ depends-top-level:
 - !private "Location"
 - !private "Measurement"
 - !private "Node"
-- !private "Post"
 - !private "Room"
 - !private "Row"
 - !private "WiFiAP"
@@ -28,7 +27,6 @@ depends-member:
 - !private ["7Configs6ConfigC", "Location"]
 - !private ["7Configs6ConfigC", "Measurement"]
 - !private ["7Configs6ConfigC", "Node"]
-- !private ["7Configs6ConfigC", "Post"]
 - !private ["7Configs6ConfigC", "Room"]
 - !private ["7Configs6ConfigC", "Row"]
 - !private ["7Configs6ConfigC", "WiFiAP"]
@@ -47,7 +45,6 @@ depends-member:
 - !private ["s9EquatableP", "Location"]
 - !private ["s9EquatableP", "Measurement"]
 - !private ["s9EquatableP", "Node"]
-- !private ["s9EquatableP", "Post"]
 - !private ["s9EquatableP", "Room"]
 - !private ["s9EquatableP", "Row"]
 - !private ["s9EquatableP", "WiFiAP"]
@@ -61,7 +58,6 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "Location"]
 - !private ["s25ExpressibleByArrayLiteralP", "Measurement"]
 - !private ["s25ExpressibleByArrayLiteralP", "Node"]
-- !private ["s25ExpressibleByArrayLiteralP", "Post"]
 - !private ["s25ExpressibleByArrayLiteralP", "Room"]
 - !private ["s25ExpressibleByArrayLiteralP", "Row"]
 - !private ["s25ExpressibleByArrayLiteralP", "WiFiAP"]
@@ -76,7 +72,6 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "Location"]
 - !private ["s27ExpressibleByBooleanLiteralP", "Measurement"]
 - !private ["s27ExpressibleByBooleanLiteralP", "Node"]
-- !private ["s27ExpressibleByBooleanLiteralP", "Post"]
 - !private ["s27ExpressibleByBooleanLiteralP", "Room"]
 - !private ["s27ExpressibleByBooleanLiteralP", "Row"]
 - !private ["s27ExpressibleByBooleanLiteralP", "WiFiAP"]
@@ -90,7 +85,6 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "Location"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Measurement"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Node"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "Post"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Room"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Row"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "WiFiAP"]
@@ -104,7 +98,6 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Location"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Measurement"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Node"]
-- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Post"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Room"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Row"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "WiFiAP"]
@@ -118,7 +111,6 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "Location"]
 - !private ["s25ExpressibleByFloatLiteralP", "Measurement"]
 - !private ["s25ExpressibleByFloatLiteralP", "Node"]
-- !private ["s25ExpressibleByFloatLiteralP", "Post"]
 - !private ["s25ExpressibleByFloatLiteralP", "Room"]
 - !private ["s25ExpressibleByFloatLiteralP", "Row"]
 - !private ["s25ExpressibleByFloatLiteralP", "WiFiAP"]
@@ -132,7 +124,6 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "Location"]
 - !private ["s27ExpressibleByIntegerLiteralP", "Measurement"]
 - !private ["s27ExpressibleByIntegerLiteralP", "Node"]
-- !private ["s27ExpressibleByIntegerLiteralP", "Post"]
 - !private ["s27ExpressibleByIntegerLiteralP", "Room"]
 - !private ["s27ExpressibleByIntegerLiteralP", "Row"]
 - !private ["s27ExpressibleByIntegerLiteralP", "WiFiAP"]
@@ -146,7 +137,6 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "Location"]
 - !private ["s23ExpressibleByNilLiteralP", "Measurement"]
 - !private ["s23ExpressibleByNilLiteralP", "Node"]
-- !private ["s23ExpressibleByNilLiteralP", "Post"]
 - !private ["s23ExpressibleByNilLiteralP", "Room"]
 - !private ["s23ExpressibleByNilLiteralP", "Row"]
 - !private ["s23ExpressibleByNilLiteralP", "WiFiAP"]
@@ -160,7 +150,6 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "Location"]
 - !private ["s26ExpressibleByStringLiteralP", "Measurement"]
 - !private ["s26ExpressibleByStringLiteralP", "Node"]
-- !private ["s26ExpressibleByStringLiteralP", "Post"]
 - !private ["s26ExpressibleByStringLiteralP", "Room"]
 - !private ["s26ExpressibleByStringLiteralP", "Row"]
 - !private ["s26ExpressibleByStringLiteralP", "WiFiAP"]
@@ -174,7 +163,6 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Location"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Measurement"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Node"]
-- !private ["s33ExpressibleByUnicodeScalarLiteralP", "Post"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Room"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Row"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "WiFiAP"]
@@ -193,7 +181,6 @@ depends-member:
 - !private ["4Node0A13InitializableP", "Location"]
 - !private ["4Node0A13InitializableP", "Measurement"]
 - !private ["4Node0A13InitializableP", "Node"]
-- !private ["4Node0A13InitializableP", "Post"]
 - !private ["4Node0A13InitializableP", "Room"]
 - !private ["4Node0A13InitializableP", "Row"]
 - !private ["4Node0A13InitializableP", "WiFiAP"]
@@ -208,7 +195,6 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "Location"]
 - !private ["4Node0A13RepresentableP", "Measurement"]
 - !private ["4Node0A13RepresentableP", "Node"]
-- !private ["4Node0A13RepresentableP", "Post"]
 - !private ["4Node0A13RepresentableP", "Room"]
 - !private ["4Node0A13RepresentableP", "Row"]
 - !private ["4Node0A13RepresentableP", "WiFiAP"]
@@ -223,7 +209,6 @@ depends-member:
 - !private ["13PathIndexableAAP", "Location"]
 - !private ["13PathIndexableAAP", "Measurement"]
 - !private ["13PathIndexableAAP", "Node"]
-- !private ["13PathIndexableAAP", "Post"]
 - !private ["13PathIndexableAAP", "Room"]
 - !private ["13PathIndexableAAP", "Row"]
 - !private ["13PathIndexableAAP", "WiFiAP"]
@@ -232,7 +217,6 @@ depends-member:
 - !private ["13PathIndexableAAP", "preparations"]
 - !private ["13PathIndexableAAP", "setupPreparations"]
 - !private ["13PathIndexableAAP", "setupProviders"]
-- !private ["3App4PostC", "deinit"]
 - !private ["s22RandomAccessCollectionP", "append"]
 - !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["3App4RoomC", "deinit"]
@@ -242,7 +226,6 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "Location"]
 - !private ["4Node21StructuredDataWrapperP", "Measurement"]
 - !private ["4Node21StructuredDataWrapperP", "Node"]
-- !private ["4Node21StructuredDataWrapperP", "Post"]
 - !private ["4Node21StructuredDataWrapperP", "Room"]
 - !private ["4Node21StructuredDataWrapperP", "Row"]
 - !private ["4Node21StructuredDataWrapperP", "WiFiAP"]
@@ -290,7 +273,6 @@ depends-nominal:
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "13PathIndexableAAP"
-- !private "3App4PostC"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
 - !private "3App4RoomC"
