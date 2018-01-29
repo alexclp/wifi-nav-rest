@@ -16,7 +16,6 @@ e7de7c0064367c150dfaaa747d12dc7ca8b0b8c3 refs/heads/core-files
 c2ddf1d6b29523d8a4330489603ef8a71792cfbd refs/heads/fluent-real
 fa95faf62a2bbfe3ef753906897dcfc41e4e44fd refs/heads/http-codable
 12362cec8073559fa3926791ab58c7c52dc97801 refs/heads/http2-client
-f7665a29922abb08e5976d82d22f1938830834c1 refs/heads/https-and-uri
 4f4ca1b658fa5df16491a67a012f64e6ea97d8d4 refs/heads/jwt-claims
 a07dc83deb5acdb5dd06af5411db9a027fe083fd refs/heads/master
 bf86ee7c2a9afcf06ace99ed5d128846e919ce80 refs/heads/more-performance-again

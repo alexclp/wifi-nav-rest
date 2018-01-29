@@ -8,38 +8,53 @@ provides-dynamic-lookup:
 depends-top-level:
 - "Config"
 - "Droplet"
+- "PostgreSQLProvider"
 - "config"
 - "drop"
 depends-member:
+- ["7Configs6ConfigC", "addProvider"]
 - ["7Configs6ConfigC", "init"]
 - ["7Configs6ConfigC", "setup"]
 - ["5Vapor7DropletC", "init"]
 - ["5Vapor7DropletC", "run"]
 - ["5Vapor7DropletC", "setup"]
+- ["s9EquatableP", "addProvider"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "setup"]
+- ["s25ExpressibleByArrayLiteralP", "addProvider"]
 - ["s25ExpressibleByArrayLiteralP", "init"]
 - ["s25ExpressibleByArrayLiteralP", "setup"]
+- ["s27ExpressibleByBooleanLiteralP", "addProvider"]
 - ["s27ExpressibleByBooleanLiteralP", "init"]
 - ["s27ExpressibleByBooleanLiteralP", "setup"]
+- ["s30ExpressibleByDictionaryLiteralP", "addProvider"]
 - ["s30ExpressibleByDictionaryLiteralP", "init"]
 - ["s30ExpressibleByDictionaryLiteralP", "setup"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addProvider"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "setup"]
+- ["s25ExpressibleByFloatLiteralP", "addProvider"]
 - ["s25ExpressibleByFloatLiteralP", "init"]
 - ["s25ExpressibleByFloatLiteralP", "setup"]
+- ["s27ExpressibleByIntegerLiteralP", "addProvider"]
 - ["s27ExpressibleByIntegerLiteralP", "init"]
 - ["s27ExpressibleByIntegerLiteralP", "setup"]
+- ["s23ExpressibleByNilLiteralP", "addProvider"]
 - ["s23ExpressibleByNilLiteralP", "init"]
 - ["s23ExpressibleByNilLiteralP", "setup"]
+- ["s26ExpressibleByStringLiteralP", "addProvider"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "setup"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "addProvider"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "setup"]
+- ["4Node0A13InitializableP", "addProvider"]
 - ["4Node0A13InitializableP", "init"]
 - ["4Node0A13InitializableP", "setup"]
+- ["4Node0A13RepresentableP", "addProvider"]
 - ["4Node0A13RepresentableP", "init"]
 - ["4Node0A13RepresentableP", "setup"]
+- ["13PathIndexableAAP", "addProvider"]
 - ["13PathIndexableAAP", "init"]
 - ["13PathIndexableAAP", "setup"]
 - ["4HTTP9ResponderP", "init"]
@@ -48,6 +63,7 @@ depends-member:
 - ["7Routing12RouteBuilderP", "init"]
 - ["7Routing12RouteBuilderP", "run"]
 - ["7Routing12RouteBuilderP", "setup"]
+- ["4Node21StructuredDataWrapperP", "addProvider"]
 - ["4Node21StructuredDataWrapperP", "init"]
 - ["4Node21StructuredDataWrapperP", "setup"]
 depends-nominal:
@@ -74,6 +90,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/URI.swiftmodule"
+- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQL.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/SMTP.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/HTTP.swiftmodule"
@@ -95,7 +112,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Crypto.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.swiftmodule"
+- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQLProvider.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/FluentProvider.swiftmodule"
+- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQLDriver.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Vapor.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Branches.swiftmodule"
@@ -115,6 +134,7 @@ depends-external:
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sqlite.git--8232814251736334455/Sources/CSQLite/include/sqlite3.h"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/CHTTP/include/http_parser.h"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/ctls.git-9210868160426949823/module.modulemap"
+- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/cpostgresql.git-2801679829006959247/module.modulemap"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/CHTTP.build/module.modulemap"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/CSQLite.build/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/usr/include/objc/ObjectiveC.apinotes"
@@ -122,4 +142,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "ae7cd180aa6fc72ddcbd2b76ff876659"
+interface-hash: "3c0cba665908a07dd5c36b8d8237ed79"
