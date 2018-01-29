@@ -36,9 +36,9 @@ extension Room {
 
 extension Room: Preparation {
     static func prepare(_ database: Database) throws {
-        try database.create(self) { rooms in
-            rooms.id()
-            rooms.string("name")
+        try database.create(self) { room in
+            room.id()
+            room.string("name")
         }
     }
 
