@@ -18,6 +18,7 @@ depends-top-level:
 - "Double"
 - "Identifier"
 - "IdentifierType"
+- "Int"
 - "JSON"
 - "JSONConvertible"
 - "JSONInitializable"
@@ -40,6 +41,7 @@ depends-member:
 - !private ["6Fluent7BuilderP", "double"]
 - !private ["6Fluent7BuilderP", "foreignId"]
 - !private ["6Fluent7BuilderP", "id"]
+- !private ["6Fluent7BuilderP", "int"]
 - !private ["4Bits16BytesConvertibleP", "get"]
 - ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits16BytesConvertibleP", "set"]
@@ -55,6 +57,7 @@ depends-member:
 - !private ["6Fluent7CreatorC", "double"]
 - !private ["6Fluent7CreatorC", "foreignId"]
 - !private ["6Fluent7CreatorC", "id"]
+- !private ["6Fluent7CreatorC", "int"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s17CustomReflectableP", "init"]
@@ -77,6 +80,7 @@ depends-member:
 - ["6Fluent6EntityP", "didDelete"]
 - ["6Fluent6EntityP", "didUpdate"]
 - ["6Fluent6EntityP", "entity"]
+- !private ["6Fluent6EntityP", "floorNumber"]
 - ["6Fluent6EntityP", "foreignIdKey"]
 - ["6Fluent6EntityP", "id"]
 - ["6Fluent6EntityP", "idKey"]
@@ -91,7 +95,6 @@ depends-member:
 - ["6Fluent6EntityP", "name"]
 - !private ["6Fluent6EntityP", "parent"]
 - ["6Fluent6EntityP", "prepare"]
-- !private ["6Fluent6EntityP", "pressure"]
 - ["6Fluent6EntityP", "revert"]
 - !private ["6Fluent6EntityP", "roomID"]
 - ["6Fluent6EntityP", "storage"]
@@ -155,6 +158,7 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "didDelete"]
 - ["4JSON15JSONConvertibleP", "didUpdate"]
 - ["4JSON15JSONConvertibleP", "entity"]
+- !private ["4JSON15JSONConvertibleP", "floorNumber"]
 - ["4JSON15JSONConvertibleP", "foreignIdKey"]
 - ["4JSON15JSONConvertibleP", "id"]
 - ["4JSON15JSONConvertibleP", "idKey"]
@@ -169,7 +173,6 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "name"]
 - !private ["4JSON15JSONConvertibleP", "parent"]
 - ["4JSON15JSONConvertibleP", "prepare"]
-- !private ["4JSON15JSONConvertibleP", "pressure"]
 - ["4JSON15JSONConvertibleP", "revert"]
 - !private ["4JSON15JSONConvertibleP", "roomID"]
 - ["4JSON15JSONConvertibleP", "storage"]
@@ -192,6 +195,7 @@ depends-member:
 - ["4JSON17JSONInitializableP", "didDelete"]
 - ["4JSON17JSONInitializableP", "didUpdate"]
 - ["4JSON17JSONInitializableP", "entity"]
+- !private ["4JSON17JSONInitializableP", "floorNumber"]
 - ["4JSON17JSONInitializableP", "foreignIdKey"]
 - ["4JSON17JSONInitializableP", "id"]
 - ["4JSON17JSONInitializableP", "idKey"]
@@ -206,7 +210,6 @@ depends-member:
 - ["4JSON17JSONInitializableP", "name"]
 - !private ["4JSON17JSONInitializableP", "parent"]
 - ["4JSON17JSONInitializableP", "prepare"]
-- !private ["4JSON17JSONInitializableP", "pressure"]
 - ["4JSON17JSONInitializableP", "revert"]
 - !private ["4JSON17JSONInitializableP", "roomID"]
 - ["4JSON17JSONInitializableP", "storage"]
@@ -229,6 +232,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "didDelete"]
 - ["4JSON17JSONRepresentableP", "didUpdate"]
 - ["4JSON17JSONRepresentableP", "entity"]
+- !private ["4JSON17JSONRepresentableP", "floorNumber"]
 - ["4JSON17JSONRepresentableP", "foreignIdKey"]
 - !private ["4JSON17JSONRepresentableP", "get"]
 - ["4JSON17JSONRepresentableP", "id"]
@@ -244,7 +248,6 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "name"]
 - !private ["4JSON17JSONRepresentableP", "parent"]
 - ["4JSON17JSONRepresentableP", "prepare"]
-- !private ["4JSON17JSONRepresentableP", "pressure"]
 - ["4JSON17JSONRepresentableP", "revert"]
 - !private ["4JSON17JSONRepresentableP", "roomID"]
 - !private ["4JSON17JSONRepresentableP", "set"]
@@ -256,9 +259,9 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "x"]
 - !private ["4JSON17JSONRepresentableP", "y"]
 - ["4JSON17JSONRepresentableP", ""]
+- ["3App8LocationC4KeysV", "floorNumber"]
 - ["3App8LocationC4KeysV", "id"]
 - ["3App8LocationC4KeysV", "init"]
-- ["3App8LocationC4KeysV", "pressure"]
 - ["3App8LocationC4KeysV", "roomID"]
 - ["3App8LocationC4KeysV", "x"]
 - ["3App8LocationC4KeysV", "y"]
@@ -267,6 +270,7 @@ depends-member:
 - ["3App8LocationC", "Double"]
 - ["3App8LocationC", "Identifier"]
 - ["3App8LocationC", "IdentifierType"]
+- ["3App8LocationC", "Int"]
 - ["3App8LocationC", "JSON"]
 - ["3App8LocationC", "Keys"]
 - ["3App8LocationC", "Location"]
@@ -282,6 +286,7 @@ depends-member:
 - ["3App8LocationC", "didDelete"]
 - ["3App8LocationC", "didUpdate"]
 - ["3App8LocationC", "entity"]
+- ["3App8LocationC", "floorNumber"]
 - ["3App8LocationC", "foreignIdKey"]
 - ["3App8LocationC", "id"]
 - ["3App8LocationC", "idKey"]
@@ -297,7 +302,6 @@ depends-member:
 - ["3App8LocationC", "name"]
 - !private ["3App8LocationC", "parent"]
 - ["3App8LocationC", "prepare"]
-- ["3App8LocationC", "pressure"]
 - ["3App8LocationC", "revert"]
 - ["3App8LocationC", "room"]
 - ["3App8LocationC", "roomID"]
@@ -323,6 +327,7 @@ depends-member:
 - ["14FluentProvider5ModelP", "didDelete"]
 - ["14FluentProvider5ModelP", "didUpdate"]
 - ["14FluentProvider5ModelP", "entity"]
+- !private ["14FluentProvider5ModelP", "floorNumber"]
 - ["14FluentProvider5ModelP", "foreignIdKey"]
 - ["14FluentProvider5ModelP", "id"]
 - ["14FluentProvider5ModelP", "idKey"]
@@ -337,7 +342,6 @@ depends-member:
 - ["14FluentProvider5ModelP", "name"]
 - !private ["14FluentProvider5ModelP", "parent"]
 - ["14FluentProvider5ModelP", "prepare"]
-- !private ["14FluentProvider5ModelP", "pressure"]
 - ["14FluentProvider5ModelP", "revert"]
 - !private ["14FluentProvider5ModelP", "roomID"]
 - ["14FluentProvider5ModelP", "storage"]
@@ -374,6 +378,7 @@ depends-member:
 - ["7Routing15ParameterizableP", "didDelete"]
 - ["7Routing15ParameterizableP", "didUpdate"]
 - ["7Routing15ParameterizableP", "entity"]
+- !private ["7Routing15ParameterizableP", "floorNumber"]
 - ["7Routing15ParameterizableP", "foreignIdKey"]
 - ["7Routing15ParameterizableP", "id"]
 - ["7Routing15ParameterizableP", "idKey"]
@@ -388,7 +393,6 @@ depends-member:
 - ["7Routing15ParameterizableP", "name"]
 - !private ["7Routing15ParameterizableP", "parent"]
 - ["7Routing15ParameterizableP", "prepare"]
-- !private ["7Routing15ParameterizableP", "pressure"]
 - ["7Routing15ParameterizableP", "revert"]
 - !private ["7Routing15ParameterizableP", "roomID"]
 - ["7Routing15ParameterizableP", "storage"]
@@ -415,6 +419,7 @@ depends-member:
 - ["6Fluent11PreparationP", "didDelete"]
 - ["6Fluent11PreparationP", "didUpdate"]
 - ["6Fluent11PreparationP", "entity"]
+- !private ["6Fluent11PreparationP", "floorNumber"]
 - ["6Fluent11PreparationP", "foreignIdKey"]
 - ["6Fluent11PreparationP", "id"]
 - ["6Fluent11PreparationP", "idKey"]
@@ -429,7 +434,6 @@ depends-member:
 - ["6Fluent11PreparationP", "name"]
 - !private ["6Fluent11PreparationP", "parent"]
 - ["6Fluent11PreparationP", "prepare"]
-- !private ["6Fluent11PreparationP", "pressure"]
 - ["6Fluent11PreparationP", "revert"]
 - !private ["6Fluent11PreparationP", "roomID"]
 - ["6Fluent11PreparationP", "storage"]
@@ -456,6 +460,7 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "didDelete"]
 - ["4HTTP21ResponseRepresentableP", "didUpdate"]
 - ["4HTTP21ResponseRepresentableP", "entity"]
+- !private ["4HTTP21ResponseRepresentableP", "floorNumber"]
 - ["4HTTP21ResponseRepresentableP", "foreignIdKey"]
 - !private ["4HTTP21ResponseRepresentableP", "get"]
 - ["4HTTP21ResponseRepresentableP", "id"]
@@ -471,7 +476,6 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "name"]
 - !private ["4HTTP21ResponseRepresentableP", "parent"]
 - ["4HTTP21ResponseRepresentableP", "prepare"]
-- !private ["4HTTP21ResponseRepresentableP", "pressure"]
 - ["4HTTP21ResponseRepresentableP", "revert"]
 - !private ["4HTTP21ResponseRepresentableP", "roomID"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
@@ -499,6 +503,7 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "didDelete"]
 - ["6Fluent14RowConvertibleP", "didUpdate"]
 - ["6Fluent14RowConvertibleP", "entity"]
+- !private ["6Fluent14RowConvertibleP", "floorNumber"]
 - ["6Fluent14RowConvertibleP", "foreignIdKey"]
 - ["6Fluent14RowConvertibleP", "id"]
 - ["6Fluent14RowConvertibleP", "idKey"]
@@ -513,7 +518,6 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "name"]
 - !private ["6Fluent14RowConvertibleP", "parent"]
 - ["6Fluent14RowConvertibleP", "prepare"]
-- !private ["6Fluent14RowConvertibleP", "pressure"]
 - ["6Fluent14RowConvertibleP", "revert"]
 - !private ["6Fluent14RowConvertibleP", "roomID"]
 - ["6Fluent14RowConvertibleP", "storage"]
@@ -536,6 +540,7 @@ depends-member:
 - ["6Fluent16RowInitializableP", "didDelete"]
 - ["6Fluent16RowInitializableP", "didUpdate"]
 - ["6Fluent16RowInitializableP", "entity"]
+- !private ["6Fluent16RowInitializableP", "floorNumber"]
 - ["6Fluent16RowInitializableP", "foreignIdKey"]
 - ["6Fluent16RowInitializableP", "id"]
 - ["6Fluent16RowInitializableP", "idKey"]
@@ -550,7 +555,6 @@ depends-member:
 - ["6Fluent16RowInitializableP", "name"]
 - !private ["6Fluent16RowInitializableP", "parent"]
 - ["6Fluent16RowInitializableP", "prepare"]
-- !private ["6Fluent16RowInitializableP", "pressure"]
 - ["6Fluent16RowInitializableP", "revert"]
 - !private ["6Fluent16RowInitializableP", "roomID"]
 - ["6Fluent16RowInitializableP", "storage"]
@@ -573,6 +577,7 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "didDelete"]
 - ["6Fluent16RowRepresentableP", "didUpdate"]
 - ["6Fluent16RowRepresentableP", "entity"]
+- !private ["6Fluent16RowRepresentableP", "floorNumber"]
 - ["6Fluent16RowRepresentableP", "foreignIdKey"]
 - ["6Fluent16RowRepresentableP", "id"]
 - ["6Fluent16RowRepresentableP", "idKey"]
@@ -587,7 +592,6 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "name"]
 - !private ["6Fluent16RowRepresentableP", "parent"]
 - ["6Fluent16RowRepresentableP", "prepare"]
-- !private ["6Fluent16RowRepresentableP", "pressure"]
 - ["6Fluent16RowRepresentableP", "revert"]
 - !private ["6Fluent16RowRepresentableP", "roomID"]
 - ["6Fluent16RowRepresentableP", "storage"]
@@ -611,6 +615,7 @@ depends-member:
 - ["6Fluent8StorableP", "didDelete"]
 - ["6Fluent8StorableP", "didUpdate"]
 - ["6Fluent8StorableP", "entity"]
+- !private ["6Fluent8StorableP", "floorNumber"]
 - ["6Fluent8StorableP", "foreignIdKey"]
 - ["6Fluent8StorableP", "id"]
 - ["6Fluent8StorableP", "idKey"]
@@ -625,7 +630,6 @@ depends-member:
 - ["6Fluent8StorableP", "name"]
 - !private ["6Fluent8StorableP", "parent"]
 - ["6Fluent8StorableP", "prepare"]
-- !private ["6Fluent8StorableP", "pressure"]
 - ["6Fluent8StorableP", "revert"]
 - !private ["6Fluent8StorableP", "roomID"]
 - ["6Fluent8StorableP", "storage"]
@@ -754,7 +758,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/URI.swiftmodule"
-- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQL.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/JSON.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/SMTP.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/HTTP.swiftmodule"
@@ -775,9 +778,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Crypto.swiftmodule"
-- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQLProvider.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/FluentProvider.swiftmodule"
-- "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/PostgreSQLDriver.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Vapor.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
 - "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/Branches.swiftmodule"
@@ -805,4 +806,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "2b5b8db7c312ac2cbd63575039e12010"
+interface-hash: "788566d2e2957705c780e46dcbcff6f3"
