@@ -26,12 +26,11 @@ extension Droplet {
             return try ap.makeJSON()
         }
 
-        // get("rooms", "floor", ":floorNumber") { request in
-        //     guard let floorNumber = request.parameters["floorNumber"]?.int else { throw Abort.badRequest }
-        //     let rooms = try Room.makeQuery().filter("floorNumber", .equals, floorNumber).all()
-        //     // return rooms.map { (room) -> JSON in return try room.makeJSON() }
-        //     return try rooms.makeJSON()
-        // }
+        get("rooms", "floor", ":floorNumber") { request in
+            guard let floorNumber = request.parameters["floorNumber"]?.int else { throw Abort.badRequest }
+            let rooms = try Room.makeQuery().filter("floorNumber", .equals, floorNumber).all()
+            return try rooms.makeJSON()
+        }
 
         try resource("posts", PostController.self)
         try resource("locations", LocationController.self)
