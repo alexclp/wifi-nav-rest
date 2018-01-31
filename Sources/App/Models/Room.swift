@@ -7,23 +7,28 @@ final class Room: Model {
 
     static let idType: IdentifierType = .int
     var name: String
+    var floorNumber: Int
 
     struct Keys {
         static let id = "id"
         static let name = "name"
+        static let floorNumber = "floorNumber"
     }
 
     init(row: Row) throws {
         name = try row.get("name")
+        floorNumber = try row.get("floorNumber")
     }
 
-    init(name: String) {
+    init(name: String, floorNumber: Int) {
         self.name = name
+        self.floorNumber = floorNumber
     }
 
     func makeRow() throws -> Row {
         var row = Row()
         try row.set("name", name)
+        try row.set("floorNumber", floorNumber)
         return row
     }
 }
@@ -39,6 +44,7 @@ extension Room: Preparation {
         try database.create(self) { room in
             room.id()
             room.string("name")
+            room.int("floorNumber")
         }
     }
 
@@ -55,6 +61,7 @@ extension Room: JSONConvertible {
 
         try toReturn.set(Room.Keys.id, id)
         try toReturn.set(Room.Keys.name, name)
+        try toReturn.set(Room.Keys.floorNumber, floorNumber)
 
         return toReturn
     }
@@ -63,6 +70,7 @@ extension Room: JSONConvertible {
 extension Room: JSONInitializable {
     convenience init(json: JSON) throws {
         let name: String = try json.get(Room.Keys.name)
-        self.init(name: name)
+        let floorNumber: Int = try json.get(Room.Keys.floorNumber)
+        self.init(name: name, floorNumber: floorNumber)
     }
 }

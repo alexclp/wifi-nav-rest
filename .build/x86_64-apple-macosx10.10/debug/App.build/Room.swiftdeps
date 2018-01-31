@@ -14,6 +14,7 @@ depends-top-level:
 - "Children"
 - "Database"
 - "IdentifierType"
+- "Int"
 - "JSON"
 - "JSONConvertible"
 - "JSONInitializable"
@@ -32,6 +33,7 @@ depends-member:
 - ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
 - !private ["6Fluent7BuilderP", "id"]
+- !private ["6Fluent7BuilderP", "int"]
 - !private ["6Fluent7BuilderP", "string"]
 - !private ["4Bits16BytesConvertibleP", "get"]
 - ["4Bits16BytesConvertibleP", "init"]
@@ -46,6 +48,7 @@ depends-member:
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["6Fluent7CreatorC", "id"]
+- !private ["6Fluent7CreatorC", "int"]
 - !private ["6Fluent7CreatorC", "string"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -68,6 +71,7 @@ depends-member:
 - ["6Fluent6EntityP", "didDelete"]
 - ["6Fluent6EntityP", "didUpdate"]
 - ["6Fluent6EntityP", "entity"]
+- !private ["6Fluent6EntityP", "floorNumber"]
 - ["6Fluent6EntityP", "foreignIdKey"]
 - ["6Fluent6EntityP", "id"]
 - ["6Fluent6EntityP", "idKey"]
@@ -140,6 +144,7 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "didDelete"]
 - ["4JSON15JSONConvertibleP", "didUpdate"]
 - ["4JSON15JSONConvertibleP", "entity"]
+- !private ["4JSON15JSONConvertibleP", "floorNumber"]
 - ["4JSON15JSONConvertibleP", "foreignIdKey"]
 - ["4JSON15JSONConvertibleP", "id"]
 - ["4JSON15JSONConvertibleP", "idKey"]
@@ -171,6 +176,7 @@ depends-member:
 - ["4JSON17JSONInitializableP", "didDelete"]
 - ["4JSON17JSONInitializableP", "didUpdate"]
 - ["4JSON17JSONInitializableP", "entity"]
+- !private ["4JSON17JSONInitializableP", "floorNumber"]
 - ["4JSON17JSONInitializableP", "foreignIdKey"]
 - ["4JSON17JSONInitializableP", "id"]
 - ["4JSON17JSONInitializableP", "idKey"]
@@ -202,6 +208,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "didDelete"]
 - ["4JSON17JSONRepresentableP", "didUpdate"]
 - ["4JSON17JSONRepresentableP", "entity"]
+- !private ["4JSON17JSONRepresentableP", "floorNumber"]
 - ["4JSON17JSONRepresentableP", "foreignIdKey"]
 - !private ["4JSON17JSONRepresentableP", "get"]
 - ["4JSON17JSONRepresentableP", "id"]
@@ -224,6 +231,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "willDelete"]
 - ["4JSON17JSONRepresentableP", "willUpdate"]
 - ["4JSON17JSONRepresentableP", ""]
+- ["3App4RoomC4KeysV", "floorNumber"]
 - ["3App4RoomC4KeysV", "id"]
 - ["3App4RoomC4KeysV", "init"]
 - ["3App4RoomC4KeysV", "name"]
@@ -241,6 +249,7 @@ depends-member:
 - ["14FluentProvider5ModelP", "didDelete"]
 - ["14FluentProvider5ModelP", "didUpdate"]
 - ["14FluentProvider5ModelP", "entity"]
+- !private ["14FluentProvider5ModelP", "floorNumber"]
 - ["14FluentProvider5ModelP", "foreignIdKey"]
 - ["14FluentProvider5ModelP", "id"]
 - ["14FluentProvider5ModelP", "idKey"]
@@ -286,6 +295,7 @@ depends-member:
 - ["7Routing15ParameterizableP", "didDelete"]
 - ["7Routing15ParameterizableP", "didUpdate"]
 - ["7Routing15ParameterizableP", "entity"]
+- !private ["7Routing15ParameterizableP", "floorNumber"]
 - ["7Routing15ParameterizableP", "foreignIdKey"]
 - ["7Routing15ParameterizableP", "id"]
 - ["7Routing15ParameterizableP", "idKey"]
@@ -321,6 +331,7 @@ depends-member:
 - ["6Fluent11PreparationP", "didDelete"]
 - ["6Fluent11PreparationP", "didUpdate"]
 - ["6Fluent11PreparationP", "entity"]
+- !private ["6Fluent11PreparationP", "floorNumber"]
 - ["6Fluent11PreparationP", "foreignIdKey"]
 - ["6Fluent11PreparationP", "id"]
 - ["6Fluent11PreparationP", "idKey"]
@@ -356,6 +367,7 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "didDelete"]
 - ["4HTTP21ResponseRepresentableP", "didUpdate"]
 - ["4HTTP21ResponseRepresentableP", "entity"]
+- !private ["4HTTP21ResponseRepresentableP", "floorNumber"]
 - ["4HTTP21ResponseRepresentableP", "foreignIdKey"]
 - !private ["4HTTP21ResponseRepresentableP", "get"]
 - ["4HTTP21ResponseRepresentableP", "id"]
@@ -381,6 +393,7 @@ depends-member:
 - ["3App4RoomC", "Children"]
 - ["3App4RoomC", "Database"]
 - ["3App4RoomC", "IdentifierType"]
+- ["3App4RoomC", "Int"]
 - ["3App4RoomC", "JSON"]
 - ["3App4RoomC", "Keys"]
 - ["3App4RoomC", "Location"]
@@ -395,6 +408,7 @@ depends-member:
 - ["3App4RoomC", "didDelete"]
 - ["3App4RoomC", "didUpdate"]
 - ["3App4RoomC", "entity"]
+- ["3App4RoomC", "floorNumber"]
 - ["3App4RoomC", "foreignIdKey"]
 - ["3App4RoomC", "id"]
 - ["3App4RoomC", "idKey"]
@@ -429,6 +443,7 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "didDelete"]
 - ["6Fluent14RowConvertibleP", "didUpdate"]
 - ["6Fluent14RowConvertibleP", "entity"]
+- !private ["6Fluent14RowConvertibleP", "floorNumber"]
 - ["6Fluent14RowConvertibleP", "foreignIdKey"]
 - ["6Fluent14RowConvertibleP", "id"]
 - ["6Fluent14RowConvertibleP", "idKey"]
@@ -460,6 +475,7 @@ depends-member:
 - ["6Fluent16RowInitializableP", "didDelete"]
 - ["6Fluent16RowInitializableP", "didUpdate"]
 - ["6Fluent16RowInitializableP", "entity"]
+- !private ["6Fluent16RowInitializableP", "floorNumber"]
 - ["6Fluent16RowInitializableP", "foreignIdKey"]
 - ["6Fluent16RowInitializableP", "id"]
 - ["6Fluent16RowInitializableP", "idKey"]
@@ -491,6 +507,7 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "didDelete"]
 - ["6Fluent16RowRepresentableP", "didUpdate"]
 - ["6Fluent16RowRepresentableP", "entity"]
+- !private ["6Fluent16RowRepresentableP", "floorNumber"]
 - ["6Fluent16RowRepresentableP", "foreignIdKey"]
 - ["6Fluent16RowRepresentableP", "id"]
 - ["6Fluent16RowRepresentableP", "idKey"]
@@ -523,6 +540,7 @@ depends-member:
 - ["6Fluent8StorableP", "didDelete"]
 - ["6Fluent8StorableP", "didUpdate"]
 - ["6Fluent8StorableP", "entity"]
+- !private ["6Fluent8StorableP", "floorNumber"]
 - ["6Fluent8StorableP", "foreignIdKey"]
 - ["6Fluent8StorableP", "id"]
 - ["6Fluent8StorableP", "idKey"]
@@ -708,4 +726,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "476387cd7d95722e73161733da7a45da"
+interface-hash: "90c58eebd5dfcc9a320986c6b0aef0b3"
