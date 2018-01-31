@@ -54,7 +54,7 @@ extension Location: Preparation {
             locations.id()
             locations.double("x")
             locations.double("y")
-            locations.foreignId(for: Room.self, optional: false, unique: true, foreignIdKey: "roomID", foreignKeyName: "roomID")
+            locations.foreignId(for: Room.self, optional: false, unique: false, foreignIdKey: "roomID", foreignKeyName: "roomID")
         }
     }
 
