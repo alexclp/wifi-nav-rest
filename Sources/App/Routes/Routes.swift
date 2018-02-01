@@ -32,7 +32,20 @@ extension Droplet {
             return try rooms.makeJSON()
         }
 
-        try resource("posts", PostController.self)
+        delete("rooms", "clearData", ":id") { request in
+            guard let roomID = request.parameters["id"]?.int else { throw Abort.badRequest }
+            guard let room = try Room.find(roomID) else { throw Abort.notFound }
+            let locations = try Location.makeQuery().filter("roomID", .equals, roomID).all()
+            for location in locations {
+                let measurements = try Measurement.makeQuery().filter("locationID", .equals, location.id).all()
+                for measurement in measurements {
+                    try measurement.delete()
+                }
+                try location.delete()
+            }
+            return "{ \"success\": true }"
+        }
+
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
         try resource("accessPoints", WiFiAPController.self)
