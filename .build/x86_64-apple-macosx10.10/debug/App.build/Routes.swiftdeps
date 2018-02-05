@@ -299,6 +299,7 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["3App6WiFiAPC", "deinit"]
+- !private ["3App6WiFiAPC", "id"]
 - !private ["3App6WiFiAPC", "makeJSON"]
 - !private ["3App6WiFiAPC", "makeQuery"]
 - !private ["3App16WiFiAPControllerC", "deinit"]
