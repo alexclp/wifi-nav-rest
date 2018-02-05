@@ -6,10 +6,10 @@ final class WiFiAPController: ResourceRepresentable {
         return try WiFiAP.all().makeJSON()
     }
 
-    func index(_ req: Request, macAddress: String) throws -> ResponseRepresentable {
-        guard let ap = try WiFiAP.makeQuery().filter("macAddress", .equals, macAddress).first() else { throw Abort.badRequest }
-        return ap
-    }
+    // func index(_ req: Request, macAddress: String) throws -> ResponseRepresentable {
+    //     guard let ap = try WiFiAP.makeQuery().filter("macAddress", .equals, macAddress).first() else { throw Abort.badRequest }
+    //     return ap
+    // }
 
     func store(_ req: Request) throws -> ResponseRepresentable {
         let ap = try req.createWiFiAP()
