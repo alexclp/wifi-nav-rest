@@ -50,7 +50,9 @@ extension Droplet {
                 }
                 try location.delete()
             }
-            return "{ \"success\": true }"
+            var responseJSON = JSON()
+            try responseJSON.set("success", true)
+            return try Response(status: .ok, json: responseJSON)
         }
 
         try resource("locations", LocationController.self)
