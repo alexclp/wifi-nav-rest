@@ -36,7 +36,9 @@ extension Droplet {
             guard let macAddress = request.parameters["macAddress"]?.string else { throw Abort.badRequest }
             guard let accessPoint = try WiFiAP.makeQuery().filter("macAddress", .equals, macAddress).first() else { throw Abort.notFound }
             let measurements = try Measurement.makeQuery().filter("apID", .equals, accessPoint.id).all()
-            return try measurements.makeJSON()
+            var responseJSON = JSON()
+            try responseJSON.set("measurements", try measurements.makeJSON())
+            return try responseJSON
         }
 
         delete("rooms", "clearData", ":id") { request in
