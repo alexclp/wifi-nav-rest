@@ -38,7 +38,7 @@ extension Droplet {
             let measurements = try Measurement.makeQuery().filter("apID", .equals, accessPoint.id).all()
             var responseJSON = JSON()
             try responseJSON.set("results", try measurements.makeJSON())
-            return try responseJSON
+            return responseJSON
         }
 
         delete("rooms", "clearData", ":id") { request in
