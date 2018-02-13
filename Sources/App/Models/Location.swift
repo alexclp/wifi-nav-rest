@@ -74,18 +74,11 @@ extension Location: Preparation {
             locations.id()
             locations.double("x")
             locations.double("y")
-            // locations.double("standardWidth")
-            // locations.double("standardHeight")
-            // locations.double("latitude", latitude)
-            // locations.double("longitude", longitude)
+            locations.double("standardWidth")
+            locations.double("standardHeight")
+            locations.double("latitude")
+            locations.double("longitude")
             locations.foreignId(for: Room.self, optional: false, unique: false, foreignIdKey: "roomID", foreignKeyName: "roomID")
-        }
-
-        try database.modify(self) { builder in
-            builder.double("standardWidth")
-            builder.double("standardHeight")
-            builder.double("latitude", latitude)
-            builder.double("longitude", longitude)
         }
     }
 
