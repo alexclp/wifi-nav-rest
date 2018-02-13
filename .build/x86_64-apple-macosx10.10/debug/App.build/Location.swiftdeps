@@ -61,7 +61,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["6Fluent8DatabaseC", "create"]
 - !private ["6Fluent8DatabaseC", "delete"]
-- !private ["6Fluent8DatabaseC", "modify"]
 - ["s9DecodableP", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "init"]
 - ["4SMTP22EmailBodyRepresentableP", "init"]
@@ -112,7 +111,6 @@ depends-member:
 - !private ["s9EquatableP", "set"]
 - !private ["6Fluent8ExecutorP", "create"]
 - !private ["6Fluent8ExecutorP", "delete"]
-- !private ["6Fluent8ExecutorP", "modify"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
@@ -371,7 +369,6 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "x"]
 - !private ["14FluentProvider5ModelP", "y"]
 - ["14FluentProvider5ModelP", ""]
-- !private ["6Fluent8ModifierC", "double"]
 - ["So8NSCodingP", "init"]
 - ["So9NSCopyingP", "init"]
 - ["So21NSItemProviderReadingP", "init"]
@@ -472,7 +469,6 @@ depends-member:
 - ["6Fluent11PreparationP", ""]
 - !private ["6Fluent11QueryLoggerP", "create"]
 - !private ["6Fluent11QueryLoggerP", "delete"]
-- !private ["6Fluent11QueryLoggerP", "modify"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "JSON"]
@@ -692,7 +688,6 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
-- !private ["6Fluent12TransactableP", "modify"]
 - ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -751,7 +746,6 @@ depends-nominal:
 - "3App11MeasurementC"
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
-- !private "6Fluent8ModifierC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
