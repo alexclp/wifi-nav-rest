@@ -1,6 +1,6 @@
 # pack-refs with: peeled fully-peeled sorted 
 1c38215f1c87edb075573099e4988509c758a062 refs/heads/autocomplete
-e3a7592e1d279c105d303055fb5b0d1bfba47903 refs/heads/beta
+c5a7378c7c571c27c252f5a5222b3f7da4785e85 refs/heads/beta
 0083a9e7deb8b93522e68fd8429ee129fa1bca62 refs/heads/error-string
 037561818459e96d145c7dda80fd94b6be95ed2e refs/heads/fallback-temp
 78d27da2838aa2fb0354037e71a589583d166b41 refs/heads/master
@@ -37,8 +37,8 @@ ea0e51caa5274d5fea8f5ba57fcade499112e900 refs/pull/37/head
 27549cdb954ffc7ec3af36ee0a7b8ff10a0628f3 refs/pull/38/head
 a3c827214b54c5b2bb37f54ffd3dcc728f38323e refs/pull/39/head
 f9f7c1392bb22df8444a573a5192c273fbb190d5 refs/pull/40/head
-e3a7592e1d279c105d303055fb5b0d1bfba47903 refs/pull/41/head
-9ec790cfa1b687769c019a6457fa5dbd062751e8 refs/pull/41/merge
+c5a7378c7c571c27c252f5a5222b3f7da4785e85 refs/pull/41/head
+f8f2b98853ab6ac8ab8d8fa4c4863ede2472e1dd refs/pull/41/merge
 2eaab9fb5ba5ef098c54bb9184f6e02b5275b8a4 refs/pull/43/head
 912ad3a26f29e1ff993808757c9d96cbd3fa22a1 refs/pull/44/head
 86aae9fa8a0a03f17654c2ba935b58d4e2a4462b refs/pull/45/head
@@ -53,9 +53,9 @@ c02a7dde07fa4bcea3a5742583bbaec55b2c71e0 refs/pull/46/merge
 2ba66d5334548ba268e85bb31771729062041fbb refs/pull/52/head
 376c8230b7061ab272c1881a3791ceb39120e9ae refs/pull/54/head
 1c38215f1c87edb075573099e4988509c758a062 refs/pull/55/head
-d90389a46c12a92802a8a51750fa337e1e738bc2 refs/pull/55/merge
+369c00f49d7c9c6af046897d819daae692c648b0 refs/pull/55/merge
 0cd34876d3dea3b182019864c6f3219398e670d2 refs/pull/56/head
-d92a7aed361df41b60b4a2c4e21cd44e0f0e8e1f refs/pull/56/merge
+b10954b2b9d6018892cbe44f2e6cab94dc4e6a5c refs/pull/56/merge
 bbb44e0f96ea20f71fb59854c5f1239cee905b82 refs/pull/57/head
 6f2b2aa183cb4c96d371c0caa55e368cb45a663d refs/pull/6/head
 41b55e2bebfbd9ee94ee33b433c514e9a0549065 refs/pull/7/head
@@ -92,3 +92,4 @@ d673851963d197ed0c863cb2294bbc8af015093d refs/tags/2.0.0-beta.5
 11c0694857d1be6c7b8b30d8db8b1162b73f2a2b refs/tags/2.2.0
 df9eb9a6afd03851abcb3d8204d04c368729776e refs/tags/2.3.0
 78d27da2838aa2fb0354037e71a589583d166b41 refs/tags/2.3.1
+c5a7378c7c571c27c252f5a5222b3f7da4785e85 refs/tags/3.0.0-beta.1

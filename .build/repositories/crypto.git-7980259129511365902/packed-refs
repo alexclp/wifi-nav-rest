@@ -2,7 +2,7 @@
 0e7b1e731522d849ccd5f87b58fe7986bea8a695 refs/heads/1.0
 f55ce8fa7c8c42c4219091d031dbf97b6177ab8e refs/heads/101
 71b48b1d7f75955b550f0e37ee6ca104d18f0dfc refs/heads/alpha
-da35dd31e43092933aaebdcd286ac94eb2b95975 refs/heads/beta
+c8510f9de2dfaa194fa147e0a395621dfc0f8b8e refs/heads/beta
 624deb8c798fae26c00843c41f0bcb68dbb2b8a4 refs/heads/cipher-coverage
 8a9ef811b493174fe44e4a37a032566e829d644d refs/heads/fix-random
 da1a2417ca7ed2c7ce3845a6715e47940b112d32 refs/heads/master
@@ -37,7 +37,7 @@ a84d52e35dc3b6c87f259d4e4a92fb244cac1cab refs/pull/27/head
 e41cf27bbb25239c1583ac5f2f61b5f8a5eb2d24 refs/pull/31/head
 a241b93fae4fa4ad3cc818e0f497ca45e4adcf2a refs/pull/31/merge
 514e7a62eb9df8a2a27f7048a11131f9f5c1e005 refs/pull/32/head
-da35dd31e43092933aaebdcd286ac94eb2b95975 refs/pull/33/head
+c8510f9de2dfaa194fa147e0a395621dfc0f8b8e refs/pull/33/head
 c5275cbd2e0d77660676c4ef762ab3a3947252a3 refs/pull/33/merge
 98f16b227cbe8adc7b508e6fbc23ff2bc10005a7 refs/pull/34/head
 c3cb74818cb3709574489b377db076fab7b907bf refs/pull/36/head
@@ -67,3 +67,4 @@ e01f5cf4f707fc49b480b3f77fae85f13f02877d refs/tags/2.0.0-beta.1
 d23bd514a8e66246450824850318debf12295427 refs/tags/2.1.0
 bf4470b9da79024aab79c85de80374f6c29e3864 refs/tags/2.1.1
 946edc6642d6825982a2f52a268a8ba9bd520a3d refs/tags/2.1.2
+c8510f9de2dfaa194fa147e0a395621dfc0f8b8e refs/tags/3.0.0-beta.1
