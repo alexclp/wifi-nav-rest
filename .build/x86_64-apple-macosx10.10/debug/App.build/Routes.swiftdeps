@@ -1,7 +1,10 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
+- "LocationConnectionRequestJSON"
 provides-nominal:
+- "3App29LocationConnectionRequestJSONV"
 provides-member:
+- ["3App29LocationConnectionRequestJSONV", ""]
 - ["5Vapor7DropletC", ""]
 - ["5Vapor7DropletC", "setupRoutes"]
 provides-dynamic-lookup:
@@ -9,10 +12,16 @@ depends-top-level:
 - !private "+="
 - !private "=="
 - !private "Abort"
+- !private "AssignmentPrecedence"
 - "BooleanLiteralType"
+- "Decodable"
 - "Droplet"
+- "Int"
 - !private "JSON"
 - !private "Location"
+- !private "LocationConnection"
+- !private "LocationConnectionController"
+- "LocationConnectionRequestJSON"
 - !private "LocationController"
 - !private "Measurement"
 - !private "MeasurementController"
@@ -22,16 +31,20 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "WiFiAP"
 - !private "WiFiAPController"
+- !private "~="
 depends-member:
 - !private ["5Vapor5AbortV", "badRequest"]
 - !private ["5Vapor5AbortV", "notFound"]
 - !private ["5Vapor10AbortErrorP", "badRequest"]
 - !private ["5Vapor10AbortErrorP", "notFound"]
 - !private ["5Vapor10AbortErrorP", "ok"]
+- !private ["Sa", "count"]
 - !private ["Sa", "init"]
 - !private ["Sa", "makeJSON"]
+- !private ["s23BidirectionalCollectionP", "count"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "makeJSON"]
+- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
 - !private ["Sb", "_getBuiltinLogicValue"]
@@ -41,34 +54,59 @@ depends-member:
 - !private ["4Bits18BytesInitializableP", "set"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "set"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "makeJSON"]
+- !private ["s9CodingKeyP", "hashValue"]
+- !private ["s9CodingKeyP", "init"]
+- !private ["s9CodingKeyP", "intValue"]
+- !private ["s9CodingKeyP", "stringValue"]
+- !private ["s9CodingKeyP", ""]
+- !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "makeJSON"]
+- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "init"]
 - !private ["6Fluent6FilterV10ComparisonO", "equals"]
 - !private ["s28CustomDebugStringConvertibleP", "badRequest"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "makeJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "notFound"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "makeJSON"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "decodeJSONBody"]
 - !private ["s23CustomStringConvertibleP", "description"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "makeJSON"]
 - !private ["s23CustomStringConvertibleP", "parameters"]
 - !private ["9Debugging10DebuggableP", "badRequest"]
 - !private ["9Debugging10DebuggableP", "notFound"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "hashValue"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "locationID1"]
+- !private ["s9DecodableP", "locationID2"]
 - !private ["s9DecodableP", "makeJSON"]
+- ["s9DecodableP", ""]
+- !private ["s7DecoderP", "container"]
 - !private ["5Vapor7DropletC", "Abort"]
 - !private ["5Vapor7DropletC", "JSON"]
 - !private ["5Vapor7DropletC", "Location"]
+- !private ["5Vapor7DropletC", "LocationConnection"]
+- !private ["5Vapor7DropletC", "LocationConnectionController"]
+- !private ["5Vapor7DropletC", "LocationConnectionRequestJSON"]
 - !private ["5Vapor7DropletC", "LocationController"]
 - !private ["5Vapor7DropletC", "Measurement"]
 - !private ["5Vapor7DropletC", "MeasurementController"]
@@ -79,32 +117,42 @@ depends-member:
 - !private ["5Vapor7DropletC", "WiFiAPController"]
 - !private ["5Vapor7DropletC", "delete"]
 - !private ["5Vapor7DropletC", "get"]
+- !private ["5Vapor7DropletC", "post"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
 - !private ["4SMTP22EmailBodyRepresentableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "hashValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "makeJSON"]
 - !private ["6Fluent6EntityP", "delete"]
-- !private ["6Fluent6EntityP", "find"]
 - !private ["6Fluent6EntityP", "id"]
+- !private ["6Fluent6EntityP", "init"]
+- !private ["6Fluent6EntityP", "locationConnectionID"]
 - !private ["6Fluent6EntityP", "makeJSON"]
 - !private ["6Fluent6EntityP", "makeQuery"]
+- !private ["6Fluent6EntityP", "save"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "equals"]
+- !private ["s9EquatableP", "hashValue"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "int"]
+- !private ["s9EquatableP", "intValue"]
 - !private ["s9EquatableP", "ok"]
 - !private ["s9EquatableP", "set"]
 - !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "stringValue"]
 - !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", ""]
 - !private ["s5ErrorP", "badRequest"]
 - !private ["s5ErrorP", "notFound"]
 - !private ["s5ErrorP", "ok"]
 - !private ["6Fluent21ExecutorRepresentableP", "all"]
 - !private ["6Fluent21ExecutorRepresentableP", "filter"]
 - !private ["6Fluent21ExecutorRepresentableP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "int"]
 - !private ["s25ExpressibleByArrayLiteralP", "makeJSON"]
@@ -132,6 +180,7 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "set"]
 - !private ["s25ExpressibleByFloatLiteralP", "string"]
 - !private ["s25ExpressibleByFloatLiteralP", "subscript"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "int"]
 - !private ["s27ExpressibleByIntegerLiteralP", "set"]
@@ -152,50 +201,83 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "set"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "string"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "hashValue"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "intValue"]
 - !private ["s8HashableP", "ok"]
+- !private ["s8HashableP", "stringValue"]
+- !private ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
 - !private ["4JSONAAV", "init"]
 - !private ["4JSONAAV", "set"]
 - !private ["4JSON15JSONConvertibleP", "delete"]
-- !private ["4JSON15JSONConvertibleP", "find"]
 - !private ["4JSON15JSONConvertibleP", "id"]
+- !private ["4JSON15JSONConvertibleP", "init"]
+- !private ["4JSON15JSONConvertibleP", "locationConnectionID"]
 - !private ["4JSON15JSONConvertibleP", "makeJSON"]
 - !private ["4JSON15JSONConvertibleP", "makeQuery"]
+- !private ["4JSON15JSONConvertibleP", "save"]
 - !private ["4JSON17JSONInitializableP", "delete"]
-- !private ["4JSON17JSONInitializableP", "find"]
 - !private ["4JSON17JSONInitializableP", "id"]
+- !private ["4JSON17JSONInitializableP", "init"]
+- !private ["4JSON17JSONInitializableP", "locationConnectionID"]
 - !private ["4JSON17JSONInitializableP", "makeJSON"]
 - !private ["4JSON17JSONInitializableP", "makeQuery"]
+- !private ["4JSON17JSONInitializableP", "save"]
 - !private ["4JSON17JSONRepresentableP", "delete"]
-- !private ["4JSON17JSONRepresentableP", "find"]
 - !private ["4JSON17JSONRepresentableP", "id"]
 - !private ["4JSON17JSONRepresentableP", "init"]
+- !private ["4JSON17JSONRepresentableP", "locationConnectionID"]
 - !private ["4JSON17JSONRepresentableP", "makeJSON"]
 - !private ["4JSON17JSONRepresentableP", "makeQuery"]
+- !private ["4JSON17JSONRepresentableP", "save"]
 - !private ["4JSON17JSONRepresentableP", "set"]
+- !private ["s22KeyedDecodingContainerV", "decode"]
+- !private ["s30KeyedDecodingContainerProtocolP", "decode"]
 - !private ["3App8LocationC", "deinit"]
 - !private ["3App8LocationC", "delete"]
 - !private ["3App8LocationC", "id"]
+- !private ["3App8LocationC", "locationConnectionID"]
 - !private ["3App8LocationC", "makeQuery"]
+- !private ["3App8LocationC", "save"]
+- !private ["3App18LocationConnectionC", "deinit"]
+- !private ["3App18LocationConnectionC", "id"]
+- !private ["3App18LocationConnectionC", "init"]
+- !private ["3App18LocationConnectionC", "makeQuery"]
+- !private ["3App18LocationConnectionC", "save"]
+- !private ["3App28LocationConnectionControllerC", "deinit"]
+- !private ["3App29LocationConnectionRequestJSONV", "CodingKeys"]
+- ["3App29LocationConnectionRequestJSONV", "Int"]
+- ["3App29LocationConnectionRequestJSONV", "deinit"]
+- ["3App29LocationConnectionRequestJSONV", "init"]
+- ["3App29LocationConnectionRequestJSONV", "locationID1"]
+- ["3App29LocationConnectionRequestJSONV", "locationID2"]
 - !private ["3App18LocationControllerC", "deinit"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["3App11MeasurementC", "deinit"]
 - !private ["3App11MeasurementC", "delete"]
 - !private ["3App11MeasurementC", "makeQuery"]
 - !private ["3App21MeasurementControllerC", "deinit"]
+- !private ["4HTTP7MessageP", "decodeJSONBody"]
 - !private ["4HTTP7MessageP", "description"]
 - !private ["4HTTP7MessageP", "init"]
 - !private ["4HTTP7MessageP", "parameters"]
+- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["14FluentProvider5ModelP", "delete"]
-- !private ["14FluentProvider5ModelP", "find"]
 - !private ["14FluentProvider5ModelP", "id"]
+- !private ["14FluentProvider5ModelP", "init"]
+- !private ["14FluentProvider5ModelP", "locationConnectionID"]
 - !private ["14FluentProvider5ModelP", "makeJSON"]
 - !private ["14FluentProvider5ModelP", "makeQuery"]
+- !private ["14FluentProvider5ModelP", "save"]
+- !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "makeJSON"]
 - !private ["So8NSCodingP", "init"]
@@ -207,6 +289,8 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
+- !private ["4Node0A13InitializableP", "count"]
+- !private ["4Node0A13InitializableP", "hashValue"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
 - !private ["4Node0A13InitializableP", "makeJSON"]
@@ -214,7 +298,10 @@ depends-member:
 - !private ["4Node0A13InitializableP", "string"]
 - !private ["4Node0A13InitializableP", "subscript"]
 - !private ["4Node0A13RepresentableP", "_getBuiltinLogicValue"]
+- !private ["4Node0A13RepresentableP", "count"]
+- !private ["4Node0A13RepresentableP", "decodeJSONBody"]
 - !private ["4Node0A13RepresentableP", "description"]
+- !private ["4Node0A13RepresentableP", "hashValue"]
 - !private ["4Node0A13RepresentableP", "init"]
 - !private ["4Node0A13RepresentableP", "int"]
 - !private ["4Node0A13RepresentableP", "makeJSON"]
@@ -222,12 +309,15 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "set"]
 - !private ["4Node0A13RepresentableP", "string"]
 - !private ["4Node0A13RepresentableP", "subscript"]
+- !private ["s7NumericP", "hashValue"]
 - !private ["7Routing15ParameterizableP", "delete"]
-- !private ["7Routing15ParameterizableP", "find"]
+- !private ["7Routing15ParameterizableP", "hashValue"]
 - !private ["7Routing15ParameterizableP", "id"]
 - !private ["7Routing15ParameterizableP", "init"]
+- !private ["7Routing15ParameterizableP", "locationConnectionID"]
 - !private ["7Routing15ParameterizableP", "makeJSON"]
 - !private ["7Routing15ParameterizableP", "makeQuery"]
+- !private ["7Routing15ParameterizableP", "save"]
 - !private ["7Routing10ParametersV", "int"]
 - !private ["7Routing10ParametersV", "string"]
 - !private ["7Routing10ParametersV", "subscript"]
@@ -236,28 +326,38 @@ depends-member:
 - !private ["13PathIndexableAAP", "set"]
 - !private ["13PathIndexableAAP", "string"]
 - !private ["13PathIndexableAAP", "subscript"]
+- !private ["13PathIndexable0A7IndexerP", "hashValue"]
 - !private ["13PathIndexable0A7IndexerP", "init"]
 - !private ["6Fluent11PreparationP", "delete"]
-- !private ["6Fluent11PreparationP", "find"]
 - !private ["6Fluent11PreparationP", "id"]
+- !private ["6Fluent11PreparationP", "init"]
+- !private ["6Fluent11PreparationP", "locationConnectionID"]
 - !private ["6Fluent11PreparationP", "makeJSON"]
 - !private ["6Fluent11PreparationP", "makeQuery"]
+- !private ["6Fluent11PreparationP", "save"]
 - !private ["6Fluent5QueryC", "all"]
 - !private ["6Fluent5QueryC", "filter"]
 - !private ["6Fluent5QueryC", "first"]
 - !private ["6Fluent18QueryRepresentableP", "all"]
 - !private ["6Fluent18QueryRepresentableP", "filter"]
 - !private ["6Fluent18QueryRepresentableP", "first"]
+- !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "makeJSON"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "makeJSON"]
+- !private ["4HTTP7RequestC", "decodeJSONBody"]
 - !private ["4HTTP7RequestC", "description"]
 - !private ["4HTTP7RequestC", "parameters"]
+- !private ["5Vapor23RequestContentSubscriptP", "hashValue"]
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP9ResponderP", "Abort"]
 - !private ["4HTTP9ResponderP", "JSON"]
 - !private ["4HTTP9ResponderP", "Location"]
+- !private ["4HTTP9ResponderP", "LocationConnection"]
+- !private ["4HTTP9ResponderP", "LocationConnectionController"]
+- !private ["4HTTP9ResponderP", "LocationConnectionRequestJSON"]
 - !private ["4HTTP9ResponderP", "LocationController"]
 - !private ["4HTTP9ResponderP", "Measurement"]
 - !private ["4HTTP9ResponderP", "MeasurementController"]
@@ -268,23 +368,27 @@ depends-member:
 - !private ["4HTTP9ResponderP", "WiFiAPController"]
 - !private ["4HTTP9ResponderP", "delete"]
 - !private ["4HTTP9ResponderP", "get"]
+- !private ["4HTTP9ResponderP", "post"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP8ResponseC", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "delete"]
-- !private ["4HTTP21ResponseRepresentableP", "find"]
 - !private ["4HTTP21ResponseRepresentableP", "id"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
+- !private ["4HTTP21ResponseRepresentableP", "locationConnectionID"]
 - !private ["4HTTP21ResponseRepresentableP", "makeJSON"]
 - !private ["4HTTP21ResponseRepresentableP", "makeQuery"]
+- !private ["4HTTP21ResponseRepresentableP", "save"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
 - !private ["3App4RoomC", "deinit"]
-- !private ["3App4RoomC", "find"]
 - !private ["3App4RoomC", "id"]
 - !private ["3App4RoomC", "makeQuery"]
 - !private ["3App14RoomControllerC", "deinit"]
 - !private ["7Routing12RouteBuilderP", "Abort"]
 - !private ["7Routing12RouteBuilderP", "JSON"]
 - !private ["7Routing12RouteBuilderP", "Location"]
+- !private ["7Routing12RouteBuilderP", "LocationConnection"]
+- !private ["7Routing12RouteBuilderP", "LocationConnectionController"]
+- !private ["7Routing12RouteBuilderP", "LocationConnectionRequestJSON"]
 - !private ["7Routing12RouteBuilderP", "LocationController"]
 - !private ["7Routing12RouteBuilderP", "Measurement"]
 - !private ["7Routing12RouteBuilderP", "MeasurementController"]
@@ -295,31 +399,45 @@ depends-member:
 - !private ["7Routing12RouteBuilderP", "WiFiAPController"]
 - !private ["7Routing12RouteBuilderP", "delete"]
 - !private ["7Routing12RouteBuilderP", "get"]
+- !private ["7Routing12RouteBuilderP", "post"]
 - !private ["7Routing12RouteBuilderP", "resource"]
 - !private ["6Fluent14RowConvertibleP", "delete"]
-- !private ["6Fluent14RowConvertibleP", "find"]
 - !private ["6Fluent14RowConvertibleP", "id"]
+- !private ["6Fluent14RowConvertibleP", "init"]
+- !private ["6Fluent14RowConvertibleP", "locationConnectionID"]
 - !private ["6Fluent14RowConvertibleP", "makeJSON"]
 - !private ["6Fluent14RowConvertibleP", "makeQuery"]
+- !private ["6Fluent14RowConvertibleP", "save"]
 - !private ["6Fluent16RowInitializableP", "delete"]
-- !private ["6Fluent16RowInitializableP", "find"]
 - !private ["6Fluent16RowInitializableP", "id"]
+- !private ["6Fluent16RowInitializableP", "init"]
+- !private ["6Fluent16RowInitializableP", "locationConnectionID"]
 - !private ["6Fluent16RowInitializableP", "makeJSON"]
 - !private ["6Fluent16RowInitializableP", "makeQuery"]
+- !private ["6Fluent16RowInitializableP", "save"]
 - !private ["6Fluent16RowRepresentableP", "delete"]
-- !private ["6Fluent16RowRepresentableP", "find"]
 - !private ["6Fluent16RowRepresentableP", "id"]
+- !private ["6Fluent16RowRepresentableP", "init"]
+- !private ["6Fluent16RowRepresentableP", "locationConnectionID"]
 - !private ["6Fluent16RowRepresentableP", "makeJSON"]
 - !private ["6Fluent16RowRepresentableP", "makeQuery"]
+- !private ["6Fluent16RowRepresentableP", "save"]
+- !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "makeJSON"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
 - !private ["4HTTP6StatusO", "ok"]
 - !private ["6Fluent8StorableP", "delete"]
-- !private ["6Fluent8StorableP", "find"]
 - !private ["6Fluent8StorableP", "id"]
+- !private ["6Fluent8StorableP", "init"]
+- !private ["6Fluent8StorableP", "locationConnectionID"]
 - !private ["6Fluent8StorableP", "makeJSON"]
 - !private ["6Fluent8StorableP", "makeQuery"]
+- !private ["6Fluent8StorableP", "save"]
+- !private ["s10StrideableP", "hashValue"]
 - !private ["SS", "init"]
+- !private ["5Vapor19StringInitializableP", "hashValue"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["4Node21StructuredDataWrapperP", "init"]
 - !private ["4Node21StructuredDataWrapperP", "int"]
@@ -333,45 +451,60 @@ depends-member:
 - !private ["3App6WiFiAPC", "makeJSON"]
 - !private ["3App6WiFiAPC", "makeQuery"]
 - !private ["3App16WiFiAPControllerC", "deinit"]
+- !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "makeJSON"]
+- !private ["s23_BidirectionalIndexableP", "count"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "makeJSON"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeJSON"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "count"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s10_IndexableP", "makeJSON"]
+- !private ["s14_IndexableBaseP", "count"]
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "makeJSON"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s17_MutableIndexableP", "count"]
 - !private ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "makeJSON"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "makeJSON"]
+- !private ["s22_RandomAccessIndexableP", "count"]
 - !private ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "makeJSON"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "makeJSON"]
+- !private ["s11_StrideableP", "hashValue"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "5Vapor5AbortV"
 - !private "5Vapor10AbortErrorP"
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
 - !private "4HTTP17BodyRepresentableP"
 - !private "Sb"
 - !private "4Bits16BytesConvertibleP"
 - !private "4Bits18BytesInitializableP"
 - !private "4Bits18BytesRepresentableP"
 - !private "s7CVarArgP"
+- !private "s9CodingKeyP"
 - !private "s10CollectionP"
 - !private "s10ComparableP"
 - !private "6Fluent6FilterV10ComparisonO"
@@ -380,7 +513,8 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
 - !private "9Debugging10DebuggableP"
-- !private "s9DecodableP"
+- "s9DecodableP"
+- !private "s7DecoderP"
 - "5Vapor7DropletC"
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"
@@ -398,13 +532,20 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
 - !private "4Node14FuzzyConverterP"
 - !private "s8HashableP"
+- !private "Si"
 - !private "4JSONAAV"
 - !private "4JSON15JSONConvertibleP"
 - !private "4JSON17JSONInitializableP"
 - !private "4JSON17JSONRepresentableP"
+- !private "s22KeyedDecodingContainerV"
+- !private "s30KeyedDecodingContainerProtocolP"
 - !private "3App8LocationC"
+- !private "3App18LocationConnectionC"
+- !private "3App28LocationConnectionControllerC"
+- "3App29LocationConnectionRequestJSONV"
 - !private "3App18LocationControllerC"
 - !private "s25LosslessStringConvertibleP"
 - !private "3App11MeasurementC"
@@ -423,6 +564,7 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
+- !private "s7NumericP"
 - !private "7Routing15ParameterizableP"
 - !private "7Routing10ParametersV"
 - !private "13PathIndexableAAP"
@@ -444,9 +586,13 @@ depends-nominal:
 - !private "6Fluent16RowInitializableP"
 - !private "6Fluent16RowRepresentableP"
 - !private "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
 - !private "4HTTP6StatusO"
 - !private "6Fluent8StorableP"
+- !private "s10StrideableP"
 - !private "SS"
+- !private "5Vapor19StringInitializableP"
 - !private "s14StringProtocolP"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
@@ -455,9 +601,11 @@ depends-nominal:
 - !private "3App16WiFiAPControllerC"
 - !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
@@ -470,6 +618,7 @@ depends-nominal:
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s22_RandomAccessIndexableP"
 - !private "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -524,4 +673,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "b0b33146560383547cdfe8dc9ca10424"
+interface-hash: "761e09863e351261c8e6f08983c93cd2"
