@@ -6,6 +6,7 @@ provides-member:
 - ["5Vapor7DropletC", "setupRoutes"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "+="
 - !private "Abort"
 - "BooleanLiteralType"
 - "Droplet"
@@ -26,6 +27,7 @@ depends-member:
 - !private ["5Vapor10AbortErrorP", "badRequest"]
 - !private ["5Vapor10AbortErrorP", "notFound"]
 - !private ["5Vapor10AbortErrorP", "ok"]
+- !private ["Sa", "init"]
 - !private ["Sa", "makeJSON"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "makeJSON"]
@@ -183,6 +185,7 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "id"]
 - !private ["14FluentProvider5ModelP", "makeJSON"]
 - !private ["14FluentProvider5ModelP", "makeQuery"]
+- !private ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "makeJSON"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "init"]
@@ -232,6 +235,7 @@ depends-member:
 - !private ["6Fluent18QueryRepresentableP", "all"]
 - !private ["6Fluent18QueryRepresentableP", "filter"]
 - !private ["6Fluent18QueryRepresentableP", "first"]
+- !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "makeJSON"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "makeJSON"]
@@ -262,6 +266,7 @@ depends-member:
 - !private ["4HTTP21ResponseRepresentableP", "set"]
 - !private ["3App4RoomC", "deinit"]
 - !private ["3App4RoomC", "find"]
+- !private ["3App4RoomC", "id"]
 - !private ["3App4RoomC", "makeQuery"]
 - !private ["3App14RoomControllerC", "deinit"]
 - !private ["7Routing12RouteBuilderP", "Abort"]
@@ -315,9 +320,11 @@ depends-member:
 - !private ["3App6WiFiAPC", "makeJSON"]
 - !private ["3App6WiFiAPC", "makeQuery"]
 - !private ["3App16WiFiAPControllerC", "deinit"]
+- !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "makeJSON"]
 - !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s23_BidirectionalIndexableP", "makeJSON"]
+- !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeJSON"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -330,9 +337,11 @@ depends-member:
 - !private ["s14_IndexableBaseP", "init"]
 - !private ["s14_IndexableBaseP", "makeJSON"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "makeJSON"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "makeJSON"]
+- !private ["s22_RandomAccessIndexableP", "init"]
 - !private ["s22_RandomAccessIndexableP", "makeJSON"]
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s26_RangeReplaceableIndexableP", "makeJSON"]

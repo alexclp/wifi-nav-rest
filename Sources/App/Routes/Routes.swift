@@ -37,7 +37,8 @@ extension Droplet {
             let rooms = try Room.makeQuery().filter("floorNumber", .equals, floorNumber).all()
             var toReturn = [Location]()
             for room in rooms {
-                toReturn += room.locations()
+                let locations = try Location.makeQuery().filter("roomID", .equals, room.id).all()
+                toReturn += locations
             }
             return try toReturn.makeJSON()
         }
