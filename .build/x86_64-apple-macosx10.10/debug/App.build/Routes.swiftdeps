@@ -7,6 +7,7 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - !private "+="
+- !private "=="
 - !private "Abort"
 - "BooleanLiteralType"
 - "Droplet"
@@ -33,6 +34,7 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "makeJSON"]
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
+- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits16BytesConvertibleP", "set"]
 - !private ["4Bits18BytesInitializableP", "init"]
@@ -49,15 +51,19 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "makeJSON"]
 - !private ["s28CustomDebugStringConvertibleP", "notFound"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "makeJSON"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "makeJSON"]
 - !private ["s23CustomStringConvertibleP", "parameters"]
 - !private ["9Debugging10DebuggableP", "badRequest"]
 - !private ["9Debugging10DebuggableP", "notFound"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "makeJSON"]
 - !private ["5Vapor7DropletC", "Abort"]
@@ -77,6 +83,7 @@ depends-member:
 - ["5Vapor7DropletC", "setupRoutes"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
 - !private ["4SMTP22EmailBodyRepresentableP", "init"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "makeJSON"]
 - !private ["6Fluent6EntityP", "delete"]
@@ -84,6 +91,7 @@ depends-member:
 - !private ["6Fluent6EntityP", "id"]
 - !private ["6Fluent6EntityP", "makeJSON"]
 - !private ["6Fluent6EntityP", "makeQuery"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "equals"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "int"]
@@ -103,6 +111,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
 - !private ["s25ExpressibleByArrayLiteralP", "string"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "int"]
 - !private ["s27ExpressibleByBooleanLiteralP", "set"]
@@ -145,6 +154,7 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "ok"]
 - !private ["4JSONAAV", "init"]
@@ -171,6 +181,7 @@ depends-member:
 - !private ["3App8LocationC", "id"]
 - !private ["3App8LocationC", "makeQuery"]
 - !private ["3App18LocationControllerC", "deinit"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["3App11MeasurementC", "deinit"]
 - !private ["3App11MeasurementC", "delete"]
@@ -195,12 +206,14 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "init"]
+- !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
 - !private ["4Node0A13InitializableP", "makeJSON"]
 - !private ["4Node0A13InitializableP", "set"]
 - !private ["4Node0A13InitializableP", "string"]
 - !private ["4Node0A13InitializableP", "subscript"]
+- !private ["4Node0A13RepresentableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13RepresentableP", "description"]
 - !private ["4Node0A13RepresentableP", "init"]
 - !private ["4Node0A13RepresentableP", "int"]
@@ -326,6 +339,7 @@ depends-member:
 - !private ["s23_BidirectionalIndexableP", "makeJSON"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeJSON"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -339,6 +353,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s17_MutableIndexableP", "init"]
 - !private ["s17_MutableIndexableP", "makeJSON"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "makeJSON"]
 - !private ["s22_RandomAccessIndexableP", "init"]
@@ -352,6 +367,7 @@ depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "4HTTP17BodyRepresentableP"
+- !private "Sb"
 - !private "4Bits16BytesConvertibleP"
 - !private "4Bits18BytesInitializableP"
 - !private "4Bits18BytesRepresentableP"
@@ -440,6 +456,7 @@ depends-nominal:
 - !private "s14_ArrayProtocolP"
 - !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
