@@ -14,6 +14,8 @@ final class Location: Model {
     var longitude: Double
     var roomID: Identifier
 
+    var locationConnectionID: Identifier?
+
     struct Keys {
         static let id = "id"
         static let x = "x"
@@ -23,6 +25,7 @@ final class Location: Model {
         static let latitude = "latitude"
         static let longitude = "longitude"
         static let roomID = "roomID"
+        static let locationConnectionID = "locationConnectionID"
     }
 
     init(row: Row) throws {
@@ -33,6 +36,7 @@ final class Location: Model {
         latitude = try row.get("latitude")
         longitude = try row.get("longitude")
         roomID = try row.get("roomID")
+        locationConnectionID = try row.get("locationConnectionID")
     }
 
     init(x: Double, y: Double, standardWidth: Double, standardHeight: Double, latitude: Double, longitude: Double, roomID: Identifier) {
@@ -45,15 +49,31 @@ final class Location: Model {
         self.roomID = roomID
     }
 
+    init(x: Double, y: Double, standardWidth: Double, standardHeight: Double, latitude: Double, longitude: Double, roomID: Identifier, locationConnectionID: Identifier) {
+        self.x = x
+        self.y = y
+        self.standardWidth = standardWidth
+        self.standardHeight = standardHeight
+        self.latitude = latitude
+        self.longitude = longitude
+        self.roomID = roomID
+        self.locationConnectionID = locationConnectionID
+    }
+
     func makeRow() throws -> Row {
         var row = Row()
-        try row.set("x", x)
-        try row.set("y", y)
-        try row.set("standardWidth", standardWidth)
-        try row.set("standardHeight", standardHeight)
-        try row.set("latitude", latitude)
-        try row.set("longitude", longitude)
-        try row.set("roomID", roomID)
+        try row.set(Location.Keys.x, x)
+        try row.set(Location.Keys.y, y)
+        try row.set(Location.Keys.standardWidth, standardWidth)
+        try row.set(Location.Keys.standardHeight, standardHeight)
+        try row.set(Location.Keys.latitude, latitude)
+        try row.set(Location.Keys.longitude, longitude)
+        try row.set(Location.Keys.roomID, roomID)
+
+        if let id = locationConnectionID {
+            try row.set(Location.Keys.locationConnectionID, id)
+        }
+
         return row
     }
 }
@@ -65,6 +85,10 @@ extension Location {
 
     var measurements: Children<Location, Measurement> {
         return children()
+    }
+
+    var locationConnection: Parent<Location, LocationConnection> {
+        return parent(id: locationConnectionID)
     }
 }
 
@@ -79,6 +103,7 @@ extension Location: Preparation {
             locations.double("latitude")
             locations.double("longitude")
             locations.foreignId(for: Room.self, optional: false, unique: false, foreignIdKey: "roomID", foreignKeyName: "roomID")
+            locations.foreignId(for: LocationConnection.self, optional: true, unique: true, foreignIdKey: "locationConnectionID", foreignKeyName: "locationConnectionID")
         }
     }
 
@@ -102,6 +127,10 @@ extension Location: JSONConvertible {
         try toReturn.set(Location.Keys.longitude, longitude)
         try toReturn.set(Location.Keys.roomID, roomID)
 
+        if let id = locationConnectionID {
+            try toReturn.set(Location.Keys.locationConnectionID, id)
+        }
+
         return toReturn
     }
 }
@@ -115,6 +144,12 @@ extension Location: JSONInitializable {
         let latitude: Double = try json.get(Location.Keys.latitude)
         let longitude: Double = try json.get(Location.Keys.longitude)
         let roomID: Identifier = try json.get(Location.Keys.roomID)
-        self.init(x: x, y: y, standardWidth: standardWidth, standardHeight: standardHeight, latitude: latitude, longitude: longitude, roomID: roomID)
+        let locationConnectionID: Identifier = try json.get(Location.Keys.locationConnectionID)
+        
+        if locationConnectionID != nil {
+            self.init(x: x, y: y, standardWidth: standardWidth, standardHeight: standardHeight, latitude: latitude, longitude: longitude, roomID: roomID, locationConnectionID: locationConnectionID)
+        } else {
+            self.init(x: x, y: y, standardWidth: standardWidth, standardHeight: standardHeight, latitude: latitude, longitude: longitude, roomID: roomID)
+        }
     }
 }
