@@ -1,5 +1,10 @@
 import Vapor
 
+struct LocationConnectionRequestJSON: Decodable {
+    let locationID1: Int
+    let locationID2: Int
+}
+
 extension Droplet {
     func setupRoutes() throws {
         get("hello") { req in
@@ -54,7 +59,7 @@ extension Droplet {
 
         delete("rooms", "clearData", ":id") { request in
             guard let roomID = request.parameters["id"]?.int else { throw Abort.badRequest }
-            if try Room.find(roomID) == nil { 
+            if try Room.makeQuery().filter("id", .equals, roomID).all().count == 0 { 
                 throw Abort.notFound 
             }
             let locations = try Location.makeQuery().filter("roomID", .equals, roomID).all()
@@ -70,9 +75,28 @@ extension Droplet {
             return try Response(status: .ok, json: responseJSON)
         }
 
+        post("linkLocations") { request in 
+            let locations = try request.decodeJSONBody(LocationConnectionRequestJSON.self)
+
+            if try LocationConnection.makeQuery().filter("rootLocationID", .equals, locations.locationID1).all().count == 0 {
+                let loc = LocationConnection.init(rootLocationID: locations.locationID1)
+                try loc.save()
+            }
+
+            guard let locConn = try LocationConnection.makeQuery().filter("rootLocationID", .equals, locations.locationID1).first() else { throw Abort.badRequest }
+            guard let loc = try Location.makeQuery().filter("id", .equals, locations.locationID2).first() else { throw Abort.notFound }
+            loc.locationConnectionID = locConn.id
+            try loc.save()
+
+            var responseJSON = JSON()
+            try responseJSON.set("success", true)
+            return try Response(status: .ok, json: responseJSON)
+        }
+
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
         try resource("accessPoints", WiFiAPController.self)
         try resource("measurements", MeasurementController.self)
+        try resource("locationConnections", LocationConnectionController.self)
     }
 }
