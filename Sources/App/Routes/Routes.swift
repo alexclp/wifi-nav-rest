@@ -32,6 +32,16 @@ extension Droplet {
             return try rooms.makeJSON()
         }
 
+        get("locations", "floor", ":floorNumber") { request in
+            guard let floorNumber = request.parameters["floorNumber"]?.int else { throw Abort.badRequest }
+            let rooms = try Room.makeQuery().filter("floorNumber", .equals, floorNumber).all()
+            var toReturn = [Location]()
+            for room in rooms {
+                toReturn += room.locations()
+            }
+            return try toReturn.makeJSON()
+        }
+
         get("measurements", "address", ":macAddress") { request in 
             guard let macAddress = request.parameters["macAddress"]?.string else { throw Abort.badRequest }
             guard let accessPoint = try WiFiAP.makeQuery().filter("macAddress", .equals, macAddress).first() else { throw Abort.notFound }
