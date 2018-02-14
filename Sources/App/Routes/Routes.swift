@@ -54,7 +54,9 @@ extension Droplet {
 
         delete("rooms", "clearData", ":id") { request in
             guard let roomID = request.parameters["id"]?.int else { throw Abort.badRequest }
-            guard let room = try Room.find(roomID) else { throw Abort.notFound }
+            if try Room.find(roomID) == nil { 
+                throw Abort.notFound 
+            }
             let locations = try Location.makeQuery().filter("roomID", .equals, roomID).all()
             for location in locations {
                 let measurements = try Measurement.makeQuery().filter("locationID", .equals, location.id).all()
