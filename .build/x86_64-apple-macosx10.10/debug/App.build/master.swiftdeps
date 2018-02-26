@@ -1,13 +1,13 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "55c091d21115a420c5ae898ad25ae767"
-build_time: [1519654689, 803328000]
+build_time: [1519655155, 478682000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationConnectionController.swift": [1518622647, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationController.swift": [1510932884, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/MeasurementController.swift": [1516370012, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/RoomController.swift": [1511309183, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/WiFiAPController.swift": [1517838403, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": [1519654640, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Location.swift": [1519655139, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/LocationConnection.swift": [1519653299, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Measurement.swift": [1518621160, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1518617884, 0]

@@ -130,5 +130,6 @@ extension Location: JSONInitializable {
         let longitude: Double = try json.get(Location.Keys.longitude)
         let roomID: Identifier = try json.get(Location.Keys.roomID)
         self.init(x: x, y: y, standardWidth: standardWidth, standardHeight: standardHeight, latitude: latitude, longitude: longitude, roomID: roomID)
+        try connectToPointsInCurrentRoom()
     }
 }
