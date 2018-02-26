@@ -33,7 +33,10 @@ depends-top-level:
 - "Storage"
 - "StringLiteralType"
 - "UnicodeScalarType"
+- !private "print"
 depends-member:
+- !private ["Sa", "count"]
+- !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "get"]
 - ["4HTTP17BodyRepresentableP", "init"]
@@ -51,24 +54,31 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "get"]
 - ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "set"]
+- !private ["s7CVarArgP", "count"]
 - ["s7CVarArgP", "init"]
+- !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["6Fluent6FilterV10ComparisonO", "equals"]
 - !private ["6Fluent7CreatorC", "double"]
 - !private ["6Fluent7CreatorC", "foreignId"]
 - !private ["6Fluent7CreatorC", "id"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s17CustomReflectableP", "count"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "int"]
 - !private ["6Fluent8DatabaseC", "create"]
 - !private ["6Fluent8DatabaseC", "delete"]
 - !private ["6Fluent8DatabaseC", "modify"]
+- !private ["s9DecodableP", "count"]
 - ["s9DecodableP", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "init"]
 - ["4SMTP22EmailBodyRepresentableP", "init"]
+- !private ["s9EncodableP", "count"]
 - ["s9EncodableP", "init"]
 - !private ["6Fluent6EntityP", "JSON"]
 - !private ["6Fluent6EntityP", "Keys"]
@@ -101,6 +111,7 @@ depends-member:
 - ["6Fluent6EntityP", "name"]
 - !private ["6Fluent6EntityP", "parent"]
 - ["6Fluent6EntityP", "prepare"]
+- !private ["6Fluent6EntityP", "print"]
 - ["6Fluent6EntityP", "revert"]
 - !private ["6Fluent6EntityP", "roomID"]
 - !private ["6Fluent6EntityP", "save"]
@@ -125,6 +136,7 @@ depends-member:
 - !private ["6Fluent8ExecutorP", "modify"]
 - !private ["6Fluent21ExecutorRepresentableP", "all"]
 - !private ["6Fluent21ExecutorRepresentableP", "filter"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
@@ -201,6 +213,7 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "name"]
 - !private ["4JSON15JSONConvertibleP", "parent"]
 - ["4JSON15JSONConvertibleP", "prepare"]
+- !private ["4JSON15JSONConvertibleP", "print"]
 - ["4JSON15JSONConvertibleP", "revert"]
 - !private ["4JSON15JSONConvertibleP", "roomID"]
 - !private ["4JSON15JSONConvertibleP", "save"]
@@ -245,6 +258,7 @@ depends-member:
 - ["4JSON17JSONInitializableP", "name"]
 - !private ["4JSON17JSONInitializableP", "parent"]
 - ["4JSON17JSONInitializableP", "prepare"]
+- !private ["4JSON17JSONInitializableP", "print"]
 - ["4JSON17JSONInitializableP", "revert"]
 - !private ["4JSON17JSONInitializableP", "roomID"]
 - !private ["4JSON17JSONInitializableP", "save"]
@@ -290,6 +304,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "name"]
 - !private ["4JSON17JSONRepresentableP", "parent"]
 - ["4JSON17JSONRepresentableP", "prepare"]
+- !private ["4JSON17JSONRepresentableP", "print"]
 - ["4JSON17JSONRepresentableP", "revert"]
 - !private ["4JSON17JSONRepresentableP", "roomID"]
 - !private ["4JSON17JSONRepresentableP", "save"]
@@ -353,9 +368,11 @@ depends-member:
 - ["3App8LocationC", "name"]
 - !private ["3App8LocationC", "parent"]
 - ["3App8LocationC", "prepare"]
+- !private ["3App8LocationC", "print"]
 - ["3App8LocationC", "revert"]
 - ["3App8LocationC", "room"]
 - ["3App8LocationC", "roomID"]
+- !private ["3App8LocationC", "save"]
 - ["3App8LocationC", "standardHeight"]
 - ["3App8LocationC", "standardWidth"]
 - ["3App8LocationC", "storage"]
@@ -402,6 +419,7 @@ depends-member:
 - ["14FluentProvider5ModelP", "name"]
 - !private ["14FluentProvider5ModelP", "parent"]
 - ["14FluentProvider5ModelP", "prepare"]
+- !private ["14FluentProvider5ModelP", "print"]
 - ["14FluentProvider5ModelP", "revert"]
 - !private ["14FluentProvider5ModelP", "roomID"]
 - !private ["14FluentProvider5ModelP", "save"]
@@ -416,6 +434,7 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "y"]
 - ["14FluentProvider5ModelP", ""]
 - !private ["6Fluent8ModifierC", "delete"]
+- !private ["s17MutableCollectionP", "count"]
 - ["So8NSCodingP", "init"]
 - ["So9NSCopyingP", "init"]
 - ["So21NSItemProviderReadingP", "init"]
@@ -424,11 +443,13 @@ depends-member:
 - ["So16NSObjectProtocolP", "init"]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
+- !private ["4Node0A13InitializableP", "count"]
 - !private ["4Node0A13InitializableP", "get"]
 - ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
 - !private ["4Node0A13InitializableP", "set"]
 - !private ["4Node0A13InitializableP", "wrapped"]
+- !private ["4Node0A13RepresentableP", "count"]
 - !private ["4Node0A13RepresentableP", "get"]
 - ["4Node0A13RepresentableP", "init"]
 - !private ["4Node0A13RepresentableP", "int"]
@@ -465,6 +486,7 @@ depends-member:
 - ["7Routing15ParameterizableP", "name"]
 - !private ["7Routing15ParameterizableP", "parent"]
 - ["7Routing15ParameterizableP", "prepare"]
+- !private ["7Routing15ParameterizableP", "print"]
 - ["7Routing15ParameterizableP", "revert"]
 - !private ["7Routing15ParameterizableP", "roomID"]
 - !private ["7Routing15ParameterizableP", "save"]
@@ -515,6 +537,7 @@ depends-member:
 - ["6Fluent11PreparationP", "name"]
 - !private ["6Fluent11PreparationP", "parent"]
 - ["6Fluent11PreparationP", "prepare"]
+- !private ["6Fluent11PreparationP", "print"]
 - ["6Fluent11PreparationP", "revert"]
 - !private ["6Fluent11PreparationP", "roomID"]
 - !private ["6Fluent11PreparationP", "save"]
@@ -535,6 +558,8 @@ depends-member:
 - !private ["6Fluent11QueryLoggerP", "modify"]
 - !private ["6Fluent18QueryRepresentableP", "all"]
 - !private ["6Fluent18QueryRepresentableP", "filter"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "JSON"]
@@ -569,6 +594,7 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "name"]
 - !private ["4HTTP21ResponseRepresentableP", "parent"]
 - ["4HTTP21ResponseRepresentableP", "prepare"]
+- !private ["4HTTP21ResponseRepresentableP", "print"]
 - ["4HTTP21ResponseRepresentableP", "revert"]
 - !private ["4HTTP21ResponseRepresentableP", "roomID"]
 - !private ["4HTTP21ResponseRepresentableP", "save"]
@@ -618,6 +644,7 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "name"]
 - !private ["6Fluent14RowConvertibleP", "parent"]
 - ["6Fluent14RowConvertibleP", "prepare"]
+- !private ["6Fluent14RowConvertibleP", "print"]
 - ["6Fluent14RowConvertibleP", "revert"]
 - !private ["6Fluent14RowConvertibleP", "roomID"]
 - !private ["6Fluent14RowConvertibleP", "save"]
@@ -662,6 +689,7 @@ depends-member:
 - ["6Fluent16RowInitializableP", "name"]
 - !private ["6Fluent16RowInitializableP", "parent"]
 - ["6Fluent16RowInitializableP", "prepare"]
+- !private ["6Fluent16RowInitializableP", "print"]
 - ["6Fluent16RowInitializableP", "revert"]
 - !private ["6Fluent16RowInitializableP", "roomID"]
 - !private ["6Fluent16RowInitializableP", "save"]
@@ -706,6 +734,7 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "name"]
 - !private ["6Fluent16RowRepresentableP", "parent"]
 - ["6Fluent16RowRepresentableP", "prepare"]
+- !private ["6Fluent16RowRepresentableP", "print"]
 - ["6Fluent16RowRepresentableP", "revert"]
 - !private ["6Fluent16RowRepresentableP", "roomID"]
 - !private ["6Fluent16RowRepresentableP", "save"]
@@ -719,6 +748,7 @@ depends-member:
 - !private ["6Fluent16RowRepresentableP", "x"]
 - !private ["6Fluent16RowRepresentableP", "y"]
 - ["6Fluent16RowRepresentableP", ""]
+- !private ["s8SequenceP", "count"]
 - ["s8SequenceP", "init"]
 - !private ["6Fluent8StorableP", "JSON"]
 - !private ["6Fluent8StorableP", "Keys"]
@@ -751,6 +781,7 @@ depends-member:
 - ["6Fluent8StorableP", "name"]
 - !private ["6Fluent8StorableP", "parent"]
 - ["6Fluent8StorableP", "prepare"]
+- !private ["6Fluent8StorableP", "print"]
 - ["6Fluent8StorableP", "revert"]
 - !private ["6Fluent8StorableP", "roomID"]
 - !private ["6Fluent8StorableP", "save"]
@@ -777,20 +808,30 @@ depends-member:
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
 - !private ["6Fluent12TransactableP", "modify"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s23_BidirectionalIndexableP", "count"]
 - ["s23_BidirectionalIndexableP", "init"]
+- !private ["s24_DestructorSafeContainerP", "count"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s10_IndexableP", "count"]
 - ["s10_IndexableP", "init"]
+- !private ["s14_IndexableBaseP", "count"]
 - ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "Sa"
 - "s23BidirectionalCollectionP"
 - "4HTTP17BodyRepresentableP"
 - !private "6Fluent7BuilderP"
@@ -840,6 +881,7 @@ depends-nominal:
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
 - !private "6Fluent8ModifierC"
+- !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"
@@ -857,6 +899,7 @@ depends-nominal:
 - !private "6Fluent5QueryC"
 - !private "6Fluent11QueryLoggerP"
 - !private "6Fluent18QueryRepresentableP"
+- !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - "5Vapor23RequestContentSubscriptP"
 - "4HTTP21ResponseRepresentableP"
@@ -875,7 +918,9 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "6Fluent12TransactableP"
+- !private "s14_ArrayProtocolP"
 - "s23_BidirectionalIndexableP"
+- !private "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -885,7 +930,9 @@ depends-nominal:
 - "s10_IndexableP"
 - "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
+- !private "s22_RandomAccessIndexableP"
 - "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:

@@ -39,10 +39,6 @@ extension LocationConnection: Preparation {
             builder.id()
             builder.int(LocationConnection.Keys.rootLocationID)
         }
-
-        try database.modify(self) { builder in
-            builder.int(LocationConnection.Keys.childLocationID)
-        }
     }
 
     static func revert(_ database: Database) throws {

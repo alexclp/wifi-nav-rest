@@ -6,6 +6,7 @@ provides-member:
 - ["7Configs6ConfigC", "setup"]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "AddChildLocationIDMigration"
 - !private "Array"
 - "AssignmentPrecedence"
 - "Config"
@@ -19,10 +20,12 @@ depends-top-level:
 - !private "Row"
 - !private "WiFiAP"
 depends-member:
+- !private ["3App27AddChildLocationIDMigrationC", "deinit"]
 - !private ["Sa", "append"]
 - !private ["s23BidirectionalCollectionP", "append"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s10CollectionP", "append"]
+- !private ["7Configs6ConfigC", "AddChildLocationIDMigration"]
 - !private ["7Configs6ConfigC", "FluentProvider"]
 - !private ["7Configs6ConfigC", "JSON"]
 - !private ["7Configs6ConfigC", "Location"]
@@ -42,6 +45,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9EncodableP", "append"]
+- !private ["s9EquatableP", "AddChildLocationIDMigration"]
 - !private ["s9EquatableP", "FluentProvider"]
 - !private ["s9EquatableP", "JSON"]
 - !private ["s9EquatableP", "Location"]
@@ -56,6 +60,7 @@ depends-member:
 - !private ["s9EquatableP", "preparations"]
 - !private ["s9EquatableP", "setupPreparations"]
 - !private ["s9EquatableP", "setupProviders"]
+- !private ["s25ExpressibleByArrayLiteralP", "AddChildLocationIDMigration"]
 - !private ["s25ExpressibleByArrayLiteralP", "FluentProvider"]
 - !private ["s25ExpressibleByArrayLiteralP", "JSON"]
 - !private ["s25ExpressibleByArrayLiteralP", "Location"]
@@ -71,6 +76,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "preparations"]
 - !private ["s25ExpressibleByArrayLiteralP", "setupPreparations"]
 - !private ["s25ExpressibleByArrayLiteralP", "setupProviders"]
+- !private ["s27ExpressibleByBooleanLiteralP", "AddChildLocationIDMigration"]
 - !private ["s27ExpressibleByBooleanLiteralP", "FluentProvider"]
 - !private ["s27ExpressibleByBooleanLiteralP", "JSON"]
 - !private ["s27ExpressibleByBooleanLiteralP", "Location"]
@@ -85,6 +91,7 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "preparations"]
 - !private ["s27ExpressibleByBooleanLiteralP", "setupPreparations"]
 - !private ["s27ExpressibleByBooleanLiteralP", "setupProviders"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "AddChildLocationIDMigration"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "FluentProvider"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "JSON"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "Location"]
@@ -99,6 +106,7 @@ depends-member:
 - !private ["s30ExpressibleByDictionaryLiteralP", "preparations"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "setupPreparations"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "setupProviders"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "AddChildLocationIDMigration"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "FluentProvider"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "JSON"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "Location"]
@@ -113,6 +121,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "preparations"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "setupPreparations"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "setupProviders"]
+- !private ["s25ExpressibleByFloatLiteralP", "AddChildLocationIDMigration"]
 - !private ["s25ExpressibleByFloatLiteralP", "FluentProvider"]
 - !private ["s25ExpressibleByFloatLiteralP", "JSON"]
 - !private ["s25ExpressibleByFloatLiteralP", "Location"]
@@ -127,6 +136,7 @@ depends-member:
 - !private ["s25ExpressibleByFloatLiteralP", "preparations"]
 - !private ["s25ExpressibleByFloatLiteralP", "setupPreparations"]
 - !private ["s25ExpressibleByFloatLiteralP", "setupProviders"]
+- !private ["s27ExpressibleByIntegerLiteralP", "AddChildLocationIDMigration"]
 - !private ["s27ExpressibleByIntegerLiteralP", "FluentProvider"]
 - !private ["s27ExpressibleByIntegerLiteralP", "JSON"]
 - !private ["s27ExpressibleByIntegerLiteralP", "Location"]
@@ -141,6 +151,7 @@ depends-member:
 - !private ["s27ExpressibleByIntegerLiteralP", "preparations"]
 - !private ["s27ExpressibleByIntegerLiteralP", "setupPreparations"]
 - !private ["s27ExpressibleByIntegerLiteralP", "setupProviders"]
+- !private ["s23ExpressibleByNilLiteralP", "AddChildLocationIDMigration"]
 - !private ["s23ExpressibleByNilLiteralP", "FluentProvider"]
 - !private ["s23ExpressibleByNilLiteralP", "JSON"]
 - !private ["s23ExpressibleByNilLiteralP", "Location"]
@@ -155,6 +166,7 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "preparations"]
 - !private ["s23ExpressibleByNilLiteralP", "setupPreparations"]
 - !private ["s23ExpressibleByNilLiteralP", "setupProviders"]
+- !private ["s26ExpressibleByStringLiteralP", "AddChildLocationIDMigration"]
 - !private ["s26ExpressibleByStringLiteralP", "FluentProvider"]
 - !private ["s26ExpressibleByStringLiteralP", "JSON"]
 - !private ["s26ExpressibleByStringLiteralP", "Location"]
@@ -169,6 +181,7 @@ depends-member:
 - !private ["s26ExpressibleByStringLiteralP", "preparations"]
 - !private ["s26ExpressibleByStringLiteralP", "setupPreparations"]
 - !private ["s26ExpressibleByStringLiteralP", "setupProviders"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "AddChildLocationIDMigration"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "FluentProvider"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "JSON"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Location"]
@@ -189,6 +202,7 @@ depends-member:
 - !private ["3App11MeasurementC", "deinit"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["4NodeAAV", "fuzzy"]
+- !private ["4Node0A13InitializableP", "AddChildLocationIDMigration"]
 - !private ["4Node0A13InitializableP", "FluentProvider"]
 - !private ["4Node0A13InitializableP", "JSON"]
 - !private ["4Node0A13InitializableP", "Location"]
@@ -204,6 +218,7 @@ depends-member:
 - !private ["4Node0A13InitializableP", "preparations"]
 - !private ["4Node0A13InitializableP", "setupPreparations"]
 - !private ["4Node0A13InitializableP", "setupProviders"]
+- !private ["4Node0A13RepresentableP", "AddChildLocationIDMigration"]
 - !private ["4Node0A13RepresentableP", "FluentProvider"]
 - !private ["4Node0A13RepresentableP", "JSON"]
 - !private ["4Node0A13RepresentableP", "Location"]
@@ -219,6 +234,7 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "preparations"]
 - !private ["4Node0A13RepresentableP", "setupPreparations"]
 - !private ["4Node0A13RepresentableP", "setupProviders"]
+- !private ["13PathIndexableAAP", "AddChildLocationIDMigration"]
 - !private ["13PathIndexableAAP", "FluentProvider"]
 - !private ["13PathIndexableAAP", "JSON"]
 - !private ["13PathIndexableAAP", "Location"]
@@ -237,6 +253,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "append"]
 - !private ["3App4RoomC", "deinit"]
 - !private ["s8SequenceP", "append"]
+- !private ["4Node21StructuredDataWrapperP", "AddChildLocationIDMigration"]
 - !private ["4Node21StructuredDataWrapperP", "FluentProvider"]
 - !private ["4Node21StructuredDataWrapperP", "JSON"]
 - !private ["4Node21StructuredDataWrapperP", "Location"]
@@ -262,6 +279,7 @@ depends-member:
 - !private ["s22_RandomAccessIndexableP", "append"]
 - !private ["s26_RangeReplaceableIndexableP", "append"]
 depends-nominal:
+- !private "3App27AddChildLocationIDMigrationC"
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "s7CVarArgP"
