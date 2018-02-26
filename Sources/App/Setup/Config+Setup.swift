@@ -23,5 +23,6 @@ extension Config {
         preparations.append(Location.self)
         preparations.append(WiFiAP.self)
         preparations.append(Measurement.self)
+        preparations.append(AddChildLocationIDMigration.self)
     }
 }
