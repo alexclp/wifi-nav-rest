@@ -9,10 +9,8 @@ provides-member:
 - ["3App8LocationC4KeysV", ""]
 - ["3App8LocationC", "room"]
 - ["3App8LocationC", "measurements"]
-- ["3App8LocationC", "locationConnection"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
 - "AssignmentPrecedence"
 - "BooleanLiteralType"
 - "Children"
@@ -24,7 +22,7 @@ depends-top-level:
 - "JSONConvertible"
 - "JSONInitializable"
 - "Location"
-- "LocationConnection"
+- !private "LocationConnection"
 - "Measurement"
 - "Model"
 - "Parent"
@@ -40,7 +38,6 @@ depends-member:
 - !private ["4HTTP17BodyRepresentableP", "get"]
 - ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
-- !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["6Fluent7BuilderP", "double"]
 - !private ["6Fluent7BuilderP", "foreignId"]
 - !private ["6Fluent7BuilderP", "id"]
@@ -56,23 +53,20 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
+- !private ["6Fluent6FilterV10ComparisonO", "equals"]
 - !private ["6Fluent7CreatorC", "double"]
 - !private ["6Fluent7CreatorC", "foreignId"]
 - !private ["6Fluent7CreatorC", "id"]
 - ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
-- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - ["s17CustomReflectableP", "init"]
-- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "int"]
 - !private ["6Fluent8DatabaseC", "create"]
 - !private ["6Fluent8DatabaseC", "delete"]
-- !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - ["s9DecodableP", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "init"]
 - ["4SMTP22EmailBodyRepresentableP", "init"]
-- !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - ["s9EncodableP", "init"]
 - !private ["6Fluent6EntityP", "JSON"]
 - !private ["6Fluent6EntityP", "Keys"]
@@ -95,10 +89,10 @@ depends-member:
 - ["6Fluent6EntityP", "init"]
 - ["6Fluent6EntityP", "keyNamingConvention"]
 - !private ["6Fluent6EntityP", "latitude"]
-- !private ["6Fluent6EntityP", "locationConnectionID"]
 - !private ["6Fluent6EntityP", "longitude"]
 - ["6Fluent6EntityP", "make"]
 - ["6Fluent6EntityP", "makeJSON"]
+- !private ["6Fluent6EntityP", "makeQuery"]
 - ["6Fluent6EntityP", "makeResponse"]
 - ["6Fluent6EntityP", "makeRow"]
 - ["6Fluent6EntityP", "name"]
@@ -106,6 +100,7 @@ depends-member:
 - ["6Fluent6EntityP", "prepare"]
 - ["6Fluent6EntityP", "revert"]
 - !private ["6Fluent6EntityP", "roomID"]
+- !private ["6Fluent6EntityP", "save"]
 - !private ["6Fluent6EntityP", "standardHeight"]
 - !private ["6Fluent6EntityP", "standardWidth"]
 - ["6Fluent6EntityP", "storage"]
@@ -116,46 +111,57 @@ depends-member:
 - !private ["6Fluent6EntityP", "x"]
 - !private ["6Fluent6EntityP", "y"]
 - ["6Fluent6EntityP", ""]
-- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "equals"]
 - !private ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "int"]
 - !private ["s9EquatableP", "set"]
+- !private ["s9EquatableP", "wrapped"]
 - !private ["6Fluent8ExecutorP", "create"]
 - !private ["6Fluent8ExecutorP", "delete"]
+- !private ["6Fluent21ExecutorRepresentableP", "all"]
+- !private ["6Fluent21ExecutorRepresentableP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
-- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s25ExpressibleByArrayLiteralP", "wrapped"]
 - !private ["s27ExpressibleByBooleanLiteralP", "get"]
 - !private ["s27ExpressibleByBooleanLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "set"]
+- !private ["s27ExpressibleByBooleanLiteralP", "wrapped"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "get"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "set"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "wrapped"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "get"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "set"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "wrapped"]
 - !private ["s25ExpressibleByFloatLiteralP", "get"]
 - !private ["s25ExpressibleByFloatLiteralP", "init"]
 - !private ["s25ExpressibleByFloatLiteralP", "set"]
+- !private ["s25ExpressibleByFloatLiteralP", "wrapped"]
 - !private ["s27ExpressibleByIntegerLiteralP", "get"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "set"]
+- !private ["s27ExpressibleByIntegerLiteralP", "wrapped"]
 - !private ["s23ExpressibleByNilLiteralP", "get"]
 - !private ["s23ExpressibleByNilLiteralP", "init"]
 - !private ["s23ExpressibleByNilLiteralP", "set"]
+- !private ["s23ExpressibleByNilLiteralP", "wrapped"]
 - !private ["s26ExpressibleByStringLiteralP", "get"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "set"]
+- !private ["s26ExpressibleByStringLiteralP", "wrapped"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "get"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "set"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "wrapped"]
 - !private ["4Node14FuzzyConverterP", "get"]
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
-- !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "init"]
+- !private ["4Node10IdentifierV", "wrapped"]
 - ["6Fluent14IdentifierTypeO", "int"]
 - !private ["4JSONAAV", "get"]
 - !private ["4JSONAAV", "init"]
@@ -181,10 +187,10 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "init"]
 - ["4JSON15JSONConvertibleP", "keyNamingConvention"]
 - !private ["4JSON15JSONConvertibleP", "latitude"]
-- !private ["4JSON15JSONConvertibleP", "locationConnectionID"]
 - !private ["4JSON15JSONConvertibleP", "longitude"]
 - ["4JSON15JSONConvertibleP", "make"]
 - ["4JSON15JSONConvertibleP", "makeJSON"]
+- !private ["4JSON15JSONConvertibleP", "makeQuery"]
 - ["4JSON15JSONConvertibleP", "makeResponse"]
 - ["4JSON15JSONConvertibleP", "makeRow"]
 - ["4JSON15JSONConvertibleP", "name"]
@@ -192,6 +198,7 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "prepare"]
 - ["4JSON15JSONConvertibleP", "revert"]
 - !private ["4JSON15JSONConvertibleP", "roomID"]
+- !private ["4JSON15JSONConvertibleP", "save"]
 - !private ["4JSON15JSONConvertibleP", "standardHeight"]
 - !private ["4JSON15JSONConvertibleP", "standardWidth"]
 - ["4JSON15JSONConvertibleP", "storage"]
@@ -223,10 +230,10 @@ depends-member:
 - ["4JSON17JSONInitializableP", "init"]
 - ["4JSON17JSONInitializableP", "keyNamingConvention"]
 - !private ["4JSON17JSONInitializableP", "latitude"]
-- !private ["4JSON17JSONInitializableP", "locationConnectionID"]
 - !private ["4JSON17JSONInitializableP", "longitude"]
 - ["4JSON17JSONInitializableP", "make"]
 - ["4JSON17JSONInitializableP", "makeJSON"]
+- !private ["4JSON17JSONInitializableP", "makeQuery"]
 - ["4JSON17JSONInitializableP", "makeResponse"]
 - ["4JSON17JSONInitializableP", "makeRow"]
 - ["4JSON17JSONInitializableP", "name"]
@@ -234,6 +241,7 @@ depends-member:
 - ["4JSON17JSONInitializableP", "prepare"]
 - ["4JSON17JSONInitializableP", "revert"]
 - !private ["4JSON17JSONInitializableP", "roomID"]
+- !private ["4JSON17JSONInitializableP", "save"]
 - !private ["4JSON17JSONInitializableP", "standardHeight"]
 - !private ["4JSON17JSONInitializableP", "standardWidth"]
 - ["4JSON17JSONInitializableP", "storage"]
@@ -266,10 +274,10 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "init"]
 - ["4JSON17JSONRepresentableP", "keyNamingConvention"]
 - !private ["4JSON17JSONRepresentableP", "latitude"]
-- !private ["4JSON17JSONRepresentableP", "locationConnectionID"]
 - !private ["4JSON17JSONRepresentableP", "longitude"]
 - ["4JSON17JSONRepresentableP", "make"]
 - ["4JSON17JSONRepresentableP", "makeJSON"]
+- !private ["4JSON17JSONRepresentableP", "makeQuery"]
 - ["4JSON17JSONRepresentableP", "makeResponse"]
 - ["4JSON17JSONRepresentableP", "makeRow"]
 - ["4JSON17JSONRepresentableP", "name"]
@@ -277,6 +285,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "prepare"]
 - ["4JSON17JSONRepresentableP", "revert"]
 - !private ["4JSON17JSONRepresentableP", "roomID"]
+- !private ["4JSON17JSONRepresentableP", "save"]
 - !private ["4JSON17JSONRepresentableP", "set"]
 - !private ["4JSON17JSONRepresentableP", "standardHeight"]
 - !private ["4JSON17JSONRepresentableP", "standardWidth"]
@@ -291,7 +300,6 @@ depends-member:
 - ["3App8LocationC4KeysV", "id"]
 - ["3App8LocationC4KeysV", "init"]
 - ["3App8LocationC4KeysV", "latitude"]
-- ["3App8LocationC4KeysV", "locationConnectionID"]
 - ["3App8LocationC4KeysV", "longitude"]
 - ["3App8LocationC4KeysV", "roomID"]
 - ["3App8LocationC4KeysV", "standardHeight"]
@@ -306,7 +314,7 @@ depends-member:
 - ["3App8LocationC", "JSON"]
 - ["3App8LocationC", "Keys"]
 - ["3App8LocationC", "Location"]
-- ["3App8LocationC", "LocationConnection"]
+- !private ["3App8LocationC", "LocationConnection"]
 - ["3App8LocationC", "Measurement"]
 - ["3App8LocationC", "Parent"]
 - ["3App8LocationC", "Room"]
@@ -314,6 +322,7 @@ depends-member:
 - ["3App8LocationC", "Storage"]
 - !private ["3App8LocationC", "children"]
 - ["3App8LocationC", "computedFields"]
+- ["3App8LocationC", "connectToPointsInCurrentRoom"]
 - ["3App8LocationC", "deinit"]
 - ["3App8LocationC", "didCreate"]
 - ["3App8LocationC", "didDelete"]
@@ -327,11 +336,10 @@ depends-member:
 - ["3App8LocationC", "init"]
 - ["3App8LocationC", "keyNamingConvention"]
 - ["3App8LocationC", "latitude"]
-- ["3App8LocationC", "locationConnection"]
-- ["3App8LocationC", "locationConnectionID"]
 - ["3App8LocationC", "longitude"]
 - ["3App8LocationC", "make"]
 - ["3App8LocationC", "makeJSON"]
+- !private ["3App8LocationC", "makeQuery"]
 - ["3App8LocationC", "makeResponse"]
 - ["3App8LocationC", "makeRow"]
 - ["3App8LocationC", "measurements"]
@@ -350,8 +358,9 @@ depends-member:
 - ["3App8LocationC", "willUpdate"]
 - ["3App8LocationC", "x"]
 - ["3App8LocationC", "y"]
-- ["3App18LocationConnectionC", "deinit"]
-- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["3App18LocationConnectionC", "deinit"]
+- !private ["3App18LocationConnectionC", "init"]
+- !private ["3App18LocationConnectionC", "save"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["3App11MeasurementC", "deinit"]
 - ["s10MirrorPathP", "init"]
@@ -376,10 +385,10 @@ depends-member:
 - ["14FluentProvider5ModelP", "init"]
 - ["14FluentProvider5ModelP", "keyNamingConvention"]
 - !private ["14FluentProvider5ModelP", "latitude"]
-- !private ["14FluentProvider5ModelP", "locationConnectionID"]
 - !private ["14FluentProvider5ModelP", "longitude"]
 - ["14FluentProvider5ModelP", "make"]
 - ["14FluentProvider5ModelP", "makeJSON"]
+- !private ["14FluentProvider5ModelP", "makeQuery"]
 - ["14FluentProvider5ModelP", "makeResponse"]
 - ["14FluentProvider5ModelP", "makeRow"]
 - ["14FluentProvider5ModelP", "name"]
@@ -387,6 +396,7 @@ depends-member:
 - ["14FluentProvider5ModelP", "prepare"]
 - ["14FluentProvider5ModelP", "revert"]
 - !private ["14FluentProvider5ModelP", "roomID"]
+- !private ["14FluentProvider5ModelP", "save"]
 - !private ["14FluentProvider5ModelP", "standardHeight"]
 - !private ["14FluentProvider5ModelP", "standardWidth"]
 - ["14FluentProvider5ModelP", "storage"]
@@ -405,14 +415,16 @@ depends-member:
 - ["So16NSObjectProtocolP", "init"]
 - ["So14NSSecureCodingP", "init"]
 - ["So8NSStringC", "init"]
-- !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "get"]
 - ["4Node0A13InitializableP", "init"]
+- !private ["4Node0A13InitializableP", "int"]
 - !private ["4Node0A13InitializableP", "set"]
-- !private ["4Node0A13RepresentableP", "_getBuiltinLogicValue"]
+- !private ["4Node0A13InitializableP", "wrapped"]
 - !private ["4Node0A13RepresentableP", "get"]
 - ["4Node0A13RepresentableP", "init"]
+- !private ["4Node0A13RepresentableP", "int"]
 - !private ["4Node0A13RepresentableP", "set"]
+- !private ["4Node0A13RepresentableP", "wrapped"]
 - !private ["7Routing15ParameterizableP", "JSON"]
 - !private ["7Routing15ParameterizableP", "Keys"]
 - !private ["7Routing15ParameterizableP", "Location"]
@@ -434,10 +446,10 @@ depends-member:
 - ["7Routing15ParameterizableP", "init"]
 - ["7Routing15ParameterizableP", "keyNamingConvention"]
 - !private ["7Routing15ParameterizableP", "latitude"]
-- !private ["7Routing15ParameterizableP", "locationConnectionID"]
 - !private ["7Routing15ParameterizableP", "longitude"]
 - ["7Routing15ParameterizableP", "make"]
 - ["7Routing15ParameterizableP", "makeJSON"]
+- !private ["7Routing15ParameterizableP", "makeQuery"]
 - ["7Routing15ParameterizableP", "makeResponse"]
 - ["7Routing15ParameterizableP", "makeRow"]
 - ["7Routing15ParameterizableP", "name"]
@@ -445,6 +457,7 @@ depends-member:
 - ["7Routing15ParameterizableP", "prepare"]
 - ["7Routing15ParameterizableP", "revert"]
 - !private ["7Routing15ParameterizableP", "roomID"]
+- !private ["7Routing15ParameterizableP", "save"]
 - !private ["7Routing15ParameterizableP", "standardHeight"]
 - !private ["7Routing15ParameterizableP", "standardWidth"]
 - ["7Routing15ParameterizableP", "storage"]
@@ -457,7 +470,9 @@ depends-member:
 - ["7Routing15ParameterizableP", ""]
 - !private ["13PathIndexableAAP", "get"]
 - !private ["13PathIndexableAAP", "init"]
+- !private ["13PathIndexableAAP", "int"]
 - !private ["13PathIndexableAAP", "set"]
+- !private ["13PathIndexableAAP", "wrapped"]
 - ["13PathIndexable0A7IndexerP", "init"]
 - !private ["6Fluent11PreparationP", "JSON"]
 - !private ["6Fluent11PreparationP", "Keys"]
@@ -480,10 +495,10 @@ depends-member:
 - ["6Fluent11PreparationP", "init"]
 - ["6Fluent11PreparationP", "keyNamingConvention"]
 - !private ["6Fluent11PreparationP", "latitude"]
-- !private ["6Fluent11PreparationP", "locationConnectionID"]
 - !private ["6Fluent11PreparationP", "longitude"]
 - ["6Fluent11PreparationP", "make"]
 - ["6Fluent11PreparationP", "makeJSON"]
+- !private ["6Fluent11PreparationP", "makeQuery"]
 - ["6Fluent11PreparationP", "makeResponse"]
 - ["6Fluent11PreparationP", "makeRow"]
 - ["6Fluent11PreparationP", "name"]
@@ -491,6 +506,7 @@ depends-member:
 - ["6Fluent11PreparationP", "prepare"]
 - ["6Fluent11PreparationP", "revert"]
 - !private ["6Fluent11PreparationP", "roomID"]
+- !private ["6Fluent11PreparationP", "save"]
 - !private ["6Fluent11PreparationP", "standardHeight"]
 - !private ["6Fluent11PreparationP", "standardWidth"]
 - ["6Fluent11PreparationP", "storage"]
@@ -501,8 +517,12 @@ depends-member:
 - !private ["6Fluent11PreparationP", "x"]
 - !private ["6Fluent11PreparationP", "y"]
 - ["6Fluent11PreparationP", ""]
+- !private ["6Fluent5QueryC", "all"]
+- !private ["6Fluent5QueryC", "filter"]
 - !private ["6Fluent11QueryLoggerP", "create"]
 - !private ["6Fluent11QueryLoggerP", "delete"]
+- !private ["6Fluent18QueryRepresentableP", "all"]
+- !private ["6Fluent18QueryRepresentableP", "filter"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "JSON"]
@@ -527,10 +547,10 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "init"]
 - ["4HTTP21ResponseRepresentableP", "keyNamingConvention"]
 - !private ["4HTTP21ResponseRepresentableP", "latitude"]
-- !private ["4HTTP21ResponseRepresentableP", "locationConnectionID"]
 - !private ["4HTTP21ResponseRepresentableP", "longitude"]
 - ["4HTTP21ResponseRepresentableP", "make"]
 - ["4HTTP21ResponseRepresentableP", "makeJSON"]
+- !private ["4HTTP21ResponseRepresentableP", "makeQuery"]
 - ["4HTTP21ResponseRepresentableP", "makeResponse"]
 - ["4HTTP21ResponseRepresentableP", "makeRow"]
 - ["4HTTP21ResponseRepresentableP", "name"]
@@ -538,6 +558,7 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "prepare"]
 - ["4HTTP21ResponseRepresentableP", "revert"]
 - !private ["4HTTP21ResponseRepresentableP", "roomID"]
+- !private ["4HTTP21ResponseRepresentableP", "save"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
 - !private ["4HTTP21ResponseRepresentableP", "standardHeight"]
 - !private ["4HTTP21ResponseRepresentableP", "standardWidth"]
@@ -574,10 +595,10 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "init"]
 - ["6Fluent14RowConvertibleP", "keyNamingConvention"]
 - !private ["6Fluent14RowConvertibleP", "latitude"]
-- !private ["6Fluent14RowConvertibleP", "locationConnectionID"]
 - !private ["6Fluent14RowConvertibleP", "longitude"]
 - ["6Fluent14RowConvertibleP", "make"]
 - ["6Fluent14RowConvertibleP", "makeJSON"]
+- !private ["6Fluent14RowConvertibleP", "makeQuery"]
 - ["6Fluent14RowConvertibleP", "makeResponse"]
 - ["6Fluent14RowConvertibleP", "makeRow"]
 - ["6Fluent14RowConvertibleP", "name"]
@@ -585,6 +606,7 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "prepare"]
 - ["6Fluent14RowConvertibleP", "revert"]
 - !private ["6Fluent14RowConvertibleP", "roomID"]
+- !private ["6Fluent14RowConvertibleP", "save"]
 - !private ["6Fluent14RowConvertibleP", "standardHeight"]
 - !private ["6Fluent14RowConvertibleP", "standardWidth"]
 - ["6Fluent14RowConvertibleP", "storage"]
@@ -616,10 +638,10 @@ depends-member:
 - ["6Fluent16RowInitializableP", "init"]
 - ["6Fluent16RowInitializableP", "keyNamingConvention"]
 - !private ["6Fluent16RowInitializableP", "latitude"]
-- !private ["6Fluent16RowInitializableP", "locationConnectionID"]
 - !private ["6Fluent16RowInitializableP", "longitude"]
 - ["6Fluent16RowInitializableP", "make"]
 - ["6Fluent16RowInitializableP", "makeJSON"]
+- !private ["6Fluent16RowInitializableP", "makeQuery"]
 - ["6Fluent16RowInitializableP", "makeResponse"]
 - ["6Fluent16RowInitializableP", "makeRow"]
 - ["6Fluent16RowInitializableP", "name"]
@@ -627,6 +649,7 @@ depends-member:
 - ["6Fluent16RowInitializableP", "prepare"]
 - ["6Fluent16RowInitializableP", "revert"]
 - !private ["6Fluent16RowInitializableP", "roomID"]
+- !private ["6Fluent16RowInitializableP", "save"]
 - !private ["6Fluent16RowInitializableP", "standardHeight"]
 - !private ["6Fluent16RowInitializableP", "standardWidth"]
 - ["6Fluent16RowInitializableP", "storage"]
@@ -658,10 +681,10 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "init"]
 - ["6Fluent16RowRepresentableP", "keyNamingConvention"]
 - !private ["6Fluent16RowRepresentableP", "latitude"]
-- !private ["6Fluent16RowRepresentableP", "locationConnectionID"]
 - !private ["6Fluent16RowRepresentableP", "longitude"]
 - ["6Fluent16RowRepresentableP", "make"]
 - ["6Fluent16RowRepresentableP", "makeJSON"]
+- !private ["6Fluent16RowRepresentableP", "makeQuery"]
 - ["6Fluent16RowRepresentableP", "makeResponse"]
 - ["6Fluent16RowRepresentableP", "makeRow"]
 - ["6Fluent16RowRepresentableP", "name"]
@@ -669,6 +692,7 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "prepare"]
 - ["6Fluent16RowRepresentableP", "revert"]
 - !private ["6Fluent16RowRepresentableP", "roomID"]
+- !private ["6Fluent16RowRepresentableP", "save"]
 - !private ["6Fluent16RowRepresentableP", "standardHeight"]
 - !private ["6Fluent16RowRepresentableP", "standardWidth"]
 - ["6Fluent16RowRepresentableP", "storage"]
@@ -701,10 +725,10 @@ depends-member:
 - ["6Fluent8StorableP", "init"]
 - ["6Fluent8StorableP", "keyNamingConvention"]
 - !private ["6Fluent8StorableP", "latitude"]
-- !private ["6Fluent8StorableP", "locationConnectionID"]
 - !private ["6Fluent8StorableP", "longitude"]
 - ["6Fluent8StorableP", "make"]
 - ["6Fluent8StorableP", "makeJSON"]
+- !private ["6Fluent8StorableP", "makeQuery"]
 - ["6Fluent8StorableP", "makeResponse"]
 - ["6Fluent8StorableP", "makeRow"]
 - ["6Fluent8StorableP", "name"]
@@ -712,6 +736,7 @@ depends-member:
 - ["6Fluent8StorableP", "prepare"]
 - ["6Fluent8StorableP", "revert"]
 - !private ["6Fluent8StorableP", "roomID"]
+- !private ["6Fluent8StorableP", "save"]
 - !private ["6Fluent8StorableP", "standardHeight"]
 - !private ["6Fluent8StorableP", "standardWidth"]
 - ["6Fluent8StorableP", "storage"]
@@ -725,15 +750,16 @@ depends-member:
 - ["6Fluent7StorageC", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
+- !private ["4Node14StructuredDataO", "int"]
 - !private ["4Node21StructuredDataWrapperP", "get"]
 - !private ["4Node21StructuredDataWrapperP", "init"]
 - !private ["4Node21StructuredDataWrapperP", "set"]
+- !private ["4Node21StructuredDataWrapperP", "wrapped"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
 - ["s23_BidirectionalIndexableP", "init"]
-- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
@@ -743,14 +769,12 @@ depends-member:
 - ["s10_IndexableP", "init"]
 - ["s14_IndexableBaseP", "init"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
 - "4HTTP17BodyRepresentableP"
-- !private "Sb"
 - !private "6Fluent7BuilderP"
 - "4Bits16BytesConvertibleP"
 - "4Bits18BytesInitializableP"
@@ -758,6 +782,7 @@ depends-nominal:
 - "s7CVarArgP"
 - "s10CollectionP"
 - "s10ComparableP"
+- !private "6Fluent6FilterV10ComparisonO"
 - !private "6Fluent7CreatorC"
 - "s28CustomDebugStringConvertibleP"
 - "s29CustomPlaygroundQuickLookableP"
@@ -771,6 +796,7 @@ depends-nominal:
 - "6Fluent6EntityP"
 - "s9EquatableP"
 - !private "6Fluent8ExecutorP"
+- !private "6Fluent21ExecutorRepresentableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
@@ -782,6 +808,7 @@ depends-nominal:
 - "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "4Node14FuzzyConverterP"
 - "s8HashableP"
+- !private "4Node10IdentifierV"
 - "6Fluent14IdentifierTypeO"
 - !private "4JSONAAV"
 - "4JSON15JSONConvertibleP"
@@ -789,7 +816,7 @@ depends-nominal:
 - "4JSON17JSONRepresentableP"
 - "3App8LocationC4KeysV"
 - "3App8LocationC"
-- "3App18LocationConnectionC"
+- !private "3App18LocationConnectionC"
 - "s25LosslessStringConvertibleP"
 - "3App11MeasurementC"
 - "s10MirrorPathP"
@@ -808,7 +835,9 @@ depends-nominal:
 - !private "13PathIndexableAAP"
 - "13PathIndexable0A7IndexerP"
 - "6Fluent11PreparationP"
+- !private "6Fluent5QueryC"
 - !private "6Fluent11QueryLoggerP"
+- !private "6Fluent18QueryRepresentableP"
 - "s26RangeReplaceableCollectionP"
 - "5Vapor23RequestContentSubscriptP"
 - "4HTTP21ResponseRepresentableP"
@@ -822,12 +851,12 @@ depends-nominal:
 - "6Fluent7StorageC"
 - "SS"
 - "s14StringProtocolP"
+- !private "4Node14StructuredDataO"
 - !private "4Node21StructuredDataWrapperP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "6Fluent12TransactableP"
 - "s23_BidirectionalIndexableP"
-- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
@@ -893,4 +922,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "240bcca0bde525307a3c56d4c89c013e"
+interface-hash: "391c6c8c47b7e2c03b49eb7702801227"
