@@ -85,6 +85,24 @@ extension Droplet {
             return try Response(status: .ok, json: responseJSON)
         }
 
+        /*get("linkRoomLocations") { request in
+            let rooms = try Room.makeQuery().filter("id", .greaterThan, 0).all()
+            for room in rooms {
+                let roomID = room.id
+                let locations = try Location.makeQuery().filter("roomID", .equals, roomID).all()
+                for rootLocation in locations {
+                    for location in locations {
+                        let locCon = LocationConnection.init(rootLocationID: (rootLocation.id!.wrapped.int)!, childLocationID: (location.id!.wrapped.int)!)
+                        try locCon.save()
+                    }
+                }
+            }
+
+            var responseJSON = JSON()
+            try responseJSON.set("success", true)
+            return try Response(status: .ok, json: responseJSON)
+        }*/
+
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
         try resource("accessPoints", WiFiAPController.self)
