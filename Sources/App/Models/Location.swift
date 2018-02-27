@@ -59,18 +59,13 @@ final class Location: Model {
     }
 
     func connectToPointsInCurrentRoom() throws {
-        print("Will connect points in current room")
         try self.save()
         let locations = try Location.makeQuery().filter("roomID", .equals, roomID).all()
-        print("Count: \(locations.count)")
         for location in locations {
-            print(location)
-            print("AA")
             let roomLocationID = location.id
             print(id?.wrapped.int)
             print(roomLocationID?.wrapped.int)
             var locationConnection = LocationConnection.init(rootLocationID: (id!.wrapped.int)!, childLocationID: (roomLocationID!.wrapped.int)!)
-            // try locationConnection.save()
             do {
                 try locationConnection.save()
             } catch {
