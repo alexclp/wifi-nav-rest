@@ -85,6 +85,13 @@ extension Droplet {
             return try Response(status: .ok, json: responseJSON)
         }
 
+        get("locationConnections", "id", ":id") { request in 
+            guard let rootLocationID = request.parameters["id"]?.int else { throw Abort.badRequest }
+            // print(rootLocationID)
+            let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, rootLocationID).all()
+            return try connections.makeJSON()
+        }
+
         /*get("linkRoomLocations") { request in
             let rooms = try Room.makeQuery().filter("id", .greaterThan, 0).all()
             for room in rooms {
