@@ -92,7 +92,7 @@ extension Droplet {
             return try connections.makeJSON()
         }
 
-        /*get("linkRoomLocations") { request in
+        get("linkRoomLocations") { request in
             let rooms = try Room.makeQuery().filter("id", .greaterThan, 0).all()
             for room in rooms {
                 let roomID = room.id
@@ -108,7 +108,7 @@ extension Droplet {
             var responseJSON = JSON()
             try responseJSON.set("success", true)
             return try Response(status: .ok, json: responseJSON)
-        }*/
+        }
 
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
