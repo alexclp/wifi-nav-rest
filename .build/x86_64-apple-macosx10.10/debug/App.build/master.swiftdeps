@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "55c091d21115a420c5ae898ad25ae767"
-build_time: [1519816125, 743027000]
+build_time: [1520082180, 682987000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationConnectionController.swift": [1518622647, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Controllers/LocationController.swift": [1510932884, 0]
@@ -12,7 +12,7 @@ inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Measurement.swift": [1518621160, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/Room.swift": [1518617884, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Models/WiFiAP.swift": [1518620691, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Routes/Routes.swift": [1519816115, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/AddChildLocationIDMigration.swift": [1519664029, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Routes/Routes.swift": [1520082169, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/AddChildLocationIDMigration.swift": [1520082018, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/Config+Setup.swift": [1519663853, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Setup/Droplet+Setup.swift": [1507237346, 0]

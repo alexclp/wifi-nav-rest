@@ -5,6 +5,10 @@ struct LocationConnectionRequestJSON: Decodable {
     let locationID2: Int
 }
 
+struct RoomSearchQueryJSON: Decodable {
+    let query: String
+}
+
 extension Droplet {
     func setupRoutes() throws {
         get("hello") { req in
@@ -108,6 +112,13 @@ extension Droplet {
             var responseJSON = JSON()
             try responseJSON.set("success", true)
             return try Response(status: .ok, json: responseJSON)
+        }
+
+        post("rooms", "search") { request in 
+            let json = try request.decodeJSONBody(RoomSearchQueryJSON.self)
+            let results = try Room.makeQuery().filter(raw: "name LIKE '\(json.query)%'").all()
+
+            return try results.makeJSON()
         }
 
         try resource("locations", LocationController.self)
