@@ -8,7 +8,5 @@ final class AddChildLocationIDMigration: Preparation {
         }
     }
     
-    static func revert(_ database: Database) throws {
-        try database.delete(self)
-    }
+    static func revert(_ database: Database) throws { }
 }
