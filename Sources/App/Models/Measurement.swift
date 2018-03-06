@@ -62,9 +62,9 @@ extension Measurement {
         return parent(id: apID)
     }
 
-    var location: Parent<Measurement, Location> {
-        return parent(id: locationID)
-    }
+    // var location: Parent<Measurement, Location> {
+    //     return parent(id: locationID)
+    // }
 }
 
 extension Measurement: JSONConvertible {
