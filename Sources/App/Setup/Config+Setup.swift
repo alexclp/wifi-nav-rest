@@ -19,10 +19,10 @@ extension Config {
     /// schemas prepared before the app boots
     private func setupPreparations() throws {
         preparations.append(Room.self)
-        preparations.append(LocationConnection.self)
         preparations.append(Location.self)
+        preparations.append(LocationConnection.self)
+        preparations.append(AddChildLocationIDMigration.self)
         preparations.append(WiFiAP.self)
         preparations.append(Measurement.self)
-        preparations.append(AddChildLocationIDMigration.self)
     }
 }

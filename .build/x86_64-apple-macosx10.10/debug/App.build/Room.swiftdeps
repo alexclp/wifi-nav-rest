@@ -7,18 +7,15 @@ provides-nominal:
 provides-member:
 - ["3App4RoomC", ""]
 - ["3App4RoomC4KeysV", ""]
-- ["3App4RoomC", "locations"]
 provides-dynamic-lookup:
 depends-top-level:
 - "AssignmentPrecedence"
-- "Children"
 - "Database"
 - "IdentifierType"
 - "Int"
 - "JSON"
 - "JSONConvertible"
 - "JSONInitializable"
-- "Location"
 - "Model"
 - "Preparation"
 - "ResponseRepresentable"
@@ -65,7 +62,6 @@ depends-member:
 - !private ["6Fluent6EntityP", "Room"]
 - !private ["6Fluent6EntityP", "Row"]
 - ["6Fluent6EntityP", "Storage"]
-- !private ["6Fluent6EntityP", "children"]
 - ["6Fluent6EntityP", "computedFields"]
 - ["6Fluent6EntityP", "didCreate"]
 - ["6Fluent6EntityP", "didDelete"]
@@ -138,7 +134,6 @@ depends-member:
 - !private ["4JSON15JSONConvertibleP", "Room"]
 - !private ["4JSON15JSONConvertibleP", "Row"]
 - ["4JSON15JSONConvertibleP", "Storage"]
-- !private ["4JSON15JSONConvertibleP", "children"]
 - ["4JSON15JSONConvertibleP", "computedFields"]
 - ["4JSON15JSONConvertibleP", "didCreate"]
 - ["4JSON15JSONConvertibleP", "didDelete"]
@@ -170,7 +165,6 @@ depends-member:
 - !private ["4JSON17JSONInitializableP", "Room"]
 - !private ["4JSON17JSONInitializableP", "Row"]
 - ["4JSON17JSONInitializableP", "Storage"]
-- !private ["4JSON17JSONInitializableP", "children"]
 - ["4JSON17JSONInitializableP", "computedFields"]
 - ["4JSON17JSONInitializableP", "didCreate"]
 - ["4JSON17JSONInitializableP", "didDelete"]
@@ -202,7 +196,6 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "Room"]
 - !private ["4JSON17JSONRepresentableP", "Row"]
 - ["4JSON17JSONRepresentableP", "Storage"]
-- !private ["4JSON17JSONRepresentableP", "children"]
 - ["4JSON17JSONRepresentableP", "computedFields"]
 - ["4JSON17JSONRepresentableP", "didCreate"]
 - ["4JSON17JSONRepresentableP", "didDelete"]
@@ -235,7 +228,6 @@ depends-member:
 - ["3App4RoomC4KeysV", "id"]
 - ["3App4RoomC4KeysV", "init"]
 - ["3App4RoomC4KeysV", "name"]
-- ["3App8LocationC", "deinit"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
 - !private ["14FluentProvider5ModelP", "JSON"]
@@ -243,7 +235,6 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "Room"]
 - !private ["14FluentProvider5ModelP", "Row"]
 - ["14FluentProvider5ModelP", "Storage"]
-- !private ["14FluentProvider5ModelP", "children"]
 - ["14FluentProvider5ModelP", "computedFields"]
 - ["14FluentProvider5ModelP", "didCreate"]
 - ["14FluentProvider5ModelP", "didDelete"]
@@ -289,7 +280,6 @@ depends-member:
 - !private ["7Routing15ParameterizableP", "Room"]
 - !private ["7Routing15ParameterizableP", "Row"]
 - ["7Routing15ParameterizableP", "Storage"]
-- !private ["7Routing15ParameterizableP", "children"]
 - ["7Routing15ParameterizableP", "computedFields"]
 - ["7Routing15ParameterizableP", "didCreate"]
 - ["7Routing15ParameterizableP", "didDelete"]
@@ -325,7 +315,6 @@ depends-member:
 - !private ["6Fluent11PreparationP", "Room"]
 - !private ["6Fluent11PreparationP", "Row"]
 - ["6Fluent11PreparationP", "Storage"]
-- !private ["6Fluent11PreparationP", "children"]
 - ["6Fluent11PreparationP", "computedFields"]
 - ["6Fluent11PreparationP", "didCreate"]
 - ["6Fluent11PreparationP", "didDelete"]
@@ -361,7 +350,6 @@ depends-member:
 - !private ["4HTTP21ResponseRepresentableP", "Room"]
 - !private ["4HTTP21ResponseRepresentableP", "Row"]
 - ["4HTTP21ResponseRepresentableP", "Storage"]
-- !private ["4HTTP21ResponseRepresentableP", "children"]
 - ["4HTTP21ResponseRepresentableP", "computedFields"]
 - ["4HTTP21ResponseRepresentableP", "didCreate"]
 - ["4HTTP21ResponseRepresentableP", "didDelete"]
@@ -390,18 +378,15 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "willDelete"]
 - ["4HTTP21ResponseRepresentableP", "willUpdate"]
 - ["4HTTP21ResponseRepresentableP", ""]
-- ["3App4RoomC", "Children"]
 - ["3App4RoomC", "Database"]
 - ["3App4RoomC", "IdentifierType"]
 - ["3App4RoomC", "Int"]
 - ["3App4RoomC", "JSON"]
 - ["3App4RoomC", "Keys"]
-- ["3App4RoomC", "Location"]
-- ["3App4RoomC", "Room"]
+- !private ["3App4RoomC", "Room"]
 - ["3App4RoomC", "Row"]
 - ["3App4RoomC", "Storage"]
 - ["3App4RoomC", "String"]
-- !private ["3App4RoomC", "children"]
 - ["3App4RoomC", "computedFields"]
 - ["3App4RoomC", "deinit"]
 - ["3App4RoomC", "didCreate"]
@@ -416,7 +401,6 @@ depends-member:
 - ["3App4RoomC", "identifier"]
 - ["3App4RoomC", "init"]
 - ["3App4RoomC", "keyNamingConvention"]
-- ["3App4RoomC", "locations"]
 - ["3App4RoomC", "make"]
 - ["3App4RoomC", "makeJSON"]
 - ["3App4RoomC", "makeResponse"]
@@ -437,7 +421,6 @@ depends-member:
 - !private ["6Fluent14RowConvertibleP", "Room"]
 - !private ["6Fluent14RowConvertibleP", "Row"]
 - ["6Fluent14RowConvertibleP", "Storage"]
-- !private ["6Fluent14RowConvertibleP", "children"]
 - ["6Fluent14RowConvertibleP", "computedFields"]
 - ["6Fluent14RowConvertibleP", "didCreate"]
 - ["6Fluent14RowConvertibleP", "didDelete"]
@@ -469,7 +452,6 @@ depends-member:
 - !private ["6Fluent16RowInitializableP", "Room"]
 - !private ["6Fluent16RowInitializableP", "Row"]
 - ["6Fluent16RowInitializableP", "Storage"]
-- !private ["6Fluent16RowInitializableP", "children"]
 - ["6Fluent16RowInitializableP", "computedFields"]
 - ["6Fluent16RowInitializableP", "didCreate"]
 - ["6Fluent16RowInitializableP", "didDelete"]
@@ -501,7 +483,6 @@ depends-member:
 - !private ["6Fluent16RowRepresentableP", "Room"]
 - !private ["6Fluent16RowRepresentableP", "Row"]
 - ["6Fluent16RowRepresentableP", "Storage"]
-- !private ["6Fluent16RowRepresentableP", "children"]
 - ["6Fluent16RowRepresentableP", "computedFields"]
 - ["6Fluent16RowRepresentableP", "didCreate"]
 - ["6Fluent16RowRepresentableP", "didDelete"]
@@ -534,7 +515,6 @@ depends-member:
 - !private ["6Fluent8StorableP", "Room"]
 - !private ["6Fluent8StorableP", "Row"]
 - ["6Fluent8StorableP", "Storage"]
-- !private ["6Fluent8StorableP", "children"]
 - ["6Fluent8StorableP", "computedFields"]
 - ["6Fluent8StorableP", "didCreate"]
 - ["6Fluent8StorableP", "didDelete"]
@@ -624,7 +604,6 @@ depends-nominal:
 - "4JSON17JSONInitializableP"
 - "4JSON17JSONRepresentableP"
 - "3App4RoomC4KeysV"
-- "3App8LocationC"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
@@ -726,4 +705,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "90c58eebd5dfcc9a320986c6b0aef0b3"
+interface-hash: "61d76767d87167e7c17c5e53b42b9d17"

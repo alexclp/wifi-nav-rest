@@ -39,7 +39,6 @@ depends-member:
 - !private ["4HTTP17BodyRepresentableP", "get"]
 - ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
-- !private ["6Fluent7BuilderP", "delete"]
 - !private ["6Fluent7BuilderP", "double"]
 - !private ["6Fluent7BuilderP", "foreignId"]
 - !private ["6Fluent7BuilderP", "id"]
@@ -66,7 +65,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "int"]
 - !private ["6Fluent8DatabaseC", "create"]
 - !private ["6Fluent8DatabaseC", "delete"]
-- !private ["6Fluent8DatabaseC", "modify"]
 - ["s9DecodableP", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "init"]
 - ["4SMTP22EmailBodyRepresentableP", "init"]
@@ -124,7 +122,6 @@ depends-member:
 - !private ["s9EquatableP", "wrapped"]
 - !private ["6Fluent8ExecutorP", "create"]
 - !private ["6Fluent8ExecutorP", "delete"]
-- !private ["6Fluent8ExecutorP", "modify"]
 - !private ["6Fluent21ExecutorRepresentableP", "all"]
 - !private ["6Fluent21ExecutorRepresentableP", "filter"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
@@ -423,7 +420,6 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "x"]
 - !private ["14FluentProvider5ModelP", "y"]
 - ["14FluentProvider5ModelP", ""]
-- !private ["6Fluent8ModifierC", "delete"]
 - ["So8NSCodingP", "init"]
 - ["So9NSCopyingP", "init"]
 - ["So21NSItemProviderReadingP", "init"]
@@ -542,7 +538,6 @@ depends-member:
 - !private ["6Fluent5QueryC", "filter"]
 - !private ["6Fluent11QueryLoggerP", "create"]
 - !private ["6Fluent11QueryLoggerP", "delete"]
-- !private ["6Fluent11QueryLoggerP", "modify"]
 - !private ["6Fluent18QueryRepresentableP", "all"]
 - !private ["6Fluent18QueryRepresentableP", "filter"]
 - ["s26RangeReplaceableCollectionP", "init"]
@@ -791,7 +786,6 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
-- !private ["6Fluent12TransactableP", "modify"]
 - ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
@@ -854,7 +848,6 @@ depends-nominal:
 - "3App11MeasurementC"
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
-- !private "6Fluent8ModifierC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
 - "So21NSItemProviderReadingP"

@@ -87,19 +87,15 @@ extension Location {
 
 extension Location: Preparation {
     static func prepare(_ database: Database) throws {
-        try database.create(self) { locations in
-            locations.id()
-            locations.double("x")
-            locations.double("y")
-            locations.double("standardWidth")
-            locations.double("standardHeight")
-            locations.double("latitude")
-            locations.double("longitude")
-            locations.foreignId(for: Room.self, optional: false, unique: false, foreignIdKey: "roomID", foreignKeyName: "roomID")
-        }
-
-        try database.modify(self) { builder in
-            builder.delete("locationConnectionID")
+        try database.create(self) { builder in
+            builder.id()
+            builder.double("x")
+            builder.double("y")
+            builder.double("standardWidth")
+            builder.double("standardHeight")
+            builder.double("latitude")
+            builder.double("longitude")
+            builder.foreignId(for: Room.self, optional: false, unique: false, foreignIdKey: "roomID", foreignKeyName: "roomID")
         }
     }
 
@@ -137,7 +133,6 @@ extension Location: JSONInitializable {
         let longitude: Double = try json.get(Location.Keys.longitude)
         let roomID: Identifier = try json.get(Location.Keys.roomID)
         self.init(x: x, y: y, standardWidth: standardWidth, standardHeight: standardHeight, latitude: latitude, longitude: longitude, roomID: roomID)
-        print("Created location")
         try connectToPointsInCurrentRoom()
     }
 }

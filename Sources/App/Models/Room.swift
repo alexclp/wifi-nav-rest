@@ -33,12 +33,6 @@ final class Room: Model {
     }
 }
 
-extension Room {
-    var locations: Children<Room, Location> {
-        return children()
-    }
-}
-
 extension Room: Preparation {
     static func prepare(_ database: Database) throws {
         try database.create(self) { room in
