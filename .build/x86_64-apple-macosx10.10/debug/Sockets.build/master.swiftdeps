@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "efeeb4d52328f03d1d5eaa8f96f73b3c"
-build_time: [1518629224, 932655000]
+build_time: [1520337996, 319092000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Sockets/Address/Address+C.swift": [1518629185, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/sockets.git-972942978533733666/Sources/Sockets/Address/Address.swift": [1518629185, 0]

@@ -35,6 +35,7 @@ depends-top-level:
 - !private "StringLiteralType"
 - !private "WiFiAP"
 - !private "WiFiAPController"
+- !private "print"
 - !private "~="
 depends-member:
 - !private ["5Vapor5AbortV", "badRequest"]
@@ -126,6 +127,7 @@ depends-member:
 - !private ["5Vapor7DropletC", "delete"]
 - !private ["5Vapor7DropletC", "get"]
 - !private ["5Vapor7DropletC", "post"]
+- !private ["5Vapor7DropletC", "print"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
@@ -148,6 +150,7 @@ depends-member:
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "int"]
 - !private ["s9EquatableP", "intValue"]
+- !private ["s9EquatableP", "notFound"]
 - !private ["s9EquatableP", "ok"]
 - !private ["s9EquatableP", "set"]
 - !private ["s9EquatableP", "string"]
@@ -226,6 +229,7 @@ depends-member:
 - !private ["s8HashableP", "hashValue"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "intValue"]
+- !private ["s8HashableP", "notFound"]
 - !private ["s8HashableP", "ok"]
 - !private ["s8HashableP", "stringValue"]
 - !private ["s8HashableP", ""]
@@ -257,6 +261,7 @@ depends-member:
 - !private ["3App8LocationC", "deinit"]
 - !private ["3App8LocationC", "delete"]
 - !private ["3App8LocationC", "id"]
+- !private ["3App8LocationC", "makeJSON"]
 - !private ["3App8LocationC", "makeQuery"]
 - !private ["3App18LocationConnectionC", "deinit"]
 - !private ["3App18LocationConnectionC", "init"]
@@ -383,6 +388,7 @@ depends-member:
 - !private ["4HTTP9ResponderP", "delete"]
 - !private ["4HTTP9ResponderP", "get"]
 - !private ["4HTTP9ResponderP", "post"]
+- !private ["4HTTP9ResponderP", "print"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP8ResponseC", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "delete"]
@@ -419,6 +425,7 @@ depends-member:
 - !private ["7Routing12RouteBuilderP", "delete"]
 - !private ["7Routing12RouteBuilderP", "get"]
 - !private ["7Routing12RouteBuilderP", "post"]
+- !private ["7Routing12RouteBuilderP", "print"]
 - !private ["7Routing12RouteBuilderP", "resource"]
 - !private ["6Fluent14RowConvertibleP", "delete"]
 - !private ["6Fluent14RowConvertibleP", "id"]
@@ -443,6 +450,7 @@ depends-member:
 - !private ["s8SequenceP", "makeJSON"]
 - !private ["s13SignedIntegerP", "hashValue"]
 - !private ["s13SignedNumericP", "hashValue"]
+- !private ["4HTTP6StatusO", "notFound"]
 - !private ["4HTTP6StatusO", "ok"]
 - !private ["6Fluent8StorableP", "delete"]
 - !private ["6Fluent8StorableP", "id"]
