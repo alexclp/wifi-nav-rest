@@ -122,12 +122,9 @@ extension Droplet {
 
         get("rooms", "connectingLocation", ":id") { request in 
             guard let roomID = request.parameters["id"]?.int else { throw Abort.badRequest } 
-            // guard let room = Room.makeQuery().filter("id", .equals, roomID).first() else { throw Abort.notFound }
             let locationsInRoom = try Location.makeQuery().filter("roomID", .equals, roomID).all()
-            // print(locationsInRoom.count)
             for location in locationsInRoom {
                 let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, location.id).all()
-                // print(connections.count)
             }
             for location in locationsInRoom {
                 let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, location.id).all()
@@ -139,7 +136,7 @@ extension Droplet {
             var responseJSON = JSON()
             try responseJSON.set("error", "room is not connected to anything")
             return try Response(status: .notFound, json: responseJSON)
-        } //33
+        }
 
         try resource("locations", LocationController.self)
         try resource("rooms", RoomController.self)
