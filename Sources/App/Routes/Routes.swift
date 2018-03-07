@@ -127,9 +127,18 @@ extension Droplet {
                 let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, location.id).all()
             }
             for location in locationsInRoom {
-                let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, location.id).all()
-                if connections.count == locationsInRoom.count {
-                    return try location.makeJSON()
+                var connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, location.id).all()
+                connections += try LocationConnection.makeQuery().filter("childLocationID", .equals, location.id).all()
+                for connection in connections {
+                    let rootID = connection.rootLocationID
+                    let childID = connection.childLocationID
+                    if let rootLoc = try Location.makeQuery().filter("id", .equals, rootID).first(), let childLoc = try Location.makeQuery().filter("id", .equals, childID).first() {
+                        if rootLoc.roomID.wrapped.int! != roomID {
+                            return try childLoc.makeJSON()
+                        } else if childLoc.roomID.wrapped.int! != roomID {
+                            return try rootLoc.makeJSON()
+                        }
+                    }
                 }
             }
             
