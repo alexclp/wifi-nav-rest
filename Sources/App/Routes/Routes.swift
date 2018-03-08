@@ -134,9 +134,9 @@ extension Droplet {
                     let childID = connection.childLocationID
                     if let rootLoc = try Location.makeQuery().filter("id", .equals, rootID).first(), let childLoc = try Location.makeQuery().filter("id", .equals, childID).first() {
                         if rootLoc.roomID.wrapped.int! != roomID {
-                            return try childLoc.makeJSON()
-                        } else if childLoc.roomID.wrapped.int! != roomID {
                             return try rootLoc.makeJSON()
+                        } else if childLoc.roomID.wrapped.int! != roomID {
+                            return try childLoc.makeJSON()
                         }
                     }
                 }
