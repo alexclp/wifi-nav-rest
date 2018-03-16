@@ -92,7 +92,7 @@ extension Droplet {
 
         get("locationConnections", "id", ":id") { request in 
             guard let rootLocationID = request.parameters["id"]?.int else { throw Abort.badRequest }
-            let connectionsRoot = try LocationConnection.makeQuery().filter("rootLocationID", .equals, rootLocationID).all()
+            let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, rootLocationID).all()
             return try connections.makeJSON()
         }
 
