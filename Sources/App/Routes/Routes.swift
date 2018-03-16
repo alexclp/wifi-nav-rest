@@ -83,7 +83,7 @@ extension Droplet {
             let locations = try request.decodeJSONBody(LocationConnectionRequestJSON.self)
             let loc1 = LocationConnection.init(rootLocationID: locations.locationID1, childLocationID: locations.locationID2)
             try loc1.save()
-            let loc2 = LocationConnection.init(rootLocationID: locations.locationID2, childLocationID: locations.locationID2)
+            let loc2 = LocationConnection.init(rootLocationID: locations.locationID2, childLocationID: locations.locationID1)
             try loc2.save()
             var responseJSON = JSON()
             try responseJSON.set("success", true)
