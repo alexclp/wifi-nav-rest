@@ -81,9 +81,10 @@ extension Droplet {
 
         post("linkLocations") { request in 
             let locations = try request.decodeJSONBody(LocationConnectionRequestJSON.self)
-            let loc = LocationConnection.init(rootLocationID: locations.locationID1, childLocationID: locations.locationID2)
+            let loc1 = LocationConnection.init(rootLocationID: locations.locationID1, childLocationID: locations.locationID2)
             try loc.save()
-
+            let loc2 = LocationConnection.init(rootLocationID: locations.locationID2, childLocationID: locations.locationID2)
+            try loc2.save()
             var responseJSON = JSON()
             try responseJSON.set("success", true)
             return try Response(status: .ok, json: responseJSON)
@@ -91,7 +92,7 @@ extension Droplet {
 
         get("locationConnections", "id", ":id") { request in 
             guard let rootLocationID = request.parameters["id"]?.int else { throw Abort.badRequest }
-            let connections = try LocationConnection.makeQuery().filter("rootLocationID", .equals, rootLocationID).all()
+            let connectionsRoot = try LocationConnection.makeQuery().filter("rootLocationID", .equals, rootLocationID).all()
             return try connections.makeJSON()
         }
 
