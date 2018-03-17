@@ -9,6 +9,10 @@ struct RoomSearchQueryJSON: Decodable {
     let query: String
 }
 
+struct ClosestLocationsJSON: Decodable {
+    let locationID: Int
+} 
+
 extension Droplet {
     func setupRoutes() throws {
         get("hello") { req in
@@ -146,6 +150,39 @@ extension Droplet {
             var responseJSON = JSON()
             try responseJSON.set("error", "room is not connected to anything")
             return try Response(status: .notFound, json: responseJSON)
+        }
+
+        post("closestLocations") { request in
+            let json = try request.decodeJSONBody(ClosestLocationsJSON.self)
+            let currentLocation = try Location.makeQuery().filter("id", .equals, json.locationID).first()!
+            let currentRoom = try Room.makeQuery().filter("id", .equals, currentLocation.roomID).first()!
+            let rooms = try Room.makeQuery().and { andGroup in
+                try andGroup.filter("id", .greaterThan, 0)
+                try andGroup.filter("floorNumber", .equals, currentRoom.floorNumber)
+                try andGroup.filter("id", .notEquals, currentRoom.id)
+            }
+            .all()
+
+            var toReturn = [String: Location]()
+
+            for room in rooms {
+                let locationsInRoom = try Location.makeQuery().filter("roomID", .equals, room.id).all()
+                var minDist = 9999999999.0
+                for location in locationsInRoom {
+                    let currentDist = Utils.haversineDistance(la1: currentLocation.latitude, lo1: currentLocation.longitude, la2: location.latitude, lo2: location.longitude)
+                    if minDist > currentDist {
+                        minDist = currentDist
+                        toReturn[room.name] = location
+                    }
+                }
+            }
+
+            var responseJSON = JSON()
+            for (roomName, location) in toReturn {
+                try responseJSON.set(roomName, location)
+            }
+
+            return try Response(status: .ok, json: responseJSON)
         }
 
         try resource("locations", LocationController.self)

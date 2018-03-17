@@ -68,3 +68,16 @@ extension Room: JSONInitializable {
         self.init(name: name, floorNumber: floorNumber)
     }
 }
+
+extension Room: Updateable {
+    public static var updateableKeys: [UpdateableKey<Room>] {
+        return [
+            UpdateableKey(Room.Keys.name, String.self) { room, name in
+                room.name = name
+            },
+            UpdateableKey(Room.Keys.floorNumber, Int.self) { room, floorNumber in
+                room.floorNumber = floorNumber
+            }
+        ]
+    }
+}
