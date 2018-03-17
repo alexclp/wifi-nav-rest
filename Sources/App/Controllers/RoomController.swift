@@ -26,11 +26,29 @@ final class RoomController: ResourceRepresentable {
         return Response(status: .ok)
     }
 
+    func update(_ req: Request, room: Room) throws -> ResponseRepresentable {
+        try room.update(for: req)
+        try room.save()
+        return room
+    }
+
+    func replace(_ req: Request, room: Room) throws -> ResponseRepresentable {
+        let new = try req.createRoom()
+
+        room.name = new.name
+        room.floorNumber = new.floorNumber
+        try room.save()
+
+        return room
+    }
+
     func makeResource() -> Resource<Room> {
         return Resource(
             index: index,
             store: store,
             show: show,
+            update: update,
+            replace: replace,
             destroy: delete,
             clear: clear
         )

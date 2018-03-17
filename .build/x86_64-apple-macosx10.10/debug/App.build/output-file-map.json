@@ -85,5 +85,11 @@
     "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Setup/Droplet+Setup.swift.o",
     "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Droplet+Setup~partial.swiftmodule",
     "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Droplet+Setup.swiftdeps"
+  },
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/Sources/App/Utils.swift": {
+    "dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Utils.d",
+    "object": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Utils.swift.o",
+    "swiftmodule": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Utils~partial.swiftmodule",
+    "swift-dependencies": "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/x86_64-apple-macosx10.10/debug/App.build/Utils.swiftdeps"
   }
 }

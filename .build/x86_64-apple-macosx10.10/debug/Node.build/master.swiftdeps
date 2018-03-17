@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "e8c428ed8f60482882b8bf962ec78d13"
-build_time: [1520349742, 798050000]
+build_time: [1521288001, 419223000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/node.git-9175390252000121167/Sources/Node/Accessors/Getters.swift": [1520349714, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/node.git-9175390252000121167/Sources/Node/Accessors/Setters.swift": [1520349714, 0]
