@@ -179,7 +179,7 @@ extension Droplet {
 
             var responseJSON = JSON()
             for (roomName, location) in toReturn {
-                try responseJSON.set(roomName, location)
+                responseJSON[DotKey(roomName)] = try location.makeJSON()
             }
 
             return try Response(status: .ok, json: responseJSON)
