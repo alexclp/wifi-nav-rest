@@ -25,6 +25,7 @@ depends-top-level:
 - "BooleanLiteralType"
 - "ClosestLocationsJSON"
 - "Decodable"
+- !private "DotKey"
 - "Droplet"
 - "Int"
 - !private "JSON"
@@ -44,7 +45,6 @@ depends-top-level:
 - !private "Utils"
 - !private "WiFiAP"
 - !private "WiFiAPController"
-- !private "print"
 - !private "~="
 depends-member:
 - !private ["5Vapor5AbortV", "badRequest"]
@@ -61,13 +61,17 @@ depends-member:
 - !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
+- !private ["4HTTP17BodyRepresentableP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits16BytesConvertibleP", "set"]
+- !private ["4Bits16BytesConvertibleP", "subscript"]
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesInitializableP", "set"]
+- !private ["4Bits18BytesInitializableP", "subscript"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "set"]
+- !private ["4Bits18BytesRepresentableP", "subscript"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "haversineDistance"]
@@ -136,8 +140,10 @@ depends-member:
 - !private ["s7DecoderP", "container"]
 - !private ["s10DictionaryV", "init"]
 - !private ["s10DictionaryV", "subscript"]
+- !private ["13PathIndexable6DotKeyV", "init"]
 - !private ["5Vapor7DropletC", "Abort"]
 - !private ["5Vapor7DropletC", "ClosestLocationsJSON"]
+- !private ["5Vapor7DropletC", "DotKey"]
 - !private ["5Vapor7DropletC", "JSON"]
 - !private ["5Vapor7DropletC", "Location"]
 - !private ["5Vapor7DropletC", "LocationConnection"]
@@ -157,7 +163,6 @@ depends-member:
 - !private ["5Vapor7DropletC", "delete"]
 - !private ["5Vapor7DropletC", "get"]
 - !private ["5Vapor7DropletC", "post"]
-- !private ["5Vapor7DropletC", "print"]
 - !private ["5Vapor7DropletC", "resource"]
 - ["5Vapor7DropletC", "setupRoutes"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
@@ -266,6 +271,7 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
+- !private ["4Node14FuzzyConverterP", "subscript"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "hashValue"]
 - !private ["s8HashableP", "haversineDistance"]
@@ -279,6 +285,7 @@ depends-member:
 - !private ["Si", "hashValue"]
 - !private ["4JSONAAV", "init"]
 - !private ["4JSONAAV", "set"]
+- !private ["4JSONAAV", "subscript"]
 - !private ["4JSON15JSONConvertibleP", "childLocationID"]
 - !private ["4JSON15JSONConvertibleP", "delete"]
 - !private ["4JSON15JSONConvertibleP", "floorNumber"]
@@ -319,6 +326,7 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "rootLocationID"]
 - !private ["4JSON17JSONRepresentableP", "save"]
 - !private ["4JSON17JSONRepresentableP", "set"]
+- !private ["4JSON17JSONRepresentableP", "subscript"]
 - !private ["4HTTP13KeyAccessibleP", "init"]
 - !private ["4HTTP13KeyAccessibleP", "subscript"]
 - !private ["7Configs13KeyAccessibleP", "init"]
@@ -469,6 +477,7 @@ depends-member:
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
 - !private ["4HTTP9ResponderP", "Abort"]
 - !private ["4HTTP9ResponderP", "ClosestLocationsJSON"]
+- !private ["4HTTP9ResponderP", "DotKey"]
 - !private ["4HTTP9ResponderP", "JSON"]
 - !private ["4HTTP9ResponderP", "Location"]
 - !private ["4HTTP9ResponderP", "LocationConnection"]
@@ -488,7 +497,6 @@ depends-member:
 - !private ["4HTTP9ResponderP", "delete"]
 - !private ["4HTTP9ResponderP", "get"]
 - !private ["4HTTP9ResponderP", "post"]
-- !private ["4HTTP9ResponderP", "print"]
 - !private ["4HTTP9ResponderP", "resource"]
 - !private ["4HTTP8ResponseC", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "childLocationID"]
@@ -505,6 +513,7 @@ depends-member:
 - !private ["4HTTP21ResponseRepresentableP", "rootLocationID"]
 - !private ["4HTTP21ResponseRepresentableP", "save"]
 - !private ["4HTTP21ResponseRepresentableP", "set"]
+- !private ["4HTTP21ResponseRepresentableP", "subscript"]
 - !private ["3App4RoomC", "deinit"]
 - !private ["3App4RoomC", "floorNumber"]
 - !private ["3App4RoomC", "id"]
@@ -518,6 +527,7 @@ depends-member:
 - ["3App19RoomSearchQueryJSONV", "query"]
 - !private ["7Routing12RouteBuilderP", "Abort"]
 - !private ["7Routing12RouteBuilderP", "ClosestLocationsJSON"]
+- !private ["7Routing12RouteBuilderP", "DotKey"]
 - !private ["7Routing12RouteBuilderP", "JSON"]
 - !private ["7Routing12RouteBuilderP", "Location"]
 - !private ["7Routing12RouteBuilderP", "LocationConnection"]
@@ -537,7 +547,6 @@ depends-member:
 - !private ["7Routing12RouteBuilderP", "delete"]
 - !private ["7Routing12RouteBuilderP", "get"]
 - !private ["7Routing12RouteBuilderP", "post"]
-- !private ["7Routing12RouteBuilderP", "print"]
 - !private ["7Routing12RouteBuilderP", "resource"]
 - !private ["6Fluent14RowConvertibleP", "childLocationID"]
 - !private ["6Fluent14RowConvertibleP", "delete"]
@@ -692,6 +701,7 @@ depends-nominal:
 - "s9DecodableP"
 - !private "s7DecoderP"
 - !private "s10DictionaryV"
+- !private "13PathIndexable6DotKeyV"
 - "5Vapor7DropletC"
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"

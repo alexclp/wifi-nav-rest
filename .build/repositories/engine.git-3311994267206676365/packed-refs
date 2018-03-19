@@ -2,9 +2,11 @@
 0e6e8603ffacb50b894196a712ad059d821e417a refs/heads/beta
 94468914fb2d732ee29f517b8d3768bfd5911bb5 refs/heads/fix-file-serving
 bb8e91fc8cb339a6a3a4328a83e7d036f33e0428 refs/heads/master
-c69fd93c3b3f8f8b5559ad4f4f3adb22ba7a70e5 refs/heads/nio
+a54ef9c9d61dbcad8e6296bcd2afc7a41b950f71 refs/heads/nio
 dfac0fdf63a9e8e8929f47f163bfdb2acca46a21 refs/heads/test-unexpected-close
 7d1ac2824844cfbfd5b185aec5151a35a5374975 refs/heads/testing
+0ecc50fa8c7bc03ec9af78ca37e3b57f192bd258 refs/heads/vapor-2
+080c2e67019e3d64cde9bdccf78a1f5dda00032b refs/heads/ws-nio
 742e662318efff6c902e7e0436fea0e9282cc344 refs/pull/1/head
 fb089c11dfc2ef4c366c15222f8db068d01e364c refs/pull/10/head
 cc8adc0538b5e481824d16c81029a72380d61d83 refs/pull/101/head
@@ -142,8 +144,13 @@ bad81087080bcffa56e3f2f5526cfd0599a35a33 refs/pull/239/head
 94468914fb2d732ee29f517b8d3768bfd5911bb5 refs/pull/241/head
 e849e1e4b1edc8fa4d67ee54f92201c358c05945 refs/pull/241/merge
 dde442dd251648741fc035d2e625d06fa502fce9 refs/pull/242/head
-c69fd93c3b3f8f8b5559ad4f4f3adb22ba7a70e5 refs/pull/243/head
-9406cdc198aabd251ed311b1a5c134fb2cea4e1c refs/pull/243/merge
+a54ef9c9d61dbcad8e6296bcd2afc7a41b950f71 refs/pull/243/head
+f825d4ea20b714ea9e521beb86cbf1786cc29e57 refs/pull/243/merge
+36b9d594ec50f8a383bcbd72261bc483825b4c51 refs/pull/244/head
+080c2e67019e3d64cde9bdccf78a1f5dda00032b refs/pull/245/head
+35b7669d32a2455ab62777563fbb3bae942e2ac0 refs/pull/245/merge
+b66918c329db3ef1427f1e93c4bbc2fffe37baef refs/pull/247/head
+82c01a4eb45d9f6e8c41695770107e887a38643a refs/pull/247/merge
 0d57b0950911c2d3a36a07b845ee63685330a833 refs/pull/29/head
 957e1574facf3f025d610a4d4e28416b721c0e0d refs/pull/3/head
 16bf7ff18a03b92baa680a5b8c6a41968d692393 refs/pull/3/merge
@@ -277,6 +284,7 @@ fcdaffca948ed769f6b1fdbc688d8af549afbda0 refs/tags/2.2.0
 decf702d774ac630dfe0441ff76b4bb68257b77a refs/tags/2.2.1
 c10bff75382f8e1f9476e4a9ebc470e18842c844 refs/tags/2.2.2
 c8072bcad951523adda26798e9b5c56a5c54d191 refs/tags/2.2.3
+0ecc50fa8c7bc03ec9af78ca37e3b57f192bd258 refs/tags/2.2.4
 40e67dff37c20f8c440ae0330e5a0bc0f1c99024 refs/tags/3.0.0-beta.1
 ffc8b0eb2f183f86bfa28cc8730b39eeae11c1e2 refs/tags/3.0.0-beta.2
 90ade369e3832477ede6397d7173b391ae430c9f refs/tags/3.0.0-beta.2.1

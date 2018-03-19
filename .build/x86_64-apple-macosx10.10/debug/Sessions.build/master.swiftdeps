@@ -1,11 +1,11 @@
 version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
 options: "caa8ceadb0bcdbf6b9caff3cec38b053"
-build_time: [1521288004, 30113000]
+build_time: [1521475064, 905496000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/CacheSessions.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/MemorySessions.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/Request+Session.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/Session.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsError.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsMiddleware.swift": [1520349711, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsProtocol.swift": [1520349711, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/CacheSessions.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/MemorySessions.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/Request+Session.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/Session.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsError.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsMiddleware.swift": [1521475001, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/SessionsProtocol.swift": [1521475001, 0]
