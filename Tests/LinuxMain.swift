@@ -5,8 +5,11 @@ import XCTest
 
 XCTMain([
     // AppTests
-    // testCase(PostControllerTests.allTests),
-    testCase(LocationTests.allTests)
+    testCase(LocationTests.allTests),
+    testCase(LocationConnectionTests.allTests),
+    testCase(MeasurementTests.allTests),
+    testCase(RoomTests.allTests),
+    testCase(WiFiAPTests.allTests),
 ])
 
 #endif
