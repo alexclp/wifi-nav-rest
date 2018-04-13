@@ -44,6 +44,7 @@ depends-member:
 - !private ["4HTTP17BodyRepresentableP", "utf8"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4HTTP14ByteSerializerP", "SerializerError"]
+- ["4HTTP14ByteSerializerP", ""]
 - !private ["4HTTP14ByteSerializerP", "done"]
 - !private ["4HTTP14ByteSerializerP", "fill"]
 - ["4HTTP14ByteSerializerP", "offset"]
@@ -52,7 +53,6 @@ depends-member:
 - !private ["4HTTP14ByteSerializerP", "serialize"]
 - ["4HTTP14ByteSerializerP", "serialized"]
 - !private ["4HTTP14ByteSerializerP", "startLine"]
-- ["4HTTP14ByteSerializerP", ""]
 - ["4HTTP19ByteSerializerErrorO", "bufferFull"]
 - ["4Bits16BytesConvertibleP", "H"]
 - ["4Bits16BytesConvertibleP", "P"]
@@ -87,6 +87,7 @@ depends-member:
 - ["s7CVarArgP", "H"]
 - ["s7CVarArgP", "P"]
 - ["s7CVarArgP", "T"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "carriageReturn"]
 - !private ["s7CVarArgP", "description"]
 - ["s7CVarArgP", "forwardSlash"]
@@ -373,11 +374,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "carriageReturn"]
 - !private ["s14_ArrayProtocolP", "newLine"]
 - !private ["s14_ArrayProtocolP", "space"]
-- !private ["s23_BidirectionalIndexableP", "carriageReturn"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "newLine"]
-- !private ["s23_BidirectionalIndexableP", "space"]
-- !private ["s23_BidirectionalIndexableP", "utf8"]
 - ["s18_BitwiseOperationsP", "H"]
 - ["s18_BitwiseOperationsP", "P"]
 - ["s18_BitwiseOperationsP", "T"]
@@ -408,20 +404,7 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "utf8"]
 - !private ["s33_ExpressibleByStringInterpolationP", "utf8"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "utf8"]
-- !private ["s10_IndexableP", "carriageReturn"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "newLine"]
-- !private ["s10_IndexableP", "space"]
-- !private ["s10_IndexableP", "utf8"]
-- !private ["s14_IndexableBaseP", "carriageReturn"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "newLine"]
-- !private ["s14_IndexableBaseP", "space"]
-- !private ["s14_IndexableBaseP", "utf8"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "utf8"]
-- !private ["s17_MutableIndexableP", "carriageReturn"]
-- !private ["s17_MutableIndexableP", "newLine"]
-- !private ["s17_MutableIndexableP", "space"]
 - ["s21_ObjectiveCBridgeableP", "H"]
 - ["s21_ObjectiveCBridgeableP", "P"]
 - ["s21_ObjectiveCBridgeableP", "T"]
@@ -434,23 +417,6 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "period"]
 - ["s21_ObjectiveCBridgeableP", "space"]
 - !private ["s21_ObjectiveCBridgeableP", "utf8"]
-- !private ["s22_RandomAccessIndexableP", "carriageReturn"]
-- !private ["s22_RandomAccessIndexableP", "newLine"]
-- !private ["s22_RandomAccessIndexableP", "space"]
-- !private ["s26_RangeReplaceableIndexableP", "carriageReturn"]
-- !private ["s26_RangeReplaceableIndexableP", "newLine"]
-- !private ["s26_RangeReplaceableIndexableP", "space"]
-- !private ["s26_RangeReplaceableIndexableP", "utf8"]
-- ["s11_StrideableP", "H"]
-- ["s11_StrideableP", "P"]
-- ["s11_StrideableP", "T"]
-- !private ["s11_StrideableP", "carriageReturn"]
-- !private ["s11_StrideableP", "description"]
-- ["s11_StrideableP", "forwardSlash"]
-- !private ["s11_StrideableP", "newLine"]
-- ["s11_StrideableP", "one"]
-- ["s11_StrideableP", "period"]
-- ["s11_StrideableP", "space"]
 - ["s14_StringElementP", "H"]
 - ["s14_StringElementP", "P"]
 - ["s14_StringElementP", "T"]
@@ -527,7 +493,6 @@ depends-nominal:
 - "s15UnsignedIntegerP"
 - !private "4HTTP7VersionV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -538,14 +503,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -578,4 +537,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "31b721974580fd010c29e9445a65355d"
+interface-hash: "a8459f61318e6690d2cac2b87986a630"

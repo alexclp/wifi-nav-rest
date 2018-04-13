@@ -67,6 +67,7 @@ depends-member:
 - ["6Fluent6EntityP", "Storage"]
 - !private ["6Fluent6EntityP", "String"]
 - !private ["6Fluent6EntityP", "UpdateableKey"]
+- ["6Fluent6EntityP", ""]
 - ["6Fluent6EntityP", "computedFields"]
 - ["6Fluent6EntityP", "didCreate"]
 - ["6Fluent6EntityP", "didDelete"]
@@ -93,7 +94,6 @@ depends-member:
 - ["6Fluent6EntityP", "willCreate"]
 - ["6Fluent6EntityP", "willDelete"]
 - ["6Fluent6EntityP", "willUpdate"]
-- ["6Fluent6EntityP", ""]
 - !private ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "int"]
@@ -143,6 +143,7 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "Storage"]
 - !private ["4JSON15JSONConvertibleP", "String"]
 - !private ["4JSON15JSONConvertibleP", "UpdateableKey"]
+- ["4JSON15JSONConvertibleP", ""]
 - ["4JSON15JSONConvertibleP", "computedFields"]
 - ["4JSON15JSONConvertibleP", "didCreate"]
 - ["4JSON15JSONConvertibleP", "didDelete"]
@@ -169,7 +170,6 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "willCreate"]
 - ["4JSON15JSONConvertibleP", "willDelete"]
 - ["4JSON15JSONConvertibleP", "willUpdate"]
-- ["4JSON15JSONConvertibleP", ""]
 - !private ["4JSON17JSONInitializableP", "Int"]
 - !private ["4JSON17JSONInitializableP", "JSON"]
 - !private ["4JSON17JSONInitializableP", "Keys"]
@@ -178,6 +178,7 @@ depends-member:
 - ["4JSON17JSONInitializableP", "Storage"]
 - !private ["4JSON17JSONInitializableP", "String"]
 - !private ["4JSON17JSONInitializableP", "UpdateableKey"]
+- ["4JSON17JSONInitializableP", ""]
 - ["4JSON17JSONInitializableP", "computedFields"]
 - ["4JSON17JSONInitializableP", "didCreate"]
 - ["4JSON17JSONInitializableP", "didDelete"]
@@ -204,7 +205,6 @@ depends-member:
 - ["4JSON17JSONInitializableP", "willCreate"]
 - ["4JSON17JSONInitializableP", "willDelete"]
 - ["4JSON17JSONInitializableP", "willUpdate"]
-- ["4JSON17JSONInitializableP", ""]
 - !private ["4JSON17JSONRepresentableP", "Int"]
 - !private ["4JSON17JSONRepresentableP", "JSON"]
 - !private ["4JSON17JSONRepresentableP", "Keys"]
@@ -213,6 +213,7 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "Storage"]
 - !private ["4JSON17JSONRepresentableP", "String"]
 - !private ["4JSON17JSONRepresentableP", "UpdateableKey"]
+- ["4JSON17JSONRepresentableP", ""]
 - ["4JSON17JSONRepresentableP", "computedFields"]
 - ["4JSON17JSONRepresentableP", "didCreate"]
 - ["4JSON17JSONRepresentableP", "didDelete"]
@@ -241,7 +242,6 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "willCreate"]
 - ["4JSON17JSONRepresentableP", "willDelete"]
 - ["4JSON17JSONRepresentableP", "willUpdate"]
-- ["4JSON17JSONRepresentableP", ""]
 - ["3App4RoomC4KeysV", "floorNumber"]
 - ["3App4RoomC4KeysV", "id"]
 - ["3App4RoomC4KeysV", "init"]
@@ -256,6 +256,7 @@ depends-member:
 - ["14FluentProvider5ModelP", "Storage"]
 - !private ["14FluentProvider5ModelP", "String"]
 - !private ["14FluentProvider5ModelP", "UpdateableKey"]
+- ["14FluentProvider5ModelP", ""]
 - ["14FluentProvider5ModelP", "computedFields"]
 - ["14FluentProvider5ModelP", "didCreate"]
 - ["14FluentProvider5ModelP", "didDelete"]
@@ -282,15 +283,6 @@ depends-member:
 - ["14FluentProvider5ModelP", "willCreate"]
 - ["14FluentProvider5ModelP", "willDelete"]
 - ["14FluentProvider5ModelP", "willUpdate"]
-- ["14FluentProvider5ModelP", ""]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "get"]
 - ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "set"]
@@ -305,6 +297,7 @@ depends-member:
 - ["7Routing15ParameterizableP", "Storage"]
 - !private ["7Routing15ParameterizableP", "String"]
 - !private ["7Routing15ParameterizableP", "UpdateableKey"]
+- ["7Routing15ParameterizableP", ""]
 - ["7Routing15ParameterizableP", "computedFields"]
 - ["7Routing15ParameterizableP", "didCreate"]
 - ["7Routing15ParameterizableP", "didDelete"]
@@ -331,7 +324,6 @@ depends-member:
 - ["7Routing15ParameterizableP", "willCreate"]
 - ["7Routing15ParameterizableP", "willDelete"]
 - ["7Routing15ParameterizableP", "willUpdate"]
-- ["7Routing15ParameterizableP", ""]
 - !private ["13PathIndexableAAP", "get"]
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "set"]
@@ -344,6 +336,7 @@ depends-member:
 - ["6Fluent11PreparationP", "Storage"]
 - !private ["6Fluent11PreparationP", "String"]
 - !private ["6Fluent11PreparationP", "UpdateableKey"]
+- ["6Fluent11PreparationP", ""]
 - ["6Fluent11PreparationP", "computedFields"]
 - ["6Fluent11PreparationP", "didCreate"]
 - ["6Fluent11PreparationP", "didDelete"]
@@ -370,7 +363,6 @@ depends-member:
 - ["6Fluent11PreparationP", "willCreate"]
 - ["6Fluent11PreparationP", "willDelete"]
 - ["6Fluent11PreparationP", "willUpdate"]
-- ["6Fluent11PreparationP", ""]
 - !private ["6Fluent11QueryLoggerP", "create"]
 - !private ["6Fluent11QueryLoggerP", "delete"]
 - ["s26RangeReplaceableCollectionP", "init"]
@@ -383,6 +375,7 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "Storage"]
 - !private ["4HTTP21ResponseRepresentableP", "String"]
 - !private ["4HTTP21ResponseRepresentableP", "UpdateableKey"]
+- ["4HTTP21ResponseRepresentableP", ""]
 - ["4HTTP21ResponseRepresentableP", "computedFields"]
 - ["4HTTP21ResponseRepresentableP", "didCreate"]
 - ["4HTTP21ResponseRepresentableP", "didDelete"]
@@ -411,7 +404,6 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "willCreate"]
 - ["4HTTP21ResponseRepresentableP", "willDelete"]
 - ["4HTTP21ResponseRepresentableP", "willUpdate"]
-- ["4HTTP21ResponseRepresentableP", ""]
 - ["3App4RoomC", "Database"]
 - ["3App4RoomC", "IdentifierType"]
 - ["3App4RoomC", "Int"]
@@ -460,6 +452,7 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "Storage"]
 - !private ["6Fluent14RowConvertibleP", "String"]
 - !private ["6Fluent14RowConvertibleP", "UpdateableKey"]
+- ["6Fluent14RowConvertibleP", ""]
 - ["6Fluent14RowConvertibleP", "computedFields"]
 - ["6Fluent14RowConvertibleP", "didCreate"]
 - ["6Fluent14RowConvertibleP", "didDelete"]
@@ -486,7 +479,6 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "willCreate"]
 - ["6Fluent14RowConvertibleP", "willDelete"]
 - ["6Fluent14RowConvertibleP", "willUpdate"]
-- ["6Fluent14RowConvertibleP", ""]
 - !private ["6Fluent16RowInitializableP", "Int"]
 - !private ["6Fluent16RowInitializableP", "JSON"]
 - !private ["6Fluent16RowInitializableP", "Keys"]
@@ -495,6 +487,7 @@ depends-member:
 - ["6Fluent16RowInitializableP", "Storage"]
 - !private ["6Fluent16RowInitializableP", "String"]
 - !private ["6Fluent16RowInitializableP", "UpdateableKey"]
+- ["6Fluent16RowInitializableP", ""]
 - ["6Fluent16RowInitializableP", "computedFields"]
 - ["6Fluent16RowInitializableP", "didCreate"]
 - ["6Fluent16RowInitializableP", "didDelete"]
@@ -521,7 +514,6 @@ depends-member:
 - ["6Fluent16RowInitializableP", "willCreate"]
 - ["6Fluent16RowInitializableP", "willDelete"]
 - ["6Fluent16RowInitializableP", "willUpdate"]
-- ["6Fluent16RowInitializableP", ""]
 - !private ["6Fluent16RowRepresentableP", "Int"]
 - !private ["6Fluent16RowRepresentableP", "JSON"]
 - !private ["6Fluent16RowRepresentableP", "Keys"]
@@ -530,6 +522,7 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "Storage"]
 - !private ["6Fluent16RowRepresentableP", "String"]
 - !private ["6Fluent16RowRepresentableP", "UpdateableKey"]
+- ["6Fluent16RowRepresentableP", ""]
 - ["6Fluent16RowRepresentableP", "computedFields"]
 - ["6Fluent16RowRepresentableP", "didCreate"]
 - ["6Fluent16RowRepresentableP", "didDelete"]
@@ -556,7 +549,6 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "willCreate"]
 - ["6Fluent16RowRepresentableP", "willDelete"]
 - ["6Fluent16RowRepresentableP", "willUpdate"]
-- ["6Fluent16RowRepresentableP", ""]
 - ["s8SequenceP", "init"]
 - !private ["6Fluent8StorableP", "Int"]
 - !private ["6Fluent8StorableP", "JSON"]
@@ -566,6 +558,7 @@ depends-member:
 - ["6Fluent8StorableP", "Storage"]
 - !private ["6Fluent8StorableP", "String"]
 - !private ["6Fluent8StorableP", "UpdateableKey"]
+- ["6Fluent8StorableP", ""]
 - ["6Fluent8StorableP", "computedFields"]
 - ["6Fluent8StorableP", "didCreate"]
 - ["6Fluent8StorableP", "didDelete"]
@@ -592,7 +585,6 @@ depends-member:
 - ["6Fluent8StorableP", "willCreate"]
 - ["6Fluent8StorableP", "willDelete"]
 - ["6Fluent8StorableP", "willUpdate"]
-- ["6Fluent8StorableP", ""]
 - ["6Fluent7StorageC", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
@@ -611,6 +603,7 @@ depends-member:
 - ["14FluentProvider10UpdateableP", "Storage"]
 - !private ["14FluentProvider10UpdateableP", "String"]
 - !private ["14FluentProvider10UpdateableP", "UpdateableKey"]
+- ["14FluentProvider10UpdateableP", ""]
 - ["14FluentProvider10UpdateableP", "computedFields"]
 - ["14FluentProvider10UpdateableP", "didCreate"]
 - ["14FluentProvider10UpdateableP", "didDelete"]
@@ -637,20 +630,13 @@ depends-member:
 - ["14FluentProvider10UpdateableP", "willCreate"]
 - ["14FluentProvider10UpdateableP", "willDelete"]
 - ["14FluentProvider10UpdateableP", "willUpdate"]
-- ["14FluentProvider10UpdateableP", ""]
 - !private ["14FluentProvider13UpdateableKeyV", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -695,14 +681,6 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -729,18 +707,12 @@ depends-nominal:
 - !private "6Fluent12TransactableP"
 - "14FluentProvider10UpdateableP"
 - !private "14FluentProvider13UpdateableKeyV"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -795,4 +767,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "eeb17dc1c6ec0a269d36ae5f84ba4f1b"
+interface-hash: "53c78d6677e898f51136a91942d29f3d"

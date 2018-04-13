@@ -10,8 +10,8 @@ depends-top-level:
 - !private "!="
 - !private "&&"
 - !private "+"
-- !private "AssignmentPrecedence"
-- !private "Bool"
+- "AssignmentPrecedence"
+- "Bool"
 - !private "BooleanLiteralType"
 - !private "DataFile"
 - !private "Dictionary"
@@ -24,7 +24,6 @@ depends-top-level:
 - !private "UnicodeScalarType"
 - !private "print"
 depends-member:
-- !private ["s11AnySequenceV", "makeString"]
 - !private ["Sa", "contains"]
 - ["Sa", "count"]
 - !private ["Sa", "dropLast"]
@@ -74,6 +73,7 @@ depends-member:
 - ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "removedJSONSuffix"]
 - !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "contains"]
 - ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "default"]
@@ -212,10 +212,14 @@ depends-member:
 - !private ["s9EquatableP", "bytes"]
 - !private ["s9EquatableP", "contains"]
 - !private ["s9EquatableP", "converted"]
+- ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "default"]
+- !private ["s9EquatableP", "dropLast"]
 - !private ["s9EquatableP", "fileExists"]
 - !private ["s9EquatableP", "files"]
+- !private ["s9EquatableP", "filter"]
 - !private ["s9EquatableP", "finished"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "hasSuffix"]
 - !private ["s9EquatableP", "hydratedEnv"]
 - ["s9EquatableP", "init"]
@@ -223,6 +227,7 @@ depends-member:
 - !private ["s9EquatableP", "jsonSuffixCount"]
 - !private ["s9EquatableP", "loadContents"]
 - ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "print"]
 - !private ["s9EquatableP", "removedJSONSuffix"]
 - !private ["s9EquatableP", "subpathsOfDirectory"]
@@ -357,9 +362,9 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "print"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "removedJSONSuffix"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "subscript"]
-- !private ["So11FileManagerC", "Bool"]
+- ["So11FileManagerC", "Bool"]
 - !private ["So11FileManagerC", "ObjCBool"]
-- !private ["So11FileManagerC", "String"]
+- ["So11FileManagerC", "String"]
 - !private ["So11FileManagerC", "default"]
 - !private ["So11FileManagerC", "fileExists"]
 - !private ["So11FileManagerC", "files"]
@@ -422,41 +427,31 @@ depends-member:
 - !private ["So8NSCodingP", "contains"]
 - !private ["So8NSCodingP", "finished"]
 - !private ["So8NSCodingP", "hasSuffix"]
-- ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "jsonSuffixCount"]
 - ["So8NSCodingP", "makeBytes"]
 - !private ["So8NSCodingP", "removedJSONSuffix"]
 - !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "finished"]
 - !private ["So9NSCopyingP", "hasSuffix"]
-- ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "jsonSuffixCount"]
 - ["So9NSCopyingP", "makeBytes"]
 - !private ["So9NSCopyingP", "removedJSONSuffix"]
 - !private ["So21NSItemProviderReadingP", "contains"]
 - !private ["So21NSItemProviderReadingP", "finished"]
 - !private ["So21NSItemProviderReadingP", "hasSuffix"]
-- ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderReadingP", "jsonSuffixCount"]
 - ["So21NSItemProviderReadingP", "makeBytes"]
 - !private ["So21NSItemProviderReadingP", "removedJSONSuffix"]
 - !private ["So21NSItemProviderWritingP", "contains"]
 - !private ["So21NSItemProviderWritingP", "finished"]
 - !private ["So21NSItemProviderWritingP", "hasSuffix"]
-- ["So21NSItemProviderWritingP", "init"]
-- !private ["So21NSItemProviderWritingP", "jsonSuffixCount"]
 - ["So21NSItemProviderWritingP", "makeBytes"]
 - !private ["So21NSItemProviderWritingP", "removedJSONSuffix"]
 - !private ["So16NSMutableCopyingP", "contains"]
 - !private ["So16NSMutableCopyingP", "finished"]
 - !private ["So16NSMutableCopyingP", "hasSuffix"]
-- ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSMutableCopyingP", "jsonSuffixCount"]
 - ["So16NSMutableCopyingP", "makeBytes"]
 - !private ["So16NSMutableCopyingP", "removedJSONSuffix"]
-- !private ["So8NSObjectC", "Bool"]
+- ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "ObjCBool"]
-- !private ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "default"]
 - !private ["So8NSObjectC", "fileExists"]
@@ -464,7 +459,6 @@ depends-member:
 - !private ["So8NSObjectC", "finished"]
 - !private ["So8NSObjectC", "hasSuffix"]
 - ["So8NSObjectC", "isDirectory"]
-- !private ["So8NSObjectC", "jsonSuffixCount"]
 - ["So8NSObjectC", "makeBytes"]
 - !private ["So8NSObjectC", "removedJSONSuffix"]
 - !private ["So8NSObjectC", "subpathsOfDirectory"]
@@ -474,24 +468,18 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "files"]
 - !private ["So16NSObjectProtocolP", "finished"]
 - !private ["So16NSObjectProtocolP", "hasSuffix"]
-- ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isDirectory"]
-- !private ["So16NSObjectProtocolP", "jsonSuffixCount"]
 - ["So16NSObjectProtocolP", "makeBytes"]
 - !private ["So16NSObjectProtocolP", "removedJSONSuffix"]
 - !private ["So16NSObjectProtocolP", "subpathsOfDirectory"]
 - !private ["So14NSSecureCodingP", "contains"]
 - !private ["So14NSSecureCodingP", "finished"]
 - !private ["So14NSSecureCodingP", "hasSuffix"]
-- ["So14NSSecureCodingP", "init"]
-- !private ["So14NSSecureCodingP", "jsonSuffixCount"]
 - ["So14NSSecureCodingP", "makeBytes"]
 - !private ["So14NSSecureCodingP", "removedJSONSuffix"]
 - !private ["So8NSStringC", "contains"]
 - !private ["So8NSStringC", "finished"]
 - !private ["So8NSStringC", "hasSuffix"]
-- ["So8NSStringC", "init"]
-- !private ["So8NSStringC", "jsonSuffixCount"]
 - ["So8NSStringC", "makeBytes"]
 - !private ["So8NSStringC", "removedJSONSuffix"]
 - !private ["4NodeAAV", "DataFile"]
@@ -654,19 +642,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "filter"]
 - !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "String"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "dropLast"]
-- !private ["s23_BidirectionalIndexableP", "filter"]
-- !private ["s23_BidirectionalIndexableP", "finished"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "hasSuffix"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "jsonSuffixCount"]
-- ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "removedJSONSuffix"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
 - ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "dropLast"]
@@ -717,54 +692,18 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "finished"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasSuffix"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "jsonSuffixCount"]
 - ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "removedJSONSuffix"]
-- !private ["s10_IndexableP", "String"]
-- !private ["s10_IndexableP", "contains"]
-- ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "dropLast"]
-- !private ["s10_IndexableP", "filter"]
-- !private ["s10_IndexableP", "finished"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "hasSuffix"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "jsonSuffixCount"]
-- ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "removedJSONSuffix"]
-- !private ["s14_IndexableBaseP", "String"]
-- !private ["s14_IndexableBaseP", "contains"]
-- ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "dropLast"]
-- !private ["s14_IndexableBaseP", "filter"]
-- !private ["s14_IndexableBaseP", "finished"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "hasSuffix"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "jsonSuffixCount"]
-- ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "removedJSONSuffix"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "files"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "finished"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasSuffix"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isDirectory"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonSuffixCount"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removedJSONSuffix"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subpathsOfDirectory"]
-- !private ["s17_MutableIndexableP", "contains"]
-- ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "dropLast"]
-- !private ["s17_MutableIndexableP", "filter"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "String"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
@@ -778,26 +717,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "jsonSuffixCount"]
 - ["s21_ObjectiveCBridgeableP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "removedJSONSuffix"]
-- !private ["s26_OptionalNilComparisonTypeV", "contains"]
-- !private ["s22_RandomAccessIndexableP", "contains"]
-- ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "dropLast"]
-- !private ["s22_RandomAccessIndexableP", "filter"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "String"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "dropLast"]
-- !private ["s26_RangeReplaceableIndexableP", "filter"]
-- !private ["s26_RangeReplaceableIndexableP", "finished"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "hasSuffix"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "jsonSuffixCount"]
-- ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "removedJSONSuffix"]
 - !private ["s16_SwiftStringViewP", "String"]
 - !private ["s16_SwiftStringViewP", "contains"]
 - !private ["s16_SwiftStringViewP", "finished"]
@@ -807,7 +726,6 @@ depends-member:
 - ["s16_SwiftStringViewP", "makeBytes"]
 - !private ["s16_SwiftStringViewP", "removedJSONSuffix"]
 depends-nominal:
-- !private "s11AnySequenceV"
 - "Sa"
 - !private "s10ArraySliceV"
 - "s23BidirectionalCollectionP"
@@ -838,7 +756,7 @@ depends-nominal:
 - !private "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "So11FileManagerC"
+- "So11FileManagerC"
 - !private "4Core12FileProtocolP"
 - !private "4Node14FuzzyConverterP"
 - "s8HashableP"
@@ -873,7 +791,6 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -882,14 +799,8 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s26_OptionalNilComparisonTypeV"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -12,6 +12,8 @@ depends-top-level:
 - "CacheProtocol"
 - "Date"
 - !private "Dictionary"
+- !private "FloatLiteralType"
+- !private "IntegerLiteralType"
 - "MemoryCache"
 - "Node"
 - "String"
@@ -19,15 +21,16 @@ depends-top-level:
 - !private "print"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "removeValue"]
 - !private ["s7CVarArgP", "subscript"]
+- ["5Cache0A8ProtocolP", ""]
 - !private ["5Cache0A8ProtocolP", "_storage"]
 - ["5Cache0A8ProtocolP", "delete"]
 - ["5Cache0A8ProtocolP", "get"]
 - ["5Cache0A8ProtocolP", "makeDefaultExpiration"]
 - !private ["5Cache0A8ProtocolP", "print"]
 - ["5Cache0A8ProtocolP", "set"]
-- ["5Cache0A8ProtocolP", ""]
 - !private ["s10CollectionP", "removeValue"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10ComparableP", "timeIntervalSinceNow"]
@@ -56,6 +59,8 @@ depends-member:
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "timeIntervalSinceNow"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "removeValue"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "timeIntervalSinceNow"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "removeValue"]
@@ -86,10 +91,6 @@ depends-member:
 - !private ["s8SequenceP", "removeValue"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s10_IndexableP", "removeValue"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "removeValue"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "removeValue"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -119,8 +120,6 @@ depends-nominal:
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s8SequenceP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
@@ -147,4 +146,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "1d222c70b7330ba69d6d505e51f03489"
+interface-hash: "9982d6ec81c35fa7bdbfd55e46705291"

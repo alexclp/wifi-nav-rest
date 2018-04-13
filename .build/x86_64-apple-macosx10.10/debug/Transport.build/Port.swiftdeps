@@ -107,10 +107,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "Port"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "max"]
-- !private ["s11_StrideableP", "Int"]
-- !private ["s11_StrideableP", "Port"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "max"]
 - !private ["s14_StringElementP", "init"]
 - !private ["s14_StringElementP", "max"]
 depends-nominal:
@@ -141,7 +137,6 @@ depends-nominal:
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:

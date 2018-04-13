@@ -50,8 +50,8 @@ depends-member:
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - !private ["4HTTP17BodyRepresentableP", "makeBytes"]
 - !private ["4HTTP17BodyRepresentableP", "set"]
-- !private ["4SMTP9EmailBodyV0C4TypeO", "html"]
-- !private ["4SMTP9EmailBodyV0C4TypeO", "plain"]
+- ["4SMTP9EmailBodyV0C4TypeO", "html"]
+- ["4SMTP9EmailBodyV0C4TypeO", "plain"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits16BytesConvertibleP", "makeBytes"]
@@ -62,6 +62,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "set"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "base64Encoded"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "init"]
@@ -98,13 +99,13 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "Request"]
 - !private ["7Configs19ConfigInitializableP", "String"]
 - !private ["7Configs19ConfigInitializableP", "URI"]
+- ["7Configs19ConfigInitializableP", ""]
 - !private ["7Configs19ConfigInitializableP", "_send"]
 - !private ["7Configs19ConfigInitializableP", "apiKey"]
 - !private ["7Configs19ConfigInitializableP", "apiURI"]
 - !private ["7Configs19ConfigInitializableP", "clientFactory"]
 - ["7Configs19ConfigInitializableP", "init"]
 - ["7Configs19ConfigInitializableP", "send"]
-- ["7Configs19ConfigInitializableP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "badRequest"]
 - !private ["s28CustomDebugStringConvertibleP", "base64Encoded"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
@@ -185,12 +186,17 @@ depends-member:
 - !private ["5Vapor12EngineClientC", "deinit"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "address"]
+- !private ["s9EquatableP", "base64Encoded"]
 - !private ["s9EquatableP", "content"]
-- !private ["s9EquatableP", "html"]
+- !private ["s9EquatableP", "forEach"]
+- ["s9EquatableP", "html"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "joined"]
 - !private ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "name"]
-- !private ["s9EquatableP", "plain"]
+- ["s9EquatableP", "plain"]
 - !private ["s9EquatableP", "post"]
 - !private ["s9EquatableP", "resolveClient"]
 - !private ["s9EquatableP", "set"]
@@ -266,10 +272,10 @@ depends-member:
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "set"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
-- !private ["s8HashableP", "html"]
+- ["s8HashableP", "html"]
 - !private ["s8HashableP", "init"]
 - !private ["s8HashableP", "makeBytes"]
-- !private ["s8HashableP", "plain"]
+- ["s8HashableP", "plain"]
 - !private ["s8HashableP", "post"]
 - !private ["s8HashableP", "statusCode"]
 - !private ["4HTTP9HeaderKeyV", "init"]
@@ -293,13 +299,13 @@ depends-member:
 - !private ["5Vapor12MailProtocolP", "Request"]
 - !private ["5Vapor12MailProtocolP", "String"]
 - !private ["5Vapor12MailProtocolP", "URI"]
+- ["5Vapor12MailProtocolP", ""]
 - !private ["5Vapor12MailProtocolP", "_send"]
 - !private ["5Vapor12MailProtocolP", "apiKey"]
 - !private ["5Vapor12MailProtocolP", "apiURI"]
 - !private ["5Vapor12MailProtocolP", "clientFactory"]
 - ["5Vapor12MailProtocolP", "init"]
 - ["5Vapor12MailProtocolP", "send"]
-- ["5Vapor12MailProtocolP", ""]
 - !private ["5Vapor7MailgunC", "Abort"]
 - ["5Vapor7MailgunC", "ClientFactoryProtocol"]
 - ["5Vapor7MailgunC", "Config"]
@@ -332,22 +338,14 @@ depends-member:
 - !private ["s17MutableCollectionP", "joined"]
 - !private ["s17MutableCollectionP", "makeString"]
 - !private ["s17MutableCollectionP", "map"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeBytes"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "makeBytes"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "makeBytes"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "makeBytes"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "makeBytes"]
 - !private ["So8NSObjectC", "makeBytes"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "makeBytes"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "makeBytes"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "makeBytes"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "base64Encoded"]
@@ -445,13 +443,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "joined"]
 - !private ["s14_ArrayProtocolP", "makeString"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "base64Encoded"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "joined"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s24_DestructorSafeContainerP", "base64Encoded"]
 - !private ["s24_DestructorSafeContainerP", "forEach"]
 - !private ["s24_DestructorSafeContainerP", "joined"]
@@ -468,31 +459,8 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "makeBytes"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "makeBytes"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
-- !private ["s10_IndexableP", "base64Encoded"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "joined"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "base64Encoded"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "joined"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
-- !private ["s17_MutableIndexableP", "base64Encoded"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "joined"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "base64Encoded"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
@@ -502,18 +470,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "base64Encoded"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "joined"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "base64Encoded"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "joined"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "makeBytes"]
 depends-nominal:
@@ -522,7 +478,7 @@ depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "4HTTP17BodyRepresentableP"
-- !private "4SMTP9EmailBodyV0C4TypeO"
+- "4SMTP9EmailBodyV0C4TypeO"
 - !private "Sb"
 - !private "4Bits16BytesConvertibleP"
 - !private "4Bits18BytesInitializableP"
@@ -549,7 +505,7 @@ depends-nominal:
 - !private "4SMTP22EmailBodyRepresentableP"
 - !private "s9EncodableP"
 - !private "5Vapor12EngineClientC"
-- !private "s9EquatableP"
+- "s9EquatableP"
 - !private "s5ErrorP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -562,7 +518,7 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "8FormData5FieldV"
 - !private "4Node14FuzzyConverterP"
-- !private "s8HashableP"
+- "s8HashableP"
 - !private "4HTTP9HeaderKeyV"
 - !private "4JSONAAV"
 - !private "4JSON17JSONRepresentableP"
@@ -608,7 +564,6 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "3URIAAV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -617,13 +572,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -672,4 +622,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "d4e7a1967112acd32e9b07a44521c97f"
+interface-hash: "338263bbd7d063635e46de757ac4b4fa"

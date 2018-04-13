@@ -60,13 +60,6 @@ depends-member:
 - ["s15UnsignedIntegerP", "containsMask"]
 - ["s15UnsignedIntegerP", "shiftLeft"]
 - ["s15UnsignedIntegerP", "shiftRight"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- ["s11_StrideableP", "Bool"]
-- ["s11_StrideableP", "Int"]
-- ["s11_StrideableP", "Self"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
 - "s13BinaryIntegerP"
@@ -86,11 +79,6 @@ depends-nominal:
 - !private "s8SequenceP"
 - "s10StrideableP"
 - "s15UnsignedIntegerP"
-- !private "s23_BidirectionalIndexableP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s22_RandomAccessIndexableP"
-- "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

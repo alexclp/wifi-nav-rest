@@ -44,6 +44,7 @@ depends-member:
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s5ErrorP", "notConfigured"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -57,14 +58,6 @@ depends-member:
 - !private ["4HTTP7MessageP", "sessionKey"]
 - !private ["4HTTP7MessageP", "storage"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "subscript"]
 - ["4Node0A13RepresentableP", "init"]
@@ -86,21 +79,13 @@ depends-member:
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -130,14 +115,6 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - !private "4HTTP7MessageP"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "13PathIndexable0A7IndexerP"
@@ -150,18 +127,12 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

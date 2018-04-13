@@ -57,6 +57,7 @@ depends-member:
 - ["6Fluent9AggregateO", "max"]
 - ["6Fluent9AggregateO", "min"]
 - ["6Fluent9AggregateO", "sum"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "aggregate"]
 - ["s9EquatableP", "average"]
 - ["s9EquatableP", "count"]
@@ -71,8 +72,7 @@ depends-member:
 - ["s9EquatableP", "modify"]
 - ["s9EquatableP", "schema"]
 - ["s9EquatableP", "sum"]
-- ["s9EquatableP", ""]
-- !private ["6Fluent5RawOrO", "deinit"]
+- ["6Fluent5RawOrO", "deinit"]
 - ["6Fluent6SchemaO", "=="]
 - ["6Fluent6SchemaO", "Bool"]
 - ["6Fluent6SchemaO", "Field"]
@@ -90,7 +90,7 @@ depends-nominal:
 - "6Fluent6ActionO"
 - "6Fluent9AggregateO"
 - "s9EquatableP"
-- !private "6Fluent5RawOrO"
+- "6Fluent5RawOrO"
 - "6Fluent6SchemaO"
 depends-dynamic-lookup:
 depends-external:

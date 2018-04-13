@@ -18,11 +18,11 @@ depends-member:
 - ["5Vapor12CommandErrorO", "_userInfo"]
 - ["5Vapor12CommandErrorO", "deinit"]
 - ["5Vapor12CommandErrorO", "general"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
-- ["s5ErrorP", ""]
 depends-nominal:
 - "5Vapor12CommandErrorO"
 - "s5ErrorP"

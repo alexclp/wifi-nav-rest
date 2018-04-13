@@ -19,20 +19,20 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "makeString"]
 - !private ["s23BidirectionalCollectionP", "utf8"]
 - !private ["4Bits16BytesConvertibleP", "Bytes"]
+- ["4Bits16BytesConvertibleP", ""]
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits16BytesConvertibleP", "makeBytes"]
 - !private ["4Bits16BytesConvertibleP", "utf8"]
-- ["4Bits16BytesConvertibleP", ""]
 - !private ["4Bits18BytesInitializableP", "Bytes"]
+- ["4Bits18BytesInitializableP", ""]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesInitializableP", "makeBytes"]
 - !private ["4Bits18BytesInitializableP", "utf8"]
-- ["4Bits18BytesInitializableP", ""]
 - !private ["4Bits18BytesRepresentableP", "Bytes"]
+- ["4Bits18BytesRepresentableP", ""]
 - ["4Bits18BytesRepresentableP", "init"]
 - ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "utf8"]
-- ["4Bits18BytesRepresentableP", ""]
 - !private ["s7CVarArgP", "Bytes"]
 - ["s7CVarArgP", "init"]
 - ["s7CVarArgP", "makeBytes"]
@@ -79,6 +79,7 @@ depends-member:
 - !private ["s9EquatableP", "Bytes"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "utf8"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "makeString"]
@@ -148,11 +149,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "utf8"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "Bytes"]
-- ["s23_BidirectionalIndexableP", "init"]
-- ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "utf8"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeString"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Bytes"]
@@ -176,31 +172,12 @@ depends-member:
 - ["s33_ExpressibleByStringInterpolationP", "makeBytes"]
 - !private ["s33_ExpressibleByStringInterpolationP", "utf8"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "utf8"]
-- !private ["s10_IndexableP", "Bytes"]
-- ["s10_IndexableP", "init"]
-- ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "utf8"]
-- !private ["s14_IndexableBaseP", "Bytes"]
-- ["s14_IndexableBaseP", "init"]
-- ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "utf8"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "utf8"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "Bytes"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "utf8"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "Bytes"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "utf8"]
 - !private ["s16_SwiftStringViewP", "Bytes"]
 - ["s16_SwiftStringViewP", "init"]
 - ["s16_SwiftStringViewP", "makeBytes"]
@@ -246,7 +223,6 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
@@ -254,13 +230,8 @@ depends-nominal:
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

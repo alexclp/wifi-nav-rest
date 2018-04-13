@@ -25,10 +25,6 @@ depends-member:
 - ["7Console8RunnableP", "Argument"]
 - ["7Console8RunnableP", "ConsoleProtocol"]
 - ["7Console8RunnableP", "String"]
-- ["7Console8RunnableP", "console"]
-- ["7Console8RunnableP", "help"]
-- ["7Console8RunnableP", "run"]
-- ["7Console8RunnableP", "signature"]
 - ["7Console8RunnableP", ""]
 depends-nominal:
 - "7Console7CommandP"

@@ -21,6 +21,7 @@ depends-member:
 - !private ["s10DictionaryV", "merge"]
 - !private ["s9EncodableP", "merge"]
 - !private ["s9EncodableP", "object"]
+- !private ["s9EquatableP", "merge"]
 - !private ["s9EquatableP", "object"]
 - !private ["s25ExpressibleByArrayLiteralP", "object"]
 - !private ["s27ExpressibleByBooleanLiteralP", "object"]
@@ -45,8 +46,6 @@ depends-member:
 - !private ["13PathIndexableAAP", "object"]
 - !private ["s8SequenceP", "merge"]
 - !private ["4Node21StructuredDataWrapperP", "object"]
-- !private ["s10_IndexableP", "merge"]
-- !private ["s14_IndexableBaseP", "merge"]
 - !private ["s21_ObjectiveCBridgeableP", "merge"]
 - !private ["s21_ObjectiveCBridgeableP", "object"]
 depends-nominal:
@@ -77,8 +76,6 @@ depends-nominal:
 - !private "13PathIndexableAAP"
 - !private "s8SequenceP"
 - !private "4Node21StructuredDataWrapperP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

@@ -16,6 +16,7 @@ depends-top-level:
 - "String"
 - "Swift"
 depends-member:
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -30,7 +31,6 @@ depends-member:
 - ["s5ErrorP", "quitFailed"]
 - ["s5ErrorP", "unexpectedReply"]
 - ["s5ErrorP", "unsupportedAuth"]
-- ["s5ErrorP", ""]
 - ["4SMTP15SMTPClientErrorO", "Int"]
 - ["4SMTP15SMTPClientErrorO", "String"]
 - ["4SMTP15SMTPClientErrorO", "_code"]

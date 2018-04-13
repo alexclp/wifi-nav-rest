@@ -1,12 +1,12 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "33d6105169c8da2a446979051d80074b"
-build_time: [1521475045, 260486000]
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "05e7533f4923a554e5d0c03336c4d4a3"
+build_time: [1523611306, 533679000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Bytes.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Fuzzy.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Parse.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Serialize.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSONContext.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSONRepresentable.swift": [1521475005, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/Sequence+Convertible.swift": [1521475005, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Bytes.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Fuzzy.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Parse.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON+Serialize.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSON.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSONContext.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/JSONRepresentable.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/json.git-9153249592855998091/Sources/JSON/Sequence+Convertible.swift": [1523282746, 0]

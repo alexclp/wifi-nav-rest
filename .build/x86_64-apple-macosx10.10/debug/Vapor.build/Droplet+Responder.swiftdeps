@@ -16,9 +16,9 @@ depends-member:
 - ["5Vapor7DropletC", "deinit"]
 - ["5Vapor7DropletC", "respond"]
 - !private ["5Vapor7DropletC", "responder"]
+- ["4HTTP9ResponderP", ""]
 - ["4HTTP9ResponderP", "respond"]
 - !private ["4HTTP9ResponderP", "responder"]
-- ["4HTTP9ResponderP", ""]
 - ["7Routing12RouteBuilderP", "respond"]
 - !private ["7Routing12RouteBuilderP", "responder"]
 depends-nominal:

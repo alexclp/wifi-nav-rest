@@ -13,10 +13,10 @@ depends-top-level:
 - "Option"
 - "String"
 depends-member:
+- ["7Console8ArgumentP", ""]
 - ["7Console8ArgumentP", "help"]
 - ["7Console8ArgumentP", "name"]
 - !private ["7Console8ArgumentP", "short"]
-- ["7Console8ArgumentP", ""]
 - ["7Console6OptionV", "Character"]
 - ["7Console6OptionV", "String"]
 - ["7Console6OptionV", "deinit"]

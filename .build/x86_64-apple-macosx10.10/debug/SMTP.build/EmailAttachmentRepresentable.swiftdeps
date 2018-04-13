@@ -16,8 +16,8 @@ depends-member:
 - ["4SMTP15EmailAttachmentV", "deinit"]
 - ["4SMTP15EmailAttachmentV", "emailAttachment"]
 - ["4SMTP28EmailAttachmentRepresentableP", "EmailAttachment"]
-- ["4SMTP28EmailAttachmentRepresentableP", "emailAttachment"]
 - ["4SMTP28EmailAttachmentRepresentableP", ""]
+- ["4SMTP28EmailAttachmentRepresentableP", "emailAttachment"]
 depends-nominal:
 - "4SMTP15EmailAttachmentV"
 - "4SMTP28EmailAttachmentRepresentableP"

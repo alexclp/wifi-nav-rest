@@ -11,6 +11,7 @@ depends-top-level:
 - "Collection"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s10CollectionP", "Index"]
 - ["s10CollectionP", "Iterator"]
 - !private ["s10CollectionP", "endIndex"]
@@ -31,19 +32,10 @@ depends-member:
 - !private ["s8SequenceP", "startIndex"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s10_IndexableP", "Index"]
-- ["s10_IndexableP", "Iterator"]
-- !private ["s10_IndexableP", "endIndex"]
-- !private ["s10_IndexableP", "startIndex"]
-- !private ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "Index"]
-- ["s14_IndexableBaseP", "Iterator"]
-- !private ["s14_IndexableBaseP", "endIndex"]
-- !private ["s14_IndexableBaseP", "startIndex"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - "s10CollectionP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
@@ -56,8 +48,6 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - "s8SequenceP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

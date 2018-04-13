@@ -17,6 +17,7 @@ depends-top-level:
 - "Swift"
 - "WebSocket"
 depends-member:
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
@@ -29,7 +30,7 @@ depends-member:
 - ["s9EquatableP", "missingSecAcceptHeader"]
 - ["s9EquatableP", "missingSecKeyHeader"]
 - ["s9EquatableP", "missingUpgradeHeader"]
-- ["s9EquatableP", ""]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -42,7 +43,6 @@ depends-member:
 - ["s5ErrorP", "missingSecAcceptHeader"]
 - ["s5ErrorP", "missingSecKeyHeader"]
 - ["s5ErrorP", "missingUpgradeHeader"]
-- ["s5ErrorP", ""]
 - ["10WebSockets0A6SocketC11FormatErrorO", "=="]
 - ["10WebSockets0A6SocketC11FormatErrorO", "Bool"]
 - ["10WebSockets0A6SocketC11FormatErrorO", "Status"]

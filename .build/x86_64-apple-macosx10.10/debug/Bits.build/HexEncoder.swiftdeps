@@ -126,6 +126,7 @@ depends-member:
 - ["s7CVarArgP", "D"]
 - ["s7CVarArgP", "E"]
 - ["s7CVarArgP", "F"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "a"]
 - !private ["s7CVarArgP", "append"]
 - ["s7CVarArgP", "b"]
@@ -316,6 +317,7 @@ depends-member:
 - ["s9EquatableP", "F"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "a"]
+- !private ["s9EquatableP", "append"]
 - ["s9EquatableP", "b"]
 - ["s9EquatableP", "c"]
 - ["s9EquatableP", "d"]
@@ -324,11 +326,13 @@ depends-member:
 - ["s9EquatableP", "f"]
 - ["s9EquatableP", "five"]
 - ["s9EquatableP", "four"]
+- !private ["s9EquatableP", "makeIterator"]
 - !private ["s9EquatableP", "max"]
 - ["s9EquatableP", "nine"]
 - ["s9EquatableP", "one"]
 - ["s9EquatableP", "seven"]
 - ["s9EquatableP", "six"]
+- !private ["s9EquatableP", "subscript"]
 - ["s9EquatableP", "three"]
 - ["s9EquatableP", "two"]
 - ["s9EquatableP", "zero"]
@@ -548,8 +552,6 @@ depends-member:
 - ["s15UnsignedIntegerP", "zero"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "makeIterator"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "makeIterator"]
 - ["s18_BitwiseOperationsP", "A"]
 - ["s18_BitwiseOperationsP", "B"]
 - ["s18_BitwiseOperationsP", "C"]
@@ -599,14 +601,6 @@ depends-member:
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "three"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "two"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "zero"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "makeIterator"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "makeIterator"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "makeIterator"]
 - ["s21_ObjectiveCBridgeableP", "A"]
 - ["s21_ObjectiveCBridgeableP", "B"]
 - ["s21_ObjectiveCBridgeableP", "C"]
@@ -634,33 +628,6 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "three"]
 - ["s21_ObjectiveCBridgeableP", "two"]
 - ["s21_ObjectiveCBridgeableP", "zero"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "makeIterator"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "makeIterator"]
-- ["s11_StrideableP", "A"]
-- ["s11_StrideableP", "B"]
-- ["s11_StrideableP", "C"]
-- ["s11_StrideableP", "D"]
-- ["s11_StrideableP", "E"]
-- ["s11_StrideableP", "F"]
-- ["s11_StrideableP", "a"]
-- ["s11_StrideableP", "b"]
-- ["s11_StrideableP", "c"]
-- ["s11_StrideableP", "d"]
-- ["s11_StrideableP", "e"]
-- ["s11_StrideableP", "eight"]
-- ["s11_StrideableP", "f"]
-- ["s11_StrideableP", "five"]
-- ["s11_StrideableP", "four"]
-- !private ["s11_StrideableP", "max"]
-- ["s11_StrideableP", "nine"]
-- ["s11_StrideableP", "one"]
-- ["s11_StrideableP", "seven"]
-- ["s11_StrideableP", "six"]
-- ["s11_StrideableP", "three"]
-- ["s11_StrideableP", "two"]
-- ["s11_StrideableP", "zero"]
 - ["s14_StringElementP", "A"]
 - ["s14_StringElementP", "B"]
 - ["s14_StringElementP", "C"]
@@ -722,18 +689,11 @@ depends-nominal:
 - "s5UInt8V"
 - "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:
@@ -754,4 +714,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "b5b9ca6a34b4fa8e115726d9ce87a691"
+interface-hash: "15acdc4c596f1bea753dd858dba0997b"

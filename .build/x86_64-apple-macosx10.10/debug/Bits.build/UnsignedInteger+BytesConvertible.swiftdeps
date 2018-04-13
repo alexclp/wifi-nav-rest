@@ -45,15 +45,15 @@ depends-member:
 - ["s13BinaryIntegerP", "init"]
 - ["s13BinaryIntegerP", "makeBytes"]
 - !private ["s13BinaryIntegerP", "shiftRight"]
+- ["4Bits16BytesConvertibleP", ""]
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits16BytesConvertibleP", "makeBytes"]
-- ["4Bits16BytesConvertibleP", ""]
+- ["4Bits18BytesInitializableP", ""]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesInitializableP", "makeBytes"]
-- ["4Bits18BytesInitializableP", ""]
+- ["4Bits18BytesRepresentableP", ""]
 - ["4Bits18BytesRepresentableP", "init"]
 - ["4Bits18BytesRepresentableP", "makeBytes"]
-- ["4Bits18BytesRepresentableP", ""]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "insert"]
 - ["s7CVarArgP", "makeBytes"]
@@ -107,8 +107,10 @@ depends-member:
 - !private ["s9EquatableP", "UInt64"]
 - !private ["s9EquatableP", "forEach"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insert"]
 - ["s9EquatableP", "makeBytes"]
 - !private ["s9EquatableP", "shiftRight"]
+- !private ["s9EquatableP", "suffix"]
 - !private ["s25ExpressibleByArrayLiteralP", "forEach"]
 - !private ["s25ExpressibleByArrayLiteralP", "insert"]
 - !private ["s25ExpressibleByArrayLiteralP", "suffix"]
@@ -185,9 +187,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "insert"]
 - !private ["s14_ArrayProtocolP", "suffix"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "insert"]
-- !private ["s23_BidirectionalIndexableP", "suffix"]
 - ["s18_BitwiseOperationsP", "init"]
 - ["s18_BitwiseOperationsP", "makeBytes"]
 - ["s15_CVarArgAlignedP", "init"]
@@ -197,33 +196,10 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "suffix"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "makeBytes"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "insert"]
-- !private ["s10_IndexableP", "suffix"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "insert"]
-- !private ["s14_IndexableBaseP", "suffix"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "insert"]
-- !private ["s17_MutableIndexableP", "suffix"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insert"]
 - ["s21_ObjectiveCBridgeableP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "suffix"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "insert"]
-- !private ["s22_RandomAccessIndexableP", "suffix"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "insert"]
-- !private ["s26_RangeReplaceableIndexableP", "suffix"]
-- !private ["s11_StrideableP", "Byte"]
-- ["s11_StrideableP", "Bytes"]
-- !private ["s11_StrideableP", "MemoryLayout"]
-- !private ["s11_StrideableP", "Self"]
-- !private ["s11_StrideableP", "UInt64"]
-- ["s11_StrideableP", "init"]
-- ["s11_StrideableP", "makeBytes"]
-- !private ["s11_StrideableP", "shiftRight"]
 - ["s14_StringElementP", "init"]
 - ["s14_StringElementP", "makeBytes"]
 depends-nominal:
@@ -265,18 +241,11 @@ depends-nominal:
 - "s5UInt8V"
 - "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - "s15_CVarArgAlignedP"
 - !private "s24_DestructorSafeContainerP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:

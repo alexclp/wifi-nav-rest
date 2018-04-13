@@ -36,19 +36,11 @@ depends-member:
 - !private ["s8HashableP", "init"]
 - ["9Transport14InternetStreamP", "Responder"]
 - ["9Transport14InternetStreamP", "ServerErrorHandler"]
-- !private ["9Transport14InternetStreamP", "print"]
-- ["9Transport14InternetStreamP", "start"]
 - ["9Transport14InternetStreamP", ""]
+- !private ["9Transport14InternetStreamP", "print"]
+- !private ["9Transport14InternetStreamP", "start"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
 - !private ["s8SequenceP", "init"]
@@ -60,18 +52,12 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -96,14 +82,6 @@ depends-nominal:
 - "9Transport14InternetStreamP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "4HTTP21ResponseRepresentableP"
 - !private "s8SequenceP"
@@ -112,18 +90,12 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

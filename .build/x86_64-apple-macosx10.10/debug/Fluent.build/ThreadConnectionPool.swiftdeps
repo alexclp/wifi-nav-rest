@@ -42,6 +42,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "init"]
@@ -60,6 +61,7 @@ depends-member:
 - ["6Fluent14ConnectionTypeO", "read"]
 - ["6Fluent14ConnectionTypeO", "readWrite"]
 - ["s28CustomDebugStringConvertibleP", "connectionClosed"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "forEach"]
 - !private ["s28CustomDebugStringConvertibleP", "hashValue"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -76,6 +78,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "keys"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "forEach"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "keys"]
@@ -100,13 +103,16 @@ depends-member:
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "hashValue"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "keys"]
 - !private ["s9EquatableP", "locked"]
 - ["s9EquatableP", "raw"]
 - ["s9EquatableP", "read"]
 - ["s9EquatableP", "readWrite"]
 - ["s9EquatableP", "some"]
+- !private ["s9EquatableP", "subscript"]
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "Int"]
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "Swift"]
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "_code"]
@@ -117,6 +123,7 @@ depends-member:
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "lockFailure"]
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "maxConnectionsReached"]
 - ["6Fluent20ThreadConnectionPoolC5ErrorO", "unspecified"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -124,10 +131,10 @@ depends-member:
 - ["s5ErrorP", "connectionClosed"]
 - !private ["s5ErrorP", "lockFailure"]
 - !private ["s5ErrorP", "maxConnectionsReached"]
-- ["s5ErrorP", ""]
 - !private ["6Fluent8ExecutorP", "Error"]
 - !private ["6Fluent8ExecutorP", "NSLock"]
 - !private ["6Fluent8ExecutorP", "ThreadConnectionPool"]
+- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent8ExecutorP", "clearClosedConnections"]
 - !private ["6Fluent8ExecutorP", "connection"]
 - !private ["6Fluent8ExecutorP", "connectionPendingTimeoutSeconds"]
@@ -143,7 +150,6 @@ depends-member:
 - !private ["6Fluent8ExecutorP", "sleep"]
 - !private ["6Fluent8ExecutorP", "threadId"]
 - !private ["6Fluent8ExecutorP", "waitForSpace"]
-- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent21ExecutorRepresentableP", "connectionType"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "forEach"]
@@ -164,21 +170,14 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So6NSLockC", "init"]
 - !private ["So6NSLockC", "locked"]
 - !private ["So9NSLockingP", "init"]
 - !private ["So9NSLockingP", "locked"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "locked"]
 - !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "locked"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "forEach"]
 - !private ["4Node0A13InitializableP", "init"]
@@ -237,24 +236,12 @@ depends-member:
 - !private ["6Fluent20ThreadConnectionPoolC", "threadId"]
 - !private ["6Fluent20ThreadConnectionPoolC", "waitForSpace"]
 - !private ["Sp", "hashValue"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "keys"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "keys"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locked"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -263,8 +250,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "keys"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s8_PointerP", "hashValue"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "hashValue"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -300,17 +285,10 @@ depends-nominal:
 - !private "s10DictionaryV4KeysV"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
 - !private "So6NSLockC"
 - !private "So9NSLockingP"
-- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "13PathIndexable0A7IndexerP"
@@ -327,21 +305,15 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - "6Fluent20ThreadConnectionPoolC"
 - !private "Sp"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -371,4 +343,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "22cf86cac58d22b7de2ba15feac98d64"
+interface-hash: "c8d8a4c17750a86570800d1517e2ac15"

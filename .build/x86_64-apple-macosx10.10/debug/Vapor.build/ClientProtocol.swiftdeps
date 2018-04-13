@@ -34,8 +34,8 @@ depends-member:
 - ["4HTTP9ResponderP", "Proxy"]
 - ["4HTTP9ResponderP", "SecurityLayer"]
 - ["4HTTP9ResponderP", "String"]
-- ["4HTTP9ResponderP", "init"]
 - ["4HTTP9ResponderP", ""]
+- !private ["4HTTP9ResponderP", "init"]
 depends-nominal:
 - "5Vapor14ClientProtocolP"
 - "5Vapor5ProxyV"

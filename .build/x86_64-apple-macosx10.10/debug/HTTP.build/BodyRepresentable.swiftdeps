@@ -22,9 +22,9 @@ depends-member:
 - !private ["4HTTP4BodyO", "init"]
 - ["4HTTP4BodyO", "makeBody"]
 - ["4HTTP17BodyRepresentableP", "Body"]
+- ["4HTTP17BodyRepresentableP", ""]
 - !private ["4HTTP17BodyRepresentableP", "init"]
 - ["4HTTP17BodyRepresentableP", "makeBody"]
-- ["4HTTP17BodyRepresentableP", ""]
 - !private ["4Bits16BytesConvertibleP", "Body"]
 - ["4Bits16BytesConvertibleP", "makeBody"]
 - !private ["4Bits18BytesInitializableP", "Body"]
@@ -80,8 +80,6 @@ depends-member:
 - ["s16TextOutputStreamP", "makeBody"]
 - !private ["s20TextOutputStreamableP", "Body"]
 - ["s20TextOutputStreamableP", "makeBody"]
-- !private ["s23_BidirectionalIndexableP", "Body"]
-- ["s23_BidirectionalIndexableP", "makeBody"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Body"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "makeBody"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "Body"]
@@ -92,14 +90,8 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "makeBody"]
 - !private ["s33_ExpressibleByStringInterpolationP", "Body"]
 - ["s33_ExpressibleByStringInterpolationP", "makeBody"]
-- !private ["s10_IndexableP", "Body"]
-- ["s10_IndexableP", "makeBody"]
-- !private ["s14_IndexableBaseP", "Body"]
-- ["s14_IndexableBaseP", "makeBody"]
 - !private ["s21_ObjectiveCBridgeableP", "Body"]
 - ["s21_ObjectiveCBridgeableP", "makeBody"]
-- !private ["s26_RangeReplaceableIndexableP", "Body"]
-- ["s26_RangeReplaceableIndexableP", "makeBody"]
 - !private ["s16_SwiftStringViewP", "Body"]
 - ["s16_SwiftStringViewP", "makeBody"]
 depends-nominal:
@@ -133,16 +125,12 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

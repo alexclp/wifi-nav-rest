@@ -21,7 +21,7 @@ depends-top-level:
 - !private "BooleanLiteralType"
 - !private "Byte"
 - "Bytes"
-- !private "CastingPrecedence"
+- "CastingPrecedence"
 - !private "CharacterSet"
 - "Dictionary"
 - "Node"
@@ -33,7 +33,7 @@ depends-top-level:
 - !private "print"
 depends-member:
 - ["Sa", "Node"]
-- !private ["Sa", "String"]
+- ["Sa", "String"]
 - !private ["Sa", "append"]
 - !private ["Sa", "contains"]
 - !private ["Sa", "count"]
@@ -144,6 +144,7 @@ depends-member:
 - !private ["s7CVarArgP", "Index"]
 - ["s7CVarArgP", "Node"]
 - ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "addingPercentEncoding"]
 - !private ["s7CVarArgP", "ampersand"]
 - !private ["s7CVarArgP", "append"]
@@ -418,18 +419,29 @@ depends-member:
 - !private ["s9EquatableP", "Byte"]
 - !private ["s9EquatableP", "CharacterSet"]
 - !private ["s9EquatableP", "Index"]
+- ["s9EquatableP", "Node"]
+- ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "addingPercentEncoding"]
 - !private ["s9EquatableP", "ampersand"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "array"]
 - !private ["s9EquatableP", "bool"]
+- !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "dropLast"]
 - !private ["s9EquatableP", "endIndex"]
 - !private ["s9EquatableP", "equals"]
+- !private ["s9EquatableP", "formURLEncoded"]
+- !private ["s9EquatableP", "formURLEncodedValue"]
 - !private ["s9EquatableP", "formUrlEscaped"]
 - !private ["s9EquatableP", "index"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "joined"]
 - !private ["s9EquatableP", "leftSquareBracket"]
 - !private ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "object"]
 - !private ["s9EquatableP", "percentDecoded"]
 - !private ["s9EquatableP", "plus"]
@@ -437,8 +449,10 @@ depends-member:
 - !private ["s9EquatableP", "remove"]
 - !private ["s9EquatableP", "rightSquareBracket"]
 - !private ["s9EquatableP", "space"]
+- !private ["s9EquatableP", "split"]
 - !private ["s9EquatableP", "startIndex"]
 - !private ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "substring"]
 - !private ["s9EquatableP", "urlQueryAllowed"]
 - !private ["s25ExpressibleByArrayLiteralP", "Byte"]
@@ -643,7 +657,6 @@ depends-member:
 - !private ["So8NSCodingP", "endIndex"]
 - !private ["So8NSCodingP", "formUrlEscaped"]
 - !private ["So8NSCodingP", "index"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeBytes"]
 - !private ["So8NSCodingP", "percentDecoded"]
 - !private ["So8NSCodingP", "startIndex"]
@@ -652,7 +665,6 @@ depends-member:
 - !private ["So9NSCopyingP", "endIndex"]
 - !private ["So9NSCopyingP", "formUrlEscaped"]
 - !private ["So9NSCopyingP", "index"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "makeBytes"]
 - !private ["So9NSCopyingP", "percentDecoded"]
 - !private ["So9NSCopyingP", "startIndex"]
@@ -661,7 +673,6 @@ depends-member:
 - !private ["So21NSItemProviderReadingP", "endIndex"]
 - !private ["So21NSItemProviderReadingP", "formUrlEscaped"]
 - !private ["So21NSItemProviderReadingP", "index"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "makeBytes"]
 - !private ["So21NSItemProviderReadingP", "percentDecoded"]
 - !private ["So21NSItemProviderReadingP", "startIndex"]
@@ -670,7 +681,6 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "endIndex"]
 - !private ["So21NSItemProviderWritingP", "formUrlEscaped"]
 - !private ["So21NSItemProviderWritingP", "index"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "makeBytes"]
 - !private ["So21NSItemProviderWritingP", "percentDecoded"]
 - !private ["So21NSItemProviderWritingP", "startIndex"]
@@ -679,7 +689,6 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "endIndex"]
 - !private ["So16NSMutableCopyingP", "formUrlEscaped"]
 - !private ["So16NSMutableCopyingP", "index"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "makeBytes"]
 - !private ["So16NSMutableCopyingP", "percentDecoded"]
 - !private ["So16NSMutableCopyingP", "startIndex"]
@@ -696,7 +705,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "endIndex"]
 - !private ["So16NSObjectProtocolP", "formUrlEscaped"]
 - !private ["So16NSObjectProtocolP", "index"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "makeBytes"]
 - !private ["So16NSObjectProtocolP", "percentDecoded"]
 - !private ["So16NSObjectProtocolP", "startIndex"]
@@ -705,7 +713,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "endIndex"]
 - !private ["So14NSSecureCodingP", "formUrlEscaped"]
 - !private ["So14NSSecureCodingP", "index"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "makeBytes"]
 - !private ["So14NSSecureCodingP", "percentDecoded"]
 - !private ["So14NSSecureCodingP", "startIndex"]
@@ -714,7 +721,6 @@ depends-member:
 - !private ["So8NSStringC", "endIndex"]
 - !private ["So8NSStringC", "formUrlEscaped"]
 - !private ["So8NSStringC", "index"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "makeBytes"]
 - !private ["So8NSStringC", "percentDecoded"]
 - !private ["So8NSStringC", "startIndex"]
@@ -935,7 +941,7 @@ depends-member:
 - !private ["SS", "CharacterSet"]
 - !private ["SS", "Index"]
 - !private ["SS", "Range"]
-- !private ["SS", "String"]
+- ["SS", "String"]
 - !private ["SS", "addingPercentEncoding"]
 - !private ["SS", "endIndex"]
 - !private ["SS", "formUrlEscaped"]
@@ -1008,29 +1014,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "map"]
 - !private ["s14_ArrayProtocolP", "split"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "CharacterSet"]
-- !private ["s23_BidirectionalIndexableP", "Index"]
-- ["s23_BidirectionalIndexableP", "Node"]
-- !private ["s23_BidirectionalIndexableP", "addingPercentEncoding"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "array"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "dropLast"]
-- !private ["s23_BidirectionalIndexableP", "endIndex"]
-- !private ["s23_BidirectionalIndexableP", "formURLEncoded"]
-- !private ["s23_BidirectionalIndexableP", "formUrlEscaped"]
-- !private ["s23_BidirectionalIndexableP", "index"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "joined"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "percentDecoded"]
-- !private ["s23_BidirectionalIndexableP", "split"]
-- !private ["s23_BidirectionalIndexableP", "startIndex"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "substring"]
 - !private ["s18_BitwiseOperationsP", "ampersand"]
 - !private ["s18_BitwiseOperationsP", "equals"]
 - !private ["s18_BitwiseOperationsP", "leftSquareBracket"]
@@ -1115,80 +1098,18 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "endIndex"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "formUrlEscaped"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "index"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "percentDecoded"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "startIndex"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "substring"]
-- !private ["s10_IndexableP", "CharacterSet"]
-- !private ["s10_IndexableP", "Index"]
-- ["s10_IndexableP", "Node"]
-- ["s10_IndexableP", "String"]
-- !private ["s10_IndexableP", "addingPercentEncoding"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "array"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "dropLast"]
-- !private ["s10_IndexableP", "endIndex"]
-- !private ["s10_IndexableP", "formURLEncoded"]
-- !private ["s10_IndexableP", "formUrlEscaped"]
-- !private ["s10_IndexableP", "index"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "joined"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "percentDecoded"]
-- !private ["s10_IndexableP", "split"]
-- !private ["s10_IndexableP", "startIndex"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "substring"]
-- !private ["s14_IndexableBaseP", "CharacterSet"]
-- !private ["s14_IndexableBaseP", "Index"]
-- ["s14_IndexableBaseP", "Node"]
-- ["s14_IndexableBaseP", "String"]
-- !private ["s14_IndexableBaseP", "addingPercentEncoding"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "array"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "dropLast"]
-- !private ["s14_IndexableBaseP", "endIndex"]
-- !private ["s14_IndexableBaseP", "formURLEncoded"]
-- !private ["s14_IndexableBaseP", "formUrlEscaped"]
-- !private ["s14_IndexableBaseP", "index"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "joined"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "percentDecoded"]
-- !private ["s14_IndexableBaseP", "split"]
-- !private ["s14_IndexableBaseP", "startIndex"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "substring"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addingPercentEncoding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "formUrlEscaped"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "index"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "percentDecoded"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "substring"]
-- ["s17_MutableIndexableP", "Node"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "array"]
-- !private ["s17_MutableIndexableP", "contains"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "dropLast"]
-- !private ["s17_MutableIndexableP", "formURLEncoded"]
-- !private ["s17_MutableIndexableP", "joined"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "split"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "CharacterSet"]
 - !private ["s21_ObjectiveCBridgeableP", "Index"]
 - ["s21_ObjectiveCBridgeableP", "Node"]
@@ -1222,47 +1143,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "substring"]
 - !private ["s21_ObjectiveCBridgeableP", "urlQueryAllowed"]
-- ["s22_RandomAccessIndexableP", "Node"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "array"]
-- !private ["s22_RandomAccessIndexableP", "contains"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "dropLast"]
-- !private ["s22_RandomAccessIndexableP", "formURLEncoded"]
-- !private ["s22_RandomAccessIndexableP", "joined"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "split"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "CharacterSet"]
-- !private ["s26_RangeReplaceableIndexableP", "Index"]
-- ["s26_RangeReplaceableIndexableP", "Node"]
-- !private ["s26_RangeReplaceableIndexableP", "addingPercentEncoding"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "array"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "dropLast"]
-- !private ["s26_RangeReplaceableIndexableP", "endIndex"]
-- !private ["s26_RangeReplaceableIndexableP", "formURLEncoded"]
-- !private ["s26_RangeReplaceableIndexableP", "formUrlEscaped"]
-- !private ["s26_RangeReplaceableIndexableP", "index"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "joined"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "percentDecoded"]
-- !private ["s26_RangeReplaceableIndexableP", "split"]
-- !private ["s26_RangeReplaceableIndexableP", "startIndex"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "substring"]
-- !private ["s11_StrideableP", "ampersand"]
-- !private ["s11_StrideableP", "equals"]
-- !private ["s11_StrideableP", "leftSquareBracket"]
-- !private ["s11_StrideableP", "plus"]
-- !private ["s11_StrideableP", "rightSquareBracket"]
-- !private ["s11_StrideableP", "space"]
 - !private ["s14_StringElementP", "ampersand"]
 - !private ["s14_StringElementP", "equals"]
 - !private ["s14_StringElementP", "leftSquareBracket"]
@@ -1303,7 +1183,7 @@ depends-nominal:
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"
 - "s9EncodableP"
-- !private "s9EquatableP"
+- "s9EquatableP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s30ExpressibleByDictionaryLiteralP"
@@ -1347,7 +1227,7 @@ depends-nominal:
 - "s8SequenceP"
 - !private "s10SetAlgebraP"
 - !private "s10StrideableP"
-- !private "SS"
+- "SS"
 - !private "s14StringProtocolP"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
@@ -1355,7 +1235,6 @@ depends-nominal:
 - !private "s5UInt8V"
 - !private "s15UnsignedIntegerP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -1366,14 +1245,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:

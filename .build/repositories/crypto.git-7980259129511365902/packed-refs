@@ -1,6 +1,8 @@
 # pack-refs with: peeled fully-peeled sorted 
-92e3e38118a9aa44a5ebc51165266dbb575cc0c7 refs/heads/master
-d23c37472d778179eb0ea370d4bf4bd8e995b5ef refs/heads/nio
+066eb43cb2322e709e20a9a8632b8174dd7d0221 refs/heads/gm
+e77aa181580b466fb26865918b62973d9fbfaed6 refs/heads/master
+04f882e39b7fef8a5815a1faec5405f9366744d7 refs/heads/nio
+847261cd9afd32ee628989ba2725af96c99091a4 refs/heads/pbkdf2
 5ceef4f532e4691dafedf0b2b4b460344cea6582 refs/heads/rsa
 d35af92a6a2dd4d4f0b8be30ee220cdea502d81f refs/pull/1/head
 1f769c57a6d45cbcf2041ab9e989ab5ecc5fc04c refs/pull/10/head
@@ -37,8 +39,12 @@ b386acbd296d50b0ffb5a9fd76e43c3faf0f2c9b refs/pull/37/head
 5ceef4f532e4691dafedf0b2b4b460344cea6582 refs/pull/39/head
 0839c815ec21ccff4f185ca0d8d626a9d01444b9 refs/pull/4/head
 625e04c0bba7efe23c8bd0edf8e7bd271d3cfa0a refs/pull/40/head
-d23c37472d778179eb0ea370d4bf4bd8e995b5ef refs/pull/41/head
-43a7f5a8cdafc50a634017da5a7c5d4a614abbbc refs/pull/41/merge
+04f882e39b7fef8a5815a1faec5405f9366744d7 refs/pull/41/head
+42b81d1f804c63bbb29426735b29385e1e4ad251 refs/pull/45/head
+7ad5f34757471141c9a62b90d32ee1f5904b4a88 refs/pull/46/head
+847261cd9afd32ee628989ba2725af96c99091a4 refs/pull/47/head
+163bfde15abe142afda8aa6e0df56bd5ae79aec2 refs/pull/47/merge
+a762a253de5c30660cd72782e0cfa7e2a66519f9 refs/pull/48/head
 24d994951c1e12bdafd9e427e06f0825847210c9 refs/pull/5/head
 a7c045a7e8c9dfc900251a76ffbb87f545f58674 refs/pull/5/merge
 83298cf97358504b882496de965da76b2e3324fe refs/pull/8/head
@@ -63,9 +69,12 @@ e01f5cf4f707fc49b480b3f77fae85f13f02877d refs/tags/2.0.0-beta.1
 d23bd514a8e66246450824850318debf12295427 refs/tags/2.1.0
 bf4470b9da79024aab79c85de80374f6c29e3864 refs/tags/2.1.1
 946edc6642d6825982a2f52a268a8ba9bd520a3d refs/tags/2.1.2
+e77aa181580b466fb26865918b62973d9fbfaed6 refs/tags/3.0.0
 c8510f9de2dfaa194fa147e0a395621dfc0f8b8e refs/tags/3.0.0-beta.1
 2164339fe61bbd8668253546dda51aa3a385d1b1 refs/tags/3.0.0-beta.1.1
 be5922397fef3bc0c10ce264d18c534fdc0f261a refs/tags/3.0.0-beta.1.2
 9a708a33ec21f5d1eea858c10cf7e9b8306a0b30 refs/tags/3.0.0-rc.1
 f5100826dbdaa639ee57d722b3ee906f528e53d9 refs/tags/3.0.0-rc.1.1
 e5dbff5eac700fe925f95a4e6eee5424f609d0d6 refs/tags/3.0.0-rc.1.1.1
+5ea23edc6d3122655daf71756bc769c987a20b29 refs/tags/3.0.0-rc.2
+4c7acb4fbf1720682275f0ef543474c951d84a09 refs/tags/3.0.0-rc.3

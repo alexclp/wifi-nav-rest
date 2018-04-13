@@ -19,7 +19,6 @@ depends-top-level:
 - !private "StringLiteralType"
 - "Swift"
 depends-member:
-- !private ["s11AnySequenceV", "makeString"]
 - !private ["Sa", "count"]
 - !private ["Sa", "map"]
 - !private ["Sa", "split"]
@@ -32,7 +31,6 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "map"]
 - !private ["s23BidirectionalCollectionP", "split"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["s13BinaryIntegerP", "space"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4Bits16BytesConvertibleP", "init"]
@@ -44,8 +42,8 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "space"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
-- !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "makeBytes"]
 - !private ["s7CVarArgP", "map"]
@@ -59,7 +57,6 @@ depends-member:
 - !private ["s10CollectionP", "map"]
 - !private ["s10CollectionP", "split"]
 - !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "makeBytes"]
 - !private ["s10ComparableP", "space"]
@@ -71,13 +68,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "split"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "makeBytes"]
 - !private ["s29CustomPlaygroundQuickLookableP", "space"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "makeBytes"]
 - !private ["s17CustomReflectableP", "makeString"]
@@ -87,7 +82,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "count"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "makeBytes"]
 - !private ["s23CustomStringConvertibleP", "makeString"]
@@ -97,7 +91,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "hashValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "makeBytes"]
 - !private ["s9DecodableP", "map"]
@@ -110,24 +103,28 @@ depends-member:
 - !private ["4SMTP22EmailBodyRepresentableP", "makeBytes"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "hashValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "makeBytes"]
 - !private ["s9EncodableP", "map"]
 - !private ["s9EncodableP", "space"]
 - !private ["s9EncodableP", "split"]
 - !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
 - ["s9EquatableP", "_userInfo"]
+- !private ["s9EquatableP", "count"]
 - ["s9EquatableP", "hashValue"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "missingDomain"]
 - !private ["s9EquatableP", "space"]
-- ["s9EquatableP", ""]
+- !private ["s9EquatableP", "split"]
+- !private ["s9EquatableP", "subscript"]
 - ["4SMTP12SMTPGreetingV5ErrorO", "__derived_enum_equals"]
 - ["4SMTP12SMTPGreetingV5ErrorO", "_code"]
 - ["4SMTP12SMTPGreetingV5ErrorO", "_domain"]
@@ -136,13 +133,13 @@ depends-member:
 - ["4SMTP12SMTPGreetingV5ErrorO", "deinit"]
 - ["4SMTP12SMTPGreetingV5ErrorO", "hashValue"]
 - ["4SMTP12SMTPGreetingV5ErrorO", "missingDomain"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - ["s5ErrorP", "hashValue"]
 - !private ["s5ErrorP", "missingDomain"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "makeString"]
 - !private ["s25ExpressibleByArrayLiteralP", "map"]
@@ -151,14 +148,13 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "makeBytes"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "space"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "makeBytes"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "makeBytes"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s17FixedWidthIntegerP", "space"]
+- ["s8HashableP", ""]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -169,14 +165,10 @@ depends-member:
 - !private ["s8HashableP", "makeBytes"]
 - !private ["s8HashableP", "missingDomain"]
 - !private ["s8HashableP", "space"]
-- ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "makeBytes"]
 - !private ["s25LosslessStringConvertibleP", "space"]
-- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "makeBytes"]
 - !private ["s17MutableCollectionP", "count"]
@@ -184,24 +176,15 @@ depends-member:
 - !private ["s17MutableCollectionP", "map"]
 - !private ["s17MutableCollectionP", "split"]
 - !private ["s17MutableCollectionP", "subscript"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "makeBytes"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "makeBytes"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "makeBytes"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "makeBytes"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "makeBytes"]
 - !private ["So8NSObjectC", "makeBytes"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "makeBytes"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "makeBytes"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "makeBytes"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["s7NumericP", "space"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "makeString"]
@@ -228,9 +211,6 @@ depends-member:
 - !private ["s8SequenceP", "map"]
 - !private ["s8SequenceP", "split"]
 - !private ["s8SequenceP", "subscript"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
 - !private ["s10StrideableP", "space"]
 - !private ["SS", "init"]
 - !private ["SS", "makeBytes"]
@@ -247,14 +227,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "map"]
 - !private ["s14_ArrayProtocolP", "split"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "split"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s18_BitwiseOperationsP", "space"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "makeString"]
@@ -264,7 +236,6 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "makeBytes"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "space"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "makeBytes"]
@@ -274,57 +245,20 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "makeBytes"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "makeBytes"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "split"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "split"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "split"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "space"]
 - !private ["s21_ObjectiveCBridgeableP", "split"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "split"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "split"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s11_StrideableP", "hashValue"]
-- !private ["s11_StrideableP", "space"]
 - !private ["s14_StringElementP", "space"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "makeBytes"]
 depends-nominal:
-- !private "s11AnySequenceV"
 - !private "Sa"
 - !private "s10ArraySliceV"
 - !private "s23BidirectionalCollectionP"
@@ -355,7 +289,6 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s17FixedWidthIntegerP"
 - "s8HashableP"
-- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
@@ -373,8 +306,6 @@ depends-nominal:
 - !private "s26RangeReplaceableCollectionP"
 - "4SMTP12SMTPGreetingV"
 - !private "s8SequenceP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
 - !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
@@ -383,7 +314,6 @@ depends-nominal:
 - !private "s5UInt8V"
 - !private "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -394,14 +324,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:

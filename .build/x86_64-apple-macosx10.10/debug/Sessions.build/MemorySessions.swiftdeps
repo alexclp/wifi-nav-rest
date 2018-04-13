@@ -50,8 +50,11 @@ depends-member:
 - !private ["s9EncodableP", "base64Encoded"]
 - !private ["s9EncodableP", "makeString"]
 - !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "base64Encoded"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "locked"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "base64Encoded"]
 - !private ["s25ExpressibleByArrayLiteralP", "makeString"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
@@ -103,6 +106,7 @@ depends-member:
 - !private ["8Sessions0A8ProtocolP", "Crypto"]
 - ["8Sessions0A8ProtocolP", "NSLock"]
 - !private ["8Sessions0A8ProtocolP", "Session"]
+- ["8Sessions0A8ProtocolP", ""]
 - ["8Sessions0A8ProtocolP", "contains"]
 - ["8Sessions0A8ProtocolP", "destroy"]
 - ["8Sessions0A8ProtocolP", "get"]
@@ -110,30 +114,15 @@ depends-member:
 - !private ["8Sessions0A8ProtocolP", "sessions"]
 - !private ["8Sessions0A8ProtocolP", "sessionsLock"]
 - ["8Sessions0A8ProtocolP", "set"]
-- ["8Sessions0A8ProtocolP", ""]
 - !private ["s14_ArrayProtocolP", "base64Encoded"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "base64Encoded"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
 - !private ["s24_DestructorSafeContainerP", "base64Encoded"]
 - !private ["s24_DestructorSafeContainerP", "makeString"]
-- !private ["s10_IndexableP", "base64Encoded"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "base64Encoded"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locked"]
-- !private ["s17_MutableIndexableP", "base64Encoded"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "base64Encoded"]
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "base64Encoded"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "base64Encoded"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -167,15 +156,9 @@ depends-nominal:
 - !private "8Sessions7SessionC"
 - "8Sessions0A8ProtocolP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -212,4 +195,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "bfd5566e9c9e0e8dca6b32c039307cec"
+interface-hash: "5c92844eaa0d107dec2fe1401ebf39c2"

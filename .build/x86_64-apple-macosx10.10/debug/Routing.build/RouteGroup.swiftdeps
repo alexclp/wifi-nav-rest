@@ -27,13 +27,14 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "isEmpty"]
 - !private ["s23BidirectionalCollectionP", "reduce"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "chain"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s7CVarArgP", "reduce"]
 - ["s10CollectionP", "Iterator"]
 - ["s10CollectionP", "Middleware"]
 - !private ["s10CollectionP", "Request"]
-- !private ["s10CollectionP", "Responder"]
+- ["s10CollectionP", "Responder"]
 - !private ["s10CollectionP", "chain"]
 - !private ["s10CollectionP", "isEmpty"]
 - !private ["s10CollectionP", "reduce"]
@@ -60,6 +61,9 @@ depends-member:
 - !private ["s9EncodableP", "isEmpty"]
 - !private ["s9EncodableP", "reduce"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "chain"]
+- !private ["s9EquatableP", "isEmpty"]
+- !private ["s9EquatableP", "reduce"]
 - !private ["s25ExpressibleByArrayLiteralP", "chain"]
 - !private ["s25ExpressibleByArrayLiteralP", "isEmpty"]
 - !private ["s25ExpressibleByArrayLiteralP", "reduce"]
@@ -89,12 +93,12 @@ depends-member:
 - !private ["4HTTP9ResponderP", "init"]
 - !private ["4HTTP9ResponderP", "respond"]
 - !private ["7Routing12RouteBuilderP", "Request"]
+- ["7Routing12RouteBuilderP", ""]
 - !private ["7Routing12RouteBuilderP", "host"]
 - !private ["7Routing12RouteBuilderP", "middleware"]
 - !private ["7Routing12RouteBuilderP", "parent"]
 - !private ["7Routing12RouteBuilderP", "pathPrefix"]
 - ["7Routing12RouteBuilderP", "register"]
-- ["7Routing12RouteBuilderP", ""]
 - ["7Routing10RouteGroupC", "Method"]
 - ["7Routing10RouteGroupC", "Middleware"]
 - !private ["7Routing10RouteGroupC", "Request"]
@@ -111,7 +115,7 @@ depends-member:
 - ["s8SequenceP", "Iterator"]
 - ["s8SequenceP", "Middleware"]
 - !private ["s8SequenceP", "Request"]
-- !private ["s8SequenceP", "Responder"]
+- ["s8SequenceP", "Responder"]
 - !private ["s8SequenceP", "chain"]
 - !private ["s8SequenceP", "isEmpty"]
 - !private ["s8SequenceP", "reduce"]
@@ -119,42 +123,14 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "chain"]
 - !private ["s14_ArrayProtocolP", "isEmpty"]
 - !private ["s14_ArrayProtocolP", "reduce"]
-- !private ["s23_BidirectionalIndexableP", "chain"]
-- !private ["s23_BidirectionalIndexableP", "isEmpty"]
-- !private ["s23_BidirectionalIndexableP", "reduce"]
 - !private ["s24_DestructorSafeContainerP", "chain"]
 - !private ["s24_DestructorSafeContainerP", "isEmpty"]
 - !private ["s24_DestructorSafeContainerP", "reduce"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- ["s10_IndexableP", "Iterator"]
-- ["s10_IndexableP", "Middleware"]
-- !private ["s10_IndexableP", "Request"]
-- !private ["s10_IndexableP", "Responder"]
-- !private ["s10_IndexableP", "chain"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s10_IndexableP", "reduce"]
-- !private ["s10_IndexableP", "reversed"]
-- ["s14_IndexableBaseP", "Iterator"]
-- ["s14_IndexableBaseP", "Middleware"]
-- !private ["s14_IndexableBaseP", "Request"]
-- !private ["s14_IndexableBaseP", "Responder"]
-- !private ["s14_IndexableBaseP", "chain"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "reduce"]
-- !private ["s14_IndexableBaseP", "reversed"]
-- !private ["s17_MutableIndexableP", "chain"]
-- !private ["s17_MutableIndexableP", "isEmpty"]
-- !private ["s17_MutableIndexableP", "reduce"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "chain"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "reduce"]
-- !private ["s22_RandomAccessIndexableP", "chain"]
-- !private ["s22_RandomAccessIndexableP", "isEmpty"]
-- !private ["s22_RandomAccessIndexableP", "reduce"]
-- !private ["s26_RangeReplaceableIndexableP", "chain"]
-- !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
-- !private ["s26_RangeReplaceableIndexableP", "reduce"]
 depends-nominal:
 - !private "Sa"
 - !private "4HTTP14BasicResponderV"
@@ -186,15 +162,9 @@ depends-nominal:
 - "7Routing10RouteGroupC"
 - "s8SequenceP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -231,4 +201,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "2655612b0a5613d734f1b87f1063879e"
+interface-hash: "17b8f130f05fd8fe8ce0f09d8c3533ef"

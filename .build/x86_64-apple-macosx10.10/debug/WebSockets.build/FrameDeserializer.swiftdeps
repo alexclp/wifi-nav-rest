@@ -15,15 +15,15 @@ depends-top-level:
 - !private "<"
 - "=="
 - "AssignmentPrecedence"
-- !private "Bool"
-- !private "Byte"
+- "Bool"
+- "Byte"
 - !private "FloatLiteralType"
 - "FrameParser"
 - "FrameParserError"
 - !private "IntegerLiteralType"
 - "ReadableStream"
 - "Swift"
-- !private "UInt64"
+- "UInt64"
 - !private "UInt8"
 - "WebSocket"
 - !private "~="
@@ -33,7 +33,6 @@ depends-member:
 - !private ["s13BinaryIntegerP", "containsMask"]
 - !private ["s13BinaryIntegerP", "eightBytePayloadLength"]
 - !private ["s13BinaryIntegerP", "finFlag"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["s13BinaryIntegerP", "maskKeyIncludedFlag"]
 - !private ["s13BinaryIntegerP", "opCodeFlag"]
@@ -80,11 +79,11 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "rsv3Flag"]
 - !private ["4Bits18BytesRepresentableP", "toUIntMax"]
 - !private ["4Bits18BytesRepresentableP", "twoBytePayloadLength"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "containsMask"]
 - !private ["s7CVarArgP", "eightBytePayloadLength"]
 - !private ["s7CVarArgP", "finFlag"]
-- !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "maskKeyIncludedFlag"]
 - !private ["s7CVarArgP", "opCodeFlag"]
@@ -98,7 +97,6 @@ depends-member:
 - !private ["s10ComparableP", "containsMask"]
 - !private ["s10ComparableP", "eightBytePayloadLength"]
 - !private ["s10ComparableP", "finFlag"]
-- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "init"]
 - !private ["s10ComparableP", "maskKeyIncludedFlag"]
 - !private ["s10ComparableP", "opCodeFlag"]
@@ -113,7 +111,6 @@ depends-member:
 - !private ["s29CustomPlaygroundQuickLookableP", "containsMask"]
 - !private ["s29CustomPlaygroundQuickLookableP", "eightBytePayloadLength"]
 - !private ["s29CustomPlaygroundQuickLookableP", "finFlag"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "maskKeyIncludedFlag"]
 - !private ["s29CustomPlaygroundQuickLookableP", "opCodeFlag"]
@@ -128,7 +125,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "containsMask"]
 - !private ["s17CustomReflectableP", "eightBytePayloadLength"]
 - !private ["s17CustomReflectableP", "finFlag"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "maskKeyIncludedFlag"]
 - !private ["s17CustomReflectableP", "opCodeFlag"]
@@ -143,7 +139,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "containsMask"]
 - !private ["s23CustomStringConvertibleP", "eightBytePayloadLength"]
 - !private ["s23CustomStringConvertibleP", "finFlag"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "maskKeyIncludedFlag"]
 - !private ["s23CustomStringConvertibleP", "opCodeFlag"]
@@ -158,7 +153,6 @@ depends-member:
 - !private ["s9DecodableP", "containsMask"]
 - !private ["s9DecodableP", "eightBytePayloadLength"]
 - !private ["s9DecodableP", "finFlag"]
-- !private ["s9DecodableP", "hashValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "maskKeyIncludedFlag"]
 - !private ["s9DecodableP", "opCodeFlag"]
@@ -173,7 +167,6 @@ depends-member:
 - !private ["s9EncodableP", "containsMask"]
 - !private ["s9EncodableP", "eightBytePayloadLength"]
 - !private ["s9EncodableP", "finFlag"]
-- !private ["s9EncodableP", "hashValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "maskKeyIncludedFlag"]
 - !private ["s9EncodableP", "opCodeFlag"]
@@ -183,11 +176,13 @@ depends-member:
 - !private ["s9EncodableP", "rsv3Flag"]
 - !private ["s9EncodableP", "toUIntMax"]
 - !private ["s9EncodableP", "twoBytePayloadLength"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
 - ["s9EquatableP", "_userInfo"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "containsMask"]
 - !private ["s9EquatableP", "eightBytePayloadLength"]
 - !private ["s9EquatableP", "finFlag"]
@@ -202,20 +197,18 @@ depends-member:
 - !private ["s9EquatableP", "rsv3Flag"]
 - !private ["s9EquatableP", "toUIntMax"]
 - !private ["s9EquatableP", "twoBytePayloadLength"]
-- ["s9EquatableP", ""]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - ["s5ErrorP", "hashValue"]
 - !private ["s5ErrorP", "missingByte"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "containsMask"]
 - !private ["s27ExpressibleByIntegerLiteralP", "eightBytePayloadLength"]
 - !private ["s27ExpressibleByIntegerLiteralP", "finFlag"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - !private ["s27ExpressibleByIntegerLiteralP", "init"]
 - !private ["s27ExpressibleByIntegerLiteralP", "maskKeyIncludedFlag"]
 - !private ["s27ExpressibleByIntegerLiteralP", "opCodeFlag"]
@@ -228,7 +221,6 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "containsMask"]
 - !private ["s17FixedWidthIntegerP", "eightBytePayloadLength"]
 - !private ["s17FixedWidthIntegerP", "finFlag"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s17FixedWidthIntegerP", "init"]
 - !private ["s17FixedWidthIntegerP", "maskKeyIncludedFlag"]
 - !private ["s17FixedWidthIntegerP", "opCodeFlag"]
@@ -239,14 +231,14 @@ depends-member:
 - !private ["s17FixedWidthIntegerP", "toUIntMax"]
 - !private ["s17FixedWidthIntegerP", "twoBytePayloadLength"]
 - !private ["10WebSockets0A6SocketC5FrameC", "Header"]
-- !private ["10WebSockets0A6SocketC5FrameC", "MaskingKey"]
-- !private ["10WebSockets0A6SocketC5FrameC", "OpCode"]
+- ["10WebSockets0A6SocketC5FrameC", "MaskingKey"]
+- ["10WebSockets0A6SocketC5FrameC", "OpCode"]
 - !private ["10WebSockets0A6SocketC5FrameC", "init"]
-- !private ["10WebSockets11FrameParserC", "Bool"]
-- !private ["10WebSockets11FrameParserC", "Byte"]
+- ["10WebSockets11FrameParserC", "Bool"]
+- ["10WebSockets11FrameParserC", "Byte"]
 - !private ["10WebSockets11FrameParserC", "FrameParserError"]
 - ["10WebSockets11FrameParserC", "ReadableStream"]
-- !private ["10WebSockets11FrameParserC", "UInt64"]
+- ["10WebSockets11FrameParserC", "UInt64"]
 - !private ["10WebSockets11FrameParserC", "UInt8"]
 - ["10WebSockets11FrameParserC", "WebSocket"]
 - ["10WebSockets11FrameParserC", "acceptFrame"]
@@ -267,6 +259,7 @@ depends-member:
 - ["10WebSockets16FrameParserErrorO", "deinit"]
 - ["10WebSockets16FrameParserErrorO", "hashValue"]
 - ["10WebSockets16FrameParserErrorO", "missingByte"]
+- ["s8HashableP", ""]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -286,14 +279,11 @@ depends-member:
 - !private ["s8HashableP", "rsv3Flag"]
 - !private ["s8HashableP", "toUIntMax"]
 - !private ["s8HashableP", "twoBytePayloadLength"]
-- ["s8HashableP", ""]
 - !private ["10WebSockets0A6SocketC5FrameC6HeaderV", "init"]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "containsMask"]
 - !private ["s25LosslessStringConvertibleP", "eightBytePayloadLength"]
 - !private ["s25LosslessStringConvertibleP", "finFlag"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "maskKeyIncludedFlag"]
 - !private ["s25LosslessStringConvertibleP", "opCodeFlag"]
@@ -306,12 +296,10 @@ depends-member:
 - !private ["10WebSockets0A6SocketC5FrameC10MaskingKeyO", "hash"]
 - !private ["10WebSockets0A6SocketC5FrameC10MaskingKeyO", "key"]
 - !private ["10WebSockets0A6SocketC5FrameC10MaskingKeyO", "none"]
-- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s17MutableCollectionP", "append"]
 - !private ["s7NumericP", "containsMask"]
 - !private ["s7NumericP", "eightBytePayloadLength"]
 - !private ["s7NumericP", "finFlag"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["s7NumericP", "init"]
 - !private ["s7NumericP", "maskKeyIncludedFlag"]
 - !private ["s7NumericP", "opCodeFlag"]
@@ -327,14 +315,11 @@ depends-member:
 - !private ["9Transport14ReadableStreamP", "read"]
 - !private ["9Transport14ReadableStreamP", "readByte"]
 - !private ["s8SequenceP", "append"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
 - !private ["9Transport6StreamP", "read"]
 - !private ["9Transport6StreamP", "readByte"]
 - !private ["s10StrideableP", "containsMask"]
 - !private ["s10StrideableP", "eightBytePayloadLength"]
 - !private ["s10StrideableP", "finFlag"]
-- !private ["s10StrideableP", "hashValue"]
 - !private ["s10StrideableP", "init"]
 - !private ["s10StrideableP", "maskKeyIncludedFlag"]
 - !private ["s10StrideableP", "opCodeFlag"]
@@ -371,11 +356,9 @@ depends-member:
 - !private ["s15UnsignedIntegerP", "twoBytePayloadLength"]
 - ["10WebSockets0A6SocketC", "Frame"]
 - !private ["s14_ArrayProtocolP", "append"]
-- !private ["s23_BidirectionalIndexableP", "append"]
 - !private ["s18_BitwiseOperationsP", "containsMask"]
 - !private ["s18_BitwiseOperationsP", "eightBytePayloadLength"]
 - !private ["s18_BitwiseOperationsP", "finFlag"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s18_BitwiseOperationsP", "maskKeyIncludedFlag"]
 - !private ["s18_BitwiseOperationsP", "opCodeFlag"]
@@ -392,7 +375,6 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "containsMask"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "eightBytePayloadLength"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "finFlag"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "maskKeyIncludedFlag"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "opCodeFlag"]
@@ -402,15 +384,11 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "rsv3Flag"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "toUIntMax"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "twoBytePayloadLength"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s17_MutableIndexableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "containsMask"]
 - !private ["s21_ObjectiveCBridgeableP", "eightBytePayloadLength"]
 - !private ["s21_ObjectiveCBridgeableP", "finFlag"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "maskKeyIncludedFlag"]
 - !private ["s21_ObjectiveCBridgeableP", "opCodeFlag"]
@@ -420,21 +398,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "rsv3Flag"]
 - !private ["s21_ObjectiveCBridgeableP", "toUIntMax"]
 - !private ["s21_ObjectiveCBridgeableP", "twoBytePayloadLength"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s11_StrideableP", "containsMask"]
-- !private ["s11_StrideableP", "eightBytePayloadLength"]
-- !private ["s11_StrideableP", "finFlag"]
-- !private ["s11_StrideableP", "hashValue"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "maskKeyIncludedFlag"]
-- !private ["s11_StrideableP", "opCodeFlag"]
-- !private ["s11_StrideableP", "payloadLengthFlag"]
-- !private ["s11_StrideableP", "rsv1Flag"]
-- !private ["s11_StrideableP", "rsv2Flag"]
-- !private ["s11_StrideableP", "rsv3Flag"]
-- !private ["s11_StrideableP", "toUIntMax"]
-- !private ["s11_StrideableP", "twoBytePayloadLength"]
 - !private ["s14_StringElementP", "containsMask"]
 - !private ["s14_StringElementP", "eightBytePayloadLength"]
 - !private ["s14_StringElementP", "finFlag"]
@@ -469,15 +432,13 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s27ExpressibleByIntegerLiteralP"
 - !private "s17FixedWidthIntegerP"
-- !private "10WebSockets0A6SocketC5FrameC"
+- "10WebSockets0A6SocketC5FrameC"
 - "10WebSockets11FrameParserC"
 - "10WebSockets16FrameParserErrorO"
 - "s8HashableP"
 - !private "10WebSockets0A6SocketC5FrameC6HeaderV"
-- !private "Si"
 - !private "s25LosslessStringConvertibleP"
 - !private "10WebSockets0A6SocketC5FrameC10MaskingKeyO"
-- !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
 - !private "s7NumericP"
 - !private "10WebSockets0A6SocketC5FrameC6OpCodeO"
@@ -485,8 +446,6 @@ depends-nominal:
 - !private "s26RangeReplaceableCollectionP"
 - !private "9Transport14ReadableStreamP"
 - !private "s8SequenceP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
 - !private "9Transport6StreamP"
 - !private "s10StrideableP"
 - !private "s6UInt64V"
@@ -494,19 +453,12 @@ depends-nominal:
 - !private "s15UnsignedIntegerP"
 - "10WebSockets0A6SocketC"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:
@@ -540,4 +492,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "8b3fe492b8ddd0ee17c1812c9dba0728"
+interface-hash: "22c6ab5675cb97156faacc42b96ad662"

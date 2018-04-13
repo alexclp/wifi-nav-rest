@@ -50,6 +50,7 @@ depends-member:
 - ["5Vapor5AbortV", "typeIdentifier"]
 - ["5Vapor5AbortV", "unauthorized"]
 - ["5Vapor10AbortErrorP", "Abort"]
+- ["5Vapor10AbortErrorP", ""]
 - ["5Vapor10AbortErrorP", "_code"]
 - ["5Vapor10AbortErrorP", "_domain"]
 - ["5Vapor10AbortErrorP", "_getEmbeddedNSError"]
@@ -75,7 +76,6 @@ depends-member:
 - ["5Vapor10AbortErrorP", "suggestedFixes"]
 - ["5Vapor10AbortErrorP", "typeIdentifier"]
 - ["5Vapor10AbortErrorP", "unauthorized"]
-- ["5Vapor10AbortErrorP", ""]
 - ["s23BidirectionalCollectionP", "init"]
 - ["4HTTP17BodyRepresentableP", "init"]
 - ["4Bits16BytesConvertibleP", "init"]
@@ -85,6 +85,7 @@ depends-member:
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "Abort"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_code"]
 - ["s28CustomDebugStringConvertibleP", "_domain"]
 - ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
@@ -105,11 +106,11 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "status"]
 - ["s28CustomDebugStringConvertibleP", "suggestedFixes"]
 - ["s28CustomDebugStringConvertibleP", "typeIdentifier"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - ["s17CustomReflectableP", "init"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["9Debugging10DebuggableP", "Abort"]
+- ["9Debugging10DebuggableP", ""]
 - ["9Debugging10DebuggableP", "_code"]
 - ["9Debugging10DebuggableP", "_domain"]
 - ["9Debugging10DebuggableP", "_getEmbeddedNSError"]
@@ -130,7 +131,6 @@ depends-member:
 - ["9Debugging10DebuggableP", "status"]
 - ["9Debugging10DebuggableP", "suggestedFixes"]
 - ["9Debugging10DebuggableP", "typeIdentifier"]
-- ["9Debugging10DebuggableP", ""]
 - ["s9DecodableP", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "init"]
 - ["4SMTP22EmailBodyRepresentableP", "init"]
@@ -142,6 +142,7 @@ depends-member:
 - !private ["s9EquatableP", "reasonPhrase"]
 - ["s9EquatableP", "unauthorized"]
 - ["s5ErrorP", "Abort"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -167,7 +168,6 @@ depends-member:
 - ["s5ErrorP", "suggestedFixes"]
 - ["s5ErrorP", "typeIdentifier"]
 - ["s5ErrorP", "unauthorized"]
-- ["s5ErrorP", ""]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
@@ -179,14 +179,6 @@ depends-member:
 - ["s8HashableP", "unauthorized"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - ["4Node0A13InitializableP", "init"]
 - ["4Node0A13RepresentableP", "init"]
 - ["7Routing15ParameterizableP", "init"]
@@ -204,18 +196,12 @@ depends-member:
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "5Vapor5AbortV"
@@ -245,14 +231,6 @@ depends-nominal:
 - "s8HashableP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -266,18 +244,12 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

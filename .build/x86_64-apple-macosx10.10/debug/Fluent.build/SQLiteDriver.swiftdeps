@@ -78,6 +78,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "hexEncoded"]
 - !private ["s7CVarArgP", "init"]
@@ -107,6 +108,7 @@ depends-member:
 - !private ["6Fluent10ConnectionP", "SQLiteDriverError"]
 - !private ["6Fluent10ConnectionP", "SQLiteSerializer"]
 - ["6Fluent10ConnectionP", "String"]
+- ["6Fluent10ConnectionP", ""]
 - !private ["6Fluent10ConnectionP", "bind"]
 - ["6Fluent10ConnectionP", "database"]
 - !private ["6Fluent10ConnectionP", "enableForeignKeys"]
@@ -121,8 +123,8 @@ depends-member:
 - !private ["6Fluent10ConnectionP", "raw"]
 - !private ["6Fluent10ConnectionP", "rowContext"]
 - ["6Fluent10ConnectionP", "transaction"]
-- ["6Fluent10ConnectionP", ""]
 - !private ["6Fluent14ConnectionTypeO", "readWrite"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_code"]
 - ["s28CustomDebugStringConvertibleP", "_domain"]
 - ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
@@ -146,7 +148,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "typeIdentifier"]
 - ["s28CustomDebugStringConvertibleP", "unspecified"]
 - ["s28CustomDebugStringConvertibleP", "unsupported"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "makeNode"]
@@ -181,6 +182,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "uint"]
 - !private ["s23CustomStringConvertibleP", "wrapped"]
 - !private ["10Foundation4DateV", "makeNode"]
+- ["9Debugging10DebuggableP", ""]
 - ["9Debugging10DebuggableP", "_code"]
 - ["9Debugging10DebuggableP", "_domain"]
 - ["9Debugging10DebuggableP", "_getEmbeddedNSError"]
@@ -197,7 +199,6 @@ depends-member:
 - ["9Debugging10DebuggableP", "typeIdentifier"]
 - ["9Debugging10DebuggableP", "unspecified"]
 - ["9Debugging10DebuggableP", "unsupported"]
-- ["9Debugging10DebuggableP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "hexEncoded"]
@@ -221,6 +222,7 @@ depends-member:
 - !private ["6Fluent6DriverP", "SQLiteDriverError"]
 - !private ["6Fluent6DriverP", "SQLiteSerializer"]
 - ["6Fluent6DriverP", "String"]
+- ["6Fluent6DriverP", ""]
 - !private ["6Fluent6DriverP", "bind"]
 - ["6Fluent6DriverP", "database"]
 - !private ["6Fluent6DriverP", "enableForeignKeys"]
@@ -235,7 +237,6 @@ depends-member:
 - !private ["6Fluent6DriverP", "raw"]
 - !private ["6Fluent6DriverP", "rowContext"]
 - ["6Fluent6DriverP", "transaction"]
-- ["6Fluent6DriverP", ""]
 - !private ["4Core18EmptyInitializableP", "bytes"]
 - !private ["4Core18EmptyInitializableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
@@ -252,13 +253,17 @@ depends-member:
 - ["s9EquatableP", "array"]
 - ["s9EquatableP", "bool"]
 - ["s9EquatableP", "bytes"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "create"]
 - ["s9EquatableP", "custom"]
 - ["s9EquatableP", "date"]
 - ["s9EquatableP", "double"]
+- !private ["s9EquatableP", "hexEncoded"]
 - !private ["s9EquatableP", "init"]
 - ["s9EquatableP", "int"]
 - !private ["s9EquatableP", "makeNode"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "map"]
 - ["s9EquatableP", "modify"]
 - ["s9EquatableP", "null"]
 - ["s9EquatableP", "number"]
@@ -273,6 +278,7 @@ depends-member:
 - ["s9EquatableP", "uint"]
 - ["s9EquatableP", "uuid"]
 - !private ["s9EquatableP", "wrapped"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -289,7 +295,6 @@ depends-member:
 - ["s5ErrorP", "typeIdentifier"]
 - ["s5ErrorP", "unspecified"]
 - ["s5ErrorP", "unsupported"]
-- ["s5ErrorP", ""]
 - ["6Fluent8ExecutorP", "Bool"]
 - ["6Fluent8ExecutorP", "Connection"]
 - ["6Fluent8ExecutorP", "ConnectionType"]
@@ -304,6 +309,7 @@ depends-member:
 - !private ["6Fluent8ExecutorP", "SQLiteDriverError"]
 - !private ["6Fluent8ExecutorP", "SQLiteSerializer"]
 - ["6Fluent8ExecutorP", "String"]
+- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent8ExecutorP", "bind"]
 - ["6Fluent8ExecutorP", "database"]
 - !private ["6Fluent8ExecutorP", "enableForeignKeys"]
@@ -318,7 +324,6 @@ depends-member:
 - !private ["6Fluent8ExecutorP", "raw"]
 - !private ["6Fluent8ExecutorP", "rowContext"]
 - ["6Fluent8ExecutorP", "transaction"]
-- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent21ExecutorRepresentableP", "action"]
 - !private ["6Fluent21ExecutorRepresentableP", "context"]
 - !private ["6Fluent21ExecutorRepresentableP", "data"]
@@ -454,14 +459,6 @@ depends-member:
 - !private ["s17MutableCollectionP", "hexEncoded"]
 - !private ["s17MutableCollectionP", "makeString"]
 - !private ["s17MutableCollectionP", "map"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4NodeAAV", "array"]
 - !private ["4NodeAAV", "init"]
 - !private ["4NodeAAV", "makeNode"]
@@ -612,6 +609,7 @@ depends-member:
 - !private ["6Fluent20SQLiteDriverProtocolP", "SQLiteDriverError"]
 - !private ["6Fluent20SQLiteDriverProtocolP", "SQLiteSerializer"]
 - ["6Fluent20SQLiteDriverProtocolP", "String"]
+- ["6Fluent20SQLiteDriverProtocolP", ""]
 - ["6Fluent20SQLiteDriverProtocolP", "bind"]
 - ["6Fluent20SQLiteDriverProtocolP", "database"]
 - ["6Fluent20SQLiteDriverProtocolP", "disableForeignKeys"]
@@ -627,7 +625,6 @@ depends-member:
 - !private ["6Fluent20SQLiteDriverProtocolP", "raw"]
 - !private ["6Fluent20SQLiteDriverProtocolP", "rowContext"]
 - ["6Fluent20SQLiteDriverProtocolP", "transaction"]
-- ["6Fluent20SQLiteDriverProtocolP", ""]
 - !private ["6Fluent16SQLiteSerializerC", "deinit"]
 - !private ["6Fluent16SQLiteSerializerC", "init"]
 - !private ["6Fluent16SQLiteSerializerC", "serialize"]
@@ -682,6 +679,7 @@ depends-member:
 - !private ["6Fluent12TransactableP", "SQLiteDriverError"]
 - !private ["6Fluent12TransactableP", "SQLiteSerializer"]
 - ["6Fluent12TransactableP", "String"]
+- ["6Fluent12TransactableP", ""]
 - !private ["6Fluent12TransactableP", "bind"]
 - ["6Fluent12TransactableP", "database"]
 - !private ["6Fluent12TransactableP", "enableForeignKeys"]
@@ -696,16 +694,10 @@ depends-member:
 - !private ["6Fluent12TransactableP", "raw"]
 - !private ["6Fluent12TransactableP", "rowContext"]
 - ["6Fluent12TransactableP", "transaction"]
-- ["6Fluent12TransactableP", ""]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "hexEncoded"]
 - !private ["s14_ArrayProtocolP", "makeString"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "hexEncoded"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s18_BitwiseOperationsP", "makeNode"]
 - !private ["s24_DestructorSafeContainerP", "count"]
@@ -720,24 +712,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "hexEncoded"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "hexEncoded"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "hexEncoded"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "hexEncoded"]
@@ -746,17 +720,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "hexEncoded"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "hexEncoded"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "makeNode"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "6Fluent6ActionO"
@@ -808,14 +771,6 @@ depends-nominal:
 - "6Fluent12MemoryDriverC"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4NodeAAV"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
@@ -859,7 +814,6 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - "6Fluent12TransactableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -869,15 +823,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -907,4 +853,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "d5ce1aa849595fb3407fa484de82da03"
+interface-hash: "9a7bcb5666496dc6ca1ba9db23344020"

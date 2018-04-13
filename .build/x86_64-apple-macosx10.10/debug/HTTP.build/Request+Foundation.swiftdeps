@@ -27,7 +27,6 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["s23BidirectionalCollectionP", "makeBytes"]
 - !private ["s23BidirectionalCollectionP", "uppercased"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["4HTTP4BodyO", "bytes"]
 - !private ["4HTTP4BodyO", "deinit"]
 - !private ["4HTTP4BodyO", "init"]
@@ -45,7 +44,6 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "uppercased"]
 - !private ["s7CVarArgP", "forEach"]
-- !private ["s7CVarArgP", "hashValue"]
 - !private ["s7CVarArgP", "makeBytes"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "uppercased"]
@@ -54,7 +52,6 @@ depends-member:
 - !private ["s10CollectionP", "makeBytes"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10CollectionP", "uppercased"]
-- !private ["s10ComparableP", "hashValue"]
 - !private ["s10ComparableP", "makeBytes"]
 - !private ["s10ComparableP", "uppercased"]
 - ["10Foundation10URLRequestV4HTTPE15ConversionErrorO", "__derived_enum_equals"]
@@ -82,7 +79,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "uppercased"]
 - !private ["s28CustomDebugStringConvertibleP", "url"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "makeBytes"]
 - !private ["s29CustomPlaygroundQuickLookableP", "makeURI"]
 - !private ["s29CustomPlaygroundQuickLookableP", "uppercased"]
@@ -94,7 +90,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "allHTTPHeaderFields"]
 - !private ["s17CustomReflectableP", "flatMap"]
 - !private ["s17CustomReflectableP", "forEach"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - !private ["s17CustomReflectableP", "init"]
@@ -113,7 +108,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "body"]
 - !private ["s23CustomStringConvertibleP", "description"]
 - !private ["s23CustomStringConvertibleP", "forEach"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "headers"]
 - !private ["s23CustomStringConvertibleP", "httpBody"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
@@ -130,7 +124,6 @@ depends-member:
 - !private ["10Foundation4DataV", "makeBytes"]
 - !private ["s9DecodableP", "flatMap"]
 - !private ["s9DecodableP", "forEach"]
-- !private ["s9DecodableP", "hashValue"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "makeBytes"]
 - !private ["s9DecodableP", "makeURI"]
@@ -141,7 +134,6 @@ depends-member:
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "flatMap"]
 - !private ["s9EncodableP", "forEach"]
-- !private ["s9EncodableP", "hashValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "makeBytes"]
 - !private ["s9EncodableP", "makeURI"]
@@ -151,6 +143,7 @@ depends-member:
 - !private ["s9EquatableP", "ConversionError"]
 - !private ["s9EquatableP", "Method"]
 - !private ["s9EquatableP", "Request"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
@@ -158,6 +151,8 @@ depends-member:
 - !private ["s9EquatableP", "addValue"]
 - !private ["s9EquatableP", "allHTTPHeaderFields"]
 - !private ["s9EquatableP", "description"]
+- !private ["s9EquatableP", "flatMap"]
+- !private ["s9EquatableP", "forEach"]
 - ["s9EquatableP", "hashValue"]
 - !private ["s9EquatableP", "httpBody"]
 - !private ["s9EquatableP", "httpMethod"]
@@ -166,9 +161,10 @@ depends-member:
 - !private ["s9EquatableP", "makeURI"]
 - !private ["s9EquatableP", "missingMethod"]
 - !private ["s9EquatableP", "missingURI"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "uppercased"]
 - !private ["s9EquatableP", "url"]
-- ["s9EquatableP", ""]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -176,7 +172,6 @@ depends-member:
 - ["s5ErrorP", "hashValue"]
 - !private ["s5ErrorP", "missingMethod"]
 - !private ["s5ErrorP", "missingURI"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "bytes"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "forEach"]
@@ -184,7 +179,6 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "description"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "makeBytes"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "uppercased"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - !private ["s23ExpressibleByNilLiteralP", "flatMap"]
 - !private ["s26ExpressibleByStringLiteralP", "description"]
 - !private ["s26ExpressibleByStringLiteralP", "makeBytes"]
@@ -192,11 +186,11 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "description"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "makeBytes"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "uppercased"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - !private ["s8HashableP", "Body"]
 - !private ["s8HashableP", "ConversionError"]
 - !private ["s8HashableP", "Method"]
 - !private ["s8HashableP", "Request"]
+- ["s8HashableP", ""]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
 - ["s8HashableP", "_getEmbeddedNSError"]
@@ -214,13 +208,10 @@ depends-member:
 - !private ["s8HashableP", "missingURI"]
 - !private ["s8HashableP", "uppercased"]
 - !private ["s8HashableP", "url"]
-- ["s8HashableP", ""]
 - ["4HTTP9HeaderKeyV", "deinit"]
 - !private ["4HTTP9HeaderKeyV", "description"]
-- !private ["Si", "hashValue"]
 - !private ["4HTTP13KeyAccessibleP", "forEach"]
 - !private ["4HTTP13KeyAccessibleP", "subscript"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "makeBytes"]
 - !private ["s25LosslessStringConvertibleP", "uppercased"]
 - !private ["4HTTP7MessageP", "Data"]
@@ -233,7 +224,6 @@ depends-member:
 - !private ["4HTTP6MethodO", "deinit"]
 - !private ["4HTTP6MethodO", "description"]
 - !private ["4HTTP6MethodO", "init"]
-- !private ["s10MirrorPathP", "hashValue"]
 - !private ["s10MirrorPathP", "makeBytes"]
 - !private ["s10MirrorPathP", "uppercased"]
 - !private ["s17MutableCollectionP", "init"]
@@ -256,7 +246,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "uppercased"]
 - !private ["So8NSStringC", "makeBytes"]
 - !private ["So8NSStringC", "uppercased"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["Sq", "flatMap"]
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "makeBytes"]
@@ -292,9 +281,6 @@ depends-member:
 - !private ["s8SequenceP", "makeBytes"]
 - !private ["s8SequenceP", "subscript"]
 - !private ["s8SequenceP", "uppercased"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
 - !private ["SS", "makeBytes"]
 - !private ["SS", "uppercased"]
 - !private ["s14StringProtocolP", "makeBytes"]
@@ -319,13 +305,8 @@ depends-member:
 - !private ["10Foundation10URLRequestV", "init"]
 - ["10Foundation10URLRequestV", "makeRequest"]
 - !private ["10Foundation10URLRequestV", "url"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "uppercased"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "makeBytes"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "uppercased"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "makeBytes"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "uppercased"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "makeBytes"]
@@ -337,20 +318,8 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "uppercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uppercased"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "uppercased"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "uppercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uppercased"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "Body"]
 - !private ["s21_ObjectiveCBridgeableP", "ConversionError"]
 - !private ["s21_ObjectiveCBridgeableP", "Method"]
@@ -359,7 +328,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "allHTTPHeaderFields"]
 - !private ["s21_ObjectiveCBridgeableP", "flatMap"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
@@ -368,17 +336,10 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "uppercased"]
 - !private ["s21_ObjectiveCBridgeableP", "url"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "uppercased"]
-- !private ["s11_StrideableP", "hashValue"]
 - !private ["s16_SwiftStringViewP", "makeBytes"]
 - !private ["s16_SwiftStringViewP", "uppercased"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
 - !private "4HTTP4BodyO"
 - !private "4HTTP17BodyRepresentableP"
 - !private "4Bits16BytesConvertibleP"
@@ -401,14 +362,11 @@ depends-nominal:
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s23ExpressibleByNilLiteralP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - "4HTTP9HeaderKeyV"
-- !private "Si"
 - !private "4HTTP13KeyAccessibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "4HTTP7MessageP"
@@ -424,7 +382,6 @@ depends-nominal:
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
-- !private "s7NumericP"
 - !private "Sq"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
@@ -432,9 +389,6 @@ depends-nominal:
 - "4HTTP7RequestC"
 - !private "4HTTP21ResponseRepresentableP"
 - !private "s8SequenceP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
-- !private "s10StrideableP"
 - !private "SS"
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
@@ -442,24 +396,15 @@ depends-nominal:
 - !private "3URIAAV"
 - !private "10Foundation3URLV"
 - "10Foundation10URLRequestV"
-- !private "s23_BidirectionalIndexableP"
-- !private "s18_BitwiseOperationsP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -147,31 +147,23 @@ depends-member:
 - ["s25LosslessStringConvertibleP", "makeNode"]
 - ["s10MirrorPathP", "init"]
 - ["s10MirrorPathP", "makeNode"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4NodeAAV", "deinit"]
 - !private ["4NodeAAV", "int"]
 - !private ["4NodeAAV", "number"]
 - !private ["4Node0A5ErrorO", "deinit"]
 - !private ["4Node0A5ErrorO", "unableToConvert"]
 - !private ["4Node0A13InitializableP", "Number"]
+- ["4Node0A13InitializableP", ""]
 - ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
 - ["4Node0A13InitializableP", "makeNode"]
 - !private ["4Node0A13InitializableP", "number"]
-- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13RepresentableP", "Number"]
+- ["4Node0A13RepresentableP", ""]
 - ["4Node0A13RepresentableP", "init"]
 - !private ["4Node0A13RepresentableP", "int"]
 - ["4Node0A13RepresentableP", "makeNode"]
 - !private ["4Node0A13RepresentableP", "number"]
-- ["4Node0A13RepresentableP", ""]
 - !private ["4Node14StructuredDataO6NumberO", "deinit"]
 - !private ["4Node14StructuredDataO6NumberO", "init"]
 - ["s7NumericP", "Context"]
@@ -221,7 +213,6 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "number"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - ["s18_BitwiseOperationsP", "init"]
 - ["s18_BitwiseOperationsP", "makeNode"]
 - ["s15_CVarArgAlignedP", "init"]
@@ -233,21 +224,8 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "makeNode"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- ["s11_StrideableP", "Context"]
-- !private ["s11_StrideableP", "Int64"]
-- ["s11_StrideableP", "Node"]
-- !private ["s11_StrideableP", "NodeError"]
-- !private ["s11_StrideableP", "Self"]
-- !private ["s11_StrideableP", "StructuredData"]
-- ["s11_StrideableP", "init"]
-- ["s11_StrideableP", "makeNode"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -286,14 +264,6 @@ depends-nominal:
 - "s4Int8V"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4NodeAAV"
 - !private "4Node0A5ErrorO"
 - "4Node0A13InitializableP"
@@ -313,7 +283,6 @@ depends-nominal:
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - "s15_CVarArgAlignedP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -322,13 +291,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

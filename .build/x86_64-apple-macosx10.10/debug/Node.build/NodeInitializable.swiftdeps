@@ -60,15 +60,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "null"]
 - !private ["s10MirrorPathP", "null"]
 - !private ["s17MutableCollectionP", "null"]
-- !private ["So8NSCodingP", "null"]
-- !private ["So9NSCopyingP", "null"]
-- !private ["So21NSItemProviderReadingP", "null"]
-- !private ["So21NSItemProviderWritingP", "null"]
-- !private ["So16NSMutableCopyingP", "null"]
-- !private ["So8NSObjectC", "null"]
-- !private ["So16NSObjectProtocolP", "null"]
-- !private ["So14NSSecureCodingP", "null"]
-- !private ["So8NSStringC", "null"]
 - !private ["4NodeAAV", "deinit"]
 - !private ["4NodeAAV", "init"]
 - !private ["4Node0A28ConvertibleFloatingPointTypeP", "null"]
@@ -100,7 +91,6 @@ depends-member:
 - !private ["Su", "null"]
 - !private ["s15UnsignedIntegerP", "null"]
 - !private ["s14_ArrayProtocolP", "null"]
-- !private ["s23_BidirectionalIndexableP", "null"]
 - !private ["s18_BitwiseOperationsP", "null"]
 - !private ["s15_CVarArgAlignedP", "null"]
 - !private ["s22_CVarArgPassedAsDoubleP", "null"]
@@ -113,15 +103,7 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "null"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "null"]
 - !private ["s33_ExpressibleByStringInterpolationP", "null"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "null"]
-- !private ["s10_IndexableP", "null"]
-- !private ["s14_IndexableBaseP", "null"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "null"]
-- !private ["s17_MutableIndexableP", "null"]
 - !private ["s21_ObjectiveCBridgeableP", "null"]
-- !private ["s22_RandomAccessIndexableP", "null"]
-- !private ["s26_RangeReplaceableIndexableP", "null"]
-- !private ["s11_StrideableP", "null"]
 - !private ["s16_SwiftStringViewP", "null"]
 depends-nominal:
 - !private "Sa"
@@ -161,15 +143,6 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So8NSObjectC"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4NodeAAV"
 - !private "4Node0A28ConvertibleFloatingPointTypeP"
 - "4Node0A13InitializableP"
@@ -193,7 +166,6 @@ depends-nominal:
 - !private "Su"
 - !private "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -206,15 +178,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -58,6 +58,7 @@ depends-member:
 - !private ["6Fluent6DriverP", "queryLogger"]
 - !private ["6Fluent8ExecutorP", "QueryLog"]
 - !private ["6Fluent8ExecutorP", "ThreadConnectionPool"]
+- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent8ExecutorP", "driver"]
 - !private ["6Fluent8ExecutorP", "idKey"]
 - !private ["6Fluent8ExecutorP", "idType"]
@@ -67,10 +68,10 @@ depends-member:
 - ["6Fluent8ExecutorP", "query"]
 - ["6Fluent8ExecutorP", "queryLogger"]
 - !private ["6Fluent8ExecutorP", "threadConnectionPool"]
-- ["6Fluent8ExecutorP", ""]
 - !private ["6Fluent8QueryLogV", "init"]
 - !private ["6Fluent11QueryLoggerP", "QueryLog"]
 - !private ["6Fluent11QueryLoggerP", "ThreadConnectionPool"]
+- ["6Fluent11QueryLoggerP", ""]
 - !private ["6Fluent11QueryLoggerP", "driver"]
 - !private ["6Fluent11QueryLoggerP", "idKey"]
 - !private ["6Fluent11QueryLoggerP", "idType"]
@@ -79,7 +80,6 @@ depends-member:
 - ["6Fluent11QueryLoggerP", "query"]
 - ["6Fluent11QueryLoggerP", "queryLogger"]
 - !private ["6Fluent11QueryLoggerP", "threadConnectionPool"]
-- ["6Fluent11QueryLoggerP", ""]
 - !private ["6Fluent20ThreadConnectionPoolC", "deinit"]
 - !private ["6Fluent20ThreadConnectionPoolC", "init"]
 - !private ["6Fluent20ThreadConnectionPoolC", "query"]
@@ -130,4 +130,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e4d835d6796dc40fa5828db1b3e578aa"
+interface-hash: "6d78befc32de44a63a6b017aba259a12"

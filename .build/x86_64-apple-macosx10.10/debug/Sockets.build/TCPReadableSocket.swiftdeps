@@ -28,6 +28,7 @@ depends-top-level:
 - !private "~="
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -64,13 +65,13 @@ depends-member:
 - !private ["9Transport14ReadableStreamP", "EINTR"]
 - ["9Transport14ReadableStreamP", "Int"]
 - !private ["9Transport14ReadableStreamP", "SocketsError"]
+- ["9Transport14ReadableStreamP", ""]
 - !private ["9Transport14ReadableStreamP", "close"]
 - !private ["9Transport14ReadableStreamP", "descriptor"]
 - !private ["9Transport14ReadableStreamP", "errno"]
 - !private ["9Transport14ReadableStreamP", "isClosed"]
 - !private ["9Transport14ReadableStreamP", "libc"]
 - !private ["9Transport14ReadableStreamP", "read"]
-- ["9Transport14ReadableStreamP", ""]
 - !private ["7Sockets0A5ErrorV", "deinit"]
 - !private ["7Sockets0A5ErrorV", "init"]
 - ["9Transport6StreamP", "Bytes"]
@@ -106,17 +107,18 @@ depends-member:
 - !private ["7Sockets9TCPSocketP", "EINTR"]
 - ["7Sockets9TCPSocketP", "Int"]
 - !private ["7Sockets9TCPSocketP", "SocketsError"]
+- ["7Sockets9TCPSocketP", ""]
 - !private ["7Sockets9TCPSocketP", "close"]
 - !private ["7Sockets9TCPSocketP", "descriptor"]
 - !private ["7Sockets9TCPSocketP", "errno"]
 - !private ["7Sockets9TCPSocketP", "isClosed"]
 - !private ["7Sockets9TCPSocketP", "libc"]
 - !private ["7Sockets9TCPSocketP", "read"]
-- ["7Sockets9TCPSocketP", ""]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

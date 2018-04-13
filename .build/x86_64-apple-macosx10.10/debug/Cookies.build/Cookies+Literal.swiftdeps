@@ -16,6 +16,9 @@ depends-member:
 - ["4Bits16BytesConvertibleP", "Element"]
 - ["4Bits16BytesConvertibleP", "Iterator"]
 - ["4Bits16BytesConvertibleP", "SubSequence"]
+- ["4Bits16BytesConvertibleP", "_Default_ArrayLiteralElement"]
+- ["4Bits16BytesConvertibleP", "_Default_Element"]
+- ["4Bits16BytesConvertibleP", "_Default_SubSequence"]
 - ["4Bits16BytesConvertibleP", "_copyContents"]
 - ["4Bits16BytesConvertibleP", "_copyToContiguousArray"]
 - ["4Bits16BytesConvertibleP", "_customContainsEquatableElement"]
@@ -37,6 +40,9 @@ depends-member:
 - ["4Bits18BytesInitializableP", "Element"]
 - ["4Bits18BytesInitializableP", "Iterator"]
 - ["4Bits18BytesInitializableP", "SubSequence"]
+- ["4Bits18BytesInitializableP", "_Default_ArrayLiteralElement"]
+- ["4Bits18BytesInitializableP", "_Default_Element"]
+- ["4Bits18BytesInitializableP", "_Default_SubSequence"]
 - ["4Bits18BytesInitializableP", "_copyContents"]
 - ["4Bits18BytesInitializableP", "_copyToContiguousArray"]
 - ["4Bits18BytesInitializableP", "_customContainsEquatableElement"]
@@ -58,6 +64,9 @@ depends-member:
 - ["4Bits18BytesRepresentableP", "Element"]
 - ["4Bits18BytesRepresentableP", "Iterator"]
 - ["4Bits18BytesRepresentableP", "SubSequence"]
+- ["4Bits18BytesRepresentableP", "_Default_ArrayLiteralElement"]
+- ["4Bits18BytesRepresentableP", "_Default_Element"]
+- ["4Bits18BytesRepresentableP", "_Default_SubSequence"]
 - ["4Bits18BytesRepresentableP", "_copyContents"]
 - ["4Bits18BytesRepresentableP", "_copyToContiguousArray"]
 - ["4Bits18BytesRepresentableP", "_customContainsEquatableElement"]
@@ -84,6 +93,9 @@ depends-member:
 - ["7CookiesAAV", "Iterator"]
 - ["7CookiesAAV", "SetIterator"]
 - ["7CookiesAAV", "SubSequence"]
+- ["7CookiesAAV", "_Default_ArrayLiteralElement"]
+- ["7CookiesAAV", "_Default_Element"]
+- ["7CookiesAAV", "_Default_SubSequence"]
 - ["7CookiesAAV", "_copyContents"]
 - ["7CookiesAAV", "_copyToContiguousArray"]
 - ["7CookiesAAV", "_customContainsEquatableElement"]
@@ -112,6 +124,10 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "Element"]
 - ["s25ExpressibleByArrayLiteralP", "Iterator"]
 - ["s25ExpressibleByArrayLiteralP", "SubSequence"]
+- ["s25ExpressibleByArrayLiteralP", ""]
+- ["s25ExpressibleByArrayLiteralP", "_Default_ArrayLiteralElement"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_Element"]
+- ["s25ExpressibleByArrayLiteralP", "_Default_SubSequence"]
 - ["s25ExpressibleByArrayLiteralP", "_copyContents"]
 - ["s25ExpressibleByArrayLiteralP", "_copyToContiguousArray"]
 - ["s25ExpressibleByArrayLiteralP", "_customContainsEquatableElement"]
@@ -129,12 +145,15 @@ depends-member:
 - ["s25ExpressibleByArrayLiteralP", "split"]
 - ["s25ExpressibleByArrayLiteralP", "suffix"]
 - ["s25ExpressibleByArrayLiteralP", "underestimatedCount"]
-- ["s25ExpressibleByArrayLiteralP", ""]
 - !private ["s8HashableP", "makeIterator"]
 - ["s8SequenceP", "ArrayLiteralElement"]
 - ["s8SequenceP", "Element"]
 - ["s8SequenceP", "Iterator"]
 - ["s8SequenceP", "SubSequence"]
+- ["s8SequenceP", ""]
+- ["s8SequenceP", "_Default_ArrayLiteralElement"]
+- ["s8SequenceP", "_Default_Element"]
+- ["s8SequenceP", "_Default_SubSequence"]
 - ["s8SequenceP", "_copyContents"]
 - ["s8SequenceP", "_copyToContiguousArray"]
 - ["s8SequenceP", "_customContainsEquatableElement"]
@@ -152,11 +171,8 @@ depends-member:
 - ["s8SequenceP", "split"]
 - ["s8SequenceP", "suffix"]
 - ["s8SequenceP", "underestimatedCount"]
-- ["s8SequenceP", ""]
 - !private ["s3SetV", "makeIterator"]
 - !private ["s10SetAlgebraP", "makeIterator"]
-- !private ["s10_IndexableP", "makeIterator"]
-- !private ["s14_IndexableBaseP", "makeIterator"]
 - !private ["s21_ObjectiveCBridgeableP", "makeIterator"]
 depends-nominal:
 - "4Bits16BytesConvertibleP"
@@ -177,8 +193,6 @@ depends-nominal:
 - "s8SequenceP"
 - !private "s3SetV"
 - !private "s10SetAlgebraP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

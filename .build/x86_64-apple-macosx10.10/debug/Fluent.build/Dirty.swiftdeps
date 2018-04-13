@@ -12,6 +12,7 @@ depends-top-level:
 - "Row"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
@@ -109,6 +110,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"

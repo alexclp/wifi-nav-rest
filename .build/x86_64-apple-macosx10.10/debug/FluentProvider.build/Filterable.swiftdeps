@@ -12,18 +12,13 @@ depends-top-level:
 - "FilterableKey"
 depends-member:
 - ["6Fluent6EntityP", "FilterableKey"]
-- ["6Fluent6EntityP", "filterableKeys"]
 - ["6Fluent6EntityP", ""]
 - ["14FluentProvider10FilterableP", "FilterableKey"]
 - ["14FluentProvider10FilterableP", "filterableKeys"]
 - ["6Fluent14RowConvertibleP", "FilterableKey"]
-- ["6Fluent14RowConvertibleP", "filterableKeys"]
 - ["6Fluent16RowInitializableP", "FilterableKey"]
-- ["6Fluent16RowInitializableP", "filterableKeys"]
 - ["6Fluent16RowRepresentableP", "FilterableKey"]
-- ["6Fluent16RowRepresentableP", "filterableKeys"]
 - ["6Fluent8StorableP", "FilterableKey"]
-- ["6Fluent8StorableP", "filterableKeys"]
 depends-nominal:
 - "6Fluent6EntityP"
 - "14FluentProvider10FilterableP"

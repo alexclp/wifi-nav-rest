@@ -19,9 +19,9 @@ depends-top-level:
 - !private ">="
 - "AssignmentPrecedence"
 - "Cacheable"
-- !private "Dictionary"
+- "Dictionary"
 - !private "FloatLiteralType"
-- !private "Hashable"
+- "Hashable"
 - "Int"
 - !private "IntegerLiteralType"
 - "OrderedDictionary"
@@ -48,7 +48,8 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "remove"]
 - !private ["s23BidirectionalCollectionP", "subscript"]
 - !private ["Sb", "_getBuiltinLogicValue"]
-- !private ["s7CVarArgP", "Values"]
+- ["s7CVarArgP", "Values"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "first"]
@@ -61,7 +62,7 @@ depends-member:
 - !private ["s7CVarArgP", "values"]
 - ["4Core9CacheableP", "Size"]
 - ["4Core9CacheableP", "cacheSize"]
-- !private ["s10CollectionP", "Values"]
+- ["s10CollectionP", "Values"]
 - !private ["s10CollectionP", "append"]
 - !private ["s10CollectionP", "count"]
 - !private ["s10CollectionP", "first"]
@@ -73,19 +74,20 @@ depends-member:
 - !private ["s10CollectionP", "remove"]
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10CollectionP", "values"]
-- !private ["s28CustomDebugStringConvertibleP", "Values"]
+- ["s28CustomDebugStringConvertibleP", "Values"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
 - !private ["s28CustomDebugStringConvertibleP", "flatMap"]
 - !private ["s28CustomDebugStringConvertibleP", "index"]
 - !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "reduce"]
 - !private ["s28CustomDebugStringConvertibleP", "remove"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "values"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "Values"]
+- ["s17CustomReflectableP", "Values"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
@@ -97,7 +99,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "remove"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s17CustomReflectableP", "values"]
-- !private ["s23CustomStringConvertibleP", "Values"]
+- ["s23CustomStringConvertibleP", "Values"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -105,11 +107,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "flatMap"]
 - !private ["s23CustomStringConvertibleP", "index"]
 - !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "reduce"]
 - !private ["s23CustomStringConvertibleP", "remove"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "values"]
-- !private ["s9DecodableP", "Values"]
+- ["s9DecodableP", "Values"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "append"]
 - !private ["s9DecodableP", "count"]
@@ -121,10 +124,10 @@ depends-member:
 - !private ["s9DecodableP", "remove"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s9DecodableP", "values"]
-- !private ["s10DictionaryV", "Values"]
+- ["s10DictionaryV", "Values"]
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s10DictionaryV", "values"]
-- !private ["s9EncodableP", "Values"]
+- ["s9EncodableP", "Values"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "append"]
 - !private ["s9EncodableP", "count"]
@@ -136,7 +139,18 @@ depends-member:
 - !private ["s9EncodableP", "remove"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "values"]
+- ["s9EquatableP", "Values"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "first"]
+- !private ["s9EquatableP", "flatMap"]
+- !private ["s9EquatableP", "index"]
+- !private ["s9EquatableP", "last"]
+- !private ["s9EquatableP", "reduce"]
+- !private ["s9EquatableP", "remove"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "values"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
@@ -147,7 +161,7 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "remove"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s30ExpressibleByDictionaryLiteralP", "Values"]
+- ["s30ExpressibleByDictionaryLiteralP", "Values"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "values"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -180,7 +194,7 @@ depends-member:
 - !private ["s26RangeReplaceableCollectionP", "reduce"]
 - !private ["s26RangeReplaceableCollectionP", "remove"]
 - !private ["s26RangeReplaceableCollectionP", "subscript"]
-- !private ["s8SequenceP", "Values"]
+- ["s8SequenceP", "Values"]
 - !private ["s8SequenceP", "append"]
 - !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "first"]
@@ -214,15 +228,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "reduce"]
 - !private ["s14_ArrayProtocolP", "remove"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- !private ["s23_BidirectionalIndexableP", "index"]
-- !private ["s23_BidirectionalIndexableP", "last"]
-- !private ["s23_BidirectionalIndexableP", "reduce"]
-- !private ["s23_BidirectionalIndexableP", "remove"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "first"]
@@ -233,41 +238,7 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "remove"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s10_IndexableP", "Values"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "flatMap"]
-- !private ["s10_IndexableP", "index"]
-- !private ["s10_IndexableP", "last"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "reduce"]
-- !private ["s10_IndexableP", "remove"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "values"]
-- !private ["s14_IndexableBaseP", "Values"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- !private ["s14_IndexableBaseP", "index"]
-- !private ["s14_IndexableBaseP", "last"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "reduce"]
-- !private ["s14_IndexableBaseP", "remove"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "values"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "flatMap"]
-- !private ["s17_MutableIndexableP", "index"]
-- !private ["s17_MutableIndexableP", "last"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "reduce"]
-- !private ["s17_MutableIndexableP", "remove"]
-- !private ["s17_MutableIndexableP", "subscript"]
-- !private ["s21_ObjectiveCBridgeableP", "Values"]
+- ["s21_ObjectiveCBridgeableP", "Values"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -279,60 +250,36 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "values"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s22_RandomAccessIndexableP", "index"]
-- !private ["s22_RandomAccessIndexableP", "last"]
-- !private ["s22_RandomAccessIndexableP", "reduce"]
-- !private ["s22_RandomAccessIndexableP", "remove"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "flatMap"]
-- !private ["s26_RangeReplaceableIndexableP", "index"]
-- !private ["s26_RangeReplaceableIndexableP", "last"]
-- !private ["s26_RangeReplaceableIndexableP", "reduce"]
-- !private ["s26_RangeReplaceableIndexableP", "remove"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
-- !private "s7CVarArgP"
+- "s7CVarArgP"
 - "4Core9CacheableP"
-- !private "s10CollectionP"
-- !private "s28CustomDebugStringConvertibleP"
+- "s10CollectionP"
+- "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
-- !private "s17CustomReflectableP"
-- !private "s23CustomStringConvertibleP"
-- !private "s9DecodableP"
-- !private "s10DictionaryV"
-- !private "s9EncodableP"
-- !private "s9EquatableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s10DictionaryV"
+- "s9EncodableP"
+- "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s30ExpressibleByDictionaryLiteralP"
+- "s30ExpressibleByDictionaryLiteralP"
 - !private "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s17MutableCollectionP"
 - !private "s22RandomAccessCollectionP"
 - !private "s26RangeReplaceableCollectionP"
-- !private "s8SequenceP"
+- "s8SequenceP"
 - "4Core11SystemCacheC"
 - !private "s10DictionaryV6ValuesV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
-- !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
+- "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -355,4 +302,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "dd211061e2b8396082631f2fdfd7400e"
+interface-hash: "305f141218089f9bad07e2bb95776b92"

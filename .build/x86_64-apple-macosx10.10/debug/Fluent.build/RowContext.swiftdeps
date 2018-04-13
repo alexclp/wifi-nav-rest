@@ -22,10 +22,10 @@ depends-member:
 - ["4Node7ContextP", "Bool"]
 - ["4Node7ContextP", "Database"]
 - !private ["4Node7ContextP", "RowContext"]
+- ["4Node7ContextP", ""]
 - ["4Node7ContextP", "database"]
 - ["4Node7ContextP", "init"]
 - ["4Node7ContextP", "isRow"]
-- ["4Node7ContextP", ""]
 - ["6Fluent10RowContextC", "Database"]
 - ["6Fluent10RowContextC", "database"]
 - ["6Fluent10RowContextC", "deinit"]
@@ -61,4 +61,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "dd79aa3042869b2fc1fa1eee8d2ad98e"
+interface-hash: "a08bec9f214b0524f33e0a8f869fc79a"

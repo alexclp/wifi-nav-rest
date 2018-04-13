@@ -18,6 +18,7 @@ depends-top-level:
 - !private "libc"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -45,28 +46,29 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["7Sockets9RawSocketP", "ResolvedInternetAddress"]
 - !private ["7Sockets9RawSocketP", "SocketsError"]
-- ["7Sockets9RawSocketP", "address"]
+- !private ["7Sockets9RawSocketP", "address"]
 - !private ["7Sockets9RawSocketP", "descriptor"]
 - !private ["7Sockets9RawSocketP", "libc"]
 - !private ["7Sockets23ResolvedInternetAddressC", "raw"]
 - !private ["7Sockets23ResolvedInternetAddressC", "rawLen"]
 - ["7Sockets6SocketP", "ResolvedInternetAddress"]
 - !private ["7Sockets6SocketP", "SocketsError"]
-- ["7Sockets6SocketP", "address"]
+- ["7Sockets6SocketP", ""]
+- !private ["7Sockets6SocketP", "address"]
 - !private ["7Sockets6SocketP", "descriptor"]
 - !private ["7Sockets6SocketP", "libc"]
-- ["7Sockets6SocketP", ""]
 - !private ["7Sockets0A5ErrorV", "deinit"]
 - !private ["7Sockets0A5ErrorV", "init"]
 - ["9Transport6StreamP", "ResolvedInternetAddress"]
 - !private ["9Transport6StreamP", "SocketsError"]
-- ["9Transport6StreamP", "address"]
+- !private ["9Transport6StreamP", "address"]
 - !private ["9Transport6StreamP", "descriptor"]
 - !private ["9Transport6StreamP", "libc"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

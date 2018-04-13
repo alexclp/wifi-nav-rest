@@ -39,6 +39,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "last"]
 - !private ["4Bits18BytesRepresentableP", "remove"]
 - !private ["4Bits18BytesRepresentableP", "startIndex"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "endIndex"]
 - !private ["s7CVarArgP", "first"]
@@ -112,6 +113,7 @@ depends-member:
 - !private ["s9EncodableP", "remove"]
 - !private ["s9EncodableP", "startIndex"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "contains"]
 - !private ["s9EquatableP", "endIndex"]
 - !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "index"]
@@ -262,13 +264,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "remove"]
 - !private ["s20TextOutputStreamableP", "startIndex"]
 - !private ["s14_ArrayProtocolP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "endIndex"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "index"]
-- !private ["s23_BidirectionalIndexableP", "last"]
-- !private ["s23_BidirectionalIndexableP", "remove"]
-- !private ["s23_BidirectionalIndexableP", "startIndex"]
 - !private ["s24_DestructorSafeContainerP", "contains"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "endIndex"]
@@ -310,27 +305,12 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "last"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "remove"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "startIndex"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "endIndex"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "index"]
-- !private ["s10_IndexableP", "last"]
-- !private ["s10_IndexableP", "remove"]
-- !private ["s10_IndexableP", "startIndex"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "endIndex"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "index"]
-- !private ["s14_IndexableBaseP", "last"]
-- !private ["s14_IndexableBaseP", "remove"]
-- !private ["s14_IndexableBaseP", "startIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "endIndex"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "first"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "index"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "last"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "remove"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startIndex"]
-- !private ["s17_MutableIndexableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "endIndex"]
@@ -339,14 +319,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "last"]
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "startIndex"]
-- !private ["s22_RandomAccessIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "endIndex"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "index"]
-- !private ["s26_RangeReplaceableIndexableP", "last"]
-- !private ["s26_RangeReplaceableIndexableP", "remove"]
-- !private ["s26_RangeReplaceableIndexableP", "startIndex"]
 - !private ["s16_SwiftStringViewP", "endIndex"]
 - !private ["s16_SwiftStringViewP", "first"]
 - !private ["s16_SwiftStringViewP", "index"]
@@ -397,7 +369,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -407,13 +378,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -438,4 +404,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "03b58e36bfc3a554c20d764525d2ae33"
+interface-hash: "baf7cbf088694fbe104721921b4a8ae3"

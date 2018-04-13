@@ -61,6 +61,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "init"]
 - ["s7CVarArgP", "Byte"]
 - ["s7CVarArgP", "Iterator"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allZeroes"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
@@ -74,13 +75,13 @@ depends-member:
 - !private ["5Vapor14CipherProtocolP", "ConfigError"]
 - !private ["5Vapor14CipherProtocolP", "CryptoEncoding"]
 - !private ["5Vapor14CipherProtocolP", "String"]
+- ["5Vapor14CipherProtocolP", ""]
 - !private ["5Vapor14CipherProtocolP", "cipher"]
 - ["5Vapor14CipherProtocolP", "decrypt"]
 - !private ["5Vapor14CipherProtocolP", "encoding"]
 - ["5Vapor14CipherProtocolP", "encrypt"]
 - ["5Vapor14CipherProtocolP", "init"]
 - !private ["5Vapor14CipherProtocolP", "print"]
-- ["5Vapor14CipherProtocolP", ""]
 - ["s10CollectionP", "Byte"]
 - ["s10CollectionP", "Iterator"]
 - !private ["s10CollectionP", "allZeroes"]
@@ -100,13 +101,13 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "ConfigError"]
 - !private ["7Configs19ConfigInitializableP", "CryptoEncoding"]
 - !private ["7Configs19ConfigInitializableP", "String"]
+- ["7Configs19ConfigInitializableP", ""]
 - !private ["7Configs19ConfigInitializableP", "cipher"]
 - ["7Configs19ConfigInitializableP", "decrypt"]
 - !private ["7Configs19ConfigInitializableP", "encoding"]
 - ["7Configs19ConfigInitializableP", "encrypt"]
 - ["7Configs19ConfigInitializableP", "init"]
 - !private ["7Configs19ConfigInitializableP", "print"]
-- ["7Configs19ConfigInitializableP", ""]
 - ["5Vapor12CryptoCipherC", "Bytes"]
 - ["5Vapor12CryptoCipherC", "Cipher"]
 - !private ["5Vapor12CryptoCipherC", "ConfigError"]
@@ -166,12 +167,17 @@ depends-member:
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "makeString"]
+- ["s9EquatableP", "Byte"]
+- ["s9EquatableP", "Iterator"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "allZeroes"]
 - !private ["s9EquatableP", "bytes"]
 - !private ["s9EquatableP", "cbc"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "decode"]
 - !private ["s9EquatableP", "encode"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "resolveLog"]
 - !private ["s9EquatableP", "string"]
 - !private ["s9EquatableP", "subscript"]
@@ -253,14 +259,6 @@ depends-member:
 - !private ["s17MutableCollectionP", "allZeroes"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "makeString"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - ["4Node0A13InitializableP", "Byte"]
 - ["4Node0A13InitializableP", "Iterator"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
@@ -329,12 +327,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "allZeroes"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- ["s23_BidirectionalIndexableP", "Byte"]
-- ["s23_BidirectionalIndexableP", "Iterator"]
-- !private ["s23_BidirectionalIndexableP", "allZeroes"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - ["s24_DestructorSafeContainerP", "Byte"]
 - ["s24_DestructorSafeContainerP", "Iterator"]
@@ -348,25 +340,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "Byte"]
-- ["s10_IndexableP", "Iterator"]
-- !private ["s10_IndexableP", "allZeroes"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeString"]
-- ["s14_IndexableBaseP", "Byte"]
-- ["s14_IndexableBaseP", "Iterator"]
-- !private ["s14_IndexableBaseP", "allZeroes"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- ["s17_MutableIndexableP", "Byte"]
-- ["s17_MutableIndexableP", "Iterator"]
-- !private ["s17_MutableIndexableP", "allZeroes"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - ["s21_ObjectiveCBridgeableP", "Byte"]
 - ["s21_ObjectiveCBridgeableP", "Iterator"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -374,18 +347,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
-- ["s22_RandomAccessIndexableP", "Byte"]
-- ["s22_RandomAccessIndexableP", "Iterator"]
-- !private ["s22_RandomAccessIndexableP", "allZeroes"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- ["s26_RangeReplaceableIndexableP", "Byte"]
-- ["s26_RangeReplaceableIndexableP", "Iterator"]
-- !private ["s26_RangeReplaceableIndexableP", "allZeroes"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s11_StrideableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "6Crypto6CipherC6MethodO10AES128ModeO"
@@ -416,7 +377,7 @@ depends-nominal:
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"
 - "s9EncodableP"
-- !private "s9EquatableP"
+- "s9EquatableP"
 - !private "s5ErrorP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -437,14 +398,6 @@ depends-nominal:
 - "6Crypto6CipherC6MethodO"
 - !private "s10MirrorPathP"
 - "s17MutableCollectionP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - !private "s7NumericP"
@@ -466,7 +419,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -476,15 +428,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -533,4 +477,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "2731bd2223b31c80ef9048ef12ae4046"
+interface-hash: "bf8c5e33462d7b724f574e05c40c9da8"

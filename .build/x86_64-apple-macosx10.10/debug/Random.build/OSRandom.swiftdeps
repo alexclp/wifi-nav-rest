@@ -68,10 +68,10 @@ depends-member:
 - ["s9DecodableP", "max"]
 - !private ["s9DecodableP", "maxByte"]
 - !private ["4Core18EmptyInitializableP", "Byte"]
+- ["4Core18EmptyInitializableP", ""]
 - ["4Core18EmptyInitializableP", "bytes"]
 - ["4Core18EmptyInitializableP", "init"]
 - !private ["4Core18EmptyInitializableP", "makeRandom"]
-- ["4Core18EmptyInitializableP", ""]
 - ["s9EncodableP", "Byte"]
 - ["s9EncodableP", "Int"]
 - ["s9EncodableP", "init"]
@@ -123,10 +123,10 @@ depends-member:
 - ["6Random8OSRandomC", "init"]
 - !private ["6Random8OSRandomC", "makeRandom"]
 - !private ["6Random0A8ProtocolP", "Byte"]
+- ["6Random0A8ProtocolP", ""]
 - ["6Random0A8ProtocolP", "bytes"]
 - ["6Random0A8ProtocolP", "init"]
 - !private ["6Random0A8ProtocolP", "makeRandom"]
-- ["6Random0A8ProtocolP", ""]
 - ["s13SignedIntegerP", "Byte"]
 - ["s13SignedIntegerP", "Int"]
 - ["s13SignedIntegerP", "init"]
@@ -160,11 +160,6 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "max"]
 - !private ["s21_ObjectiveCBridgeableP", "maxByte"]
-- ["s11_StrideableP", "Byte"]
-- ["s11_StrideableP", "Int"]
-- ["s11_StrideableP", "init"]
-- ["s11_StrideableP", "max"]
-- !private ["s11_StrideableP", "maxByte"]
 - !private ["s14_StringElementP", "init"]
 - ["s14_StringElementP", "max"]
 depends-nominal:
@@ -199,7 +194,6 @@ depends-nominal:
 - "s18_BitwiseOperationsP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s21_ObjectiveCBridgeableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:
@@ -224,4 +218,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "56f4cf7854504c374a0eac53249626d6"
+interface-hash: "d405f84ffd230b6579c0da8420a2acac"

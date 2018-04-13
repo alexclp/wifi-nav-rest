@@ -49,6 +49,7 @@ depends-member:
 - ["4HTTP9HeaderKeyV", "deinit"]
 - !private ["4HTTP7MessageP", "Body"]
 - !private ["4HTTP7MessageP", "Version"]
+- ["4HTTP7MessageP", ""]
 - ["4HTTP7MessageP", "body"]
 - ["4HTTP7MessageP", "headers"]
 - !private ["4HTTP7MessageP", "init"]
@@ -56,7 +57,6 @@ depends-member:
 - !private ["4HTTP7MessageP", "status"]
 - ["4HTTP7MessageP", "storage"]
 - ["4HTTP7MessageP", "version"]
-- ["4HTTP7MessageP", ""]
 - ["4HTTP8ResponseC", "Body"]
 - ["4HTTP8ResponseC", "BodyRepresentable"]
 - ["4HTTP8ResponseC", "Byte"]
@@ -127,4 +127,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4519a2abb7ed5cb78cdb15317dbf320d"
+interface-hash: "0a31e05fb696ed8845e96f34c2efb815"

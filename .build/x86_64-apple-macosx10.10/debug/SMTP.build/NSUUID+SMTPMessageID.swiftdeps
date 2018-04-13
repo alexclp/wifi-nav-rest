@@ -32,6 +32,7 @@ depends-member:
 - !private ["s7CVarArgP", "NSUUID"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "UnsafeMutablePointer"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allocate"]
 - !private ["s7CVarArgP", "currentHostName"]
 - !private ["s7CVarArgP", "deallocate"]
@@ -143,9 +144,6 @@ depends-member:
 - !private ["So9NSCopyingP", "gethostname"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "uuidString"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "Int8"]
 - !private ["So8NSObjectC", "NI_MAXHOST"]
@@ -175,7 +173,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "gethostname"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "uuidString"]
-- !private ["So8NSStringC", "init"]
 - !private ["So6NSUUIDC", "Int"]
 - !private ["So6NSUUIDC", "Int8"]
 - !private ["So6NSUUIDC", "NI_MAXHOST"]
@@ -205,7 +202,6 @@ depends-member:
 - !private ["Sp", "deallocate"]
 - !private ["Sp", "deinitialize"]
 - !private ["Sp", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -223,8 +219,6 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "gethostname"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uuidString"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NI_MAXHOST"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSUUID"]
@@ -240,12 +234,6 @@ depends-member:
 - !private ["s8_PointerP", "deallocate"]
 - !private ["s8_PointerP", "deinitialize"]
 - !private ["s8_PointerP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "allocate"]
-- !private ["s11_StrideableP", "deallocate"]
-- !private ["s11_StrideableP", "deinitialize"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -278,13 +266,9 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
 - !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - "So6NSUUIDC"
 - !private "s7NumericP"
 - !private "s26RangeReplaceableCollectionP"
@@ -297,7 +281,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "Sp"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -307,13 +290,9 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

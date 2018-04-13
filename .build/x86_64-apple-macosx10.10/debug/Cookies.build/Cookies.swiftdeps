@@ -18,6 +18,7 @@ depends-top-level:
 - "SetIndex"
 - "String"
 depends-member:
+- !private ["s23BidirectionalCollectionP", "value"]
 - !private ["4Bits16BytesConvertibleP", "Cookie"]
 - !private ["4Bits16BytesConvertibleP", "cookies"]
 - !private ["4Bits16BytesConvertibleP", "index"]
@@ -123,6 +124,11 @@ depends-member:
 - !private ["s8HashableP", "removeAll"]
 - !private ["s8HashableP", "subscript"]
 - !private ["s8HashableP", "value"]
+- !private ["s22LazyCollectionProtocolP", "value"]
+- !private ["s20LazySequenceProtocolP", "value"]
+- !private ["s17MutableCollectionP", "value"]
+- !private ["s22RandomAccessCollectionP", "value"]
+- !private ["s26RangeReplaceableCollectionP", "value"]
 - !private ["s8SequenceP", "Cookie"]
 - !private ["s8SequenceP", "contains"]
 - !private ["s8SequenceP", "cookies"]
@@ -145,20 +151,6 @@ depends-member:
 - !private ["s10SetAlgebraP", "removeAll"]
 - !private ["s10SetAlgebraP", "subscript"]
 - !private ["s5SliceV", "value"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "index"]
-- !private ["s10_IndexableP", "insert"]
-- !private ["s10_IndexableP", "remove"]
-- !private ["s10_IndexableP", "removeAll"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "value"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "index"]
-- !private ["s14_IndexableBaseP", "insert"]
-- !private ["s14_IndexableBaseP", "remove"]
-- !private ["s14_IndexableBaseP", "removeAll"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "value"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "index"]
 - !private ["s21_ObjectiveCBridgeableP", "insert"]
@@ -166,6 +158,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "removeAll"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 depends-nominal:
+- !private "s23BidirectionalCollectionP"
 - !private "4Bits16BytesConvertibleP"
 - !private "4Bits18BytesInitializableP"
 - !private "4Bits18BytesRepresentableP"
@@ -181,12 +174,15 @@ depends-nominal:
 - !private "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "s8HashableP"
+- !private "s22LazyCollectionProtocolP"
+- !private "s20LazySequenceProtocolP"
+- !private "s17MutableCollectionP"
+- !private "s22RandomAccessCollectionP"
+- !private "s26RangeReplaceableCollectionP"
 - !private "s8SequenceP"
 - !private "s3SetV"
 - !private "s10SetAlgebraP"
 - !private "s5SliceV"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

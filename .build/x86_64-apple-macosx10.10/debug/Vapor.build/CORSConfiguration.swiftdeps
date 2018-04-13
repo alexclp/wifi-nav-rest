@@ -94,6 +94,7 @@ depends-member:
 - ["5Vapor22CORSConfigurationErrorO", "configurationFileNotFound"]
 - ["5Vapor22CORSConfigurationErrorO", "deinit"]
 - ["5Vapor22CORSConfigurationErrorO", "missingRequiredConfigurationKey"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "flatMap"]
 - ["s7CVarArgP", "init"]
@@ -121,6 +122,7 @@ depends-member:
 - ["7Configs19ConfigInitializableP", "CORSConfiguration"]
 - !private ["7Configs19ConfigInitializableP", "CORSConfigurationError"]
 - !private ["7Configs19ConfigInitializableP", "ConfigError"]
+- ["7Configs19ConfigInitializableP", ""]
 - !private ["7Configs19ConfigInitializableP", "allowCredentials"]
 - !private ["7Configs19ConfigInitializableP", "allowedHeaders"]
 - !private ["7Configs19ConfigInitializableP", "allowedMethods"]
@@ -128,7 +130,6 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "cacheExpiration"]
 - !private ["7Configs19ConfigInitializableP", "exposedHeaders"]
 - ["7Configs19ConfigInitializableP", "init"]
-- ["7Configs19ConfigInitializableP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "contains"]
 - !private ["s28CustomDebugStringConvertibleP", "flatMap"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -203,9 +204,12 @@ depends-member:
 - !private ["s9EquatableP", "contains"]
 - ["s9EquatableP", "delete"]
 - !private ["s9EquatableP", "description"]
+- !private ["s9EquatableP", "flatMap"]
 - ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "joined"]
 - !private ["s9EquatableP", "lowercased"]
+- !private ["s9EquatableP", "map"]
 - ["s9EquatableP", "options"]
 - ["s9EquatableP", "patch"]
 - ["s9EquatableP", "post"]
@@ -214,13 +218,13 @@ depends-member:
 - !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "uppercased"]
 - !private ["s9EquatableP", "wrapped"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - !private ["s5ErrorP", "missingFile"]
 - !private ["s5ErrorP", "missingRequiredConfigurationKey"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "flatMap"]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "joined"]
@@ -301,38 +305,30 @@ depends-member:
 - !private ["s17MutableCollectionP", "joined"]
 - !private ["s17MutableCollectionP", "map"]
 - !private ["So8NSCodingP", "contains"]
-- ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "lowercased"]
 - !private ["So8NSCodingP", "uppercased"]
 - !private ["So9NSCopyingP", "contains"]
-- ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lowercased"]
 - !private ["So9NSCopyingP", "uppercased"]
 - !private ["So21NSItemProviderReadingP", "contains"]
-- ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "lowercased"]
 - !private ["So21NSItemProviderReadingP", "uppercased"]
 - !private ["So21NSItemProviderWritingP", "contains"]
-- ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "lowercased"]
 - !private ["So21NSItemProviderWritingP", "uppercased"]
 - !private ["So16NSMutableCopyingP", "contains"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "lowercased"]
 - !private ["So16NSMutableCopyingP", "uppercased"]
 - !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "lowercased"]
 - !private ["So8NSObjectC", "uppercased"]
 - !private ["So16NSObjectProtocolP", "contains"]
-- ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "lowercased"]
 - !private ["So16NSObjectProtocolP", "uppercased"]
 - !private ["So14NSSecureCodingP", "contains"]
-- ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "lowercased"]
 - !private ["So14NSSecureCodingP", "uppercased"]
 - !private ["So8NSStringC", "contains"]
-- ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "lowercased"]
 - !private ["So8NSStringC", "uppercased"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
@@ -426,13 +422,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "flatMap"]
 - !private ["s14_ArrayProtocolP", "joined"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "joined"]
-- !private ["s23_BidirectionalIndexableP", "lowercased"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "uppercased"]
 - !private ["s24_DestructorSafeContainerP", "flatMap"]
 - !private ["s24_DestructorSafeContainerP", "joined"]
 - !private ["s24_DestructorSafeContainerP", "map"]
@@ -458,32 +447,11 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
 - !private ["s33_ExpressibleByStringInterpolationP", "uppercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uppercased"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "flatMap"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "joined"]
-- !private ["s10_IndexableP", "lowercased"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "uppercased"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "joined"]
-- !private ["s14_IndexableBaseP", "lowercased"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "uppercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uppercased"]
-- !private ["s17_MutableIndexableP", "flatMap"]
-- !private ["s17_MutableIndexableP", "joined"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "flatMap"]
@@ -493,16 +461,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "uppercased"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s22_RandomAccessIndexableP", "joined"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "flatMap"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "joined"]
-- !private ["s26_RangeReplaceableIndexableP", "lowercased"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "uppercased"]
 - !private ["s16_SwiftStringViewP", "contains"]
 - ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "lowercased"]
@@ -554,15 +512,15 @@ depends-nominal:
 - "4HTTP6MethodO"
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -581,7 +539,6 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -589,14 +546,9 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -645,4 +597,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "3d7944eadbacd9cb241fbc725344c29c"
+interface-hash: "25cc036c53b8cf0f9bb7db535316b2d8"

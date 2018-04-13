@@ -39,12 +39,11 @@ depends-member:
 - ["s13SignedNumericP", "init"]
 - ["s10StrideableP", "init"]
 - ["5Vapor19StringInitializableP", "String"]
-- ["5Vapor19StringInitializableP", "init"]
 - ["5Vapor19StringInitializableP", ""]
+- ["5Vapor19StringInitializableP", "init"]
 - ["s18_BitwiseOperationsP", "init"]
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s11_StrideableP", "init"]
 depends-nominal:
 - "s13BinaryIntegerP"
 - "s7CVarArgP"
@@ -74,7 +73,6 @@ depends-nominal:
 - "s18_BitwiseOperationsP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s21_ObjectiveCBridgeableP"
-- "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

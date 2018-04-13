@@ -29,6 +29,7 @@ depends-top-level:
 - "timeval"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -96,6 +97,7 @@ depends-member:
 - !private ["SC7timevalV", "init"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

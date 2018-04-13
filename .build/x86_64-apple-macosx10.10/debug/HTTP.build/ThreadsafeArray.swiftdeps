@@ -108,10 +108,17 @@ depends-member:
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "remove"]
 - !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "barrier"]
 - ["s9EquatableP", "concurrent"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "first"]
+- !private ["s9EquatableP", "forEach"]
+- !private ["s9EquatableP", "index"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "remove"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "sync"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "barrier"]
@@ -139,18 +146,11 @@ depends-member:
 - ["s17MutableCollectionP", "init"]
 - !private ["s17MutableCollectionP", "remove"]
 - !private ["s17MutableCollectionP", "subscript"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "async"]
 - !private ["So8NSObjectC", "sync"]
 - !private ["So16NSObjectProtocolP", "async"]
 - ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "sync"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "sync"]
 - !private ["s9OptionSetP", "barrier"]
@@ -212,14 +212,6 @@ depends-member:
 - ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "remove"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "index"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "remove"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "first"]
@@ -233,34 +225,9 @@ depends-member:
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "index"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "remove"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "index"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "remove"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sync"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "index"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "remove"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
@@ -269,22 +236,6 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "index"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "remove"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "index"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "remove"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "Sa"
@@ -315,15 +266,8 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - !private "So9OS_objectC"
 - "s9OptionSetP"
 - "s22RandomAccessCollectionP"
@@ -338,21 +282,14 @@ depends-nominal:
 - "s20TextOutputStreamableP"
 - "4HTTP15ThreadsafeArrayC"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -384,4 +321,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "8875810b444ee3f181aca3366d1f1bc2"
+interface-hash: "78d75d41b0e8428ff3e0b4ee4bdaf687"

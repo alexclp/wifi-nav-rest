@@ -22,8 +22,8 @@ depends-top-level:
 - "ByteStream"
 - "Bytes"
 - "Cipher"
-- !private "EVP_CIPHER"
-- !private "EVP_CIPHER_CTX"
+- "EVP_CIPHER"
+- "EVP_CIPHER_CTX"
 - !private "EVP_CIPHER_CTX_cleanup"
 - !private "EVP_CIPHER_iv_length"
 - !private "EVP_CIPHER_key_length"
@@ -36,13 +36,13 @@ depends-top-level:
 - !private "EVP_MAX_BLOCK_LENGTH"
 - !private "FloatLiteralType"
 - "Int"
-- !private "Int32"
+- "Int32"
 - !private "IntegerLiteralType"
 - "Swift"
-- !private "UInt8"
+- "UInt8"
 - !private "UnsafeMutableBufferPointer"
-- !private "UnsafeMutablePointer"
-- !private "UnsafePointer"
+- "UnsafeMutablePointer"
+- "UnsafePointer"
 depends-member:
 - !private ["Sa", "count"]
 - !private ["Sa", "init"]
@@ -55,6 +55,7 @@ depends-member:
 - !private ["6Crypto10ByteStreamP", "closed"]
 - !private ["6Crypto10ByteStreamP", "init"]
 - !private ["6Crypto10ByteStreamP", "next"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allocate"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "deallocate"]
@@ -65,8 +66,8 @@ depends-member:
 - !private ["6Crypto6CipherC", "Byte"]
 - ["6Crypto6CipherC", "ByteStream"]
 - ["6Crypto6CipherC", "Bytes"]
-- !private ["6Crypto6CipherC", "EVP_CIPHER"]
-- !private ["6Crypto6CipherC", "EVP_CIPHER_CTX"]
+- ["6Crypto6CipherC", "EVP_CIPHER"]
+- ["6Crypto6CipherC", "EVP_CIPHER_CTX"]
 - !private ["6Crypto6CipherC", "EVP_CIPHER_CTX_cleanup"]
 - !private ["6Crypto6CipherC", "EVP_CIPHER_iv_length"]
 - !private ["6Crypto6CipherC", "EVP_CIPHER_key_length"]
@@ -79,13 +80,13 @@ depends-member:
 - !private ["6Crypto6CipherC", "EVP_MAX_BLOCK_LENGTH"]
 - ["6Crypto6CipherC", "Error"]
 - ["6Crypto6CipherC", "Int"]
-- !private ["6Crypto6CipherC", "Int32"]
+- ["6Crypto6CipherC", "Int32"]
 - ["6Crypto6CipherC", "Method"]
 - ["6Crypto6CipherC", "Swift"]
-- !private ["6Crypto6CipherC", "UInt8"]
+- ["6Crypto6CipherC", "UInt8"]
 - !private ["6Crypto6CipherC", "UnsafeMutableBufferPointer"]
-- !private ["6Crypto6CipherC", "UnsafeMutablePointer"]
-- !private ["6Crypto6CipherC", "UnsafePointer"]
+- ["6Crypto6CipherC", "UnsafeMutablePointer"]
+- ["6Crypto6CipherC", "UnsafePointer"]
 - ["6Crypto6CipherC", "decrypt"]
 - ["6Crypto6CipherC", "deinit"]
 - ["6Crypto6CipherC", "encrypt"]
@@ -127,6 +128,7 @@ depends-member:
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "allocate"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "deallocate"]
 - !private ["s9EquatableP", "deinitialize"]
 - !private ["s9EquatableP", "init"]
@@ -141,6 +143,7 @@ depends-member:
 - ["6Crypto6CipherC5ErrorO", "invalidInitializationVectorLength"]
 - ["6Crypto6CipherC5ErrorO", "invalidKeyLength"]
 - ["6Crypto6CipherC5ErrorO", "update"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -150,7 +153,6 @@ depends-member:
 - !private ["s5ErrorP", "invalidInitializationVectorLength"]
 - !private ["s5ErrorP", "invalidKeyLength"]
 - !private ["s5ErrorP", "update"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -188,33 +190,17 @@ depends-member:
 - !private ["Sp", "deinitialize"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s8_PointerP", "allocate"]
 - !private ["s8_PointerP", "deallocate"]
 - !private ["s8_PointerP", "deinitialize"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "allocate"]
-- !private ["s11_StrideableP", "deallocate"]
-- !private ["s11_StrideableP", "deinitialize"]
-- !private ["s11_StrideableP", "init"]
 - !private ["SC17evp_cipher_ctx_stV", "init"]
 depends-nominal:
 - !private "Sa"
@@ -257,19 +243,12 @@ depends-nominal:
 - !private "Sr"
 - !private "Sp"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "SC17evp_cipher_ctx_stV"
 depends-dynamic-lookup:
 depends-external:
@@ -296,4 +275,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "ebf2b57041a21c4d86af658ec53f97b2"
+interface-hash: "ec8cc57ed142327257fe218dce8d501d"

@@ -120,6 +120,7 @@ depends-member:
 - !private ["s9EquatableP", "MemoryLayout"]
 - ["s9EquatableP", "Self"]
 - ["s9EquatableP", "UInt32"]
+- !private ["s9EquatableP", "append"]
 - !private ["s9EquatableP", "arc4random_uniform"]
 - !private ["s9EquatableP", "forEach"]
 - ["s9EquatableP", "init"]
@@ -206,8 +207,6 @@ depends-member:
 - ["s15UnsignedIntegerP", "random"]
 - !private ["s15UnsignedIntegerP", "randomByte"]
 - !private ["s14_ArrayProtocolP", "append"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
 - ["s18_BitwiseOperationsP", "Byte"]
 - ["s18_BitwiseOperationsP", "UInt32"]
 - !private ["s18_BitwiseOperationsP", "arc4random_uniform"]
@@ -223,11 +222,6 @@ depends-member:
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "max"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "max32"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "randomByte"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s17_MutableIndexableP", "append"]
 - ["s21_ObjectiveCBridgeableP", "Byte"]
 - ["s21_ObjectiveCBridgeableP", "UInt32"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
@@ -236,18 +230,6 @@ depends-member:
 - ["s21_ObjectiveCBridgeableP", "max"]
 - !private ["s21_ObjectiveCBridgeableP", "max32"]
 - !private ["s21_ObjectiveCBridgeableP", "randomByte"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- ["s11_StrideableP", "Byte"]
-- !private ["s11_StrideableP", "MemoryLayout"]
-- ["s11_StrideableP", "Self"]
-- ["s11_StrideableP", "UInt32"]
-- !private ["s11_StrideableP", "arc4random_uniform"]
-- ["s11_StrideableP", "init"]
-- ["s11_StrideableP", "max"]
-- !private ["s11_StrideableP", "max32"]
-- !private ["s11_StrideableP", "randomByte"]
 - ["s14_StringElementP", "Byte"]
 - ["s14_StringElementP", "UInt32"]
 - !private ["s14_StringElementP", "arc4random_uniform"]
@@ -291,17 +273,10 @@ depends-nominal:
 - "s5UInt8V"
 - "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:

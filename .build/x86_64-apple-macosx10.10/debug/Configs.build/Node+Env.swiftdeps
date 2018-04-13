@@ -21,6 +21,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "hydratedEnv"]
 - !private ["4Bits18BytesInitializableP", "hydratedEnv"]
 - !private ["4Bits18BytesRepresentableP", "hydratedEnv"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "flatMap"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "hydratedEnv"]
@@ -102,12 +103,16 @@ depends-member:
 - ["s9EquatableP", "bytes"]
 - !private ["s9EquatableP", "context"]
 - ["s9EquatableP", "date"]
+- !private ["s9EquatableP", "flatMap"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "hydratedEnv"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
 - ["s9EquatableP", "null"]
 - ["s9EquatableP", "number"]
 - ["s9EquatableP", "object"]
 - ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "wrapped"]
 - !private ["s25ExpressibleByArrayLiteralP", "Node"]
 - !private ["s25ExpressibleByArrayLiteralP", "context"]
@@ -272,8 +277,6 @@ depends-member:
 - !private ["s16TextOutputStreamP", "hydratedEnv"]
 - !private ["s20TextOutputStreamableP", "hydratedEnv"]
 - !private ["s14_ArrayProtocolP", "flatMap"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- !private ["s23_BidirectionalIndexableP", "hydratedEnv"]
 - !private ["s24_DestructorSafeContainerP", "flatMap"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hydratedEnv"]
@@ -282,20 +285,7 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "hydratedEnv"]
 - !private ["s33_ExpressibleByStringInterpolationP", "hydratedEnv"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hydratedEnv"]
-- !private ["s10_IndexableP", "flatMap"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "hydratedEnv"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "hydratedEnv"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hydratedEnv"]
-- !private ["s17_MutableIndexableP", "flatMap"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "array"]
 - !private ["s21_ObjectiveCBridgeableP", "flatMap"]
@@ -305,9 +295,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "object"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s26_RangeReplaceableIndexableP", "flatMap"]
-- !private ["s26_RangeReplaceableIndexableP", "hydratedEnv"]
 - !private ["s16_SwiftStringViewP", "hydratedEnv"]
 depends-nominal:
 - !private "Sa"
@@ -367,7 +354,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -376,13 +362,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

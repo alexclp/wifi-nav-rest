@@ -171,9 +171,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "addingPercentEncoding"]
 - !private ["s20TextOutputStreamableP", "makeBytes"]
 - !private ["s20TextOutputStreamableP", "removingPercentEncoding"]
-- !private ["s23_BidirectionalIndexableP", "addingPercentEncoding"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "removingPercentEncoding"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "addingPercentEncoding"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "makeBytes"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "removingPercentEncoding"]
@@ -192,12 +189,6 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "addingPercentEncoding"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "removingPercentEncoding"]
-- !private ["s10_IndexableP", "addingPercentEncoding"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "removingPercentEncoding"]
-- !private ["s14_IndexableBaseP", "addingPercentEncoding"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "removingPercentEncoding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addingPercentEncoding"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removingPercentEncoding"]
@@ -208,9 +199,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "urlHostAllowed"]
 - !private ["s21_ObjectiveCBridgeableP", "urlPathAllowed"]
 - !private ["s21_ObjectiveCBridgeableP", "urlQueryAllowed"]
-- !private ["s26_RangeReplaceableIndexableP", "addingPercentEncoding"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "removingPercentEncoding"]
 - !private ["s16_SwiftStringViewP", "addingPercentEncoding"]
 - !private ["s16_SwiftStringViewP", "makeBytes"]
 - !private ["s16_SwiftStringViewP", "removingPercentEncoding"]
@@ -254,18 +242,14 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

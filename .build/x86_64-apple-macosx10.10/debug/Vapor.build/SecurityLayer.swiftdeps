@@ -21,6 +21,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "isSecure"]
 - !private ["4Bits18BytesInitializableP", "isSecure"]
 - !private ["4Bits18BytesRepresentableP", "isSecure"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "isSecure"]
 - !private ["s10CollectionP", "isSecure"]
 - !private ["s10ComparableP", "isSecure"]
@@ -76,7 +77,6 @@ depends-member:
 - !private ["s14StringProtocolP", "isSecure"]
 - !private ["s16TextOutputStreamP", "isSecure"]
 - !private ["s20TextOutputStreamableP", "isSecure"]
-- !private ["s23_BidirectionalIndexableP", "isSecure"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "isSecure"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "isSecure"]
@@ -84,12 +84,9 @@ depends-member:
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "isSecure"]
 - !private ["s33_ExpressibleByStringInterpolationP", "isSecure"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isSecure"]
-- !private ["s10_IndexableP", "isSecure"]
-- !private ["s14_IndexableBaseP", "isSecure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isSecure"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "isSecure"]
-- !private ["s26_RangeReplaceableIndexableP", "isSecure"]
 - !private ["s16_SwiftStringViewP", "isSecure"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -139,7 +136,6 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -147,11 +143,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

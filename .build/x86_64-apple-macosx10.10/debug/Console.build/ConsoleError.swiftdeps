@@ -30,11 +30,11 @@ depends-member:
 - ["7Console0A5ErrorO", "noCommand"]
 - ["7Console0A5ErrorO", "noExecutable"]
 - ["7Console0A5ErrorO", "spawnProcess"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
-- ["s5ErrorP", ""]
 depends-nominal:
 - "7Console0A5ErrorO"
 - "s5ErrorP"

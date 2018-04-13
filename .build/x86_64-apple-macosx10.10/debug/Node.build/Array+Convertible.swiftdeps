@@ -73,11 +73,16 @@ depends-member:
 - ["s9EncodableP", "makeNode"]
 - !private ["s9EncodableP", "map"]
 - !private ["s9EncodableP", "represent"]
+- !private ["s9EquatableP", "Node"]
 - ["s9EquatableP", "String"]
 - !private ["s9EquatableP", "array"]
 - !private ["s9EquatableP", "context"]
 - !private ["s9EquatableP", "fuzzy"]
-- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "initialize"]
+- ["s9EquatableP", "makeNode"]
+- !private ["s9EquatableP", "map"]
+- !private ["s9EquatableP", "represent"]
 - !private ["s9EquatableP", "set"]
 - !private ["s25ExpressibleByArrayLiteralP", "Node"]
 - ["s25ExpressibleByArrayLiteralP", "String"]
@@ -154,6 +159,7 @@ depends-member:
 - !private ["4NodeAAV", "init"]
 - !private ["4Node0A13InitializableP", "Node"]
 - ["4Node0A13InitializableP", "String"]
+- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13InitializableP", "array"]
 - !private ["4Node0A13InitializableP", "context"]
 - !private ["4Node0A13InitializableP", "fuzzy"]
@@ -163,9 +169,9 @@ depends-member:
 - !private ["4Node0A13InitializableP", "map"]
 - !private ["4Node0A13InitializableP", "represent"]
 - !private ["4Node0A13InitializableP", "set"]
-- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13RepresentableP", "Node"]
 - ["4Node0A13RepresentableP", "String"]
+- ["4Node0A13RepresentableP", ""]
 - !private ["4Node0A13RepresentableP", "array"]
 - !private ["4Node0A13RepresentableP", "context"]
 - !private ["4Node0A13RepresentableP", "fuzzy"]
@@ -175,7 +181,6 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "map"]
 - !private ["4Node0A13RepresentableP", "represent"]
 - !private ["4Node0A13RepresentableP", "set"]
-- ["4Node0A13RepresentableP", ""]
 - !private ["Sq", "deinit"]
 - !private ["Sq", "makeNode"]
 - ["13PathIndexableAAP", "String"]
@@ -214,54 +219,18 @@ depends-member:
 - ["s14_ArrayProtocolP", "makeNode"]
 - !private ["s14_ArrayProtocolP", "map"]
 - !private ["s14_ArrayProtocolP", "represent"]
-- !private ["s23_BidirectionalIndexableP", "Node"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "initialize"]
-- ["s23_BidirectionalIndexableP", "makeNode"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "represent"]
 - !private ["s24_DestructorSafeContainerP", "Node"]
 - ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "initialize"]
 - ["s24_DestructorSafeContainerP", "makeNode"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "represent"]
-- !private ["s10_IndexableP", "Node"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "initialize"]
-- ["s10_IndexableP", "makeNode"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "represent"]
-- !private ["s14_IndexableBaseP", "Node"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "initialize"]
-- ["s14_IndexableBaseP", "makeNode"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "represent"]
-- !private ["s17_MutableIndexableP", "Node"]
-- ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "initialize"]
-- ["s17_MutableIndexableP", "makeNode"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "represent"]
 - !private ["s21_ObjectiveCBridgeableP", "Node"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "initialize"]
 - ["s21_ObjectiveCBridgeableP", "makeNode"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "represent"]
-- !private ["s22_RandomAccessIndexableP", "Node"]
-- ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "initialize"]
-- ["s22_RandomAccessIndexableP", "makeNode"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "represent"]
-- !private ["s26_RangeReplaceableIndexableP", "Node"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "initialize"]
-- ["s26_RangeReplaceableIndexableP", "makeNode"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "represent"]
 depends-nominal:
 - "Sa"
 - "s23BidirectionalCollectionP"
@@ -294,14 +263,8 @@ depends-nominal:
 - "s8SequenceP"
 - "4Node21StructuredDataWrapperP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - "s24_DestructorSafeContainerP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

@@ -16,7 +16,7 @@ depends-top-level:
 - !private "??"
 - "AssignmentPrecedence"
 - !private "BasicClient"
-- !private "Bytes"
+- "Bytes"
 - "ClientStream"
 - !private "Core"
 - "HeaderKey"
@@ -56,6 +56,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "isEmpty"]
 - !private ["4Bits18BytesRepresentableP", "lowercased"]
 - !private ["4Bits18BytesRepresentableP", "random"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "base64Encoded"]
 - !private ["s7CVarArgP", "connection"]
 - !private ["s7CVarArgP", "init"]
@@ -171,7 +172,9 @@ depends-member:
 - !private ["s9EncodableP", "secWebSocketVersion"]
 - !private ["s9EncodableP", "upgrade"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "base64Encoded"]
 - !private ["s9EquatableP", "client"]
+- !private ["s9EquatableP", "connection"]
 - !private ["s9EquatableP", "get"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "invalidOrUnsupportedStatus"]
@@ -179,12 +182,18 @@ depends-member:
 - !private ["s9EquatableP", "invalidURI"]
 - !private ["s9EquatableP", "isEmpty"]
 - !private ["s9EquatableP", "lowercased"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "missingConnectionHeader"]
 - !private ["s9EquatableP", "missingSecAcceptHeader"]
 - !private ["s9EquatableP", "missingUpgradeHeader"]
 - !private ["s9EquatableP", "random"]
+- !private ["s9EquatableP", "secWebProtocol"]
+- !private ["s9EquatableP", "secWebSocketAccept"]
+- !private ["s9EquatableP", "secWebSocketKey"]
+- !private ["s9EquatableP", "secWebSocketVersion"]
 - !private ["s9EquatableP", "switchingProtocols"]
+- !private ["s9EquatableP", "upgrade"]
 - !private ["s5ErrorP", "invalidOrUnsupportedStatus"]
 - !private ["s5ErrorP", "invalidSecAcceptHeader"]
 - !private ["s5ErrorP", "invalidURI"]
@@ -253,30 +262,22 @@ depends-member:
 - !private ["s17MutableCollectionP", "base64Encoded"]
 - !private ["s17MutableCollectionP", "isEmpty"]
 - !private ["s17MutableCollectionP", "makeString"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "isEmpty"]
 - !private ["So8NSCodingP", "lowercased"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "isEmpty"]
 - !private ["So9NSCopyingP", "lowercased"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "isEmpty"]
 - !private ["So21NSItemProviderReadingP", "lowercased"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "isEmpty"]
 - !private ["So21NSItemProviderWritingP", "lowercased"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "isEmpty"]
 - !private ["So16NSMutableCopyingP", "lowercased"]
 - !private ["So8NSObjectC", "isEmpty"]
 - !private ["So8NSObjectC", "lowercased"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "isEmpty"]
 - !private ["So16NSObjectProtocolP", "lowercased"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "isEmpty"]
 - !private ["So14NSSecureCodingP", "lowercased"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "isEmpty"]
 - !private ["So8NSStringC", "lowercased"]
 - !private ["s7NumericP", "random"]
@@ -331,7 +332,7 @@ depends-member:
 - !private ["3URIAAV", "init"]
 - !private ["s15UnsignedIntegerP", "random"]
 - !private ["10WebSockets0A6SocketC", "BasicClient"]
-- !private ["10WebSockets0A6SocketC", "Bytes"]
+- ["10WebSockets0A6SocketC", "Bytes"]
 - ["10WebSockets0A6SocketC", "ClientStream"]
 - !private ["10WebSockets0A6SocketC", "Core"]
 - !private ["10WebSockets0A6SocketC", "FormatError"]
@@ -352,12 +353,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "base64Encoded"]
 - !private ["s14_ArrayProtocolP", "isEmpty"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "base64Encoded"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "isEmpty"]
-- !private ["s23_BidirectionalIndexableP", "lowercased"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s18_BitwiseOperationsP", "random"]
 - !private ["s24_DestructorSafeContainerP", "base64Encoded"]
 - !private ["s24_DestructorSafeContainerP", "isEmpty"]
@@ -379,39 +374,10 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "isEmpty"]
 - !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isEmpty"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
-- !private ["s10_IndexableP", "base64Encoded"]
-- !private ["s10_IndexableP", "connection"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s10_IndexableP", "lowercased"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "secWebProtocol"]
-- !private ["s10_IndexableP", "secWebSocketAccept"]
-- !private ["s10_IndexableP", "secWebSocketKey"]
-- !private ["s10_IndexableP", "secWebSocketVersion"]
-- !private ["s10_IndexableP", "upgrade"]
-- !private ["s14_IndexableBaseP", "base64Encoded"]
-- !private ["s14_IndexableBaseP", "connection"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "lowercased"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "secWebProtocol"]
-- !private ["s14_IndexableBaseP", "secWebSocketAccept"]
-- !private ["s14_IndexableBaseP", "secWebSocketKey"]
-- !private ["s14_IndexableBaseP", "secWebSocketVersion"]
-- !private ["s14_IndexableBaseP", "upgrade"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isEmpty"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
-- !private ["s17_MutableIndexableP", "base64Encoded"]
-- !private ["s17_MutableIndexableP", "isEmpty"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "base64Encoded"]
 - !private ["s21_ObjectiveCBridgeableP", "connection"]
@@ -425,16 +391,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "secWebSocketKey"]
 - !private ["s21_ObjectiveCBridgeableP", "secWebSocketVersion"]
 - !private ["s21_ObjectiveCBridgeableP", "upgrade"]
-- !private ["s22_RandomAccessIndexableP", "base64Encoded"]
-- !private ["s22_RandomAccessIndexableP", "isEmpty"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "base64Encoded"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
-- !private ["s26_RangeReplaceableIndexableP", "lowercased"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s11_StrideableP", "random"]
 - !private ["s14_StringElementP", "random"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "isEmpty"]
@@ -511,7 +467,6 @@ depends-nominal:
 - !private "s15UnsignedIntegerP"
 - "10WebSockets0A6SocketC"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
@@ -522,14 +477,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s14_StringElementP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:

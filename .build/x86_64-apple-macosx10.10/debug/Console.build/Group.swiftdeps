@@ -22,11 +22,11 @@ depends-member:
 - ["7Console5GroupC", "help"]
 - ["7Console5GroupC", "id"]
 - ["7Console5GroupC", "init"]
+- ["7Console8RunnableP", ""]
 - !private ["7Console8RunnableP", "commands"]
 - !private ["7Console8RunnableP", "fallback"]
 - !private ["7Console8RunnableP", "help"]
 - ["7Console8RunnableP", "id"]
-- ["7Console8RunnableP", ""]
 depends-nominal:
 - "7Console5GroupC"
 - "7Console8RunnableP"
@@ -53,4 +53,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "e272fcf39e7c5b0fe7237e76ce13b0d6"
+interface-hash: "bcefb944e23f62ef073c19de979a8bbb"

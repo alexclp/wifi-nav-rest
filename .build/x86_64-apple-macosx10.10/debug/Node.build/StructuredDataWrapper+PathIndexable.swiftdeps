@@ -74,8 +74,14 @@ depends-member:
 - !private ["s9EquatableP", "StructuredData"]
 - !private ["s9EquatableP", "array"]
 - !private ["s9EquatableP", "context"]
+- !private ["s9EquatableP", "first"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "lazy"]
+- !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "object"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "values"]
 - !private ["s9EquatableP", "wrapped"]
 - ["s25ExpressibleByArrayLiteralP", "Self"]
 - ["s25ExpressibleByArrayLiteralP", "String"]
@@ -137,15 +143,12 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "context"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "wrapped"]
-- !private ["s27LazyBidirectionalCollectionV", "flatMap"]
 - !private ["s14LazyCollectionV", "first"]
 - !private ["s14LazyCollectionV", "flatMap"]
 - !private ["s22LazyCollectionProtocolP", "first"]
 - !private ["s22LazyCollectionProtocolP", "flatMap"]
-- !private ["s30LazyMapBidirectionalCollectionV", "first"]
 - !private ["s17LazyMapCollectionV", "first"]
 - !private ["s15LazyMapSequenceV", "first"]
-- !private ["s26LazyRandomAccessCollectionV", "flatMap"]
 - !private ["s12LazySequenceV", "first"]
 - !private ["s12LazySequenceV", "flatMap"]
 - !private ["s20LazySequenceProtocolP", "first"]
@@ -217,43 +220,15 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "lazy"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- !private ["s23_BidirectionalIndexableP", "lazy"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "lazy"]
 - !private ["s24_DestructorSafeContainerP", "map"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "flatMap"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "lazy"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "values"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "lazy"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "values"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "lazy"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "lazy"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "values"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s22_RandomAccessIndexableP", "lazy"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "lazy"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
 - !private ["s16_SequenceWrapperP", "first"]
 - !private ["s16_SequenceWrapperP", "flatMap"]
 depends-nominal:
@@ -277,13 +252,10 @@ depends-nominal:
 - "s23ExpressibleByNilLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s27LazyBidirectionalCollectionV"
 - !private "s14LazyCollectionV"
 - !private "s22LazyCollectionProtocolP"
-- !private "s30LazyMapBidirectionalCollectionV"
 - !private "s17LazyMapCollectionV"
 - !private "s15LazyMapSequenceV"
-- !private "s26LazyRandomAccessCollectionV"
 - !private "s12LazySequenceV"
 - !private "s20LazySequenceProtocolP"
 - !private "s17MutableCollectionP"
@@ -297,14 +269,8 @@ depends-nominal:
 - "4Node21StructuredDataWrapperP"
 - !private "s10DictionaryV6ValuesV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SequenceWrapperP"
 depends-dynamic-lookup:
 depends-external:

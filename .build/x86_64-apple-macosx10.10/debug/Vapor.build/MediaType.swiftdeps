@@ -40,14 +40,6 @@ depends-member:
 - !private ["4HTTP7MessageP", "Vapor"]
 - ["4HTTP7MessageP", "mediaTypes"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - ["4Node0A13InitializableP", "init"]
 - ["4Node0A13RepresentableP", "init"]
 - ["7Routing15ParameterizableP", "init"]
@@ -60,18 +52,12 @@ depends-member:
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -98,14 +84,6 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "4HTTP7MessageP"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -118,18 +96,12 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -178,4 +150,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "f861e756f20f54cdf8989567dba5e03d"
+interface-hash: "710919ae6f89c5859ad4b9d23c6b41d1"

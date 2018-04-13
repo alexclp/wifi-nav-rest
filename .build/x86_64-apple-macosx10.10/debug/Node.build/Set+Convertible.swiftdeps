@@ -74,15 +74,15 @@ depends-member:
 - !private ["4Node0A13InitializableP", "Array"]
 - !private ["4Node0A13InitializableP", "Element"]
 - !private ["4Node0A13InitializableP", "Set"]
+- ["4Node0A13InitializableP", ""]
 - ["4Node0A13InitializableP", "init"]
 - ["4Node0A13InitializableP", "makeNode"]
-- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13RepresentableP", "Array"]
 - !private ["4Node0A13RepresentableP", "Element"]
 - !private ["4Node0A13RepresentableP", "Set"]
+- ["4Node0A13RepresentableP", ""]
 - ["4Node0A13RepresentableP", "init"]
 - ["4Node0A13RepresentableP", "makeNode"]
-- ["4Node0A13RepresentableP", ""]
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "makeNode"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
@@ -107,31 +107,13 @@ depends-member:
 - ["s10SetAlgebraP", "makeNode"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "makeNode"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeNode"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeNode"]
-- !private ["s10_IndexableP", "Array"]
-- !private ["s10_IndexableP", "Element"]
-- !private ["s10_IndexableP", "Set"]
-- ["s10_IndexableP", "init"]
-- ["s10_IndexableP", "makeNode"]
-- !private ["s14_IndexableBaseP", "Array"]
-- !private ["s14_IndexableBaseP", "Element"]
-- !private ["s14_IndexableBaseP", "Set"]
-- ["s14_IndexableBaseP", "init"]
-- ["s14_IndexableBaseP", "makeNode"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "makeNode"]
 - !private ["s21_ObjectiveCBridgeableP", "Array"]
 - !private ["s21_ObjectiveCBridgeableP", "Element"]
 - !private ["s21_ObjectiveCBridgeableP", "Set"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - ["s21_ObjectiveCBridgeableP", "makeNode"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "makeNode"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeNode"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -155,14 +137,8 @@ depends-nominal:
 - "s3SetV"
 - "s10SetAlgebraP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

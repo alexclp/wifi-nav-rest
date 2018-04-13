@@ -29,9 +29,9 @@ depends-member:
 - ["4HTTP7RequestC", "Handler"]
 - ["4HTTP9ResponderP", "Request"]
 - ["4HTTP9ResponderP", "Response"]
+- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP9ResponderP", "closure"]
 - ["4HTTP9ResponderP", "respond"]
-- ["4HTTP9ResponderP", ""]
 depends-nominal:
 - "4HTTP14BasicResponderV"
 - "4HTTP7RequestC"

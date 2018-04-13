@@ -40,6 +40,7 @@ depends-member:
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "hasPrefix"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "first"]
 - !private ["s7CVarArgP", "hasPrefix"]
@@ -116,8 +117,15 @@ depends-member:
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EncodableP", "values"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "hasPrefix"]
+- !private ["s9EquatableP", "index"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "lazy"]
+- !private ["s9EquatableP", "remove"]
+- !private ["s9EquatableP", "subscript"]
+- !private ["s9EquatableP", "values"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "first"]
 - !private ["s25ExpressibleByArrayLiteralP", "index"]
@@ -137,14 +145,11 @@ depends-member:
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "hasPrefix"]
 - !private ["s8HashableP", "init"]
-- !private ["s27LazyBidirectionalCollectionV", "filter"]
 - !private ["s14LazyCollectionV", "filter"]
 - !private ["s22LazyCollectionProtocolP", "filter"]
 - !private ["s22LazyCollectionProtocolP", "first"]
-- !private ["s33LazyFilterBidirectionalCollectionV", "first"]
 - !private ["s20LazyFilterCollectionV", "first"]
 - !private ["s18LazyFilterSequenceV", "first"]
-- !private ["s26LazyRandomAccessCollectionV", "filter"]
 - !private ["s12LazySequenceV", "filter"]
 - !private ["s20LazySequenceProtocolP", "filter"]
 - !private ["s20LazySequenceProtocolP", "first"]
@@ -161,22 +166,14 @@ depends-member:
 - !private ["s17MutableCollectionP", "remove"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "hasPrefix"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "hasPrefix"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "hasPrefix"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "hasPrefix"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "hasPrefix"]
 - !private ["So16NSObjectProtocolP", "hasPrefix"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "hasPrefix"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "hasPrefix"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "append"]
 - !private ["4Node0A13InitializableP", "first"]
@@ -249,15 +246,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "lazy"]
 - !private ["s14_ArrayProtocolP", "remove"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "filter"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "hasPrefix"]
-- !private ["s23_BidirectionalIndexableP", "index"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "lazy"]
-- !private ["s23_BidirectionalIndexableP", "remove"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "index"]
@@ -277,36 +265,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "hasPrefix"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "filter"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "hasPrefix"]
-- !private ["s10_IndexableP", "index"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "lazy"]
-- !private ["s10_IndexableP", "remove"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "values"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "filter"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "hasPrefix"]
-- !private ["s14_IndexableBaseP", "index"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "lazy"]
-- !private ["s14_IndexableBaseP", "remove"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "values"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasPrefix"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "index"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "lazy"]
-- !private ["s17_MutableIndexableP", "remove"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
@@ -317,22 +276,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "remove"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "values"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "filter"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "index"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "lazy"]
-- !private ["s22_RandomAccessIndexableP", "remove"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "hasPrefix"]
-- !private ["s26_RangeReplaceableIndexableP", "index"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "lazy"]
-- !private ["s26_RangeReplaceableIndexableP", "remove"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SequenceWrapperP", "filter"]
 - !private ["s16_SwiftStringViewP", "hasPrefix"]
 - !private ["s16_SwiftStringViewP", "init"]
@@ -362,13 +305,10 @@ depends-nominal:
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "s8HashableP"
-- !private "s27LazyBidirectionalCollectionV"
 - !private "s14LazyCollectionV"
 - !private "s22LazyCollectionProtocolP"
-- !private "s33LazyFilterBidirectionalCollectionV"
 - !private "s20LazyFilterCollectionV"
 - !private "s18LazyFilterSequenceV"
-- !private "s26LazyRandomAccessCollectionV"
 - !private "s12LazySequenceV"
 - !private "s20LazySequenceProtocolP"
 - !private "s25LosslessStringConvertibleP"
@@ -395,7 +335,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -404,13 +343,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SequenceWrapperP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:

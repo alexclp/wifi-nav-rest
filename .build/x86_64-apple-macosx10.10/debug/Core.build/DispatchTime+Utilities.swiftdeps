@@ -131,10 +131,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "UInt64"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "nanoseconds"]
-- !private ["s11_StrideableP", "Double"]
-- !private ["s11_StrideableP", "UInt64"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "nanoseconds"]
 depends-nominal:
 - !private "s19BinaryFloatingPointP"
 - !private "s13BinaryIntegerP"
@@ -169,7 +165,6 @@ depends-nominal:
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

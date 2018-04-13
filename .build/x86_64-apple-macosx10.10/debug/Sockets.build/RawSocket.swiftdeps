@@ -19,6 +19,7 @@ depends-top-level:
 - !private "libc"
 depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -46,15 +47,14 @@ depends-member:
 - ["9Transport6StreamP", "Bool"]
 - ["9Transport6StreamP", "Descriptor"]
 - !private ["9Transport6StreamP", "SocketsError"]
-- ["9Transport6StreamP", "close"]
-- ["9Transport6StreamP", "descriptor"]
-- ["9Transport6StreamP", "isClosed"]
-- !private ["9Transport6StreamP", "libc"]
 - ["9Transport6StreamP", ""]
+- !private ["9Transport6StreamP", "descriptor"]
+- !private ["9Transport6StreamP", "libc"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 depends-nominal:
 - !private "Sb"
+- !private "s7CVarArgP"
 - !private "s28CustomDebugStringConvertibleP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

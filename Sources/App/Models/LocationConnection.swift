@@ -20,7 +20,7 @@ final class LocationConnection: Model {
         childLocationID = try row.get(LocationConnection.Keys.childLocationID)
     }
 
-    init(rootLocationID: Int, childLocationID: Int) {
+init(rootLocationID: Int, childLocationID: Int) {
         self.rootLocationID = rootLocationID
         self.childLocationID = childLocationID
     }

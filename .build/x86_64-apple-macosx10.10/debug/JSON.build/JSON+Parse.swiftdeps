@@ -60,6 +60,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["s7CVarArgP", "ReadingOptions"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "base64Encoded"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "getBytes"]
@@ -175,10 +176,12 @@ depends-member:
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "allowFragments"]
 - ["s9EquatableP", "array"]
+- !private ["s9EquatableP", "base64Encoded"]
 - ["s9EquatableP", "bool"]
 - ["s9EquatableP", "bytes"]
 - ["s9EquatableP", "date"]
 - ["s9EquatableP", "double"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "foundationJSON"]
 - !private ["s9EquatableP", "getBytes"]
 - !private ["s9EquatableP", "init"]
@@ -186,11 +189,14 @@ depends-member:
 - !private ["s9EquatableP", "jsonObject"]
 - !private ["s9EquatableP", "length"]
 - !private ["s9EquatableP", "makeBytes"]
+- !private ["s9EquatableP", "makeString"]
+- !private ["s9EquatableP", "map"]
 - ["s9EquatableP", "null"]
 - ["s9EquatableP", "number"]
 - ["s9EquatableP", "object"]
 - !private ["s9EquatableP", "outgoingDateFormatter"]
 - ["s9EquatableP", "string"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "timeIntervalSince1970"]
 - ["s9EquatableP", "uint"]
 - !private ["s25ExpressibleByArrayLiteralP", "Data"]
@@ -455,11 +461,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "makeString"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "base64Encoded"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s24_DestructorSafeContainerP", "base64Encoded"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s24_DestructorSafeContainerP", "makeString"]
@@ -468,20 +469,6 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "getBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "length"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "timeIntervalSince1970"]
-- !private ["s10_IndexableP", "base64Encoded"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "base64Encoded"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ReadingOptions"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "getBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
@@ -489,11 +476,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "length"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "timeIntervalSince1970"]
-- !private ["s17_MutableIndexableP", "base64Encoded"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "makeBytes"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "base64Encoded"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
@@ -503,16 +485,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "outgoingDateFormatter"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "base64Encoded"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "makeBytes"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "base64Encoded"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -575,17 +547,11 @@ depends-nominal:
 - "4Node14StructuredDataO"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

@@ -198,10 +198,12 @@ depends-member:
 - ["s9EquatableP", "date"]
 - ["s9EquatableP", "dateFormat"]
 - ["s9EquatableP", "double"]
+- !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "incomingDateFormatters"]
 - !private ["s9EquatableP", "incomingTimestamp"]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "iso8601"]
+- !private ["s9EquatableP", "lazy"]
 - ["s9EquatableP", "locale"]
 - !private ["s9EquatableP", "lock"]
 - ["s9EquatableP", "makeNode"]
@@ -285,15 +287,12 @@ depends-member:
 - ["s8HashableP", "timeIntervalSince1970"]
 - ["s8HashableP", "timeZone"]
 - !private ["s8HashableP", "unlock"]
-- !private ["s27LazyBidirectionalCollectionV", "flatMap"]
 - !private ["s14LazyCollectionV", "first"]
 - !private ["s14LazyCollectionV", "flatMap"]
 - !private ["s22LazyCollectionProtocolP", "first"]
 - !private ["s22LazyCollectionProtocolP", "flatMap"]
-- !private ["s30LazyMapBidirectionalCollectionV", "first"]
 - !private ["s17LazyMapCollectionV", "first"]
 - !private ["s15LazyMapSequenceV", "first"]
-- !private ["s26LazyRandomAccessCollectionV", "flatMap"]
 - !private ["s12LazySequenceV", "first"]
 - !private ["s12LazySequenceV", "flatMap"]
 - !private ["s20LazySequenceProtocolP", "first"]
@@ -325,15 +324,12 @@ depends-member:
 - ["So9NSCopyingP", "mysql"]
 - ["So9NSCopyingP", "rfc1123"]
 - ["So9NSCopyingP", "timeZone"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
 - ["So6NSLockC", "init"]
 - !private ["So6NSLockC", "lock"]
 - !private ["So6NSLockC", "unlock"]
 - ["So9NSLockingP", "init"]
 - !private ["So9NSLockingP", "lock"]
 - !private ["So9NSLockingP", "unlock"]
-- ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "DateFormatter"]
 - ["So8NSObjectC", "Locale"]
 - ["So8NSObjectC", "TimeZone"]
@@ -360,8 +356,6 @@ depends-member:
 - ["So16NSObjectProtocolP", "rfc1123"]
 - ["So16NSObjectProtocolP", "timeZone"]
 - !private ["So16NSObjectProtocolP", "unlock"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - ["4NodeAAV", "Number"]
 - !private ["4NodeAAV", "date"]
 - !private ["4NodeAAV", "deinit"]
@@ -373,6 +367,7 @@ depends-member:
 - ["4Node0A13InitializableP", "Node"]
 - !private ["4Node0A13InitializableP", "NodeError"]
 - ["4Node0A13InitializableP", "Number"]
+- ["4Node0A13InitializableP", ""]
 - ["4Node0A13InitializableP", "date"]
 - !private ["4Node0A13InitializableP", "first"]
 - !private ["4Node0A13InitializableP", "incomingDateFormatters"]
@@ -385,12 +380,12 @@ depends-member:
 - ["4Node0A13InitializableP", "string"]
 - ["4Node0A13InitializableP", "timeIntervalSince1970"]
 - !private ["4Node0A13InitializableP", "wrapped"]
-- ["4Node0A13InitializableP", ""]
 - ["4Node0A13RepresentableP", "Date"]
 - ["4Node0A13RepresentableP", "NSLock"]
 - ["4Node0A13RepresentableP", "Node"]
 - !private ["4Node0A13RepresentableP", "NodeError"]
 - ["4Node0A13RepresentableP", "Number"]
+- ["4Node0A13RepresentableP", ""]
 - ["4Node0A13RepresentableP", "date"]
 - !private ["4Node0A13RepresentableP", "first"]
 - !private ["4Node0A13RepresentableP", "incomingDateFormatters"]
@@ -403,7 +398,6 @@ depends-member:
 - ["4Node0A13RepresentableP", "string"]
 - ["4Node0A13RepresentableP", "timeIntervalSince1970"]
 - !private ["4Node0A13RepresentableP", "wrapped"]
-- ["4Node0A13RepresentableP", ""]
 - ["4Node14StructuredDataO6NumberO", "deinit"]
 - ["4Node14StructuredDataO6NumberO", "double"]
 - ["4Node14StructuredDataO6NumberO", "init"]
@@ -450,10 +444,6 @@ depends-member:
 - ["10Foundation8TimeZoneV", "init"]
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "lazy"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "lazy"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "lazy"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -461,15 +451,6 @@ depends-member:
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "flatMap"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "lazy"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "lazy"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "TimeZone"]
@@ -483,8 +464,6 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "rfc1123"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "timeZone"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "unlock"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "lazy"]
 - ["s21_ObjectiveCBridgeableP", "Date"]
 - ["s21_ObjectiveCBridgeableP", "NSLock"]
 - ["s21_ObjectiveCBridgeableP", "Node"]
@@ -497,12 +476,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "lock"]
 - ["s21_ObjectiveCBridgeableP", "makeNode"]
 - ["s21_ObjectiveCBridgeableP", "timeIntervalSince1970"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s22_RandomAccessIndexableP", "lazy"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "lazy"]
 - !private ["s16_SequenceWrapperP", "first"]
 - !private ["s16_SequenceWrapperP", "flatMap"]
 - ["s16_SwiftStringViewP", "init"]
@@ -538,13 +511,10 @@ depends-nominal:
 - "So9FormatterC"
 - "4Node14FuzzyConverterP"
 - "s8HashableP"
-- !private "s27LazyBidirectionalCollectionV"
 - !private "s14LazyCollectionV"
 - !private "s22LazyCollectionProtocolP"
-- !private "s30LazyMapBidirectionalCollectionV"
 - !private "s17LazyMapCollectionV"
 - !private "s15LazyMapSequenceV"
-- !private "s26LazyRandomAccessCollectionV"
 - !private "s12LazySequenceV"
 - !private "s20LazySequenceProtocolP"
 - "10Foundation6LocaleV"
@@ -553,15 +523,10 @@ depends-nominal:
 - !private "s17MutableCollectionP"
 - "So8NSCodingP"
 - "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
 - "So6NSLockC"
 - "So9NSLockingP"
-- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4NodeAAV"
 - !private "4Node0A5ErrorO"
 - "4Node0A13InitializableP"
@@ -581,21 +546,14 @@ depends-nominal:
 - "s20TextOutputStreamableP"
 - "10Foundation8TimeZoneV"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - !private "s16_SequenceWrapperP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
@@ -622,4 +580,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "9a7126fc2ee40f10bf3e3a73f1598ed1"
+interface-hash: "1a84df37b1851546cde86c215cecca66"

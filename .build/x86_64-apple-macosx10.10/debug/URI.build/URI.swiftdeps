@@ -35,6 +35,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "hasPrefix"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "lowercased"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "hasPrefix"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "lowercased"]
@@ -60,6 +61,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "lowercased"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "URI"]
+- ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "defaultPorts"]
 - ["s23CustomStringConvertibleP", "description"]
@@ -76,7 +78,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "userInfo"]
 - !private ["s23CustomStringConvertibleP", "username"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "hasPrefix"]
 - !private ["s9DecodableP", "init"]
@@ -92,6 +93,7 @@ depends-member:
 - !private ["s9EquatableP", "hasPrefix"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "lowercased"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "hasPrefix"]
@@ -115,30 +117,22 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "lowercased"]
 - !private ["So8NSCodingP", "hasPrefix"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "lowercased"]
 - !private ["So9NSCopyingP", "hasPrefix"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "lowercased"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "lowercased"]
 - !private ["So21NSItemProviderWritingP", "hasPrefix"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "lowercased"]
 - !private ["So16NSMutableCopyingP", "hasPrefix"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "lowercased"]
 - !private ["So8NSObjectC", "hasPrefix"]
 - !private ["So8NSObjectC", "lowercased"]
 - !private ["So16NSObjectProtocolP", "hasPrefix"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "lowercased"]
 - !private ["So14NSSecureCodingP", "hasPrefix"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "lowercased"]
 - !private ["So8NSStringC", "hasPrefix"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "lowercased"]
 - !private ["s26RangeReplaceableCollectionP", "hasPrefix"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
@@ -178,9 +172,6 @@ depends-member:
 - ["3URIAAV8UserInfoV", "info"]
 - ["3URIAAV8UserInfoV", "init"]
 - ["3URIAAV8UserInfoV", "username"]
-- !private ["s23_BidirectionalIndexableP", "hasPrefix"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "lowercased"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hasPrefix"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -198,27 +189,14 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
-- !private ["s10_IndexableP", "hasPrefix"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "lowercased"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "hasPrefix"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "lowercased"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasPrefix"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "hasPrefix"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "hasPrefix"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "lowercased"]
 - !private ["s16_SwiftStringViewP", "hasPrefix"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "lowercased"]
@@ -264,7 +242,6 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - "3URIAAV"
 - "3URIAAV8UserInfoV"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -272,11 +249,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

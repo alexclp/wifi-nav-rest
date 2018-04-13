@@ -14,11 +14,11 @@ depends-top-level:
 - "String"
 - "Swift"
 depends-member:
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
-- ["s5ErrorP", ""]
 - ["4HTTP11ServerErrorO", "Int"]
 - ["4HTTP11ServerErrorO", "String"]
 - ["4HTTP11ServerErrorO", "Swift"]

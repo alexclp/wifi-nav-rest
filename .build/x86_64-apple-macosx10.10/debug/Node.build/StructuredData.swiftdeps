@@ -51,6 +51,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "joined"]
 - !private ["s17CustomReflectableP", "map"]
+- ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "array"]
 - ["s23CustomStringConvertibleP", "bool"]
 - ["s23CustomStringConvertibleP", "bytes"]
@@ -63,7 +64,6 @@ depends-member:
 - ["s23CustomStringConvertibleP", "number"]
 - ["s23CustomStringConvertibleP", "object"]
 - ["s23CustomStringConvertibleP", "string"]
-- ["s23CustomStringConvertibleP", ""]
 - !private ["s9DecodableP", "description"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "joined"]
@@ -79,6 +79,8 @@ depends-member:
 - ["s9EquatableP", "date"]
 - ["s9EquatableP", "description"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "joined"]
+- !private ["s9EquatableP", "map"]
 - ["s9EquatableP", "null"]
 - ["s9EquatableP", "number"]
 - ["s9EquatableP", "object"]
@@ -104,22 +106,14 @@ depends-member:
 - !private ["s17MutableCollectionP", "joined"]
 - !private ["s17MutableCollectionP", "map"]
 - !private ["So8NSCodingP", "description"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "description"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "description"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "description"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "description"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "description"]
 - !private ["So16NSObjectProtocolP", "description"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "description"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "description"]
-- !private ["So8NSStringC", "init"]
 - ["4Node0A13InitializableP", "array"]
 - ["4Node0A13InitializableP", "bool"]
 - ["4Node0A13InitializableP", "bytes"]
@@ -196,10 +190,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s14_ArrayProtocolP", "joined"]
 - !private ["s14_ArrayProtocolP", "map"]
-- !private ["s23_BidirectionalIndexableP", "description"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "joined"]
-- !private ["s23_BidirectionalIndexableP", "map"]
 - !private ["s24_DestructorSafeContainerP", "joined"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "description"]
@@ -214,29 +204,11 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "description"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "description"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "description"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "joined"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s14_IndexableBaseP", "description"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "joined"]
-- !private ["s14_IndexableBaseP", "map"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "description"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "joined"]
-- !private ["s17_MutableIndexableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "description"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "joined"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "joined"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "description"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "joined"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
 - !private ["s16_SwiftStringViewP", "description"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -292,7 +264,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -301,13 +272,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

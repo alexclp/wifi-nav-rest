@@ -12,12 +12,10 @@ depends-top-level:
 - "Socket"
 depends-member:
 - ["7Sockets9RawSocketP", "Config"]
-- ["7Sockets9RawSocketP", "config"]
 - ["7Sockets9RawSocketP", ""]
 - ["7Sockets6SocketP", "Config"]
 - ["7Sockets6SocketP", "config"]
 - ["9Transport6StreamP", "Config"]
-- ["9Transport6StreamP", "config"]
 depends-nominal:
 - "7Sockets9RawSocketP"
 - "7Sockets6SocketP"

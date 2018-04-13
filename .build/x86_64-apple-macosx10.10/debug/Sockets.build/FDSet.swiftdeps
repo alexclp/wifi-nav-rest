@@ -27,6 +27,7 @@ depends-top-level:
 depends-member:
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s10ComparableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -58,7 +59,6 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - !private ["SC6fd_setV", "fds_bits"]
 depends-nominal:
 - !private "s13BinaryIntegerP"
@@ -85,7 +85,6 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
 - !private "SC6fd_setV"
 depends-dynamic-lookup:
 depends-external:

@@ -57,23 +57,22 @@ depends-member:
 - ["6Fluent6EntityP", "Self"]
 - ["6Fluent6EntityP", "SoftDeletable"]
 - ["6Fluent6EntityP", "String"]
+- ["6Fluent6EntityP", ""]
 - !private ["6Fluent6EntityP", "assertExists"]
 - !private ["6Fluent6EntityP", "delete"]
-- ["6Fluent6EntityP", "deletedAt"]
-- ["6Fluent6EntityP", "deletedAtKey"]
-- ["6Fluent6EntityP", "didForceDelete"]
-- ["6Fluent6EntityP", "didRestore"]
-- ["6Fluent6EntityP", "didSoftDelete"]
+- !private ["6Fluent6EntityP", "deletedAt"]
+- !private ["6Fluent6EntityP", "didForceDelete"]
+- !private ["6Fluent6EntityP", "didRestore"]
+- !private ["6Fluent6EntityP", "didSoftDelete"]
 - !private ["6Fluent6EntityP", "keyNamingConvention"]
 - !private ["6Fluent6EntityP", "makeQuery"]
 - !private ["6Fluent6EntityP", "save"]
 - ["6Fluent6EntityP", "shouldForceDelete"]
 - !private ["6Fluent6EntityP", "storage"]
-- ["6Fluent6EntityP", "willForceDelete"]
-- ["6Fluent6EntityP", "willRestore"]
-- ["6Fluent6EntityP", "willSoftDelete"]
+- !private ["6Fluent6EntityP", "willForceDelete"]
+- !private ["6Fluent6EntityP", "willRestore"]
+- !private ["6Fluent6EntityP", "willSoftDelete"]
 - ["6Fluent6EntityP", "withSoftDeleted"]
-- ["6Fluent6EntityP", ""]
 - ["s9EquatableP", "camelCase"]
 - !private ["s9EquatableP", "delete"]
 - !private ["s9EquatableP", "init"]
@@ -96,14 +95,6 @@ depends-member:
 - ["6Fluent19KeyNamingConventionO", "snake_case"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13RepresentableP", "init"]
 - !private ["13PathIndexable0A7IndexerP", "init"]
@@ -134,19 +125,18 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "String"]
 - !private ["6Fluent14RowConvertibleP", "assertExists"]
 - !private ["6Fluent14RowConvertibleP", "delete"]
-- ["6Fluent14RowConvertibleP", "deletedAt"]
-- ["6Fluent14RowConvertibleP", "deletedAtKey"]
-- ["6Fluent14RowConvertibleP", "didForceDelete"]
-- ["6Fluent14RowConvertibleP", "didRestore"]
-- ["6Fluent14RowConvertibleP", "didSoftDelete"]
+- !private ["6Fluent14RowConvertibleP", "deletedAt"]
+- !private ["6Fluent14RowConvertibleP", "didForceDelete"]
+- !private ["6Fluent14RowConvertibleP", "didRestore"]
+- !private ["6Fluent14RowConvertibleP", "didSoftDelete"]
 - !private ["6Fluent14RowConvertibleP", "keyNamingConvention"]
 - !private ["6Fluent14RowConvertibleP", "makeQuery"]
 - !private ["6Fluent14RowConvertibleP", "save"]
 - !private ["6Fluent14RowConvertibleP", "shouldForceDelete"]
 - !private ["6Fluent14RowConvertibleP", "storage"]
-- ["6Fluent14RowConvertibleP", "willForceDelete"]
-- ["6Fluent14RowConvertibleP", "willRestore"]
-- ["6Fluent14RowConvertibleP", "willSoftDelete"]
+- !private ["6Fluent14RowConvertibleP", "willForceDelete"]
+- !private ["6Fluent14RowConvertibleP", "willRestore"]
+- !private ["6Fluent14RowConvertibleP", "willSoftDelete"]
 - ["6Fluent16RowInitializableP", "Bool"]
 - ["6Fluent16RowInitializableP", "Date"]
 - ["6Fluent16RowInitializableP", "Query"]
@@ -155,19 +145,18 @@ depends-member:
 - ["6Fluent16RowInitializableP", "String"]
 - !private ["6Fluent16RowInitializableP", "assertExists"]
 - !private ["6Fluent16RowInitializableP", "delete"]
-- ["6Fluent16RowInitializableP", "deletedAt"]
-- ["6Fluent16RowInitializableP", "deletedAtKey"]
-- ["6Fluent16RowInitializableP", "didForceDelete"]
-- ["6Fluent16RowInitializableP", "didRestore"]
-- ["6Fluent16RowInitializableP", "didSoftDelete"]
+- !private ["6Fluent16RowInitializableP", "deletedAt"]
+- !private ["6Fluent16RowInitializableP", "didForceDelete"]
+- !private ["6Fluent16RowInitializableP", "didRestore"]
+- !private ["6Fluent16RowInitializableP", "didSoftDelete"]
 - !private ["6Fluent16RowInitializableP", "keyNamingConvention"]
 - !private ["6Fluent16RowInitializableP", "makeQuery"]
 - !private ["6Fluent16RowInitializableP", "save"]
 - !private ["6Fluent16RowInitializableP", "shouldForceDelete"]
 - !private ["6Fluent16RowInitializableP", "storage"]
-- ["6Fluent16RowInitializableP", "willForceDelete"]
-- ["6Fluent16RowInitializableP", "willRestore"]
-- ["6Fluent16RowInitializableP", "willSoftDelete"]
+- !private ["6Fluent16RowInitializableP", "willForceDelete"]
+- !private ["6Fluent16RowInitializableP", "willRestore"]
+- !private ["6Fluent16RowInitializableP", "willSoftDelete"]
 - ["6Fluent16RowRepresentableP", "Bool"]
 - ["6Fluent16RowRepresentableP", "Date"]
 - ["6Fluent16RowRepresentableP", "Query"]
@@ -176,19 +165,18 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "String"]
 - !private ["6Fluent16RowRepresentableP", "assertExists"]
 - !private ["6Fluent16RowRepresentableP", "delete"]
-- ["6Fluent16RowRepresentableP", "deletedAt"]
-- ["6Fluent16RowRepresentableP", "deletedAtKey"]
-- ["6Fluent16RowRepresentableP", "didForceDelete"]
-- ["6Fluent16RowRepresentableP", "didRestore"]
-- ["6Fluent16RowRepresentableP", "didSoftDelete"]
+- !private ["6Fluent16RowRepresentableP", "deletedAt"]
+- !private ["6Fluent16RowRepresentableP", "didForceDelete"]
+- !private ["6Fluent16RowRepresentableP", "didRestore"]
+- !private ["6Fluent16RowRepresentableP", "didSoftDelete"]
 - !private ["6Fluent16RowRepresentableP", "keyNamingConvention"]
 - !private ["6Fluent16RowRepresentableP", "makeQuery"]
 - !private ["6Fluent16RowRepresentableP", "save"]
 - !private ["6Fluent16RowRepresentableP", "shouldForceDelete"]
 - !private ["6Fluent16RowRepresentableP", "storage"]
-- ["6Fluent16RowRepresentableP", "willForceDelete"]
-- ["6Fluent16RowRepresentableP", "willRestore"]
-- ["6Fluent16RowRepresentableP", "willSoftDelete"]
+- !private ["6Fluent16RowRepresentableP", "willForceDelete"]
+- !private ["6Fluent16RowRepresentableP", "willRestore"]
+- !private ["6Fluent16RowRepresentableP", "willSoftDelete"]
 - !private ["s8SequenceP", "init"]
 - ["6Fluent13SoftDeletableP", "Bool"]
 - ["6Fluent13SoftDeletableP", "Date"]
@@ -221,37 +209,30 @@ depends-member:
 - ["6Fluent8StorableP", "String"]
 - !private ["6Fluent8StorableP", "assertExists"]
 - !private ["6Fluent8StorableP", "delete"]
-- ["6Fluent8StorableP", "deletedAt"]
-- ["6Fluent8StorableP", "deletedAtKey"]
-- ["6Fluent8StorableP", "didForceDelete"]
-- ["6Fluent8StorableP", "didRestore"]
-- ["6Fluent8StorableP", "didSoftDelete"]
+- !private ["6Fluent8StorableP", "deletedAt"]
+- !private ["6Fluent8StorableP", "didForceDelete"]
+- !private ["6Fluent8StorableP", "didRestore"]
+- !private ["6Fluent8StorableP", "didSoftDelete"]
 - !private ["6Fluent8StorableP", "keyNamingConvention"]
 - !private ["6Fluent8StorableP", "makeQuery"]
 - !private ["6Fluent8StorableP", "save"]
 - !private ["6Fluent8StorableP", "shouldForceDelete"]
 - !private ["6Fluent8StorableP", "storage"]
-- ["6Fluent8StorableP", "willForceDelete"]
-- ["6Fluent8StorableP", "willRestore"]
-- ["6Fluent8StorableP", "willSoftDelete"]
+- !private ["6Fluent8StorableP", "willForceDelete"]
+- !private ["6Fluent8StorableP", "willRestore"]
+- !private ["6Fluent8StorableP", "willSoftDelete"]
 - !private ["6Fluent7StorageC", "deletedAt"]
 - !private ["6Fluent7StorageC", "shouldForceDelete"]
 - !private ["SS", "init"]
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "6Fluent6ActionO"
@@ -279,14 +260,6 @@ depends-nominal:
 - "6Fluent19KeyNamingConventionO"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "13PathIndexable0A7IndexerP"
@@ -305,18 +278,12 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -45,6 +45,8 @@ depends-member:
 - ["6Fluent21ExecutorRepresentableP", "PivotProtocol"]
 - !private ["6Fluent21ExecutorRepresentableP", "RelationError"]
 - !private ["6Fluent21ExecutorRepresentableP", "Through"]
+- ["6Fluent21ExecutorRepresentableP", ""]
+- ["6Fluent21ExecutorRepresentableP", "_Default_E"]
 - !private ["6Fluent21ExecutorRepresentableP", "filter"]
 - !private ["6Fluent21ExecutorRepresentableP", "foreignIdKey"]
 - !private ["6Fluent21ExecutorRepresentableP", "init"]
@@ -53,7 +55,6 @@ depends-member:
 - !private ["6Fluent21ExecutorRepresentableP", "localIdKey"]
 - ["6Fluent21ExecutorRepresentableP", "makeExecutor"]
 - ["6Fluent21ExecutorRepresentableP", "makeQuery"]
-- ["6Fluent21ExecutorRepresentableP", ""]
 - !private ["6Fluent13PivotProtocolP", "attach"]
 - !private ["6Fluent13PivotProtocolP", "detach"]
 - !private ["6Fluent13PivotProtocolP", "related"]
@@ -66,6 +67,8 @@ depends-member:
 - ["6Fluent18QueryRepresentableP", "PivotProtocol"]
 - !private ["6Fluent18QueryRepresentableP", "RelationError"]
 - !private ["6Fluent18QueryRepresentableP", "Through"]
+- ["6Fluent18QueryRepresentableP", ""]
+- ["6Fluent18QueryRepresentableP", "_Default_E"]
 - !private ["6Fluent18QueryRepresentableP", "filter"]
 - !private ["6Fluent18QueryRepresentableP", "foreignIdKey"]
 - !private ["6Fluent18QueryRepresentableP", "init"]
@@ -74,7 +77,6 @@ depends-member:
 - !private ["6Fluent18QueryRepresentableP", "localIdKey"]
 - ["6Fluent18QueryRepresentableP", "makeExecutor"]
 - ["6Fluent18QueryRepresentableP", "makeQuery"]
-- ["6Fluent18QueryRepresentableP", ""]
 - !private ["6Fluent13RelationErrorO", "deinit"]
 - !private ["6Fluent13RelationErrorO", "idRequired"]
 - ["6Fluent14RowConvertibleP", "Entity"]
@@ -120,6 +122,7 @@ depends-member:
 - !private ["6Fluent8SiblingsC", "RelationError"]
 - ["6Fluent8SiblingsC", "String"]
 - ["6Fluent8SiblingsC", "Through"]
+- ["6Fluent8SiblingsC", "_Default_E"]
 - ["6Fluent8SiblingsC", "add"]
 - ["6Fluent8SiblingsC", "deinit"]
 - ["6Fluent8SiblingsC", "foreignIdKey"]
@@ -184,4 +187,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "b99530932f6ef08a1d7f557df768168c"
+interface-hash: "e280ffb34e9b1ee5c96607f637948e2d"

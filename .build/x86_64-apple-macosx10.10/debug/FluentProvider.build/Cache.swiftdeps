@@ -38,6 +38,7 @@ depends-member:
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
 - ["14FluentProvider0A5CacheC0C6EntityC", "Database"]
 - ["14FluentProvider0A5CacheC0C6EntityC", "Date"]
@@ -76,6 +77,7 @@ depends-member:
 - !private ["5Cache0A8ProtocolP", "Query"]
 - !private ["5Cache0A8ProtocolP", "Row"]
 - ["5Cache0A8ProtocolP", "Storage"]
+- ["5Cache0A8ProtocolP", ""]
 - !private ["5Cache0A8ProtocolP", "_find"]
 - ["5Cache0A8ProtocolP", "delete"]
 - !private ["5Cache0A8ProtocolP", "driver"]
@@ -83,7 +85,6 @@ depends-member:
 - ["5Cache0A8ProtocolP", "init"]
 - ["5Cache0A8ProtocolP", "makeDefaultExpiration"]
 - ["5Cache0A8ProtocolP", "set"]
-- ["5Cache0A8ProtocolP", ""]
 - ["s10CollectionP", "init"]
 - ["s10ComparableP", "init"]
 - !private ["7Configs6ConfigC", "resolveDriver"]
@@ -92,6 +93,7 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "Query"]
 - !private ["7Configs19ConfigInitializableP", "Row"]
 - ["7Configs19ConfigInitializableP", "Storage"]
+- ["7Configs19ConfigInitializableP", ""]
 - !private ["7Configs19ConfigInitializableP", "_find"]
 - ["7Configs19ConfigInitializableP", "delete"]
 - !private ["7Configs19ConfigInitializableP", "driver"]
@@ -99,7 +101,6 @@ depends-member:
 - ["7Configs19ConfigInitializableP", "init"]
 - ["7Configs19ConfigInitializableP", "makeDefaultExpiration"]
 - ["7Configs19ConfigInitializableP", "set"]
-- ["7Configs19ConfigInitializableP", ""]
 - !private ["6Fluent7CreatorC", "date"]
 - !private ["6Fluent7CreatorC", "id"]
 - !private ["6Fluent7CreatorC", "string"]
@@ -121,6 +122,7 @@ depends-member:
 - ["s9EncodableP", "init"]
 - !private ["6Fluent6EntityP", "Row"]
 - ["6Fluent6EntityP", "Storage"]
+- ["6Fluent6EntityP", ""]
 - ["6Fluent6EntityP", "computedFields"]
 - !private ["6Fluent6EntityP", "delete"]
 - ["6Fluent6EntityP", "didCreate"]
@@ -146,7 +148,6 @@ depends-member:
 - ["6Fluent6EntityP", "willCreate"]
 - ["6Fluent6EntityP", "willDelete"]
 - ["6Fluent6EntityP", "willUpdate"]
-- ["6Fluent6EntityP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
@@ -220,14 +221,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "get"]
 - ["4Node0A13InitializableP", "init"]
@@ -246,6 +239,7 @@ depends-member:
 - ["13PathIndexable0A7IndexerP", "init"]
 - !private ["6Fluent11PreparationP", "Row"]
 - ["6Fluent11PreparationP", "Storage"]
+- ["6Fluent11PreparationP", ""]
 - ["6Fluent11PreparationP", "computedFields"]
 - !private ["6Fluent11PreparationP", "delete"]
 - ["6Fluent11PreparationP", "didCreate"]
@@ -271,7 +265,6 @@ depends-member:
 - ["6Fluent11PreparationP", "willCreate"]
 - ["6Fluent11PreparationP", "willDelete"]
 - ["6Fluent11PreparationP", "willUpdate"]
-- ["6Fluent11PreparationP", ""]
 - !private ["6Fluent5QueryC", "filter"]
 - !private ["6Fluent5QueryC", "first"]
 - !private ["6Fluent5QueryC", "init"]
@@ -289,6 +282,7 @@ depends-member:
 - !private ["6Fluent3RowV", "set"]
 - !private ["6Fluent14RowConvertibleP", "Row"]
 - ["6Fluent14RowConvertibleP", "Storage"]
+- ["6Fluent14RowConvertibleP", ""]
 - ["6Fluent14RowConvertibleP", "computedFields"]
 - !private ["6Fluent14RowConvertibleP", "delete"]
 - ["6Fluent14RowConvertibleP", "didCreate"]
@@ -314,9 +308,9 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "willCreate"]
 - ["6Fluent14RowConvertibleP", "willDelete"]
 - ["6Fluent14RowConvertibleP", "willUpdate"]
-- ["6Fluent14RowConvertibleP", ""]
 - !private ["6Fluent16RowInitializableP", "Row"]
 - ["6Fluent16RowInitializableP", "Storage"]
+- ["6Fluent16RowInitializableP", ""]
 - ["6Fluent16RowInitializableP", "computedFields"]
 - !private ["6Fluent16RowInitializableP", "delete"]
 - ["6Fluent16RowInitializableP", "didCreate"]
@@ -342,9 +336,9 @@ depends-member:
 - ["6Fluent16RowInitializableP", "willCreate"]
 - ["6Fluent16RowInitializableP", "willDelete"]
 - ["6Fluent16RowInitializableP", "willUpdate"]
-- ["6Fluent16RowInitializableP", ""]
 - !private ["6Fluent16RowRepresentableP", "Row"]
 - ["6Fluent16RowRepresentableP", "Storage"]
+- ["6Fluent16RowRepresentableP", ""]
 - ["6Fluent16RowRepresentableP", "computedFields"]
 - !private ["6Fluent16RowRepresentableP", "delete"]
 - ["6Fluent16RowRepresentableP", "didCreate"]
@@ -370,10 +364,10 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "willCreate"]
 - ["6Fluent16RowRepresentableP", "willDelete"]
 - ["6Fluent16RowRepresentableP", "willUpdate"]
-- ["6Fluent16RowRepresentableP", ""]
 - ["s8SequenceP", "init"]
 - !private ["6Fluent8StorableP", "Row"]
 - ["6Fluent8StorableP", "Storage"]
+- ["6Fluent8StorableP", ""]
 - ["6Fluent8StorableP", "computedFields"]
 - !private ["6Fluent8StorableP", "delete"]
 - ["6Fluent8StorableP", "didCreate"]
@@ -399,7 +393,6 @@ depends-member:
 - ["6Fluent8StorableP", "willCreate"]
 - ["6Fluent8StorableP", "willDelete"]
 - ["6Fluent8StorableP", "willUpdate"]
-- ["6Fluent8StorableP", ""]
 - ["6Fluent7StorageC", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
@@ -411,20 +404,14 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -470,14 +457,6 @@ depends-nominal:
 - "s8HashableP"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -504,19 +483,13 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "6Fluent12TransactableP"
-- "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -569,4 +542,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "2e54f7264f2e51a48b9507844a9859ec"
+interface-hash: "b151fa978577281f35b6d648219268c6"

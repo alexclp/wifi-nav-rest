@@ -51,9 +51,9 @@ depends-member:
 - !private ["6Fluent6EntityP", "Identifier"]
 - ["6Fluent6EntityP", "Self"]
 - ["6Fluent6EntityP", "String"]
+- ["6Fluent6EntityP", ""]
 - !private ["6Fluent6EntityP", "find"]
 - !private ["6Fluent6EntityP", "foreignIdKey"]
-- ["6Fluent6EntityP", ""]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "makeResponse"]
 - !private ["s9EquatableP", "notFound"]
@@ -87,14 +87,6 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "makeResponse"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "makeResponse"]
 - !private ["4Node0A13RepresentableP", "init"]
@@ -104,12 +96,12 @@ depends-member:
 - !private ["7Routing15ParameterizableP", "Identifier"]
 - ["7Routing15ParameterizableP", "Self"]
 - ["7Routing15ParameterizableP", "String"]
+- ["7Routing15ParameterizableP", ""]
 - !private ["7Routing15ParameterizableP", "find"]
 - !private ["7Routing15ParameterizableP", "foreignIdKey"]
 - !private ["7Routing15ParameterizableP", "init"]
 - ["7Routing15ParameterizableP", "make"]
 - ["7Routing15ParameterizableP", "uniqueSlug"]
-- ["7Routing15ParameterizableP", ""]
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "makeResponse"]
 - !private ["13PathIndexable0A7IndexerP", "init"]
@@ -152,18 +144,12 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "makeResponse"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "5Vapor5AbortV"
@@ -204,14 +190,6 @@ depends-nominal:
 - "4JSON17JSONRepresentableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -231,18 +209,12 @@ depends-nominal:
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

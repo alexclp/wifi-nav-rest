@@ -114,9 +114,6 @@ depends-member:
 - !private ["So9NSCopyingP", "makeSMTPFormatter"]
 - !private ["So9NSCopyingP", "sharedSMTPFormatter"]
 - !private ["So9NSCopyingP", "string"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - ["So8NSObjectC", "DateFormatter"]
 - !private ["So8NSObjectC", "Locale"]
 - !private ["So8NSObjectC", "dateFormat"]
@@ -133,8 +130,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "makeSMTPFormatter"]
 - !private ["So16NSObjectProtocolP", "sharedSMTPFormatter"]
 - !private ["So16NSObjectProtocolP", "string"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s26RangeReplaceableCollectionP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "DateFormatter"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
@@ -143,15 +138,11 @@ depends-member:
 - !private ["s14StringProtocolP", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "DateFormatter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Locale"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dateFormat"]
@@ -162,7 +153,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "string"]
 - !private ["s21_ObjectiveCBridgeableP", "DateFormatter"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -193,13 +183,8 @@ depends-nominal:
 - !private "s10MirrorPathP"
 - !private "So8NSCodingP"
 - !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s26RangeReplaceableCollectionP"
 - !private "10Foundation20ReferenceConvertibleP"
 - !private "s8SequenceP"
@@ -207,18 +192,13 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

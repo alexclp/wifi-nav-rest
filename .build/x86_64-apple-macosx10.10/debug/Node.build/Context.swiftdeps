@@ -20,9 +20,9 @@ depends-top-level:
 - "String"
 - "emptyContext"
 depends-member:
+- ["4Node7ContextP", ""]
 - ["4Node7ContextP", "init"]
 - !private ["4Node7ContextP", "object"]
-- ["4Node7ContextP", ""]
 - ["4Node13ObjectContextC", "K"]
 - ["4Node13ObjectContextC", "V"]
 - ["4Node13ObjectContextC", "deinit"]
@@ -55,4 +55,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "ee9b8f9cc9a550dd2bffcc60ea920ce6"
+interface-hash: "c1da11d850629728c81de8e54c1562eb"

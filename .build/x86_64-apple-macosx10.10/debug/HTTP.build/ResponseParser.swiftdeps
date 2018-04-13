@@ -32,6 +32,7 @@ depends-member:
 - !private ["4HTTP11CHTTPParserP", "ParserError"]
 - !private ["4HTTP11CHTTPParserP", "Response"]
 - !private ["4HTTP11CHTTPParserP", "Status"]
+- ["4HTTP11CHTTPParserP", ""]
 - !private ["4HTTP11CHTTPParserP", "executeParser"]
 - !private ["4HTTP11CHTTPParserP", "http_parser"]
 - !private ["4HTTP11CHTTPParserP", "http_parser_init"]
@@ -40,9 +41,9 @@ depends-member:
 - ["4HTTP11CHTTPParserP", "parser"]
 - ["4HTTP11CHTTPParserP", "settings"]
 - !private ["4HTTP11CHTTPParserP", "state"]
-- ["4HTTP11CHTTPParserP", ""]
 - ["4HTTP16CHTTPParserStateO", "parsing"]
 - ["4HTTP16CHTTPParserStateO", "ready"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s10ComparableP", "init"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -115,7 +116,6 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s11_StrideableP", "init"]
 - !private ["SC11http_parserV", "init"]
 - !private ["SC11http_parserV", "status_code"]
 - !private ["SC20http_parser_settingsV", "init"]
@@ -158,7 +158,6 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
 - !private "SC11http_parserV"
 - !private "SC20http_parser_settingsV"
 depends-dynamic-lookup:
@@ -191,4 +190,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "d1a2ece5c534e9737e3a49db48a0ad9f"
+interface-hash: "4bc708d3eb7614a46f1189e19c5c1a1e"

@@ -1,16 +1,16 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "d5474c1da826a5064fbf78e357044449"
-build_time: [1521475044, 108636000]
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "3b7b7c33decba8aac7e5b3d5f038d65e"
+build_time: [1523611306, 422903000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Certificates.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ClientSocket.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Context.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Error.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Exports.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/InternetSocket.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Mode.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ReadableSocket.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ServerSocket.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Socket.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Utilities.swift": [1521475009, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/WriteableSocket.swift": [1521475009, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Certificates.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ClientSocket.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Context.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Error.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Exports.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/InternetSocket.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Mode.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ReadableSocket.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/ServerSocket.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Socket.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/Utilities.swift": [1523282743, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/tls.git-2678149690400510061/Sources/TLS/WriteableSocket.swift": [1523282743, 0]

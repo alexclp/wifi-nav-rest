@@ -28,10 +28,10 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "jsonContext"]
 - ["4Node7ContextP", "Bool"]
 - ["4Node7ContextP", "JSONContext"]
+- ["4Node7ContextP", ""]
 - ["4Node7ContextP", "init"]
 - ["4Node7ContextP", "isJSON"]
 - ["4Node7ContextP", "shared"]
-- ["4Node7ContextP", ""]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "jsonContext"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
@@ -119,4 +119,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "fa7730cb95ca49f9567963665ff0b3d7"
+interface-hash: "d4efb34181fa9d94e1e7374c966b56d9"

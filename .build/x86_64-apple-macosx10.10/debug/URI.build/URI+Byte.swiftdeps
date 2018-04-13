@@ -160,6 +160,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "zero"]
 - !private ["s7CVarArgP", "A"]
 - !private ["s7CVarArgP", "Byte"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "a"]
 - ["s7CVarArgP", "ampersand"]
 - ["s7CVarArgP", "apostrophe"]
@@ -418,6 +419,7 @@ depends-member:
 - ["s9EquatableP", "at"]
 - ["s9EquatableP", "colon"]
 - ["s9EquatableP", "comma"]
+- !private ["s9EquatableP", "contains"]
 - ["s9EquatableP", "dollar"]
 - ["s9EquatableP", "equals"]
 - ["s9EquatableP", "exclamation"]
@@ -726,7 +728,6 @@ depends-member:
 - !private ["s15UnsignedIntegerP", "z"]
 - !private ["s15UnsignedIntegerP", "zero"]
 - !private ["s14_ArrayProtocolP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
 - !private ["s18_BitwiseOperationsP", "A"]
 - !private ["s18_BitwiseOperationsP", "Byte"]
 - !private ["s18_BitwiseOperationsP", "a"]
@@ -797,9 +798,6 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "underscore"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "z"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "zero"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s17_MutableIndexableP", "contains"]
 - !private ["s21_ObjectiveCBridgeableP", "A"]
 - !private ["s21_ObjectiveCBridgeableP", "Byte"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
@@ -836,42 +834,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "underscore"]
 - !private ["s21_ObjectiveCBridgeableP", "z"]
 - !private ["s21_ObjectiveCBridgeableP", "zero"]
-- !private ["s22_RandomAccessIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s11_StrideableP", "A"]
-- !private ["s11_StrideableP", "Byte"]
-- !private ["s11_StrideableP", "a"]
-- ["s11_StrideableP", "ampersand"]
-- ["s11_StrideableP", "apostrophe"]
-- ["s11_StrideableP", "asterisk"]
-- ["s11_StrideableP", "at"]
-- ["s11_StrideableP", "colon"]
-- ["s11_StrideableP", "comma"]
-- ["s11_StrideableP", "dollar"]
-- ["s11_StrideableP", "equals"]
-- ["s11_StrideableP", "exclamation"]
-- ["s11_StrideableP", "forwardSlash"]
-- !private ["s11_StrideableP", "generalDelimiters"]
-- !private ["s11_StrideableP", "hyphen"]
-- !private ["s11_StrideableP", "isGeneralDelimiter"]
-- !private ["s11_StrideableP", "isSubDelimiter"]
-- !private ["s11_StrideableP", "isUnreservedUriCharacter"]
-- ["s11_StrideableP", "leftParenthesis"]
-- ["s11_StrideableP", "leftSquareBracket"]
-- !private ["s11_StrideableP", "nine"]
-- ["s11_StrideableP", "numberSign"]
-- !private ["s11_StrideableP", "percent"]
-- !private ["s11_StrideableP", "period"]
-- ["s11_StrideableP", "plus"]
-- ["s11_StrideableP", "questionMark"]
-- ["s11_StrideableP", "rightParenthesis"]
-- ["s11_StrideableP", "rightSquareBracket"]
-- ["s11_StrideableP", "semicolon"]
-- !private ["s11_StrideableP", "subDelimiters"]
-- !private ["s11_StrideableP", "tilda"]
-- !private ["s11_StrideableP", "underscore"]
-- !private ["s11_StrideableP", "z"]
-- !private ["s11_StrideableP", "zero"]
 - !private ["s14_StringElementP", "A"]
 - !private ["s14_StringElementP", "Byte"]
 - !private ["s14_StringElementP", "a"]
@@ -939,18 +901,11 @@ depends-nominal:
 - "s5UInt8V"
 - "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:
@@ -977,4 +932,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "33d7f747c80aaf4830e741c583d057b0"
+interface-hash: "929088019de1f42452331c7fd6879686"

@@ -27,6 +27,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "converted"]
 - ["4Bits18BytesRepresentableP", "initialize"]
 - ["4Bits18BytesRepresentableP", "represent"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["4Node7ContextP", "isJSON"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
@@ -86,11 +87,11 @@ depends-member:
 - ["s33ExpressibleByUnicodeScalarLiteralP", "initialize"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "represent"]
 - !private ["4Node14FuzzyConverterP", "JSON"]
+- ["4Node14FuzzyConverterP", ""]
 - !private ["4Node14FuzzyConverterP", "context"]
 - !private ["4Node14FuzzyConverterP", "converted"]
 - ["4Node14FuzzyConverterP", "initialize"]
 - ["4Node14FuzzyConverterP", "represent"]
-- ["4Node14FuzzyConverterP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["4JSONAAV", "Context"]
 - !private ["4JSONAAV", "JSON"]
@@ -139,6 +140,7 @@ depends-nominal:
 - "4Bits16BytesConvertibleP"
 - "4Bits18BytesInitializableP"
 - "4Bits18BytesRepresentableP"
+- !private "s7CVarArgP"
 - !private "4Node7ContextP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

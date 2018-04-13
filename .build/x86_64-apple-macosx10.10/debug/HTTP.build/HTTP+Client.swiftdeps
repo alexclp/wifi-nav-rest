@@ -69,7 +69,6 @@ depends-member:
 - !private ["4HTTP11BasicClientC", "userAgent"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - ["4HTTP4BodyO", "chunked"]
 - ["4HTTP4BodyO", "data"]
 - ["4HTTP17BodyRepresentableP", "chunked"]
@@ -83,8 +82,8 @@ depends-member:
 - ["4Bits18BytesRepresentableP", "init"]
 - !private ["4HTTP11CHTTPParserP", "init"]
 - !private ["4HTTP11CHTTPParserP", "parse"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
-- !private ["s7CVarArgP", "hashValue"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["4HTTP11ChunkStreamC", "init"]
@@ -95,6 +94,7 @@ depends-member:
 - !private ["4HTTP6ClientP", "RequestSerializer"]
 - !private ["4HTTP6ClientP", "ResponseParser"]
 - !private ["4HTTP6ClientP", "StreamError"]
+- ["4HTTP6ClientP", ""]
 - ["4HTTP6ClientP", "assertValid"]
 - !private ["4HTTP6ClientP", "buffer"]
 - ["4HTTP6ClientP", "hostname"]
@@ -103,7 +103,6 @@ depends-member:
 - ["4HTTP6ClientP", "scheme"]
 - !private ["4HTTP6ClientP", "stream"]
 - !private ["4HTTP6ClientP", "userAgent"]
-- ["4HTTP6ClientP", ""]
 - ["4HTTP11ClientErrorO", "__derived_enum_equals"]
 - ["4HTTP11ClientErrorO", "_code"]
 - ["4HTTP11ClientErrorO", "_domain"]
@@ -128,24 +127,20 @@ depends-member:
 - !private ["s10CollectionP", "count"]
 - ["s10CollectionP", "init"]
 - !private ["s10CollectionP", "subscript"]
-- !private ["s10ComparableP", "hashValue"]
 - ["s10ComparableP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "closed"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "count"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s23CustomStringConvertibleP", "body"]
 - !private ["s23CustomStringConvertibleP", "count"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "headers"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "stream"]
@@ -155,27 +150,28 @@ depends-member:
 - !private ["9Debugging10DebuggableP", "closed"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
-- !private ["s9DecodableP", "hashValue"]
 - ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "subscript"]
 - !private ["s10DictionaryV", "deinit"]
 - !private ["s10DictionaryV", "subscript"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
-- !private ["s9EncodableP", "hashValue"]
 - ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
 - ["s9EquatableP", "_userInfo"]
 - !private ["s9EquatableP", "closed"]
+- !private ["s9EquatableP", "count"]
 - ["s9EquatableP", "hashValue"]
 - ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "unableToConnect"]
 - !private ["s9EquatableP", "userInfoNotAllowedOnHTTP"]
-- ["s9EquatableP", ""]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -184,7 +180,6 @@ depends-member:
 - ["s5ErrorP", "hashValue"]
 - !private ["s5ErrorP", "unableToConnect"]
 - !private ["s5ErrorP", "userInfoNotAllowedOnHTTP"]
-- ["s5ErrorP", ""]
 - ["s25ExpressibleByArrayLiteralP", "chunked"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - ["s25ExpressibleByArrayLiteralP", "data"]
@@ -192,10 +187,9 @@ depends-member:
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", ""]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -206,9 +200,7 @@ depends-member:
 - ["s8HashableP", "init"]
 - !private ["s8HashableP", "unableToConnect"]
 - !private ["s8HashableP", "userInfoNotAllowedOnHTTP"]
-- ["s8HashableP", ""]
 - !private ["4HTTP9HeaderKeyV", "deinit"]
-- !private ["Si", "hashValue"]
 - !private ["9Transport14InternetStreamP", "Bytes"]
 - !private ["9Transport14InternetStreamP", "ChunkStream"]
 - !private ["9Transport14InternetStreamP", "ClientError"]
@@ -216,6 +208,7 @@ depends-member:
 - !private ["9Transport14InternetStreamP", "RequestSerializer"]
 - !private ["9Transport14InternetStreamP", "ResponseParser"]
 - !private ["9Transport14InternetStreamP", "StreamError"]
+- ["9Transport14InternetStreamP", ""]
 - !private ["9Transport14InternetStreamP", "assertValid"]
 - !private ["9Transport14InternetStreamP", "buffer"]
 - !private ["9Transport14InternetStreamP", "close"]
@@ -229,28 +222,16 @@ depends-member:
 - !private ["9Transport14InternetStreamP", "stream"]
 - !private ["9Transport14InternetStreamP", "userAgent"]
 - !private ["9Transport14InternetStreamP", "write"]
-- ["9Transport14InternetStreamP", ""]
 - !private ["4HTTP13KeyAccessibleP", "subscript"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["4HTTP7MessageP", "body"]
 - !private ["4HTTP7MessageP", "headers"]
 - !private ["4HTTP7MessageP", "stream"]
 - !private ["4HTTP7MessageP", "uri"]
-- !private ["s10MirrorPathP", "hashValue"]
 - ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
-- !private ["s7NumericP", "hashValue"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s26RangeReplaceableCollectionP", "count"]
@@ -276,6 +257,7 @@ depends-member:
 - !private ["4HTTP9ResponderP", "RequestSerializer"]
 - !private ["4HTTP9ResponderP", "ResponseParser"]
 - !private ["4HTTP9ResponderP", "StreamError"]
+- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP9ResponderP", "assertValid"]
 - !private ["4HTTP9ResponderP", "buffer"]
 - ["4HTTP9ResponderP", "hostname"]
@@ -284,7 +266,6 @@ depends-member:
 - ["4HTTP9ResponderP", "scheme"]
 - !private ["4HTTP9ResponderP", "stream"]
 - !private ["4HTTP9ResponderP", "userAgent"]
-- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP8ResponseC", "deinit"]
 - !private ["4HTTP8ResponseC", "stream"]
 - !private ["4HTTP14ResponseParserC", "init"]
@@ -294,8 +275,6 @@ depends-member:
 - !private ["s8SequenceP", "count"]
 - ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "subscript"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
 - !private ["9Transport6StreamP", "close"]
 - !private ["9Transport6StreamP", "connect"]
 - !private ["9Transport6StreamP", "hostname"]
@@ -305,7 +284,6 @@ depends-member:
 - !private ["9Transport6StreamP", "scheme"]
 - !private ["9Transport6StreamP", "write"]
 - !private ["9Transport11StreamErrorO", "closed"]
-- !private ["s10StrideableP", "hashValue"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
@@ -321,44 +299,23 @@ depends-member:
 - !private ["9Transport15WriteableStreamP", "write"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "hashValue"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
 - "4HTTP11BasicClientC"
 - "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
 - "4HTTP4BodyO"
 - "4HTTP17BodyRepresentableP"
 - !private "Sb"
@@ -388,28 +345,16 @@ depends-nominal:
 - !private "s27ExpressibleByBooleanLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
 - !private "4HTTP9HeaderKeyV"
-- !private "Si"
 - "9Transport14InternetStreamP"
 - !private "4HTTP13KeyAccessibleP"
 - "s25LosslessStringConvertibleP"
 - !private "4HTTP7MessageP"
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
-- !private "s7NumericP"
 - !private "s22RandomAccessCollectionP"
 - "s26RangeReplaceableCollectionP"
 - !private "9Transport14ReadableStreamP"
@@ -420,11 +365,8 @@ depends-nominal:
 - !private "4HTTP14ResponseParserC"
 - "4HTTP21ResponseRepresentableP"
 - "s8SequenceP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
 - !private "9Transport6StreamP"
 - !private "9Transport11StreamErrorO"
-- !private "s10StrideableP"
 - "SS"
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
@@ -432,25 +374,14 @@ depends-nominal:
 - !private "3URIAAV"
 - !private "9Transport15WriteableStreamP"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
-- !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -482,4 +413,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "37727f05874f8d0b1cc5b8972b36a486"
+interface-hash: "819fd3832324bf3bad19e099e7670a61"

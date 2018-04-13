@@ -37,6 +37,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "init"]
 - !private ["4HTTP6ClientP", "init"]
 - !private ["4HTTP6ClientP", "respond"]
@@ -44,6 +45,7 @@ depends-member:
 - ["5Vapor13ClientFactoryC", "init"]
 - ["5Vapor21ClientFactoryProtocolP", "init"]
 - ["5Vapor14ClientProtocolP", "EngineClientFactory"]
+- ["5Vapor14ClientProtocolP", ""]
 - !private ["5Vapor14ClientProtocolP", "client"]
 - !private ["5Vapor14ClientProtocolP", "hostname"]
 - ["5Vapor14ClientProtocolP", "init"]
@@ -52,7 +54,6 @@ depends-member:
 - !private ["5Vapor14ClientProtocolP", "proxy"]
 - ["5Vapor14ClientProtocolP", "respond"]
 - !private ["5Vapor14ClientProtocolP", "securityLayer"]
-- ["5Vapor14ClientProtocolP", ""]
 - !private ["3TLS12ClientSocketP", "init"]
 - !private ["9Transport12ClientStreamP", "init"]
 - !private ["s10CollectionP", "init"]
@@ -108,14 +109,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["4HTTP7MessageP", "uri"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13RepresentableP", "_getBuiltinLogicValue"]
@@ -134,6 +127,7 @@ depends-member:
 - !private ["4HTTP7RequestC", "uri"]
 - !private ["5Vapor23RequestContentSubscriptP", "init"]
 - ["4HTTP9ResponderP", "EngineClientFactory"]
+- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP9ResponderP", "client"]
 - !private ["4HTTP9ResponderP", "hostname"]
 - ["4HTTP9ResponderP", "init"]
@@ -142,11 +136,10 @@ depends-member:
 - !private ["4HTTP9ResponderP", "proxy"]
 - ["4HTTP9ResponderP", "respond"]
 - !private ["4HTTP9ResponderP", "securityLayer"]
-- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
-- !private ["5Vapor13SecurityLayerO", "none"]
+- ["5Vapor13SecurityLayerO", "none"]
 - !private ["5Vapor13SecurityLayerO", "scheme"]
-- !private ["5Vapor13SecurityLayerO", "tls"]
+- ["5Vapor13SecurityLayerO", "tls"]
 - !private ["s8SequenceP", "init"]
 - !private ["3TLS12ServerSocketP", "init"]
 - !private ["9Transport12ServerStreamP", "init"]
@@ -164,20 +157,14 @@ depends-member:
 - !private ["3URIAAV", "path"]
 - !private ["3TLS15WriteableSocketP", "init"]
 - !private ["9Transport15WriteableStreamP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "4HTTP11BasicClientC"
@@ -219,14 +206,6 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "4HTTP7MessageP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "7Routing15ParameterizableP"
@@ -240,7 +219,7 @@ depends-nominal:
 - !private "5Vapor23RequestContentSubscriptP"
 - "4HTTP9ResponderP"
 - !private "4HTTP21ResponseRepresentableP"
-- !private "5Vapor13SecurityLayerO"
+- "5Vapor13SecurityLayerO"
 - !private "s8SequenceP"
 - !private "3TLS12ServerSocketP"
 - !private "9Transport12ServerStreamP"
@@ -258,19 +237,13 @@ depends-nominal:
 - !private "3URIAAV"
 - !private "3TLS15WriteableSocketP"
 - !private "9Transport15WriteableStreamP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -319,4 +292,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "aec0d023989d419534e645d1f15253ba"
+interface-hash: "c33060ac903e7fc9420a605f2afb890e"

@@ -37,13 +37,16 @@ depends-member:
 - ["s9EncodableP", "Key"]
 - ["s9EncodableP", "Value"]
 - ["s9EncodableP", "subscript"]
+- ["s9EquatableP", "Key"]
+- ["s9EquatableP", "Value"]
+- ["s9EquatableP", "subscript"]
 - ["s30ExpressibleByDictionaryLiteralP", "Key"]
 - ["s30ExpressibleByDictionaryLiteralP", "Value"]
 - ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - ["7Configs13KeyAccessibleP", "Key"]
 - ["7Configs13KeyAccessibleP", "Value"]
-- ["7Configs13KeyAccessibleP", "subscript"]
 - ["7Configs13KeyAccessibleP", ""]
+- ["7Configs13KeyAccessibleP", "subscript"]
 - ["4Node0A13InitializableP", "Key"]
 - ["4Node0A13InitializableP", "Value"]
 - ["4Node0A13InitializableP", "subscript"]
@@ -53,12 +56,6 @@ depends-member:
 - ["s8SequenceP", "Key"]
 - ["s8SequenceP", "Value"]
 - ["s8SequenceP", "subscript"]
-- ["s10_IndexableP", "Key"]
-- ["s10_IndexableP", "Value"]
-- ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "Key"]
-- ["s14_IndexableBaseP", "Value"]
-- ["s14_IndexableBaseP", "subscript"]
 - ["s21_ObjectiveCBridgeableP", "Key"]
 - ["s21_ObjectiveCBridgeableP", "Value"]
 - ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -71,13 +68,12 @@ depends-nominal:
 - "s9DecodableP"
 - "s10DictionaryV"
 - "s9EncodableP"
+- "s9EquatableP"
 - "s30ExpressibleByDictionaryLiteralP"
 - "7Configs13KeyAccessibleP"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "s8SequenceP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

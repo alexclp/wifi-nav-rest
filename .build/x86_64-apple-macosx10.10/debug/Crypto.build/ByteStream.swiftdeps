@@ -33,27 +33,21 @@ depends-member:
 - ["6Crypto15BasicByteStreamC", "deinit"]
 - ["6Crypto15BasicByteStreamC", "init"]
 - ["6Crypto15BasicByteStreamC", "next"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["6Crypto10ByteStreamP", "Bool"]
 - ["6Crypto10ByteStreamP", "Bytes"]
 - !private ["6Crypto10ByteStreamP", "Error"]
+- ["6Crypto10ByteStreamP", ""]
 - !private ["6Crypto10ByteStreamP", "bytes"]
 - ["6Crypto10ByteStreamP", "closed"]
 - ["6Crypto10ByteStreamP", "next"]
-- ["6Crypto10ByteStreamP", ""]
-- !private ["s7CVarArgP", "hashValue"]
-- !private ["s10ComparableP", "hashValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "hashValue"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "hashValue"]
+- ["s9EquatableP", ""]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
@@ -61,7 +55,6 @@ depends-member:
 - ["s9EquatableP", "_userInfo"]
 - !private ["s9EquatableP", "closed"]
 - ["s9EquatableP", "hashValue"]
-- ["s9EquatableP", ""]
 - ["6Crypto15BasicByteStreamC5ErrorO", "__derived_enum_equals"]
 - ["6Crypto15BasicByteStreamC5ErrorO", "_code"]
 - ["6Crypto15BasicByteStreamC5ErrorO", "_domain"]
@@ -70,16 +63,15 @@ depends-member:
 - ["6Crypto15BasicByteStreamC5ErrorO", "closed"]
 - ["6Crypto15BasicByteStreamC5ErrorO", "deinit"]
 - ["6Crypto15BasicByteStreamC5ErrorO", "hashValue"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - !private ["s5ErrorP", "closed"]
 - ["s5ErrorP", "hashValue"]
-- ["s5ErrorP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
+- ["s8HashableP", ""]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
@@ -87,28 +79,14 @@ depends-member:
 - ["s8HashableP", "_userInfo"]
 - !private ["s8HashableP", "closed"]
 - ["s8HashableP", "hashValue"]
-- ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
-- !private ["s10MirrorPathP", "hashValue"]
-- !private ["s7NumericP", "hashValue"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
-- !private ["s11_StrideableP", "hashValue"]
 depends-nominal:
 - "6Crypto15BasicByteStreamC"
-- !private "s13BinaryIntegerP"
 - !private "Sb"
 - "6Crypto10ByteStreamP"
 - !private "s7CVarArgP"
-- !private "s10ComparableP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
 - !private "s23CustomStringConvertibleP"
@@ -118,21 +96,10 @@ depends-nominal:
 - "6Crypto15BasicByteStreamC5ErrorO"
 - "s5ErrorP"
 - !private "s27ExpressibleByBooleanLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
-- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
-- !private "Si"
 - !private "s25LosslessStringConvertibleP"
-- !private "s10MirrorPathP"
-- !private "s7NumericP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
-- !private "s10StrideableP"
-- !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -158,4 +125,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "0559c84af7b88ffe40a6a26d01bc3eda"
+interface-hash: "90da2cfff065fd50083849e7945c8825"

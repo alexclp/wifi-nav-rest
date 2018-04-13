@@ -27,6 +27,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "converted"]
 - !private ["4Bits18BytesInitializableP", "converted"]
 - !private ["4Bits18BytesRepresentableP", "converted"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["4Node7ContextP", "isJSON"]
 - !private ["4Node7ContextP", "isRow"]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
@@ -37,12 +38,12 @@ depends-member:
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "context"]
 - !private ["s9EquatableP", "converted"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - !private ["s5ErrorP", "invalidContext"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "context"]
 - !private ["s25ExpressibleByArrayLiteralP", "converted"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -128,6 +129,7 @@ depends-nominal:
 - !private "4Bits16BytesConvertibleP"
 - !private "4Bits18BytesInitializableP"
 - !private "4Bits18BytesRepresentableP"
+- !private "s7CVarArgP"
 - !private "4Node7ContextP"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"

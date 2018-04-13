@@ -66,10 +66,10 @@ depends-member:
 - ["4HTTP11BasicServerC", "stream"]
 - !private ["s23BidirectionalCollectionP", "count"]
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["4HTTP4BodyO", "chunked"]
-- !private ["4HTTP4BodyO", "data"]
-- !private ["4HTTP17BodyRepresentableP", "chunked"]
-- !private ["4HTTP17BodyRepresentableP", "data"]
+- ["4HTTP4BodyO", "chunked"]
+- ["4HTTP4BodyO", "data"]
+- ["4HTTP17BodyRepresentableP", "chunked"]
+- ["4HTTP17BodyRepresentableP", "data"]
 - ["4HTTP17BodyRepresentableP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["4HTTP14ByteSerializerP", "init"]
@@ -79,6 +79,7 @@ depends-member:
 - ["4Bits18BytesRepresentableP", "init"]
 - !private ["4HTTP11CHTTPParserP", "init"]
 - !private ["4HTTP11CHTTPParserP", "parse"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "count"]
 - ["s7CVarArgP", "init"]
@@ -118,6 +119,7 @@ depends-member:
 - !private ["s9EquatableP", "async"]
 - !private ["s9EquatableP", "closed"]
 - ["s9EquatableP", "concurrent"]
+- !private ["s9EquatableP", "count"]
 - ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "invalidMessage"]
 - ["s9EquatableP", "userInteractive"]
@@ -125,10 +127,10 @@ depends-member:
 - !private ["s5ErrorP", "closed"]
 - !private ["s5ErrorP", "dispatch"]
 - !private ["s5ErrorP", "invalidMessage"]
-- !private ["s25ExpressibleByArrayLiteralP", "chunked"]
+- ["s25ExpressibleByArrayLiteralP", "chunked"]
 - ["s25ExpressibleByArrayLiteralP", "concurrent"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
-- !private ["s25ExpressibleByArrayLiteralP", "data"]
+- ["s25ExpressibleByArrayLiteralP", "data"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -147,6 +149,7 @@ depends-member:
 - !private ["9Transport14InternetStreamP", "RequestParser"]
 - !private ["9Transport14InternetStreamP", "ResponseSerializer"]
 - !private ["9Transport14InternetStreamP", "StreamError"]
+- ["9Transport14InternetStreamP", ""]
 - !private ["9Transport14InternetStreamP", "accept"]
 - !private ["9Transport14InternetStreamP", "bind"]
 - !private ["9Transport14InternetStreamP", "close"]
@@ -165,7 +168,6 @@ depends-member:
 - ["9Transport14InternetStreamP", "start"]
 - !private ["9Transport14InternetStreamP", "stream"]
 - !private ["9Transport14InternetStreamP", "write"]
-- ["9Transport14InternetStreamP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["4HTTP7MessageP", "body"]
@@ -175,16 +177,9 @@ depends-member:
 - ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "async"]
 - !private ["So16NSObjectProtocolP", "async"]
 - ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["So9OS_objectC", "async"]
 - ["s9OptionSetP", "concurrent"]
 - !private ["4HTTP11ParserErrorO", "deinit"]
@@ -222,6 +217,7 @@ depends-member:
 - !private ["4HTTP6ServerP", "RequestParser"]
 - !private ["4HTTP6ServerP", "ResponseSerializer"]
 - !private ["4HTTP6ServerP", "StreamError"]
+- ["4HTTP6ServerP", ""]
 - !private ["4HTTP6ServerP", "defaultServerTimeout"]
 - ["4HTTP6ServerP", "hostname"]
 - !private ["4HTTP6ServerP", "listenMax"]
@@ -232,7 +228,6 @@ depends-member:
 - ["4HTTP6ServerP", "scheme"]
 - ["4HTTP6ServerP", "start"]
 - !private ["4HTTP6ServerP", "stream"]
-- ["4HTTP6ServerP", ""]
 - !private ["4HTTP11ServerErrorO", "accept"]
 - !private ["4HTTP11ServerErrorO", "dispatch"]
 - !private ["9Transport12ServerStreamP", "Client"]
@@ -267,8 +262,6 @@ depends-member:
 - !private ["9Transport15WriteableStreamP", "write"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -277,29 +270,18 @@ depends-member:
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "count"]
-- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "Sa"
 - "So13DispatchQueueC0A0E10AttributesV"
 - "4HTTP11BasicServerC"
 - "s23BidirectionalCollectionP"
-- !private "4HTTP4BodyO"
+- "4HTTP4BodyO"
 - "4HTTP17BodyRepresentableP"
 - !private "Sb"
 - !private "4HTTP14ByteSerializerP"
@@ -334,15 +316,8 @@ depends-nominal:
 - !private "4HTTP7MessageP"
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - !private "So9OS_objectC"
 - "s9OptionSetP"
 - !private "4HTTP11ParserErrorO"
@@ -369,7 +344,6 @@ depends-nominal:
 - "s20TextOutputStreamableP"
 - !private "9Transport15WriteableStreamP"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -377,14 +351,8 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -416,4 +384,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "900af3b3322a908ea9da89882fc73407"
+interface-hash: "1110898a51bc00f92b19d59dbf2be298"

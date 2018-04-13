@@ -55,6 +55,7 @@ depends-member:
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["7Sockets21CTypeInt32ConvertibleP", "toCType"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allocate"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "deallocate"]
@@ -109,10 +110,13 @@ depends-member:
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "allocate"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "deallocate"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "raw"]
 - !private ["s9EquatableP", "rawLen"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "toCType"]
 - !private ["s5ErrorP", "init"]
 - !private ["7Sockets11ErrorReasonO", "closeSocketFailed"]
@@ -143,6 +147,7 @@ depends-member:
 - !private ["7Sockets14InternetSocketP", "ResolvedInternetAddress"]
 - !private ["7Sockets14InternetSocketP", "SocketsError"]
 - !private ["7Sockets14InternetSocketP", "UnsafeMutablePointer"]
+- ["7Sockets14InternetSocketP", ""]
 - ["7Sockets14InternetSocketP", "address"]
 - ["7Sockets14InternetSocketP", "close"]
 - ["7Sockets14InternetSocketP", "config"]
@@ -152,7 +157,6 @@ depends-member:
 - !private ["7Sockets14InternetSocketP", "libc"]
 - ["7Sockets14InternetSocketP", "setTimeout"]
 - !private ["7Sockets14InternetSocketP", "socklen_t"]
-- ["7Sockets14InternetSocketP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s12MemoryLayoutO", "size"]
@@ -179,6 +183,7 @@ depends-member:
 - !private ["7Sockets9RawSocketP", "ResolvedInternetAddress"]
 - !private ["7Sockets9RawSocketP", "SocketsError"]
 - !private ["7Sockets9RawSocketP", "UnsafeMutablePointer"]
+- ["7Sockets9RawSocketP", ""]
 - ["7Sockets9RawSocketP", "address"]
 - ["7Sockets9RawSocketP", "close"]
 - ["7Sockets9RawSocketP", "config"]
@@ -188,7 +193,6 @@ depends-member:
 - !private ["7Sockets9RawSocketP", "libc"]
 - ["7Sockets9RawSocketP", "setTimeout"]
 - !private ["7Sockets9RawSocketP", "socklen_t"]
-- ["7Sockets9RawSocketP", ""]
 - !private ["7Sockets23ResolvedInternetAddressC", "init"]
 - !private ["7Sockets23ResolvedInternetAddressC", "raw"]
 - !private ["7Sockets23ResolvedInternetAddressC", "rawLen"]
@@ -205,6 +209,7 @@ depends-member:
 - !private ["7Sockets6SocketP", "ResolvedInternetAddress"]
 - !private ["7Sockets6SocketP", "SocketsError"]
 - !private ["7Sockets6SocketP", "UnsafeMutablePointer"]
+- ["7Sockets6SocketP", ""]
 - ["7Sockets6SocketP", "address"]
 - ["7Sockets6SocketP", "close"]
 - ["7Sockets6SocketP", "config"]
@@ -214,7 +219,6 @@ depends-member:
 - !private ["7Sockets6SocketP", "libc"]
 - ["7Sockets6SocketP", "setTimeout"]
 - !private ["7Sockets6SocketP", "socklen_t"]
-- ["7Sockets6SocketP", ""]
 - !private ["7Sockets0A5ErrorV", "deinit"]
 - !private ["7Sockets0A5ErrorV", "init"]
 - !private ["9Transport6StreamP", "Array"]
@@ -226,6 +230,7 @@ depends-member:
 - !private ["9Transport6StreamP", "ResolvedInternetAddress"]
 - !private ["9Transport6StreamP", "SocketsError"]
 - !private ["9Transport6StreamP", "UnsafeMutablePointer"]
+- ["9Transport6StreamP", ""]
 - ["9Transport6StreamP", "address"]
 - ["9Transport6StreamP", "close"]
 - ["9Transport6StreamP", "config"]
@@ -235,7 +240,6 @@ depends-member:
 - !private ["9Transport6StreamP", "libc"]
 - ["9Transport6StreamP", "setTimeout"]
 - !private ["9Transport6StreamP", "socklen_t"]
-- ["9Transport6StreamP", ""]
 - !private ["s10StrideableP", "allocate"]
 - !private ["s10StrideableP", "deallocate"]
 - !private ["s10StrideableP", "init"]
@@ -279,10 +283,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "forEach"]
@@ -290,18 +290,6 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
@@ -310,17 +298,6 @@ depends-member:
 - !private ["s8_PointerP", "allocate"]
 - !private ["s8_PointerP", "deallocate"]
 - !private ["s8_PointerP", "init"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s11_StrideableP", "allocate"]
-- !private ["s11_StrideableP", "deallocate"]
-- !private ["s11_StrideableP", "init"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -373,19 +350,12 @@ depends-nominal:
 - !private "Sp"
 - !private "s15UnsignedIntegerP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -410,4 +380,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "803fedc44339565d43839c549fcb55ea"
+interface-hash: "0b74ab42dc0625c195b4b41348738b6e"

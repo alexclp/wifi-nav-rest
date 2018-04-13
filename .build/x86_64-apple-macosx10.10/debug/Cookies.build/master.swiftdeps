@@ -1,15 +1,15 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "847ecf5b813d0117d3392c7c5108b286"
-build_time: [1521475060, 925223000]
+version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
+options: "253db153852b410563b06eee30421140"
+build_time: [1523611307, 126874000]
 inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+BytesConvertible.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+Parse.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+Serialize.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+BytesConvertible.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Literal.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Parse.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Serialize.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Request+Cookies.swift": [1521475006, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Response+Cookies.swift": [1521475006, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+BytesConvertible.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+Parse.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie+Serialize.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookie.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+BytesConvertible.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Literal.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Parse.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies+Serialize.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Cookies.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Request+Cookies.swift": [1523282746, 0]
+  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/Cookies/Response+Cookies.swift": [1523282746, 0]

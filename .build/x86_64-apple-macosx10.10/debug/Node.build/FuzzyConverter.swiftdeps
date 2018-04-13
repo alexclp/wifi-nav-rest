@@ -62,6 +62,10 @@ depends-member:
 - ["s9EncodableP", "Iterator"]
 - !private ["s9EncodableP", "Node"]
 - !private ["s9EncodableP", "NodeError"]
+- ["s9EquatableP", "FuzzyConverter"]
+- ["s9EquatableP", "Iterator"]
+- !private ["s9EquatableP", "Node"]
+- !private ["s9EquatableP", "NodeError"]
 - !private ["s9EquatableP", "_fuzzyTypes"]
 - !private ["s9EquatableP", "defaultContext"]
 - !private ["s9EquatableP", "fuzzy"]
@@ -155,38 +159,14 @@ depends-member:
 - ["s14_ArrayProtocolP", "Iterator"]
 - !private ["s14_ArrayProtocolP", "Node"]
 - !private ["s14_ArrayProtocolP", "NodeError"]
-- ["s23_BidirectionalIndexableP", "FuzzyConverter"]
-- ["s23_BidirectionalIndexableP", "Iterator"]
-- !private ["s23_BidirectionalIndexableP", "Node"]
-- !private ["s23_BidirectionalIndexableP", "NodeError"]
 - ["s24_DestructorSafeContainerP", "FuzzyConverter"]
 - ["s24_DestructorSafeContainerP", "Iterator"]
 - !private ["s24_DestructorSafeContainerP", "Node"]
 - !private ["s24_DestructorSafeContainerP", "NodeError"]
-- ["s10_IndexableP", "FuzzyConverter"]
-- ["s10_IndexableP", "Iterator"]
-- !private ["s10_IndexableP", "Node"]
-- !private ["s10_IndexableP", "NodeError"]
-- ["s14_IndexableBaseP", "FuzzyConverter"]
-- ["s14_IndexableBaseP", "Iterator"]
-- !private ["s14_IndexableBaseP", "Node"]
-- !private ["s14_IndexableBaseP", "NodeError"]
-- ["s17_MutableIndexableP", "FuzzyConverter"]
-- ["s17_MutableIndexableP", "Iterator"]
-- !private ["s17_MutableIndexableP", "Node"]
-- !private ["s17_MutableIndexableP", "NodeError"]
 - ["s21_ObjectiveCBridgeableP", "FuzzyConverter"]
 - ["s21_ObjectiveCBridgeableP", "Iterator"]
 - !private ["s21_ObjectiveCBridgeableP", "Node"]
 - !private ["s21_ObjectiveCBridgeableP", "NodeError"]
-- ["s22_RandomAccessIndexableP", "FuzzyConverter"]
-- ["s22_RandomAccessIndexableP", "Iterator"]
-- !private ["s22_RandomAccessIndexableP", "Node"]
-- !private ["s22_RandomAccessIndexableP", "NodeError"]
-- ["s26_RangeReplaceableIndexableP", "FuzzyConverter"]
-- ["s26_RangeReplaceableIndexableP", "Iterator"]
-- !private ["s26_RangeReplaceableIndexableP", "Node"]
-- !private ["s26_RangeReplaceableIndexableP", "NodeError"]
 depends-nominal:
 - "Sa"
 - "s23BidirectionalCollectionP"
@@ -198,7 +178,7 @@ depends-nominal:
 - !private "9Debugging10DebuggableP"
 - "s9DecodableP"
 - "s9EncodableP"
-- !private "s9EquatableP"
+- "s9EquatableP"
 - !private "s5ErrorP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -224,14 +204,8 @@ depends-nominal:
 - "s8SequenceP"
 - !private "4Node21StructuredDataWrapperP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - "s24_DestructorSafeContainerP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -256,4 +230,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "cb554b7564c9c76fd5f34692adb5c46a"
+interface-hash: "74c8d7c3e904fe833e43f286d79abf0d"

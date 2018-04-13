@@ -11,18 +11,18 @@ depends-top-level:
 - "BytesConvertible"
 - "JSON"
 depends-member:
+- ["4Bits16BytesConvertibleP", ""]
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits16BytesConvertibleP", "makeBytes"]
 - !private ["4Bits16BytesConvertibleP", "serialize"]
-- ["4Bits16BytesConvertibleP", ""]
+- ["4Bits18BytesInitializableP", ""]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesInitializableP", "makeBytes"]
 - !private ["4Bits18BytesInitializableP", "serialize"]
-- ["4Bits18BytesInitializableP", ""]
+- ["4Bits18BytesRepresentableP", ""]
 - ["4Bits18BytesRepresentableP", "init"]
 - ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "serialize"]
-- ["4Bits18BytesRepresentableP", ""]
 - ["s9EquatableP", "init"]
 - ["s9EquatableP", "makeBytes"]
 - !private ["s9EquatableP", "serialize"]

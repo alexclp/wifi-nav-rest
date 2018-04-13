@@ -128,13 +128,6 @@ depends-member:
 - !private ["s8_PointerP", "init"]
 - !private ["s8_PointerP", "initialize"]
 - !private ["s8_PointerP", "pointee"]
-- !private ["s11_StrideableP", "allocate"]
-- !private ["s11_StrideableP", "assumingMemoryBound"]
-- !private ["s11_StrideableP", "deallocate"]
-- !private ["s11_StrideableP", "deinitialize"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "initialize"]
-- !private ["s11_StrideableP", "pointee"]
 - !private ["SC11http_parserV", "data"]
 depends-nominal:
 - !private "s7CVarArgP"
@@ -152,7 +145,6 @@ depends-nominal:
 - !private "Sv"
 - !private "SP"
 - !private "s8_PointerP"
-- !private "s11_StrideableP"
 - !private "SC11http_parserV"
 depends-dynamic-lookup:
 depends-external:
@@ -184,4 +176,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "6cb8405b515e32087aff6bf7646c722a"
+interface-hash: "a2fc46592055fdc21b02edf404cf7fa3"

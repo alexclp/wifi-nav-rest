@@ -16,10 +16,10 @@ depends-top-level:
 - "ForeignKey"
 - "RawOr"
 depends-member:
+- ["6Fluent7BuilderP", ""]
 - ["6Fluent7BuilderP", "entity"]
 - ["6Fluent7BuilderP", "fields"]
 - ["6Fluent7BuilderP", "foreignKeys"]
-- ["6Fluent7BuilderP", ""]
 - ["6Fluent7CreatorC", "Entity"]
 - ["6Fluent7CreatorC", "Field"]
 - ["6Fluent7CreatorC", "ForeignKey"]
@@ -60,4 +60,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "37a3db52ed3eb0dac87768156a77ed66"
+interface-hash: "54b826ce5f62431a8236007d343c6bf0"

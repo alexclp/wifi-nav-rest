@@ -40,6 +40,7 @@ depends-member:
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
 - !private ["5Cache0A8ProtocolP", "init"]
 - ["s10CollectionP", "init"]
@@ -64,6 +65,7 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "Prepare"]
 - !private ["7Configs19ConfigInitializableP", "SQLiteDriver"]
 - !private ["7Configs19ConfigInitializableP", "String"]
+- ["7Configs19ConfigInitializableP", ""]
 - !private ["7Configs19ConfigInitializableP", "autoForeignKeys"]
 - ["7Configs19ConfigInitializableP", "beforeRun"]
 - ["7Configs19ConfigInitializableP", "boot"]
@@ -80,7 +82,6 @@ depends-member:
 - ["7Configs19ConfigInitializableP", "repositoryName"]
 - !private ["7Configs19ConfigInitializableP", "skipPreparations"]
 - ["7Configs19ConfigInitializableP", "viewsDir"]
-- ["7Configs19ConfigInitializableP", ""]
 - !private ["6Fluent10ConnectionP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "camelCase"]
 - ["s28CustomDebugStringConvertibleP", "init"]
@@ -228,16 +229,9 @@ depends-member:
 - !private ["5Vapor11LogProtocolP", "info"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - ["s25LosslessStringConvertibleP", "init"]
+- !private ["6Fluent12MemoryDriverC", "deinit"]
 - !private ["6Fluent12MemoryDriverC", "init"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "addConfigurable"]
 - !private ["4Node0A13InitializableP", "bool"]
@@ -318,6 +312,7 @@ depends-member:
 - !private ["5Vapor8ProviderP", "Prepare"]
 - !private ["5Vapor8ProviderP", "SQLiteDriver"]
 - !private ["5Vapor8ProviderP", "String"]
+- ["5Vapor8ProviderP", ""]
 - !private ["5Vapor8ProviderP", "autoForeignKeys"]
 - ["5Vapor8ProviderP", "beforeRun"]
 - ["5Vapor8ProviderP", "boot"]
@@ -334,7 +329,6 @@ depends-member:
 - ["5Vapor8ProviderP", "repositoryName"]
 - !private ["5Vapor8ProviderP", "skipPreparations"]
 - ["5Vapor8ProviderP", "viewsDir"]
-- ["5Vapor8ProviderP", ""]
 - !private ["6Fluent8QueryLogV", "description"]
 - !private ["6Fluent11QueryLoggerP", "idKey"]
 - !private ["6Fluent11QueryLoggerP", "idType"]
@@ -353,6 +347,7 @@ depends-member:
 - !private ["7Routing12RouteBuilderP", "log"]
 - !private ["7Routing12RouteBuilderP", "prepare"]
 - !private ["7Console8RunnableP", "init"]
+- !private ["6Fluent12SQLiteDriverC", "deinit"]
 - !private ["6Fluent12SQLiteDriverC", "init"]
 - !private ["6Fluent20SQLiteDriverProtocolP", "init"]
 - ["s8SequenceP", "init"]
@@ -372,24 +367,18 @@ depends-member:
 - !private ["6Fluent12TransactableP", "init"]
 - !private ["6Fluent12TransactableP", "keyNamingConvention"]
 - !private ["6Fluent12TransactableP", "log"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "camelCase"]
 - ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "int"]
 - !private ["s21_ObjectiveCBridgeableP", "snake_case"]
 - !private ["s21_ObjectiveCBridgeableP", "uuid"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -438,14 +427,6 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - !private "6Fluent12MemoryDriverC"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - !private "Sq"
@@ -472,19 +453,13 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "6Fluent12TransactableP"
-- "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -537,4 +512,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "cce938d3c00ae7ef39a8331efb9a4ff8"
+interface-hash: "4f408ee247537c7a3bd8582860edfbe6"

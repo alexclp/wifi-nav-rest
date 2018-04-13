@@ -12,18 +12,18 @@ depends-top-level:
 depends-member:
 - !private ["s23BidirectionalCollectionP", "makeBytes"]
 - !private ["4HTTP17BodyRepresentableP", "makeBytes"]
+- ["4Bits16BytesConvertibleP", ""]
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits16BytesConvertibleP", "makeBytes"]
 - !private ["4Bits16BytesConvertibleP", "serialize"]
-- ["4Bits16BytesConvertibleP", ""]
+- ["4Bits18BytesInitializableP", ""]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesInitializableP", "makeBytes"]
 - !private ["4Bits18BytesInitializableP", "serialize"]
-- ["4Bits18BytesInitializableP", ""]
+- ["4Bits18BytesRepresentableP", ""]
 - ["4Bits18BytesRepresentableP", "init"]
 - ["4Bits18BytesRepresentableP", "makeBytes"]
 - !private ["4Bits18BytesRepresentableP", "serialize"]
-- ["4Bits18BytesRepresentableP", ""]
 - !private ["s7CVarArgP", "makeBytes"]
 - !private ["s10CollectionP", "makeBytes"]
 - !private ["s10ComparableP", "makeBytes"]
@@ -65,18 +65,14 @@ depends-member:
 - !private ["s14StringProtocolP", "makeBytes"]
 - !private ["s16TextOutputStreamP", "makeBytes"]
 - !private ["s20TextOutputStreamableP", "makeBytes"]
-- !private ["s23_BidirectionalIndexableP", "makeBytes"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "makeBytes"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "makeBytes"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "makeBytes"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "makeBytes"]
 - !private ["s33_ExpressibleByStringInterpolationP", "makeBytes"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "makeBytes"]
-- !private ["s10_IndexableP", "makeBytes"]
-- !private ["s14_IndexableBaseP", "makeBytes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeBytes"]
 - !private ["s21_ObjectiveCBridgeableP", "makeBytes"]
-- !private ["s26_RangeReplaceableIndexableP", "makeBytes"]
 - !private ["s16_SwiftStringViewP", "makeBytes"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -117,18 +113,14 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

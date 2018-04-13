@@ -55,11 +55,11 @@ depends-member:
 - !private ["5Vapor21ClientFactoryProtocolP", "Port"]
 - !private ["5Vapor21ClientFactoryProtocolP", "Proxy"]
 - !private ["5Vapor21ClientFactoryProtocolP", "String"]
+- ["5Vapor21ClientFactoryProtocolP", ""]
 - ["5Vapor21ClientFactoryProtocolP", "defaultProxy"]
 - ["5Vapor21ClientFactoryProtocolP", "init"]
 - ["5Vapor21ClientFactoryProtocolP", "makeClient"]
 - ["5Vapor21ClientFactoryProtocolP", "respond"]
-- ["5Vapor21ClientFactoryProtocolP", ""]
 - !private ["5Vapor14ClientProtocolP", "init"]
 - !private ["5Vapor14ClientProtocolP", "respond"]
 - !private ["s10CollectionP", "init"]
@@ -79,11 +79,11 @@ depends-member:
 - !private ["7Configs19ConfigInitializableP", "Port"]
 - !private ["7Configs19ConfigInitializableP", "Proxy"]
 - !private ["7Configs19ConfigInitializableP", "String"]
+- ["7Configs19ConfigInitializableP", ""]
 - ["7Configs19ConfigInitializableP", "defaultProxy"]
 - ["7Configs19ConfigInitializableP", "init"]
 - ["7Configs19ConfigInitializableP", "makeClient"]
 - ["7Configs19ConfigInitializableP", "respond"]
-- ["7Configs19ConfigInitializableP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -177,14 +177,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "port"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["s10MirrorPathP", "port"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
 - !private ["4Node0A13InitializableP", "makeSecurityLayer"]
@@ -220,11 +212,11 @@ depends-member:
 - !private ["4HTTP9ResponderP", "Port"]
 - !private ["4HTTP9ResponderP", "Proxy"]
 - !private ["4HTTP9ResponderP", "String"]
+- ["4HTTP9ResponderP", ""]
 - ["4HTTP9ResponderP", "defaultProxy"]
 - ["4HTTP9ResponderP", "init"]
 - ["4HTTP9ResponderP", "makeClient"]
 - ["4HTTP9ResponderP", "respond"]
-- ["4HTTP9ResponderP", ""]
 - !private ["4HTTP21ResponseRepresentableP", "init"]
 - !private ["s8SequenceP", "init"]
 - !private ["s8SequenceP", "subscript"]
@@ -242,7 +234,6 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "subscript"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "port"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "port"]
@@ -250,17 +241,9 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "port"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "port"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -305,14 +288,6 @@ depends-nominal:
 - !private "7Configs13KeyAccessibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
-- !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "4Node0A13InitializableP"
 - !private "4Node0A13RepresentableP"
 - !private "s7NumericP"
@@ -334,7 +309,6 @@ depends-nominal:
 - !private "4Node21StructuredDataWrapperP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
@@ -342,13 +316,7 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -397,4 +365,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "dbce1ee84b0276ff287fe189e591152d"
+interface-hash: "9835e47dfbbf733d0f2b5b4556e34210"

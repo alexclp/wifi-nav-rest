@@ -31,6 +31,7 @@ depends-member:
 - !private ["s23BidirectionalCollectionP", "chain"]
 - !private ["4HTTP17BodyRepresentableP", "makeBody"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "chain"]
 - !private ["s7CVarArgP", "isEmpty"]
 - !private ["s10CollectionP", "chain"]
@@ -61,9 +62,11 @@ depends-member:
 - !private ["s9EncodableP", "chain"]
 - !private ["s9EncodableP", "isEmpty"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "chain"]
 - !private ["s9EquatableP", "delete"]
 - !private ["s9EquatableP", "get"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
 - !private ["s9EquatableP", "patch"]
 - !private ["s9EquatableP", "post"]
 - !private ["s9EquatableP", "put"]
@@ -141,19 +144,11 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "init"]
 - !private ["3URIAAV", "init"]
 - !private ["s14_ArrayProtocolP", "chain"]
-- !private ["s23_BidirectionalIndexableP", "chain"]
 - !private ["s24_DestructorSafeContainerP", "chain"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s10_IndexableP", "chain"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "chain"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s17_MutableIndexableP", "chain"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "chain"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
-- !private ["s22_RandomAccessIndexableP", "chain"]
-- !private ["s26_RangeReplaceableIndexableP", "chain"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -198,15 +193,9 @@ depends-nominal:
 - !private "4Node21StructuredDataWrapperP"
 - !private "3URIAAV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

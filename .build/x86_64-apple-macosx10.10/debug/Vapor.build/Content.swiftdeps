@@ -70,7 +70,10 @@ depends-member:
 - !private ["s9EncodableP", "first"]
 - !private ["s9EncodableP", "lazy"]
 - !private ["s9EncodableP", "null"]
+- !private ["s9EquatableP", "append"]
+- !private ["s9EquatableP", "first"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "lazy"]
 - !private ["s9EquatableP", "null"]
 - !private ["s9EquatableP", "subscript"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
@@ -106,15 +109,12 @@ depends-member:
 - !private ["4Node14FuzzyConverterP", "init"]
 - !private ["4Node14FuzzyConverterP", "null"]
 - ["Si", "deinit"]
-- !private ["s27LazyBidirectionalCollectionV", "flatMap"]
 - !private ["s14LazyCollectionV", "first"]
 - !private ["s14LazyCollectionV", "flatMap"]
 - !private ["s22LazyCollectionProtocolP", "first"]
 - !private ["s22LazyCollectionProtocolP", "flatMap"]
-- !private ["s30LazyMapBidirectionalCollectionV", "first"]
 - !private ["s17LazyMapCollectionV", "first"]
 - !private ["s15LazyMapSequenceV", "first"]
-- !private ["s26LazyRandomAccessCollectionV", "flatMap"]
 - !private ["s12LazySequenceV", "first"]
 - !private ["s12LazySequenceV", "flatMap"]
 - !private ["s20LazySequenceProtocolP", "first"]
@@ -159,35 +159,13 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "first"]
 - !private ["s14_ArrayProtocolP", "lazy"]
-- !private ["s23_BidirectionalIndexableP", "append"]
-- !private ["s23_BidirectionalIndexableP", "first"]
-- !private ["s23_BidirectionalIndexableP", "flatMap"]
-- !private ["s23_BidirectionalIndexableP", "lazy"]
 - !private ["s24_DestructorSafeContainerP", "append"]
 - !private ["s24_DestructorSafeContainerP", "first"]
 - !private ["s24_DestructorSafeContainerP", "lazy"]
-- !private ["s10_IndexableP", "append"]
-- !private ["s10_IndexableP", "first"]
-- !private ["s10_IndexableP", "flatMap"]
-- !private ["s10_IndexableP", "lazy"]
-- !private ["s14_IndexableBaseP", "append"]
-- !private ["s14_IndexableBaseP", "first"]
-- !private ["s14_IndexableBaseP", "flatMap"]
-- !private ["s14_IndexableBaseP", "lazy"]
-- !private ["s17_MutableIndexableP", "append"]
-- !private ["s17_MutableIndexableP", "first"]
-- !private ["s17_MutableIndexableP", "lazy"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "lazy"]
 - !private ["s21_ObjectiveCBridgeableP", "null"]
-- !private ["s22_RandomAccessIndexableP", "append"]
-- !private ["s22_RandomAccessIndexableP", "first"]
-- !private ["s22_RandomAccessIndexableP", "flatMap"]
-- !private ["s22_RandomAccessIndexableP", "lazy"]
-- !private ["s26_RangeReplaceableIndexableP", "append"]
-- !private ["s26_RangeReplaceableIndexableP", "first"]
-- !private ["s26_RangeReplaceableIndexableP", "lazy"]
 - !private ["s16_SequenceWrapperP", "first"]
 - !private ["s16_SequenceWrapperP", "flatMap"]
 depends-nominal:
@@ -213,13 +191,10 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "4Node14FuzzyConverterP"
 - "Si"
-- !private "s27LazyBidirectionalCollectionV"
 - !private "s14LazyCollectionV"
 - !private "s22LazyCollectionProtocolP"
-- !private "s30LazyMapBidirectionalCollectionV"
 - !private "s17LazyMapCollectionV"
 - !private "s15LazyMapSequenceV"
-- !private "s26LazyRandomAccessCollectionV"
 - !private "s12LazySequenceV"
 - !private "s20LazySequenceProtocolP"
 - !private "s17MutableCollectionP"
@@ -235,14 +210,8 @@ depends-nominal:
 - "SS"
 - !private "4Node21StructuredDataWrapperP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SequenceWrapperP"
 depends-dynamic-lookup:
 depends-external:
@@ -291,4 +260,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "cddbe1379b903545f528635818674455"
+interface-hash: "7a13bf5528d927b2f16402893167d203"

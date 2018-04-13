@@ -44,9 +44,9 @@ depends-member:
 - ["4SMTP12EmailAddressV", "emailAddress"]
 - !private ["4SMTP12EmailAddressV", "init"]
 - ["4SMTP25EmailAddressRepresentableP", "EmailAddress"]
+- ["4SMTP25EmailAddressRepresentableP", ""]
 - ["4SMTP25EmailAddressRepresentableP", "emailAddress"]
 - !private ["4SMTP25EmailAddressRepresentableP", "init"]
-- ["4SMTP25EmailAddressRepresentableP", ""]
 - !private ["4SMTP22EmailBodyRepresentableP", "EmailAddress"]
 - ["4SMTP22EmailBodyRepresentableP", "emailAddress"]
 - !private ["s9EncodableP", "EmailAddress"]
@@ -82,8 +82,6 @@ depends-member:
 - ["s16TextOutputStreamP", "emailAddress"]
 - !private ["s20TextOutputStreamableP", "EmailAddress"]
 - ["s20TextOutputStreamableP", "emailAddress"]
-- !private ["s23_BidirectionalIndexableP", "EmailAddress"]
-- ["s23_BidirectionalIndexableP", "emailAddress"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "EmailAddress"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "emailAddress"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "EmailAddress"]
@@ -94,14 +92,8 @@ depends-member:
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "emailAddress"]
 - !private ["s33_ExpressibleByStringInterpolationP", "EmailAddress"]
 - ["s33_ExpressibleByStringInterpolationP", "emailAddress"]
-- !private ["s10_IndexableP", "EmailAddress"]
-- ["s10_IndexableP", "emailAddress"]
-- !private ["s14_IndexableBaseP", "EmailAddress"]
-- ["s14_IndexableBaseP", "emailAddress"]
 - !private ["s21_ObjectiveCBridgeableP", "EmailAddress"]
 - ["s21_ObjectiveCBridgeableP", "emailAddress"]
-- !private ["s26_RangeReplaceableIndexableP", "EmailAddress"]
-- ["s26_RangeReplaceableIndexableP", "emailAddress"]
 - !private ["s16_SwiftStringViewP", "EmailAddress"]
 - ["s16_SwiftStringViewP", "emailAddress"]
 depends-nominal:
@@ -134,16 +126,12 @@ depends-nominal:
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

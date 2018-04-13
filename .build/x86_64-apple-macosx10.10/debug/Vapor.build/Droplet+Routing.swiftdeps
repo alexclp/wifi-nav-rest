@@ -65,27 +65,23 @@ depends-member:
 - ["4HTTP9ResponderP", "register"]
 - !private ["4HTTP9ResponderP", "router"]
 - !private ["4HTTP21ResponseRepresentableP", "int"]
+- ["7Routing12RouteBuilderP", ""]
 - ["7Routing12RouteBuilderP", "register"]
 - !private ["7Routing12RouteBuilderP", "router"]
-- ["7Routing12RouteBuilderP", ""]
 - !private ["7Routing6RouterC", "register"]
 - !private ["s8SequenceP", "int"]
 - !private ["SS", "int"]
 - !private ["s14StringProtocolP", "int"]
 - !private ["s16TextOutputStreamP", "int"]
 - !private ["s20TextOutputStreamableP", "int"]
-- !private ["s23_BidirectionalIndexableP", "int"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "int"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "int"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "int"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "int"]
 - !private ["s33_ExpressibleByStringInterpolationP", "int"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "int"]
-- !private ["s10_IndexableP", "int"]
-- !private ["s14_IndexableBaseP", "int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "int"]
 - !private ["s21_ObjectiveCBridgeableP", "int"]
-- !private ["s26_RangeReplaceableIndexableP", "int"]
 - !private ["s16_SwiftStringViewP", "int"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -137,18 +133,14 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

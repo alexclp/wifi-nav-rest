@@ -30,6 +30,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "reduce"]
 - !private ["s9DecodableP", "reduce"]
 - !private ["s9EncodableP", "reduce"]
+- !private ["s9EquatableP", "reduce"]
 - !private ["s25ExpressibleByArrayLiteralP", "reduce"]
 - !private ["4HTTP7MessageP", "Handler"]
 - !private ["4HTTP10MiddlewareP", "Request"]
@@ -51,24 +52,8 @@ depends-member:
 - !private ["s8SequenceP", "reduce"]
 - !private ["s8SequenceP", "reversed"]
 - !private ["s14_ArrayProtocolP", "reduce"]
-- !private ["s23_BidirectionalIndexableP", "reduce"]
 - !private ["s24_DestructorSafeContainerP", "reduce"]
-- ["s10_IndexableP", "Iterator"]
-- ["s10_IndexableP", "Middleware"]
-- !private ["s10_IndexableP", "Request"]
-- ["s10_IndexableP", "Responder"]
-- !private ["s10_IndexableP", "reduce"]
-- !private ["s10_IndexableP", "reversed"]
-- ["s14_IndexableBaseP", "Iterator"]
-- ["s14_IndexableBaseP", "Middleware"]
-- !private ["s14_IndexableBaseP", "Request"]
-- ["s14_IndexableBaseP", "Responder"]
-- !private ["s14_IndexableBaseP", "reduce"]
-- !private ["s14_IndexableBaseP", "reversed"]
-- !private ["s17_MutableIndexableP", "reduce"]
 - !private ["s21_ObjectiveCBridgeableP", "reduce"]
-- !private ["s22_RandomAccessIndexableP", "reduce"]
-- !private ["s26_RangeReplaceableIndexableP", "reduce"]
 depends-nominal:
 - !private "Sa"
 - !private "4HTTP14BasicResponderV"
@@ -80,6 +65,7 @@ depends-nominal:
 - !private "s23CustomStringConvertibleP"
 - !private "s9DecodableP"
 - !private "s9EncodableP"
+- !private "s9EquatableP"
 - !private "s25ExpressibleByArrayLiteralP"
 - !private "4HTTP7MessageP"
 - "4HTTP10MiddlewareP"
@@ -92,14 +78,8 @@ depends-nominal:
 - !private "4HTTP9ResponderP"
 - "s8SequenceP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

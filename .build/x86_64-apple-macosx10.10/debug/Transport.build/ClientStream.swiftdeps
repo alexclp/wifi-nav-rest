@@ -12,18 +12,13 @@ depends-top-level:
 - "InternetStream"
 depends-member:
 - ["9Transport12ClientStreamP", "connect"]
-- ["9Transport14InternetStreamP", "connect"]
 - ["9Transport14InternetStreamP", ""]
-- ["9Transport14ReadableStreamP", "connect"]
 - ["9Transport14ReadableStreamP", ""]
-- ["9Transport6StreamP", "connect"]
-- ["9Transport15WriteableStreamP", "connect"]
 - ["9Transport15WriteableStreamP", ""]
 depends-nominal:
 - "9Transport12ClientStreamP"
 - "9Transport14InternetStreamP"
 - "9Transport14ReadableStreamP"
-- "9Transport6StreamP"
 - "9Transport15WriteableStreamP"
 depends-dynamic-lookup:
 depends-external:

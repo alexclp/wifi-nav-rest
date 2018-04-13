@@ -21,11 +21,11 @@ depends-top-level:
 depends-member:
 - ["4Bits18BytesInitializableP", "Bytes"]
 - ["4Bits18BytesInitializableP", "BytesRepresentable"]
-- ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesInitializableP", ""]
+- ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesRepresentableP", "Bytes"]
-- ["4Bits18BytesRepresentableP", "makeBytes"]
 - ["4Bits18BytesRepresentableP", ""]
+- ["4Bits18BytesRepresentableP", "makeBytes"]
 depends-nominal:
 - "4Bits18BytesInitializableP"
 - "4Bits18BytesRepresentableP"

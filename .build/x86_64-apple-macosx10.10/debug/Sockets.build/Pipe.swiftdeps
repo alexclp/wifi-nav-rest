@@ -32,6 +32,7 @@ depends-member:
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["7Sockets21CTypeInt32ConvertibleP", "stream"]
 - !private ["7Sockets21CTypeInt32ConvertibleP", "toCType"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "map"]
 - !private ["s7CVarArgP", "subscript"]
@@ -64,7 +65,10 @@ depends-member:
 - !private ["s9EncodableP", "map"]
 - !private ["s9EncodableP", "subscript"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "forEach"]
+- !private ["s9EquatableP", "map"]
 - !private ["s9EquatableP", "stream"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "toCType"]
 - !private ["s5ErrorP", "init"]
 - !private ["7Sockets11ErrorReasonO", "pipeCreationFailed"]
@@ -88,10 +92,10 @@ depends-member:
 - !private ["7Sockets8PipeableP", "TCPEstablishedSocket"]
 - ["7Sockets8PipeableP", "TCPReadableSocket"]
 - ["7Sockets8PipeableP", "TCPWriteableSocket"]
+- ["7Sockets8PipeableP", ""]
 - !private ["7Sockets8PipeableP", "init"]
 - ["7Sockets8PipeableP", "pipe"]
 - !private ["7Sockets8PipeableP", "socketpair"]
-- ["7Sockets8PipeableP", ""]
 - !private ["s22RandomAccessCollectionP", "forEach"]
 - !private ["s22RandomAccessCollectionP", "map"]
 - !private ["s22RandomAccessCollectionP", "subscript"]
@@ -177,32 +181,14 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "map"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "map"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "forEach"]
 - !private ["s24_DestructorSafeContainerP", "map"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "map"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "map"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "map"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "map"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "map"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -242,15 +228,9 @@ depends-nominal:
 - "7Sockets18TCPWriteableSocketP"
 - "9Transport15WriteableStreamP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

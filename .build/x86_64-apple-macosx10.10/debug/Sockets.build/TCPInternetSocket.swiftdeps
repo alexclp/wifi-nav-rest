@@ -53,6 +53,7 @@ depends-member:
 - !private ["4Bits16BytesConvertibleP", "init"]
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "allocate"]
 - !private ["s7CVarArgP", "deallocate"]
 - !private ["s7CVarArgP", "enter"]
@@ -77,6 +78,8 @@ depends-member:
 - !private ["9Transport12ClientStreamP", "SocketsError"]
 - !private ["9Transport12ClientStreamP", "TCPInternetSocket"]
 - !private ["9Transport12ClientStreamP", "UnsafeMutablePointer"]
+- ["9Transport12ClientStreamP", ""]
+- ["9Transport12ClientStreamP", "_Default_Client"]
 - ["9Transport12ClientStreamP", "accept"]
 - ["9Transport12ClientStreamP", "address"]
 - ["9Transport12ClientStreamP", "bind"]
@@ -97,7 +100,6 @@ depends-member:
 - ["9Transport12ClientStreamP", "setTimeout"]
 - !private ["9Transport12ClientStreamP", "socklen_t"]
 - ["9Transport12ClientStreamP", "write"]
-- ["9Transport12ClientStreamP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "allocate"]
 - !private ["s10ComparableP", "deallocate"]
@@ -156,6 +158,8 @@ depends-member:
 - !private ["7Sockets23DescriptorRepresentableP", "SocketsError"]
 - !private ["7Sockets23DescriptorRepresentableP", "TCPInternetSocket"]
 - !private ["7Sockets23DescriptorRepresentableP", "UnsafeMutablePointer"]
+- ["7Sockets23DescriptorRepresentableP", ""]
+- ["7Sockets23DescriptorRepresentableP", "_Default_Client"]
 - ["7Sockets23DescriptorRepresentableP", "accept"]
 - ["7Sockets23DescriptorRepresentableP", "address"]
 - ["7Sockets23DescriptorRepresentableP", "bind"]
@@ -176,7 +180,6 @@ depends-member:
 - ["7Sockets23DescriptorRepresentableP", "setTimeout"]
 - !private ["7Sockets23DescriptorRepresentableP", "socklen_t"]
 - ["7Sockets23DescriptorRepresentableP", "write"]
-- ["7Sockets23DescriptorRepresentableP", ""]
 - !private ["So13DispatchGroupC", "enter"]
 - !private ["So13DispatchGroupC", "init"]
 - !private ["So13DispatchGroupC", "leave"]
@@ -265,6 +268,8 @@ depends-member:
 - !private ["7Sockets14InternetSocketP", "SocketsError"]
 - !private ["7Sockets14InternetSocketP", "TCPInternetSocket"]
 - !private ["7Sockets14InternetSocketP", "UnsafeMutablePointer"]
+- ["7Sockets14InternetSocketP", ""]
+- ["7Sockets14InternetSocketP", "_Default_Client"]
 - ["7Sockets14InternetSocketP", "accept"]
 - ["7Sockets14InternetSocketP", "address"]
 - ["7Sockets14InternetSocketP", "bind"]
@@ -285,7 +290,6 @@ depends-member:
 - ["7Sockets14InternetSocketP", "setTimeout"]
 - !private ["7Sockets14InternetSocketP", "socklen_t"]
 - ["7Sockets14InternetSocketP", "write"]
-- ["7Sockets14InternetSocketP", ""]
 - ["9Transport14InternetStreamP", "Client"]
 - !private ["9Transport14InternetStreamP", "Config"]
 - !private ["9Transport14InternetStreamP", "Descriptor"]
@@ -302,6 +306,8 @@ depends-member:
 - !private ["9Transport14InternetStreamP", "SocketsError"]
 - !private ["9Transport14InternetStreamP", "TCPInternetSocket"]
 - !private ["9Transport14InternetStreamP", "UnsafeMutablePointer"]
+- ["9Transport14InternetStreamP", ""]
+- ["9Transport14InternetStreamP", "_Default_Client"]
 - ["9Transport14InternetStreamP", "accept"]
 - ["9Transport14InternetStreamP", "address"]
 - ["9Transport14InternetStreamP", "bind"]
@@ -322,17 +328,11 @@ depends-member:
 - ["9Transport14InternetStreamP", "setTimeout"]
 - !private ["9Transport14InternetStreamP", "socklen_t"]
 - ["9Transport14InternetStreamP", "write"]
-- ["9Transport14InternetStreamP", ""]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "max"]
 - !private ["s12MemoryLayoutO", "size"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "enter"]
 - !private ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "leave"]
@@ -344,8 +344,6 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "makeWriteSource"]
 - !private ["So16NSObjectProtocolP", "setEventHandler"]
 - !private ["So16NSObjectProtocolP", "wait"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So8NSStringC", "init"]
 - !private ["s7NumericP", "init"]
 - !private ["s7NumericP", "max"]
 - !private ["So9OS_objectC", "enter"]
@@ -371,6 +369,8 @@ depends-member:
 - !private ["7Sockets9RawSocketP", "SocketsError"]
 - !private ["7Sockets9RawSocketP", "TCPInternetSocket"]
 - !private ["7Sockets9RawSocketP", "UnsafeMutablePointer"]
+- ["7Sockets9RawSocketP", ""]
+- ["7Sockets9RawSocketP", "_Default_Client"]
 - ["7Sockets9RawSocketP", "accept"]
 - ["7Sockets9RawSocketP", "address"]
 - ["7Sockets9RawSocketP", "bind"]
@@ -391,7 +391,6 @@ depends-member:
 - ["7Sockets9RawSocketP", "setTimeout"]
 - !private ["7Sockets9RawSocketP", "socklen_t"]
 - ["7Sockets9RawSocketP", "write"]
-- ["7Sockets9RawSocketP", ""]
 - ["9Transport14ReadableStreamP", "Client"]
 - !private ["9Transport14ReadableStreamP", "Config"]
 - !private ["9Transport14ReadableStreamP", "Descriptor"]
@@ -408,6 +407,8 @@ depends-member:
 - !private ["9Transport14ReadableStreamP", "SocketsError"]
 - !private ["9Transport14ReadableStreamP", "TCPInternetSocket"]
 - !private ["9Transport14ReadableStreamP", "UnsafeMutablePointer"]
+- ["9Transport14ReadableStreamP", ""]
+- ["9Transport14ReadableStreamP", "_Default_Client"]
 - ["9Transport14ReadableStreamP", "accept"]
 - ["9Transport14ReadableStreamP", "address"]
 - ["9Transport14ReadableStreamP", "bind"]
@@ -428,7 +429,6 @@ depends-member:
 - ["9Transport14ReadableStreamP", "setTimeout"]
 - !private ["9Transport14ReadableStreamP", "socklen_t"]
 - ["9Transport14ReadableStreamP", "write"]
-- ["9Transport14ReadableStreamP", ""]
 - !private ["7Sockets23ResolvedInternetAddressC", "init"]
 - !private ["7Sockets23ResolvedInternetAddressC", "port"]
 - !private ["7Sockets23ResolvedInternetAddressC", "raw"]
@@ -450,6 +450,8 @@ depends-member:
 - !private ["9Transport12ServerStreamP", "SocketsError"]
 - !private ["9Transport12ServerStreamP", "TCPInternetSocket"]
 - !private ["9Transport12ServerStreamP", "UnsafeMutablePointer"]
+- ["9Transport12ServerStreamP", ""]
+- ["9Transport12ServerStreamP", "_Default_Client"]
 - ["9Transport12ServerStreamP", "accept"]
 - ["9Transport12ServerStreamP", "address"]
 - ["9Transport12ServerStreamP", "bind"]
@@ -470,7 +472,6 @@ depends-member:
 - ["9Transport12ServerStreamP", "setTimeout"]
 - !private ["9Transport12ServerStreamP", "socklen_t"]
 - ["9Transport12ServerStreamP", "write"]
-- ["9Transport12ServerStreamP", ""]
 - !private ["s13SignedIntegerP", "init"]
 - !private ["s13SignedIntegerP", "max"]
 - !private ["s13SignedNumericP", "init"]
@@ -491,6 +492,8 @@ depends-member:
 - !private ["7Sockets6SocketP", "SocketsError"]
 - !private ["7Sockets6SocketP", "TCPInternetSocket"]
 - !private ["7Sockets6SocketP", "UnsafeMutablePointer"]
+- ["7Sockets6SocketP", ""]
+- ["7Sockets6SocketP", "_Default_Client"]
 - ["7Sockets6SocketP", "accept"]
 - ["7Sockets6SocketP", "address"]
 - ["7Sockets6SocketP", "bind"]
@@ -511,7 +514,6 @@ depends-member:
 - ["7Sockets6SocketP", "setTimeout"]
 - !private ["7Sockets6SocketP", "socklen_t"]
 - ["7Sockets6SocketP", "write"]
-- ["7Sockets6SocketP", ""]
 - !private ["7Sockets0A5ErrorV", "deinit"]
 - !private ["7Sockets0A5ErrorV", "init"]
 - !private ["7Sockets0A5ErrorV", "interruptedSystemCall"]
@@ -531,6 +533,8 @@ depends-member:
 - !private ["9Transport6StreamP", "SocketsError"]
 - !private ["9Transport6StreamP", "TCPInternetSocket"]
 - !private ["9Transport6StreamP", "UnsafeMutablePointer"]
+- ["9Transport6StreamP", ""]
+- ["9Transport6StreamP", "_Default_Client"]
 - ["9Transport6StreamP", "accept"]
 - ["9Transport6StreamP", "address"]
 - ["9Transport6StreamP", "bind"]
@@ -551,7 +555,6 @@ depends-member:
 - ["9Transport6StreamP", "setTimeout"]
 - !private ["9Transport6StreamP", "socklen_t"]
 - ["9Transport6StreamP", "write"]
-- ["9Transport6StreamP", ""]
 - !private ["s10StrideableP", "allocate"]
 - !private ["s10StrideableP", "deallocate"]
 - !private ["s10StrideableP", "init"]
@@ -577,6 +580,7 @@ depends-member:
 - ["7Sockets17TCPInternetSocketC", "String"]
 - ["7Sockets17TCPInternetSocketC", "TCPInternetSocket"]
 - !private ["7Sockets17TCPInternetSocketC", "UnsafeMutablePointer"]
+- ["7Sockets17TCPInternetSocketC", "_Default_Client"]
 - ["7Sockets17TCPInternetSocketC", "accept"]
 - ["7Sockets17TCPInternetSocketC", "address"]
 - ["7Sockets17TCPInternetSocketC", "bind"]
@@ -616,6 +620,8 @@ depends-member:
 - !private ["7Sockets17TCPReadableSocketP", "SocketsError"]
 - !private ["7Sockets17TCPReadableSocketP", "TCPInternetSocket"]
 - !private ["7Sockets17TCPReadableSocketP", "UnsafeMutablePointer"]
+- ["7Sockets17TCPReadableSocketP", ""]
+- ["7Sockets17TCPReadableSocketP", "_Default_Client"]
 - ["7Sockets17TCPReadableSocketP", "accept"]
 - ["7Sockets17TCPReadableSocketP", "address"]
 - ["7Sockets17TCPReadableSocketP", "bind"]
@@ -636,7 +642,6 @@ depends-member:
 - ["7Sockets17TCPReadableSocketP", "setTimeout"]
 - !private ["7Sockets17TCPReadableSocketP", "socklen_t"]
 - ["7Sockets17TCPReadableSocketP", "write"]
-- ["7Sockets17TCPReadableSocketP", ""]
 - ["7Sockets9TCPSocketP", "Client"]
 - !private ["7Sockets9TCPSocketP", "Config"]
 - !private ["7Sockets9TCPSocketP", "Descriptor"]
@@ -653,6 +658,8 @@ depends-member:
 - !private ["7Sockets9TCPSocketP", "SocketsError"]
 - !private ["7Sockets9TCPSocketP", "TCPInternetSocket"]
 - !private ["7Sockets9TCPSocketP", "UnsafeMutablePointer"]
+- ["7Sockets9TCPSocketP", ""]
+- ["7Sockets9TCPSocketP", "_Default_Client"]
 - ["7Sockets9TCPSocketP", "accept"]
 - ["7Sockets9TCPSocketP", "address"]
 - ["7Sockets9TCPSocketP", "bind"]
@@ -673,7 +680,6 @@ depends-member:
 - ["7Sockets9TCPSocketP", "setTimeout"]
 - !private ["7Sockets9TCPSocketP", "socklen_t"]
 - ["7Sockets9TCPSocketP", "write"]
-- ["7Sockets9TCPSocketP", ""]
 - ["7Sockets18TCPWriteableSocketP", "Client"]
 - !private ["7Sockets18TCPWriteableSocketP", "Config"]
 - !private ["7Sockets18TCPWriteableSocketP", "Descriptor"]
@@ -690,6 +696,8 @@ depends-member:
 - !private ["7Sockets18TCPWriteableSocketP", "SocketsError"]
 - !private ["7Sockets18TCPWriteableSocketP", "TCPInternetSocket"]
 - !private ["7Sockets18TCPWriteableSocketP", "UnsafeMutablePointer"]
+- ["7Sockets18TCPWriteableSocketP", ""]
+- ["7Sockets18TCPWriteableSocketP", "_Default_Client"]
 - ["7Sockets18TCPWriteableSocketP", "accept"]
 - ["7Sockets18TCPWriteableSocketP", "address"]
 - ["7Sockets18TCPWriteableSocketP", "bind"]
@@ -710,7 +718,6 @@ depends-member:
 - ["7Sockets18TCPWriteableSocketP", "setTimeout"]
 - !private ["7Sockets18TCPWriteableSocketP", "socklen_t"]
 - ["7Sockets18TCPWriteableSocketP", "write"]
-- ["7Sockets18TCPWriteableSocketP", ""]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s6UInt32V", "init"]
@@ -734,6 +741,8 @@ depends-member:
 - !private ["9Transport15WriteableStreamP", "SocketsError"]
 - !private ["9Transport15WriteableStreamP", "TCPInternetSocket"]
 - !private ["9Transport15WriteableStreamP", "UnsafeMutablePointer"]
+- ["9Transport15WriteableStreamP", ""]
+- ["9Transport15WriteableStreamP", "_Default_Client"]
 - ["9Transport15WriteableStreamP", "accept"]
 - ["9Transport15WriteableStreamP", "address"]
 - ["9Transport15WriteableStreamP", "bind"]
@@ -754,8 +763,6 @@ depends-member:
 - ["9Transport15WriteableStreamP", "setTimeout"]
 - !private ["9Transport15WriteableStreamP", "socklen_t"]
 - ["9Transport15WriteableStreamP", "write"]
-- ["9Transport15WriteableStreamP", ""]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s18_BitwiseOperationsP", "max"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -766,9 +773,6 @@ depends-member:
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "enter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leave"]
@@ -780,11 +784,6 @@ depends-member:
 - !private ["s8_PointerP", "allocate"]
 - !private ["s8_PointerP", "deallocate"]
 - !private ["s8_PointerP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "allocate"]
-- !private ["s11_StrideableP", "deallocate"]
-- !private ["s11_StrideableP", "init"]
-- !private ["s11_StrideableP", "max"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -841,15 +840,8 @@ depends-nominal:
 - !private "s25LosslessStringConvertibleP"
 - !private "s12MemoryLayoutO"
 - !private "s10MirrorPathP"
-- !private "So8NSCodingP"
-- !private "So9NSCopyingP"
-- !private "So21NSItemProviderReadingP"
-- !private "So21NSItemProviderWritingP"
-- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
 - !private "So16NSObjectProtocolP"
-- !private "So14NSSecureCodingP"
-- !private "So8NSStringC"
 - !private "s7NumericP"
 - !private "So9OS_objectC"
 - !private "s13OpaquePointerV"
@@ -877,7 +869,6 @@ depends-nominal:
 - !private "Sp"
 - !private "s15UnsignedIntegerP"
 - "9Transport15WriteableStreamP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -886,14 +877,9 @@ depends-nominal:
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -919,4 +905,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "32a8fa1706860218b824df162c88ea8f"
+interface-hash: "9df98abba8dc284aa90337077b42e59f"

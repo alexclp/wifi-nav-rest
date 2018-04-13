@@ -32,6 +32,7 @@ depends-member:
 - !private ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "hasPrefix"]
 - !private ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "hasPrefix"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s10CollectionP", "hasPrefix"]
@@ -45,8 +46,8 @@ depends-member:
 - !private ["7Configs11ConfigErrorO", "missingFile"]
 - !private ["7Configs19ConfigInitializableP", "ConfigError"]
 - !private ["7Configs19ConfigInitializableP", "String"]
-- ["7Configs19ConfigInitializableP", "init"]
 - ["7Configs19ConfigInitializableP", ""]
+- ["7Configs19ConfigInitializableP", "init"]
 - !private ["6Fluent10ConnectionP", "ConfigError"]
 - !private ["6Fluent10ConnectionP", "String"]
 - ["6Fluent10ConnectionP", "init"]
@@ -133,22 +134,14 @@ depends-member:
 - !private ["s10MirrorPathP", "hasPrefix"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["So8NSCodingP", "hasPrefix"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "hasPrefix"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "hasPrefix"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "hasPrefix"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "hasPrefix"]
 - !private ["So16NSObjectProtocolP", "hasPrefix"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "hasPrefix"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "hasPrefix"]
-- !private ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "hasPrefix"]
 - !private ["4Node0A13InitializableP", "init"]
@@ -198,8 +191,6 @@ depends-member:
 - !private ["6Fluent12TransactableP", "ConfigError"]
 - !private ["6Fluent12TransactableP", "String"]
 - ["6Fluent12TransactableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "hasPrefix"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "hasPrefix"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -212,18 +203,10 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "hasPrefix"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "hasPrefix"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "hasPrefix"]
-- !private ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasPrefix"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "hasPrefix"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "hasPrefix"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "hasPrefix"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -291,7 +274,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - "6Fluent12TransactableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -299,11 +281,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

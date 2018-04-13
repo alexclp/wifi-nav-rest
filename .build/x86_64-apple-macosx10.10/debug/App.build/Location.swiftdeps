@@ -76,6 +76,7 @@ depends-member:
 - !private ["6Fluent6EntityP", "Room"]
 - !private ["6Fluent6EntityP", "Row"]
 - ["6Fluent6EntityP", "Storage"]
+- ["6Fluent6EntityP", ""]
 - !private ["6Fluent6EntityP", "children"]
 - ["6Fluent6EntityP", "computedFields"]
 - !private ["6Fluent6EntityP", "connectToPointsInCurrentRoom"]
@@ -113,7 +114,6 @@ depends-member:
 - ["6Fluent6EntityP", "willUpdate"]
 - !private ["6Fluent6EntityP", "x"]
 - !private ["6Fluent6EntityP", "y"]
-- ["6Fluent6EntityP", ""]
 - !private ["s9EquatableP", "equals"]
 - !private ["s9EquatableP", "get"]
 - ["s9EquatableP", "init"]
@@ -176,6 +176,7 @@ depends-member:
 - !private ["4JSON15JSONConvertibleP", "Room"]
 - !private ["4JSON15JSONConvertibleP", "Row"]
 - ["4JSON15JSONConvertibleP", "Storage"]
+- ["4JSON15JSONConvertibleP", ""]
 - !private ["4JSON15JSONConvertibleP", "children"]
 - ["4JSON15JSONConvertibleP", "computedFields"]
 - !private ["4JSON15JSONConvertibleP", "connectToPointsInCurrentRoom"]
@@ -213,7 +214,6 @@ depends-member:
 - ["4JSON15JSONConvertibleP", "willUpdate"]
 - !private ["4JSON15JSONConvertibleP", "x"]
 - !private ["4JSON15JSONConvertibleP", "y"]
-- ["4JSON15JSONConvertibleP", ""]
 - !private ["4JSON17JSONInitializableP", "JSON"]
 - !private ["4JSON17JSONInitializableP", "Keys"]
 - !private ["4JSON17JSONInitializableP", "Location"]
@@ -221,6 +221,7 @@ depends-member:
 - !private ["4JSON17JSONInitializableP", "Room"]
 - !private ["4JSON17JSONInitializableP", "Row"]
 - ["4JSON17JSONInitializableP", "Storage"]
+- ["4JSON17JSONInitializableP", ""]
 - !private ["4JSON17JSONInitializableP", "children"]
 - ["4JSON17JSONInitializableP", "computedFields"]
 - !private ["4JSON17JSONInitializableP", "connectToPointsInCurrentRoom"]
@@ -258,7 +259,6 @@ depends-member:
 - ["4JSON17JSONInitializableP", "willUpdate"]
 - !private ["4JSON17JSONInitializableP", "x"]
 - !private ["4JSON17JSONInitializableP", "y"]
-- ["4JSON17JSONInitializableP", ""]
 - !private ["4JSON17JSONRepresentableP", "JSON"]
 - !private ["4JSON17JSONRepresentableP", "Keys"]
 - !private ["4JSON17JSONRepresentableP", "Location"]
@@ -266,6 +266,7 @@ depends-member:
 - !private ["4JSON17JSONRepresentableP", "Room"]
 - !private ["4JSON17JSONRepresentableP", "Row"]
 - ["4JSON17JSONRepresentableP", "Storage"]
+- ["4JSON17JSONRepresentableP", ""]
 - !private ["4JSON17JSONRepresentableP", "children"]
 - ["4JSON17JSONRepresentableP", "computedFields"]
 - !private ["4JSON17JSONRepresentableP", "connectToPointsInCurrentRoom"]
@@ -305,7 +306,6 @@ depends-member:
 - ["4JSON17JSONRepresentableP", "willUpdate"]
 - !private ["4JSON17JSONRepresentableP", "x"]
 - !private ["4JSON17JSONRepresentableP", "y"]
-- ["4JSON17JSONRepresentableP", ""]
 - ["3App8LocationC4KeysV", "id"]
 - ["3App8LocationC4KeysV", "init"]
 - ["3App8LocationC4KeysV", "latitude"]
@@ -382,6 +382,7 @@ depends-member:
 - !private ["14FluentProvider5ModelP", "Room"]
 - !private ["14FluentProvider5ModelP", "Row"]
 - ["14FluentProvider5ModelP", "Storage"]
+- ["14FluentProvider5ModelP", ""]
 - !private ["14FluentProvider5ModelP", "children"]
 - ["14FluentProvider5ModelP", "computedFields"]
 - !private ["14FluentProvider5ModelP", "connectToPointsInCurrentRoom"]
@@ -419,15 +420,6 @@ depends-member:
 - ["14FluentProvider5ModelP", "willUpdate"]
 - !private ["14FluentProvider5ModelP", "x"]
 - !private ["14FluentProvider5ModelP", "y"]
-- ["14FluentProvider5ModelP", ""]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "get"]
 - ["4Node0A13InitializableP", "init"]
 - !private ["4Node0A13InitializableP", "int"]
@@ -445,6 +437,7 @@ depends-member:
 - !private ["7Routing15ParameterizableP", "Room"]
 - !private ["7Routing15ParameterizableP", "Row"]
 - ["7Routing15ParameterizableP", "Storage"]
+- ["7Routing15ParameterizableP", ""]
 - !private ["7Routing15ParameterizableP", "children"]
 - ["7Routing15ParameterizableP", "computedFields"]
 - !private ["7Routing15ParameterizableP", "connectToPointsInCurrentRoom"]
@@ -482,7 +475,6 @@ depends-member:
 - ["7Routing15ParameterizableP", "willUpdate"]
 - !private ["7Routing15ParameterizableP", "x"]
 - !private ["7Routing15ParameterizableP", "y"]
-- ["7Routing15ParameterizableP", ""]
 - !private ["13PathIndexableAAP", "get"]
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "int"]
@@ -496,6 +488,7 @@ depends-member:
 - !private ["6Fluent11PreparationP", "Room"]
 - !private ["6Fluent11PreparationP", "Row"]
 - ["6Fluent11PreparationP", "Storage"]
+- ["6Fluent11PreparationP", ""]
 - !private ["6Fluent11PreparationP", "children"]
 - ["6Fluent11PreparationP", "computedFields"]
 - !private ["6Fluent11PreparationP", "connectToPointsInCurrentRoom"]
@@ -533,7 +526,6 @@ depends-member:
 - ["6Fluent11PreparationP", "willUpdate"]
 - !private ["6Fluent11PreparationP", "x"]
 - !private ["6Fluent11PreparationP", "y"]
-- ["6Fluent11PreparationP", ""]
 - !private ["6Fluent5QueryC", "all"]
 - !private ["6Fluent5QueryC", "filter"]
 - !private ["6Fluent11QueryLoggerP", "create"]
@@ -549,6 +541,7 @@ depends-member:
 - !private ["4HTTP21ResponseRepresentableP", "Room"]
 - !private ["4HTTP21ResponseRepresentableP", "Row"]
 - ["4HTTP21ResponseRepresentableP", "Storage"]
+- ["4HTTP21ResponseRepresentableP", ""]
 - !private ["4HTTP21ResponseRepresentableP", "children"]
 - ["4HTTP21ResponseRepresentableP", "computedFields"]
 - !private ["4HTTP21ResponseRepresentableP", "connectToPointsInCurrentRoom"]
@@ -588,7 +581,6 @@ depends-member:
 - ["4HTTP21ResponseRepresentableP", "willUpdate"]
 - !private ["4HTTP21ResponseRepresentableP", "x"]
 - !private ["4HTTP21ResponseRepresentableP", "y"]
-- ["4HTTP21ResponseRepresentableP", ""]
 - ["3App4RoomC", "deinit"]
 - !private ["6Fluent3RowV", "get"]
 - !private ["6Fluent3RowV", "init"]
@@ -600,6 +592,7 @@ depends-member:
 - !private ["6Fluent14RowConvertibleP", "Room"]
 - !private ["6Fluent14RowConvertibleP", "Row"]
 - ["6Fluent14RowConvertibleP", "Storage"]
+- ["6Fluent14RowConvertibleP", ""]
 - !private ["6Fluent14RowConvertibleP", "children"]
 - ["6Fluent14RowConvertibleP", "computedFields"]
 - !private ["6Fluent14RowConvertibleP", "connectToPointsInCurrentRoom"]
@@ -637,7 +630,6 @@ depends-member:
 - ["6Fluent14RowConvertibleP", "willUpdate"]
 - !private ["6Fluent14RowConvertibleP", "x"]
 - !private ["6Fluent14RowConvertibleP", "y"]
-- ["6Fluent14RowConvertibleP", ""]
 - !private ["6Fluent16RowInitializableP", "JSON"]
 - !private ["6Fluent16RowInitializableP", "Keys"]
 - !private ["6Fluent16RowInitializableP", "Location"]
@@ -645,6 +637,7 @@ depends-member:
 - !private ["6Fluent16RowInitializableP", "Room"]
 - !private ["6Fluent16RowInitializableP", "Row"]
 - ["6Fluent16RowInitializableP", "Storage"]
+- ["6Fluent16RowInitializableP", ""]
 - !private ["6Fluent16RowInitializableP", "children"]
 - ["6Fluent16RowInitializableP", "computedFields"]
 - !private ["6Fluent16RowInitializableP", "connectToPointsInCurrentRoom"]
@@ -682,7 +675,6 @@ depends-member:
 - ["6Fluent16RowInitializableP", "willUpdate"]
 - !private ["6Fluent16RowInitializableP", "x"]
 - !private ["6Fluent16RowInitializableP", "y"]
-- ["6Fluent16RowInitializableP", ""]
 - !private ["6Fluent16RowRepresentableP", "JSON"]
 - !private ["6Fluent16RowRepresentableP", "Keys"]
 - !private ["6Fluent16RowRepresentableP", "Location"]
@@ -690,6 +682,7 @@ depends-member:
 - !private ["6Fluent16RowRepresentableP", "Room"]
 - !private ["6Fluent16RowRepresentableP", "Row"]
 - ["6Fluent16RowRepresentableP", "Storage"]
+- ["6Fluent16RowRepresentableP", ""]
 - !private ["6Fluent16RowRepresentableP", "children"]
 - ["6Fluent16RowRepresentableP", "computedFields"]
 - !private ["6Fluent16RowRepresentableP", "connectToPointsInCurrentRoom"]
@@ -727,7 +720,6 @@ depends-member:
 - ["6Fluent16RowRepresentableP", "willUpdate"]
 - !private ["6Fluent16RowRepresentableP", "x"]
 - !private ["6Fluent16RowRepresentableP", "y"]
-- ["6Fluent16RowRepresentableP", ""]
 - ["s8SequenceP", "init"]
 - !private ["6Fluent8StorableP", "JSON"]
 - !private ["6Fluent8StorableP", "Keys"]
@@ -736,6 +728,7 @@ depends-member:
 - !private ["6Fluent8StorableP", "Room"]
 - !private ["6Fluent8StorableP", "Row"]
 - ["6Fluent8StorableP", "Storage"]
+- ["6Fluent8StorableP", ""]
 - !private ["6Fluent8StorableP", "children"]
 - ["6Fluent8StorableP", "computedFields"]
 - !private ["6Fluent8StorableP", "connectToPointsInCurrentRoom"]
@@ -773,7 +766,6 @@ depends-member:
 - ["6Fluent8StorableP", "willUpdate"]
 - !private ["6Fluent8StorableP", "x"]
 - !private ["6Fluent8StorableP", "y"]
-- ["6Fluent8StorableP", ""]
 - ["6Fluent7StorageC", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
@@ -786,18 +778,12 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["6Fluent12TransactableP", "create"]
 - !private ["6Fluent12TransactableP", "delete"]
-- ["s23_BidirectionalIndexableP", "init"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "s23BidirectionalCollectionP"
@@ -848,14 +834,6 @@ depends-nominal:
 - "3App11MeasurementC"
 - "s10MirrorPathP"
 - "14FluentProvider5ModelP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -883,18 +861,12 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "6Fluent12TransactableP"
-- "s23_BidirectionalIndexableP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -949,4 +921,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "391c6c8c47b7e2c03b49eb7702801227"
+interface-hash: "f950b0a7884ed60c4f1bac09a91a9c50"

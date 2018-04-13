@@ -57,6 +57,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "hasPrefix"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "toCharacterSequence"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "dropFirst"]
 - !private ["s7CVarArgP", "finished"]
@@ -157,6 +158,7 @@ depends-member:
 - !private ["s9EquatableP", "forbidden"]
 - !private ["s9EquatableP", "hasPrefix"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "toCharacterSequence"]
 - !private ["s5ErrorP", "forbidden"]
 - ["s5ErrorP", "missingRoute"]
@@ -220,10 +222,10 @@ depends-member:
 - !private ["4HTTP10MiddlewareP", "HTTP"]
 - !private ["4HTTP10MiddlewareP", "Response"]
 - !private ["4HTTP10MiddlewareP", "String"]
+- ["4HTTP10MiddlewareP", ""]
 - !private ["4HTTP10MiddlewareP", "chunkSize"]
 - !private ["4HTTP10MiddlewareP", "publicDir"]
 - ["4HTTP10MiddlewareP", "respond"]
-- ["4HTTP10MiddlewareP", ""]
 - !private ["s10MirrorPathP", "contains"]
 - !private ["s10MirrorPathP", "dropFirst"]
 - !private ["s10MirrorPathP", "finished"]
@@ -234,31 +236,26 @@ depends-member:
 - !private ["So8NSCodingP", "dropFirst"]
 - !private ["So8NSCodingP", "finished"]
 - !private ["So8NSCodingP", "hasPrefix"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "toCharacterSequence"]
 - !private ["So9NSCopyingP", "contains"]
 - !private ["So9NSCopyingP", "dropFirst"]
 - !private ["So9NSCopyingP", "finished"]
 - !private ["So9NSCopyingP", "hasPrefix"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "toCharacterSequence"]
 - !private ["So21NSItemProviderReadingP", "contains"]
 - !private ["So21NSItemProviderReadingP", "dropFirst"]
 - !private ["So21NSItemProviderReadingP", "finished"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderReadingP", "toCharacterSequence"]
 - !private ["So21NSItemProviderWritingP", "contains"]
 - !private ["So21NSItemProviderWritingP", "dropFirst"]
 - !private ["So21NSItemProviderWritingP", "finished"]
 - !private ["So21NSItemProviderWritingP", "hasPrefix"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So21NSItemProviderWritingP", "toCharacterSequence"]
 - !private ["So16NSMutableCopyingP", "contains"]
 - !private ["So16NSMutableCopyingP", "dropFirst"]
 - !private ["So16NSMutableCopyingP", "finished"]
 - !private ["So16NSMutableCopyingP", "hasPrefix"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So16NSMutableCopyingP", "toCharacterSequence"]
 - !private ["So8NSObjectC", "contains"]
 - !private ["So8NSObjectC", "dropFirst"]
@@ -269,19 +266,16 @@ depends-member:
 - !private ["So16NSObjectProtocolP", "dropFirst"]
 - !private ["So16NSObjectProtocolP", "finished"]
 - !private ["So16NSObjectProtocolP", "hasPrefix"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So16NSObjectProtocolP", "toCharacterSequence"]
 - !private ["So14NSSecureCodingP", "contains"]
 - !private ["So14NSSecureCodingP", "dropFirst"]
 - !private ["So14NSSecureCodingP", "finished"]
 - !private ["So14NSSecureCodingP", "hasPrefix"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "toCharacterSequence"]
 - !private ["So8NSStringC", "contains"]
 - !private ["So8NSStringC", "dropFirst"]
 - !private ["So8NSStringC", "finished"]
 - !private ["So8NSStringC", "hasPrefix"]
-- !private ["So8NSStringC", "init"]
 - !private ["So8NSStringC", "toCharacterSequence"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "contains"]
@@ -371,12 +365,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "toCharacterSequence"]
 - !private ["3URIAAV", "path"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "dropFirst"]
-- !private ["s23_BidirectionalIndexableP", "finished"]
-- !private ["s23_BidirectionalIndexableP", "hasPrefix"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "toCharacterSequence"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "contains"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "dropFirst"]
@@ -412,27 +400,11 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "dropFirst"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "finished"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "toCharacterSequence"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "dropFirst"]
-- !private ["s10_IndexableP", "finished"]
-- !private ["s10_IndexableP", "hasPrefix"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s10_IndexableP", "toCharacterSequence"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "dropFirst"]
-- !private ["s14_IndexableBaseP", "finished"]
-- !private ["s14_IndexableBaseP", "hasPrefix"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
-- !private ["s14_IndexableBaseP", "toCharacterSequence"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dropFirst"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "finished"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hasPrefix"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "toCharacterSequence"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
@@ -442,12 +414,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "toCharacterSequence"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "dropFirst"]
-- !private ["s26_RangeReplaceableIndexableP", "finished"]
-- !private ["s26_RangeReplaceableIndexableP", "hasPrefix"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "toCharacterSequence"]
 - !private ["s16_SwiftStringViewP", "contains"]
 - !private ["s16_SwiftStringViewP", "dropFirst"]
 - !private ["s16_SwiftStringViewP", "finished"]
@@ -522,7 +488,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "3URIAAV"
-- !private "s23_BidirectionalIndexableP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -530,11 +495,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -583,4 +545,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "da6d74f1323ddb76a2d80286a1fdccaa"
+interface-hash: "595d0e95d3d3e5c3f7a4fdbe26a78e9e"

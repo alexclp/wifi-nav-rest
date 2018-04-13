@@ -17,9 +17,6 @@ depends-member:
 - ["9Transport14InternetStreamP", "DuplexStream"]
 - ["9Transport14InternetStreamP", "Int"]
 - ["9Transport14InternetStreamP", "InternetStream"]
-- ["9Transport14InternetStreamP", "accept"]
-- ["9Transport14InternetStreamP", "bind"]
-- ["9Transport14InternetStreamP", "listen"]
 - ["9Transport14InternetStreamP", ""]
 - ["9Transport12ServerStreamP", "Client"]
 - ["9Transport12ServerStreamP", "DuplexStream"]
@@ -32,9 +29,6 @@ depends-member:
 - ["9Transport6StreamP", "DuplexStream"]
 - ["9Transport6StreamP", "Int"]
 - ["9Transport6StreamP", "InternetStream"]
-- ["9Transport6StreamP", "accept"]
-- ["9Transport6StreamP", "bind"]
-- ["9Transport6StreamP", "listen"]
 - ["9Transport6StreamP", ""]
 depends-nominal:
 - "9Transport14InternetStreamP"

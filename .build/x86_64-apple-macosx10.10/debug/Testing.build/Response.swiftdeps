@@ -98,6 +98,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "testMakeBytes"]
 - !private ["4Bits18BytesRepresentableP", "wrapped"]
 - ["s7CVarArgP", "Equatable"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "contains"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "init"]
@@ -183,9 +184,13 @@ depends-member:
 - !private ["s9EncodableP", "makeString"]
 - !private ["s9EncodableP", "null"]
 - !private ["s9EncodableP", "subscript"]
+- ["s9EquatableP", "Equatable"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - !private ["s9EquatableP", "contains"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "makeNode"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "noBodyBytes"]
 - !private ["s9EquatableP", "null"]
 - !private ["s9EquatableP", "statusCode"]
@@ -299,31 +304,14 @@ depends-member:
 - !private ["s17MutableCollectionP", "null"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "contains"]
-- !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "null"]
 - !private ["So9NSCopyingP", "contains"]
-- !private ["So9NSCopyingP", "init"]
-- !private ["So9NSCopyingP", "null"]
 - !private ["So21NSItemProviderReadingP", "contains"]
-- !private ["So21NSItemProviderReadingP", "init"]
-- !private ["So21NSItemProviderReadingP", "null"]
 - !private ["So21NSItemProviderWritingP", "contains"]
-- !private ["So21NSItemProviderWritingP", "init"]
-- !private ["So21NSItemProviderWritingP", "null"]
 - !private ["So16NSMutableCopyingP", "contains"]
-- !private ["So16NSMutableCopyingP", "init"]
-- !private ["So16NSMutableCopyingP", "null"]
 - !private ["So8NSObjectC", "contains"]
-- !private ["So8NSObjectC", "null"]
 - !private ["So16NSObjectProtocolP", "contains"]
-- !private ["So16NSObjectProtocolP", "init"]
-- !private ["So16NSObjectProtocolP", "null"]
 - !private ["So14NSSecureCodingP", "contains"]
-- !private ["So14NSSecureCodingP", "init"]
-- !private ["So14NSSecureCodingP", "null"]
 - !private ["So8NSStringC", "contains"]
-- !private ["So8NSStringC", "init"]
-- !private ["So8NSStringC", "null"]
 - !private ["4NodeAAV", "wrapped"]
 - !private ["4Node0A28ConvertibleFloatingPointTypeP", "null"]
 - ["4Node0A13InitializableP", "Equatable"]
@@ -461,13 +449,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "makeString"]
 - !private ["s14_ArrayProtocolP", "null"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- ["s23_BidirectionalIndexableP", "Equatable"]
-- !private ["s23_BidirectionalIndexableP", "contains"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "null"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s18_BitwiseOperationsP", "null"]
 - !private ["s15_CVarArgAlignedP", "null"]
 - !private ["s22_CVarArgPassedAsDoubleP", "null"]
@@ -497,31 +478,7 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s33_ExpressibleByStringInterpolationP", "null"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "contains"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "null"]
-- ["s10_IndexableP", "Equatable"]
-- !private ["s10_IndexableP", "contains"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "null"]
-- !private ["s10_IndexableP", "subscript"]
-- ["s14_IndexableBaseP", "Equatable"]
-- !private ["s14_IndexableBaseP", "contains"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "null"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contains"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "null"]
-- ["s17_MutableIndexableP", "Equatable"]
-- !private ["s17_MutableIndexableP", "contains"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "makeString"]
-- !private ["s17_MutableIndexableP", "null"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - ["s21_ObjectiveCBridgeableP", "Equatable"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "contains"]
@@ -531,20 +488,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "null"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- ["s22_RandomAccessIndexableP", "Equatable"]
-- !private ["s22_RandomAccessIndexableP", "contains"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s22_RandomAccessIndexableP", "null"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- ["s26_RangeReplaceableIndexableP", "Equatable"]
-- !private ["s26_RangeReplaceableIndexableP", "contains"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "null"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
-- !private ["s11_StrideableP", "null"]
 - !private ["s16_SwiftStringViewP", "contains"]
 - !private ["s16_SwiftStringViewP", "init"]
 - !private ["s16_SwiftStringViewP", "null"]
@@ -574,7 +517,7 @@ depends-nominal:
 - !private "4SMTP25EmailAddressRepresentableP"
 - !private "4SMTP22EmailBodyRepresentableP"
 - "s9EncodableP"
-- !private "s9EquatableP"
+- "s9EquatableP"
 - !private "s5ErrorP"
 - "s25ExpressibleByArrayLiteralP"
 - !private "s27ExpressibleByBooleanLiteralP"
@@ -639,7 +582,6 @@ depends-nominal:
 - !private "Su"
 - !private "s15UnsignedIntegerP"
 - "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -653,14 +595,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- "s17_MutableIndexableP"
 - "s21_ObjectiveCBridgeableP"
-- "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

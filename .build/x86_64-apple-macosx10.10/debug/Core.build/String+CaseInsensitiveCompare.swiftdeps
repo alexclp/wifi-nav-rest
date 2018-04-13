@@ -48,18 +48,14 @@ depends-member:
 - !private ["s14StringProtocolP", "lowercased"]
 - !private ["s16TextOutputStreamP", "lowercased"]
 - !private ["s20TextOutputStreamableP", "lowercased"]
-- !private ["s23_BidirectionalIndexableP", "lowercased"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
 - !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
 - !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
-- !private ["s10_IndexableP", "lowercased"]
-- !private ["s14_IndexableBaseP", "lowercased"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
 - !private ["s21_ObjectiveCBridgeableP", "lowercased"]
-- !private ["s26_RangeReplaceableIndexableP", "lowercased"]
 - !private ["s16_SwiftStringViewP", "lowercased"]
 depends-nominal:
 - !private "s23BidirectionalCollectionP"
@@ -97,18 +93,14 @@ depends-nominal:
 - !private "s14StringProtocolP"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

@@ -17,9 +17,9 @@ depends-top-level:
 - "String"
 depends-member:
 - !private ["7Configs19ConfigInitializableP", "S"]
+- ["7Configs19ConfigInitializableP", ""]
 - ["7Configs19ConfigInitializableP", "init"]
 - ["7Configs19ConfigInitializableP", "makeServer"]
-- ["7Configs19ConfigInitializableP", ""]
 - ["5Vapor13ServerFactoryC", "Configs"]
 - ["5Vapor13ServerFactoryC", "Port"]
 - !private ["5Vapor13ServerFactoryC", "S"]
@@ -30,9 +30,9 @@ depends-member:
 - ["5Vapor13ServerFactoryC", "init"]
 - ["5Vapor13ServerFactoryC", "makeServer"]
 - !private ["5Vapor21ServerFactoryProtocolP", "S"]
+- ["5Vapor21ServerFactoryProtocolP", ""]
 - ["5Vapor21ServerFactoryProtocolP", "init"]
 - ["5Vapor21ServerFactoryProtocolP", "makeServer"]
-- ["5Vapor21ServerFactoryProtocolP", ""]
 - !private ["5Vapor14ServerProtocolP", "init"]
 depends-nominal:
 - "7Configs19ConfigInitializableP"
@@ -86,4 +86,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4c963d635ee205291e6f030a5810cb74"
+interface-hash: "0e8eda22b1640cef0df9add5b6bb8806"

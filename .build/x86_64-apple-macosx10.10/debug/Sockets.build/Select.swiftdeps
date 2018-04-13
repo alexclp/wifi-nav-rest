@@ -34,7 +34,7 @@ depends-top-level:
 - !private "fdIsSet"
 - !private "fdSet"
 - !private "fdZero"
-- !private "fd_set"
+- "fd_set"
 - !private "filter"
 - !private "max"
 - !private "pow"
@@ -52,6 +52,7 @@ depends-member:
 - !private ["s19BinaryFloatingPointP", "init"]
 - !private ["s13BinaryIntegerP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "filter"]
 - !private ["s7CVarArgP", "forEach"]
 - !private ["s7CVarArgP", "init"]
@@ -99,13 +100,17 @@ depends-member:
 - !private ["s9EquatableP", "Double"]
 - !private ["s9EquatableP", "Int"]
 - !private ["s9EquatableP", "Int32"]
+- ["s9EquatableP", ""]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "filter"]
+- !private ["s9EquatableP", "forEach"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "isEmpty"]
 - !private ["s9EquatableP", "pow"]
+- !private ["s9EquatableP", "reduce"]
 - !private ["s9EquatableP", "timeval"]
 - !private ["s9EquatableP", "tv_sec"]
 - !private ["s9EquatableP", "tv_usec"]
-- ["s9EquatableP", ""]
 - !private ["s5ErrorP", "init"]
 - !private ["7Sockets11ErrorReasonO", "selectFailed"]
 - !private ["s25ExpressibleByArrayLiteralP", "filter"]
@@ -160,10 +165,6 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "forEach"]
 - !private ["s14_ArrayProtocolP", "isEmpty"]
 - !private ["s14_ArrayProtocolP", "reduce"]
-- !private ["s23_BidirectionalIndexableP", "filter"]
-- !private ["s23_BidirectionalIndexableP", "forEach"]
-- !private ["s23_BidirectionalIndexableP", "isEmpty"]
-- !private ["s23_BidirectionalIndexableP", "reduce"]
 - !private ["s18_BitwiseOperationsP", "init"]
 - !private ["s15_CVarArgAlignedP", "init"]
 - !private ["s22_CVarArgPassedAsDoubleP", "init"]
@@ -174,33 +175,12 @@ depends-member:
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - !private ["s33_ExpressibleByBuiltinFloatLiteralP", "init"]
 - !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "init"]
-- !private ["s10_IndexableP", "filter"]
-- !private ["s10_IndexableP", "forEach"]
-- !private ["s10_IndexableP", "isEmpty"]
-- !private ["s10_IndexableP", "reduce"]
-- !private ["s14_IndexableBaseP", "filter"]
-- !private ["s14_IndexableBaseP", "forEach"]
-- !private ["s14_IndexableBaseP", "isEmpty"]
-- !private ["s14_IndexableBaseP", "reduce"]
-- !private ["s17_MutableIndexableP", "filter"]
-- !private ["s17_MutableIndexableP", "forEach"]
-- !private ["s17_MutableIndexableP", "isEmpty"]
-- !private ["s17_MutableIndexableP", "reduce"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "filter"]
 - !private ["s21_ObjectiveCBridgeableP", "forEach"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "isEmpty"]
 - !private ["s21_ObjectiveCBridgeableP", "reduce"]
-- !private ["s22_RandomAccessIndexableP", "filter"]
-- !private ["s22_RandomAccessIndexableP", "forEach"]
-- !private ["s22_RandomAccessIndexableP", "isEmpty"]
-- !private ["s22_RandomAccessIndexableP", "reduce"]
-- !private ["s26_RangeReplaceableIndexableP", "filter"]
-- !private ["s26_RangeReplaceableIndexableP", "forEach"]
-- !private ["s26_RangeReplaceableIndexableP", "isEmpty"]
-- !private ["s26_RangeReplaceableIndexableP", "reduce"]
-- !private ["s11_StrideableP", "init"]
 - !private ["SC6fd_setV", "init"]
 - ["SC7timevalV", "Double"]
 - ["SC7timevalV", "Int"]
@@ -255,7 +235,6 @@ depends-nominal:
 - "9Transport6StreamP"
 - !private "s10StrideableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s18_BitwiseOperationsP"
 - !private "s15_CVarArgAlignedP"
 - !private "s22_CVarArgPassedAsDoubleP"
@@ -263,13 +242,7 @@ depends-nominal:
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s33_ExpressibleByBuiltinFloatLiteralP"
 - !private "s35_ExpressibleByBuiltinIntegerLiteralP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - !private "SC6fd_setV"
 - "SC7timevalV"
 depends-dynamic-lookup:

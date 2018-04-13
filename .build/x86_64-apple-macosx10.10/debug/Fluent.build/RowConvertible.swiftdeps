@@ -19,11 +19,11 @@ depends-top-level:
 - "RowRepresentable"
 depends-member:
 - ["6Fluent16RowInitializableP", "Row"]
-- ["6Fluent16RowInitializableP", "init"]
 - ["6Fluent16RowInitializableP", ""]
+- ["6Fluent16RowInitializableP", "init"]
 - ["6Fluent16RowRepresentableP", "Row"]
-- ["6Fluent16RowRepresentableP", "makeRow"]
 - ["6Fluent16RowRepresentableP", ""]
+- ["6Fluent16RowRepresentableP", "makeRow"]
 depends-nominal:
 - "6Fluent16RowInitializableP"
 - "6Fluent16RowRepresentableP"

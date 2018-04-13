@@ -49,6 +49,7 @@ depends-member:
 - !private ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "allocate"]
+- !private ["s9EquatableP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s8HashableP", "allocate"]
 - !private ["s17MutableCollectionP", "init"]
@@ -59,16 +60,9 @@ depends-member:
 - !private ["SR", "init"]
 - !private ["Sp", "allocate"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s23_BidirectionalIndexableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "init"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s17_MutableIndexableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s8_PointerP", "allocate"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "allocate"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -93,16 +87,9 @@ depends-nominal:
 - !private "SR"
 - !private "Sp"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
 - !private "s8_PointerP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
@@ -127,4 +114,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "17b55cf265e05b7a91c49433f45d39f3"
+interface-hash: "d72c44701ad6661328d278fa1dbbb98b"

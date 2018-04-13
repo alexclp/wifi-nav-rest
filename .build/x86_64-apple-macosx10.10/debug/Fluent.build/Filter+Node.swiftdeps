@@ -44,6 +44,7 @@ depends-member:
 - !private ["s10CollectionP", "subscript"]
 - !private ["s10ComparableP", "components"]
 - !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_code"]
 - ["s28CustomDebugStringConvertibleP", "_domain"]
 - ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
@@ -67,7 +68,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "undefinedMethodType"]
 - ["s28CustomDebugStringConvertibleP", "undefinedRelation"]
 - ["s28CustomDebugStringConvertibleP", "undefinedScope"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "components"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "components"]
@@ -84,6 +84,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "makeNode"]
 - !private ["s23CustomStringConvertibleP", "method"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- ["9Debugging10DebuggableP", ""]
 - ["9Debugging10DebuggableP", "_code"]
 - ["9Debugging10DebuggableP", "_domain"]
 - ["9Debugging10DebuggableP", "_getEmbeddedNSError"]
@@ -104,7 +105,6 @@ depends-member:
 - ["9Debugging10DebuggableP", "undefinedMethodType"]
 - ["9Debugging10DebuggableP", "undefinedRelation"]
 - ["9Debugging10DebuggableP", "undefinedScope"]
-- ["9Debugging10DebuggableP", ""]
 - !private ["s9DecodableP", "components"]
 - !private ["s9DecodableP", "init"]
 - !private ["s9DecodableP", "subscript"]
@@ -115,6 +115,8 @@ depends-member:
 - !private ["s9EquatableP", "get"]
 - !private ["s9EquatableP", "init"]
 - !private ["s9EquatableP", "set"]
+- !private ["s9EquatableP", "subscript"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -135,7 +137,6 @@ depends-member:
 - ["s5ErrorP", "undefinedMethodType"]
 - ["s5ErrorP", "undefinedRelation"]
 - ["s5ErrorP", "undefinedScope"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "get"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "set"]
@@ -216,22 +217,14 @@ depends-member:
 - !private ["s10MirrorPathP", "init"]
 - !private ["s17MutableCollectionP", "subscript"]
 - !private ["So8NSCodingP", "components"]
-- !private ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "components"]
-- !private ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "components"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "components"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "components"]
-- !private ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "components"]
 - !private ["So16NSObjectProtocolP", "components"]
-- !private ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "components"]
-- !private ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "components"]
-- !private ["So8NSStringC", "init"]
 - !private ["4NodeAAV", "get"]
 - !private ["4NodeAAV", "init"]
 - !private ["4NodeAAV", "set"]
@@ -240,6 +233,7 @@ depends-member:
 - !private ["4Node0A13InitializableP", "NSClassFromString"]
 - !private ["4Node0A13InitializableP", "Node"]
 - !private ["4Node0A13InitializableP", "String"]
+- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13InitializableP", "components"]
 - !private ["4Node0A13InitializableP", "entity"]
 - !private ["4Node0A13InitializableP", "get"]
@@ -248,12 +242,12 @@ depends-member:
 - !private ["4Node0A13InitializableP", "method"]
 - !private ["4Node0A13InitializableP", "set"]
 - !private ["4Node0A13InitializableP", "subscript"]
-- ["4Node0A13InitializableP", ""]
 - !private ["4Node0A13RepresentableP", "FilterSerializationError"]
 - !private ["4Node0A13RepresentableP", "Method"]
 - !private ["4Node0A13RepresentableP", "NSClassFromString"]
 - !private ["4Node0A13RepresentableP", "Node"]
 - !private ["4Node0A13RepresentableP", "String"]
+- ["4Node0A13RepresentableP", ""]
 - !private ["4Node0A13RepresentableP", "components"]
 - !private ["4Node0A13RepresentableP", "entity"]
 - !private ["4Node0A13RepresentableP", "get"]
@@ -262,7 +256,6 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "method"]
 - !private ["4Node0A13RepresentableP", "set"]
 - !private ["4Node0A13RepresentableP", "subscript"]
-- ["4Node0A13RepresentableP", ""]
 - !private ["13PathIndexableAAP", "get"]
 - !private ["13PathIndexableAAP", "init"]
 - !private ["13PathIndexableAAP", "set"]
@@ -287,9 +280,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "components"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s14_ArrayProtocolP", "subscript"]
-- !private ["s23_BidirectionalIndexableP", "components"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "subscript"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -302,23 +292,10 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "components"]
 - !private ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "components"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "subscript"]
-- !private ["s14_IndexableBaseP", "components"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "components"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
-- !private ["s22_RandomAccessIndexableP", "subscript"]
-- !private ["s26_RangeReplaceableIndexableP", "components"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "subscript"]
 - !private ["s16_SwiftStringViewP", "components"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -379,7 +356,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -387,13 +363,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

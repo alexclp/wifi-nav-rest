@@ -124,8 +124,6 @@ depends-member:
 - ["s35_ExpressibleByBuiltinIntegerLiteralP", "newLine"]
 - ["s21_ObjectiveCBridgeableP", "carriageReturn"]
 - ["s21_ObjectiveCBridgeableP", "newLine"]
-- ["s11_StrideableP", "carriageReturn"]
-- ["s11_StrideableP", "newLine"]
 - ["s14_StringElementP", "carriageReturn"]
 - ["s14_StringElementP", "newLine"]
 depends-nominal:
@@ -152,7 +150,6 @@ depends-nominal:
 - "s18_BitwiseOperationsP"
 - "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s21_ObjectiveCBridgeableP"
-- "s11_StrideableP"
 - "s14_StringElementP"
 depends-dynamic-lookup:
 depends-external:
@@ -173,4 +170,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "527e4be528f6aaa09eb2f33ae922ec41"
+interface-hash: "a725ac1387d53d87e752936ce1d7620d"

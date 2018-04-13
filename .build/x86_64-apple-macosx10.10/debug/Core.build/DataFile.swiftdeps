@@ -13,7 +13,7 @@ depends-top-level:
 - !private "!"
 - !private "+"
 - "AssignmentPrecedence"
-- !private "Bool"
+- "Bool"
 - "Bytes"
 - !private "Data"
 - "DataFile"
@@ -27,7 +27,7 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 - "Swift"
-- !private "TernaryPrecedence"
+- "TernaryPrecedence"
 - !private "URL"
 - !private "UnicodeScalarType"
 - !private "workingDirectory"
@@ -48,6 +48,7 @@ depends-member:
 - !private ["4Bits18BytesRepresentableP", "hasPrefix"]
 - !private ["4Bits18BytesRepresentableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "write"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "createFile"]
 - !private ["s7CVarArgP", "default"]
@@ -63,6 +64,7 @@ depends-member:
 - !private ["s10CollectionP", "write"]
 - !private ["s10ComparableP", "hasPrefix"]
 - !private ["s10ComparableP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_code"]
 - ["s28CustomDebugStringConvertibleP", "_domain"]
 - ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
@@ -90,7 +92,6 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "typeIdentifier"]
 - ["s28CustomDebugStringConvertibleP", "unspecified"]
 - !private ["s28CustomDebugStringConvertibleP", "write"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
 - !private ["s29CustomPlaygroundQuickLookableP", "hasPrefix"]
 - !private ["s29CustomPlaygroundQuickLookableP", "init"]
@@ -112,7 +113,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "write"]
 - !private ["10Foundation4DataV", "init"]
 - !private ["10Foundation4DataV", "write"]
-- !private ["4Core8DataFileC", "Bool"]
+- ["4Core8DataFileC", "Bool"]
 - ["4Core8DataFileC", "Bytes"]
 - !private ["4Core8DataFileC", "Data"]
 - !private ["4Core8DataFileC", "DataFileError"]
@@ -150,6 +151,7 @@ depends-member:
 - ["4Core13DataFileErrorO", "suggestedFixes"]
 - ["4Core13DataFileErrorO", "typeIdentifier"]
 - ["4Core13DataFileErrorO", "unspecified"]
+- ["9Debugging10DebuggableP", ""]
 - ["9Debugging10DebuggableP", "_code"]
 - ["9Debugging10DebuggableP", "_domain"]
 - ["9Debugging10DebuggableP", "_getEmbeddedNSError"]
@@ -167,7 +169,6 @@ depends-member:
 - ["9Debugging10DebuggableP", "suggestedFixes"]
 - ["9Debugging10DebuggableP", "typeIdentifier"]
 - ["9Debugging10DebuggableP", "unspecified"]
-- ["9Debugging10DebuggableP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
 - !private ["s9DecodableP", "count"]
 - !private ["s9DecodableP", "hasPrefix"]
@@ -179,6 +180,7 @@ depends-member:
 - !private ["4Core18EmptyInitializableP", "FileManager"]
 - !private ["4Core18EmptyInitializableP", "NSData"]
 - !private ["4Core18EmptyInitializableP", "URL"]
+- ["4Core18EmptyInitializableP", ""]
 - !private ["4Core18EmptyInitializableP", "create"]
 - ["4Core18EmptyInitializableP", "delete"]
 - !private ["4Core18EmptyInitializableP", "fileExists"]
@@ -188,13 +190,13 @@ depends-member:
 - !private ["4Core18EmptyInitializableP", "workDir"]
 - !private ["4Core18EmptyInitializableP", "workingDirectory"]
 - ["4Core18EmptyInitializableP", "write"]
-- ["4Core18EmptyInitializableP", ""]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "count"]
 - !private ["s9EncodableP", "hasPrefix"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "write"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
 - !private ["s9EquatableP", "createFile"]
 - !private ["s9EquatableP", "default"]
 - !private ["s9EquatableP", "fileExists"]
@@ -204,6 +206,7 @@ depends-member:
 - !private ["s9EquatableP", "length"]
 - !private ["s9EquatableP", "removeItem"]
 - !private ["s9EquatableP", "write"]
+- ["s5ErrorP", ""]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
@@ -221,7 +224,6 @@ depends-member:
 - ["s5ErrorP", "suggestedFixes"]
 - ["s5ErrorP", "typeIdentifier"]
 - ["s5ErrorP", "unspecified"]
-- ["s5ErrorP", ""]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -241,6 +243,7 @@ depends-member:
 - !private ["4Core12FileProtocolP", "FileManager"]
 - !private ["4Core12FileProtocolP", "NSData"]
 - !private ["4Core12FileProtocolP", "URL"]
+- ["4Core12FileProtocolP", ""]
 - !private ["4Core12FileProtocolP", "create"]
 - ["4Core12FileProtocolP", "delete"]
 - !private ["4Core12FileProtocolP", "fileExists"]
@@ -250,7 +253,6 @@ depends-member:
 - !private ["4Core12FileProtocolP", "workDir"]
 - !private ["4Core12FileProtocolP", "workingDirectory"]
 - ["4Core12FileProtocolP", "write"]
-- ["4Core12FileProtocolP", ""]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - !private ["s8HashableP", "createFile"]
 - !private ["s8HashableP", "default"]
@@ -281,9 +283,7 @@ depends-member:
 - !private ["So6NSDataC", "init"]
 - !private ["So6NSDataC", "length"]
 - !private ["So21NSItemProviderReadingP", "hasPrefix"]
-- !private ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "hasPrefix"]
-- !private ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "getBytes"]
 - !private ["So16NSMutableCopyingP", "hasPrefix"]
 - !private ["So16NSMutableCopyingP", "init"]
@@ -309,7 +309,6 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "length"]
 - !private ["So8NSStringC", "hasPrefix"]
-- !private ["So8NSStringC", "init"]
 - !private ["s22RandomAccessCollectionP", "count"]
 - !private ["s22RandomAccessCollectionP", "init"]
 - !private ["s22RandomAccessCollectionP", "write"]
@@ -334,10 +333,6 @@ depends-member:
 - !private ["10Foundation3URLV", "init"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "init"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "hasPrefix"]
-- !private ["s23_BidirectionalIndexableP", "init"]
-- !private ["s23_BidirectionalIndexableP", "write"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "init"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -356,14 +351,6 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "hasPrefix"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "length"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "hasPrefix"]
-- !private ["s10_IndexableP", "init"]
-- !private ["s10_IndexableP", "write"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "hasPrefix"]
-- !private ["s14_IndexableBaseP", "init"]
-- !private ["s14_IndexableBaseP", "write"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "createFile"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "default"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fileExists"]
@@ -372,21 +359,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "length"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeItem"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "init"]
-- !private ["s17_MutableIndexableP", "write"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "hasPrefix"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "write"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "write"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "hasPrefix"]
-- !private ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s26_RangeReplaceableIndexableP", "write"]
 - !private ["s16_SwiftStringViewP", "hasPrefix"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -443,7 +420,6 @@ depends-nominal:
 - !private "s20TextOutputStreamableP"
 - !private "10Foundation3URLV"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -453,13 +429,8 @@ depends-nominal:
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -483,4 +454,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "4358c3ce1134a5b8d7259e1d62504e20"
+interface-hash: "b4296dca88eaf272c78e11a084786129"

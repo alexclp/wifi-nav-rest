@@ -8,17 +8,21 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "=="
+- !private "Array"
 - "BCryptError"
 - "Debuggable"
 - "Error"
 - "String"
 - "StringLiteralType"
+- !private "_findStringSwitchCase"
 - !private "~="
 depends-member:
 - ["6BCrypt0A5ErrorO", "RawValue"]
 - ["6BCrypt0A5ErrorO", "String"]
+- ["6BCrypt0A5ErrorO", "_Default_RawValue"]
 - ["6BCrypt0A5ErrorO", "_code"]
 - ["6BCrypt0A5ErrorO", "_domain"]
+- !private ["6BCrypt0A5ErrorO", "_findStringSwitchCase"]
 - ["6BCrypt0A5ErrorO", "_getEmbeddedNSError"]
 - ["6BCrypt0A5ErrorO", "_userInfo"]
 - ["6BCrypt0A5ErrorO", "debugDescription"]
@@ -41,19 +45,20 @@ depends-member:
 - ["6BCrypt0A5ErrorO", "typeIdentifier"]
 - ["6BCrypt0A5ErrorO", "unsupportedSaltVersion"]
 - ["s23BidirectionalCollectionP", "init"]
-- !private ["s13BinaryIntegerP", "hashValue"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - ["4Bits16BytesConvertibleP", "init"]
 - ["4Bits18BytesInitializableP", "init"]
 - ["4Bits18BytesRepresentableP", "init"]
-- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - ["s7CVarArgP", "init"]
 - ["s10CollectionP", "init"]
-- !private ["s10ComparableP", "hashValue"]
 - ["s10ComparableP", "init"]
 - ["s28CustomDebugStringConvertibleP", "RawValue"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "_Default_RawValue"]
 - ["s28CustomDebugStringConvertibleP", "_code"]
 - ["s28CustomDebugStringConvertibleP", "_domain"]
+- !private ["s28CustomDebugStringConvertibleP", "_findStringSwitchCase"]
 - ["s28CustomDebugStringConvertibleP", "_getEmbeddedNSError"]
 - ["s28CustomDebugStringConvertibleP", "_userInfo"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
@@ -74,19 +79,18 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "suggestedFixes"]
 - ["s28CustomDebugStringConvertibleP", "typeIdentifier"]
 - ["s28CustomDebugStringConvertibleP", "unsupportedSaltVersion"]
-- ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
-- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
 - ["s29CustomPlaygroundQuickLookableP", "init"]
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
-- !private ["s17CustomReflectableP", "hashValue"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s23CustomStringConvertibleP", "hashValue"]
 - ["s23CustomStringConvertibleP", "init"]
 - ["9Debugging10DebuggableP", "RawValue"]
+- ["9Debugging10DebuggableP", ""]
+- ["9Debugging10DebuggableP", "_Default_RawValue"]
 - ["9Debugging10DebuggableP", "_code"]
 - ["9Debugging10DebuggableP", "_domain"]
+- !private ["9Debugging10DebuggableP", "_findStringSwitchCase"]
 - ["9Debugging10DebuggableP", "_getEmbeddedNSError"]
 - ["9Debugging10DebuggableP", "_userInfo"]
 - ["9Debugging10DebuggableP", "debugDescription"]
@@ -107,16 +111,16 @@ depends-member:
 - ["9Debugging10DebuggableP", "suggestedFixes"]
 - ["9Debugging10DebuggableP", "typeIdentifier"]
 - ["9Debugging10DebuggableP", "unsupportedSaltVersion"]
-- ["9Debugging10DebuggableP", ""]
 - !private ["s9DecodableP", "_getBuiltinLogicValue"]
-- !private ["s9DecodableP", "hashValue"]
 - ["s9DecodableP", "init"]
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
-- !private ["s9EncodableP", "hashValue"]
 - ["s9EncodableP", "init"]
 - ["s9EquatableP", "RawValue"]
+- ["s9EquatableP", ""]
+- ["s9EquatableP", "_Default_RawValue"]
 - ["s9EquatableP", "_code"]
 - ["s9EquatableP", "_domain"]
+- !private ["s9EquatableP", "_findStringSwitchCase"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
 - ["s9EquatableP", "_getEmbeddedNSError"]
 - ["s9EquatableP", "_userInfo"]
@@ -138,10 +142,12 @@ depends-member:
 - ["s9EquatableP", "suggestedFixes"]
 - ["s9EquatableP", "typeIdentifier"]
 - ["s9EquatableP", "unsupportedSaltVersion"]
-- ["s9EquatableP", ""]
 - ["s5ErrorP", "RawValue"]
+- ["s5ErrorP", ""]
+- ["s5ErrorP", "_Default_RawValue"]
 - ["s5ErrorP", "_code"]
 - ["s5ErrorP", "_domain"]
+- !private ["s5ErrorP", "_findStringSwitchCase"]
 - ["s5ErrorP", "_getEmbeddedNSError"]
 - ["s5ErrorP", "_userInfo"]
 - ["s5ErrorP", "debugDescription"]
@@ -162,16 +168,16 @@ depends-member:
 - ["s5ErrorP", "suggestedFixes"]
 - ["s5ErrorP", "typeIdentifier"]
 - ["s5ErrorP", "unsupportedSaltVersion"]
-- ["s5ErrorP", ""]
 - !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
 - ["s26ExpressibleByStringLiteralP", "init"]
 - ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["s17FixedWidthIntegerP", "hashValue"]
 - ["s8HashableP", "RawValue"]
+- ["s8HashableP", ""]
+- ["s8HashableP", "_Default_RawValue"]
 - ["s8HashableP", "_code"]
 - ["s8HashableP", "_domain"]
+- !private ["s8HashableP", "_findStringSwitchCase"]
 - !private ["s8HashableP", "_getBuiltinLogicValue"]
 - ["s8HashableP", "_getEmbeddedNSError"]
 - ["s8HashableP", "_userInfo"]
@@ -193,26 +199,16 @@ depends-member:
 - ["s8HashableP", "suggestedFixes"]
 - ["s8HashableP", "typeIdentifier"]
 - ["s8HashableP", "unsupportedSaltVersion"]
-- ["s8HashableP", ""]
-- !private ["Si", "hashValue"]
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
-- !private ["s25LosslessStringConvertibleP", "hashValue"]
 - ["s25LosslessStringConvertibleP", "init"]
-- !private ["s10MirrorPathP", "hashValue"]
 - ["s10MirrorPathP", "init"]
-- ["So8NSCodingP", "init"]
-- ["So9NSCopyingP", "init"]
-- ["So21NSItemProviderReadingP", "init"]
-- ["So21NSItemProviderWritingP", "init"]
-- ["So16NSMutableCopyingP", "init"]
-- ["So16NSObjectProtocolP", "init"]
-- ["So14NSSecureCodingP", "init"]
-- ["So8NSStringC", "init"]
-- !private ["s7NumericP", "hashValue"]
 - ["s26RangeReplaceableCollectionP", "init"]
 - ["s16RawRepresentableP", "RawValue"]
+- ["s16RawRepresentableP", ""]
+- ["s16RawRepresentableP", "_Default_RawValue"]
 - ["s16RawRepresentableP", "_code"]
 - ["s16RawRepresentableP", "_domain"]
+- !private ["s16RawRepresentableP", "_findStringSwitchCase"]
 - ["s16RawRepresentableP", "_getEmbeddedNSError"]
 - ["s16RawRepresentableP", "_userInfo"]
 - ["s16RawRepresentableP", "debugDescription"]
@@ -233,38 +229,24 @@ depends-member:
 - ["s16RawRepresentableP", "suggestedFixes"]
 - ["s16RawRepresentableP", "typeIdentifier"]
 - ["s16RawRepresentableP", "unsupportedSaltVersion"]
-- ["s16RawRepresentableP", ""]
 - ["s8SequenceP", "init"]
-- !private ["s13SignedIntegerP", "hashValue"]
-- !private ["s13SignedNumericP", "hashValue"]
-- !private ["s10StrideableP", "hashValue"]
+- !private ["s12StaticStringV", "init"]
 - ["SS", "init"]
 - ["s14StringProtocolP", "init"]
 - ["s16TextOutputStreamP", "init"]
 - ["s20TextOutputStreamableP", "init"]
-- ["s23_BidirectionalIndexableP", "init"]
-- !private ["s18_BitwiseOperationsP", "hashValue"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
 - ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
-- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
 - ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
 - ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- ["s10_IndexableP", "init"]
-- ["s14_IndexableBaseP", "init"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
-- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- ["s26_RangeReplaceableIndexableP", "init"]
-- !private ["s11_StrideableP", "hashValue"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
 - "6BCrypt0A5ErrorO"
 - "s23BidirectionalCollectionP"
-- !private "s13BinaryIntegerP"
 - !private "Sb"
 - "4Bits16BytesConvertibleP"
 - "4Bits18BytesInitializableP"
@@ -283,49 +265,26 @@ depends-nominal:
 - "s5ErrorP"
 - !private "s27ExpressibleByBooleanLiteralP"
 - "s43ExpressibleByExtendedGraphemeClusterLiteralP"
-- !private "s27ExpressibleByIntegerLiteralP"
 - "s26ExpressibleByStringLiteralP"
 - "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "s17FixedWidthIntegerP"
 - "s8HashableP"
-- !private "Si"
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
-- !private "s7NumericP"
 - "s26RangeReplaceableCollectionP"
 - "s16RawRepresentableP"
 - "s8SequenceP"
-- !private "s13SignedIntegerP"
-- !private "s13SignedNumericP"
-- !private "s10StrideableP"
+- !private "s12StaticStringV"
 - "SS"
 - "s14StringProtocolP"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
-- "s23_BidirectionalIndexableP"
-- !private "s18_BitwiseOperationsP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
-- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - "s34_ExpressibleByBuiltinStringLiteralP"
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- "s26_RangeReplaceableIndexableP"
-- !private "s11_StrideableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

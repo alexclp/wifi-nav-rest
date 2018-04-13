@@ -24,7 +24,7 @@ final class Measurement: Model {
     }
 
     init(signalStrength: Int, apID: Identifier, locationID: Identifier) {
-        self.signalStrength = signalStrength
+    self.signalStrength = signalStrength
         self.apID = apID
         self.locationID = locationID
     }

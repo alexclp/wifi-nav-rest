@@ -43,7 +43,9 @@ depends-member:
 - !private ["s9EquatableP", "context"]
 - !private ["s9EquatableP", "fuzzy"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "initialize"]
 - !private ["s9EquatableP", "null"]
+- !private ["s9EquatableP", "represent"]
 - !private ["s9EquatableP", "subscript"]
 - !private ["s9EquatableP", "wrapped"]
 - !private ["s25ExpressibleByArrayLiteralP", "Node"]
@@ -160,23 +162,11 @@ depends-member:
 - !private ["4Node21StructuredDataWrapperP", "wrapped"]
 - !private ["s14_ArrayProtocolP", "initialize"]
 - !private ["s14_ArrayProtocolP", "represent"]
-- !private ["s23_BidirectionalIndexableP", "initialize"]
-- !private ["s23_BidirectionalIndexableP", "represent"]
 - !private ["s24_DestructorSafeContainerP", "initialize"]
 - !private ["s24_DestructorSafeContainerP", "represent"]
-- !private ["s10_IndexableP", "initialize"]
-- !private ["s10_IndexableP", "represent"]
-- !private ["s14_IndexableBaseP", "initialize"]
-- !private ["s14_IndexableBaseP", "represent"]
-- !private ["s17_MutableIndexableP", "initialize"]
-- !private ["s17_MutableIndexableP", "represent"]
 - !private ["s21_ObjectiveCBridgeableP", "initialize"]
 - !private ["s21_ObjectiveCBridgeableP", "null"]
 - !private ["s21_ObjectiveCBridgeableP", "represent"]
-- !private ["s22_RandomAccessIndexableP", "initialize"]
-- !private ["s22_RandomAccessIndexableP", "represent"]
-- !private ["s26_RangeReplaceableIndexableP", "initialize"]
-- !private ["s26_RangeReplaceableIndexableP", "represent"]
 depends-nominal:
 - !private "Sa"
 - !private "s23BidirectionalCollectionP"
@@ -210,14 +200,8 @@ depends-nominal:
 - !private "4Node14StructuredDataO"
 - "4Node21StructuredDataWrapperP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"

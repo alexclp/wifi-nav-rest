@@ -137,6 +137,7 @@ depends-member:
 - !private ["s9EquatableP", "float"]
 - !private ["s9EquatableP", "int"]
 - !private ["s9EquatableP", "isNull"]
+- !private ["s9EquatableP", "makeString"]
 - !private ["s9EquatableP", "uint"]
 - !private ["s25ExpressibleByArrayLiteralP", "bytes"]
 - !private ["s25ExpressibleByArrayLiteralP", "makeString"]
@@ -270,6 +271,7 @@ depends-member:
 - !private ["4Node0A13InitializableP", "makeString"]
 - !private ["4Node0A13InitializableP", "uint"]
 - !private ["4Node0A13RepresentableP", "Node"]
+- ["4Node0A13RepresentableP", ""]
 - !private ["4Node0A13RepresentableP", "bool"]
 - !private ["4Node0A13RepresentableP", "bytes"]
 - !private ["4Node0A13RepresentableP", "double"]
@@ -280,7 +282,6 @@ depends-member:
 - !private ["4Node0A13RepresentableP", "makeString"]
 - !private ["4Node0A13RepresentableP", "part"]
 - !private ["4Node0A13RepresentableP", "uint"]
-- ["4Node0A13RepresentableP", ""]
 - !private ["7Routing15ParameterizableP", "bool"]
 - !private ["7Routing15ParameterizableP", "double"]
 - !private ["7Routing15ParameterizableP", "float"]
@@ -348,13 +349,6 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "isNull"]
 - !private ["s20TextOutputStreamableP", "uint"]
 - !private ["s14_ArrayProtocolP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "bool"]
-- !private ["s23_BidirectionalIndexableP", "double"]
-- !private ["s23_BidirectionalIndexableP", "float"]
-- !private ["s23_BidirectionalIndexableP", "int"]
-- !private ["s23_BidirectionalIndexableP", "isNull"]
-- !private ["s23_BidirectionalIndexableP", "makeString"]
-- !private ["s23_BidirectionalIndexableP", "uint"]
 - !private ["s24_DestructorSafeContainerP", "makeString"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "bool"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "double"]
@@ -392,27 +386,12 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "int"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "isNull"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "uint"]
-- !private ["s10_IndexableP", "bool"]
-- !private ["s10_IndexableP", "double"]
-- !private ["s10_IndexableP", "float"]
-- !private ["s10_IndexableP", "int"]
-- !private ["s10_IndexableP", "isNull"]
-- !private ["s10_IndexableP", "makeString"]
-- !private ["s10_IndexableP", "uint"]
-- !private ["s14_IndexableBaseP", "bool"]
-- !private ["s14_IndexableBaseP", "double"]
-- !private ["s14_IndexableBaseP", "float"]
-- !private ["s14_IndexableBaseP", "int"]
-- !private ["s14_IndexableBaseP", "isNull"]
-- !private ["s14_IndexableBaseP", "makeString"]
-- !private ["s14_IndexableBaseP", "uint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bool"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "double"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "float"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "isNull"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "uint"]
-- !private ["s17_MutableIndexableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "bool"]
 - !private ["s21_ObjectiveCBridgeableP", "double"]
 - !private ["s21_ObjectiveCBridgeableP", "float"]
@@ -420,14 +399,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "isNull"]
 - !private ["s21_ObjectiveCBridgeableP", "makeString"]
 - !private ["s21_ObjectiveCBridgeableP", "uint"]
-- !private ["s22_RandomAccessIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "bool"]
-- !private ["s26_RangeReplaceableIndexableP", "double"]
-- !private ["s26_RangeReplaceableIndexableP", "float"]
-- !private ["s26_RangeReplaceableIndexableP", "int"]
-- !private ["s26_RangeReplaceableIndexableP", "isNull"]
-- !private ["s26_RangeReplaceableIndexableP", "makeString"]
-- !private ["s26_RangeReplaceableIndexableP", "uint"]
 - !private ["s16_SwiftStringViewP", "bool"]
 - !private ["s16_SwiftStringViewP", "double"]
 - !private ["s16_SwiftStringViewP", "float"]
@@ -495,7 +466,6 @@ depends-nominal:
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- !private "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
@@ -503,13 +473,8 @@ depends-nominal:
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s33_ExpressibleByStringInterpolationP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
-- !private "s10_IndexableP"
-- !private "s14_IndexableBaseP"
 - !private "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
 - !private "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- !private "s26_RangeReplaceableIndexableP"
 - !private "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:

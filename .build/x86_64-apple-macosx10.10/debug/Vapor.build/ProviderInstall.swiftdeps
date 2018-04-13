@@ -35,6 +35,7 @@ depends-member:
 - ["4Bits18BytesInitializableP", "init"]
 - !private ["4Bits18BytesRepresentableP", "finished"]
 - ["4Bits18BytesRepresentableP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "enumerated"]
 - !private ["s7CVarArgP", "finished"]
@@ -44,6 +45,7 @@ depends-member:
 - !private ["s10CollectionP", "finished"]
 - ["s10CollectionP", "init"]
 - !private ["7Console7CommandP", "Swift"]
+- ["7Console7CommandP", ""]
 - ["7Console7CommandP", "console"]
 - ["7Console7CommandP", "help"]
 - ["7Console7CommandP", "id"]
@@ -52,7 +54,6 @@ depends-member:
 - ["7Console7CommandP", "run"]
 - ["7Console7CommandP", "signature"]
 - !private ["7Console7CommandP", "viewsDir"]
-- ["7Console7CommandP", ""]
 - !private ["s10ComparableP", "finished"]
 - ["s10ComparableP", "init"]
 - !private ["7Configs19ConfigInitializableP", "providedDirectory"]
@@ -97,6 +98,8 @@ depends-member:
 - !private ["s9EncodableP", "finished"]
 - ["s9EncodableP", "init"]
 - !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "enumerated"]
 - !private ["s9EquatableP", "finished"]
 - ["s9EquatableP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -125,22 +128,14 @@ depends-member:
 - !private ["s17MutableCollectionP", "count"]
 - !private ["s17MutableCollectionP", "enumerated"]
 - !private ["So8NSCodingP", "finished"]
-- ["So8NSCodingP", "init"]
 - !private ["So9NSCopyingP", "finished"]
-- ["So9NSCopyingP", "init"]
 - !private ["So21NSItemProviderReadingP", "finished"]
-- ["So21NSItemProviderReadingP", "init"]
 - !private ["So21NSItemProviderWritingP", "finished"]
-- ["So21NSItemProviderWritingP", "init"]
 - !private ["So16NSMutableCopyingP", "finished"]
-- ["So16NSMutableCopyingP", "init"]
 - !private ["So8NSObjectC", "finished"]
 - !private ["So16NSObjectProtocolP", "finished"]
-- ["So16NSObjectProtocolP", "init"]
 - !private ["So14NSSecureCodingP", "finished"]
-- ["So14NSSecureCodingP", "init"]
 - !private ["So8NSStringC", "finished"]
-- ["So8NSStringC", "init"]
 - !private ["4Node0A13InitializableP", "_getBuiltinLogicValue"]
 - !private ["4Node0A13InitializableP", "count"]
 - !private ["4Node0A13InitializableP", "enumerated"]
@@ -184,6 +179,7 @@ depends-member:
 - !private ["4HTTP21ResponseRepresentableP", "finished"]
 - ["4HTTP21ResponseRepresentableP", "init"]
 - !private ["7Console8RunnableP", "Swift"]
+- ["7Console8RunnableP", ""]
 - ["7Console8RunnableP", "console"]
 - ["7Console8RunnableP", "help"]
 - ["7Console8RunnableP", "id"]
@@ -192,7 +188,6 @@ depends-member:
 - ["7Console8RunnableP", "run"]
 - ["7Console8RunnableP", "signature"]
 - !private ["7Console8RunnableP", "viewsDir"]
-- ["7Console8RunnableP", ""]
 - !private ["s8SequenceP", "count"]
 - !private ["s8SequenceP", "enumerated"]
 - !private ["s8SequenceP", "finished"]
@@ -207,10 +202,6 @@ depends-member:
 - ["s20TextOutputStreamableP", "init"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "enumerated"]
-- !private ["s23_BidirectionalIndexableP", "count"]
-- !private ["s23_BidirectionalIndexableP", "enumerated"]
-- !private ["s23_BidirectionalIndexableP", "finished"]
-- ["s23_BidirectionalIndexableP", "init"]
 - !private ["s24_DestructorSafeContainerP", "count"]
 - !private ["s24_DestructorSafeContainerP", "enumerated"]
 - !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
@@ -225,30 +216,12 @@ depends-member:
 - !private ["s33_ExpressibleByStringInterpolationP", "finished"]
 - ["s33_ExpressibleByStringInterpolationP", "init"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "finished"]
-- ["s35_HasCustomAnyHashableRepresentationP", "init"]
-- !private ["s10_IndexableP", "count"]
-- !private ["s10_IndexableP", "enumerated"]
-- !private ["s10_IndexableP", "finished"]
-- ["s10_IndexableP", "init"]
-- !private ["s14_IndexableBaseP", "count"]
-- !private ["s14_IndexableBaseP", "enumerated"]
-- !private ["s14_IndexableBaseP", "finished"]
-- ["s14_IndexableBaseP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "finished"]
-- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
-- !private ["s17_MutableIndexableP", "count"]
-- !private ["s17_MutableIndexableP", "enumerated"]
 - !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "enumerated"]
 - !private ["s21_ObjectiveCBridgeableP", "finished"]
 - ["s21_ObjectiveCBridgeableP", "init"]
-- !private ["s22_RandomAccessIndexableP", "count"]
-- !private ["s22_RandomAccessIndexableP", "enumerated"]
-- !private ["s26_RangeReplaceableIndexableP", "count"]
-- !private ["s26_RangeReplaceableIndexableP", "enumerated"]
-- !private ["s26_RangeReplaceableIndexableP", "finished"]
-- ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "finished"]
 - ["s16_SwiftStringViewP", "init"]
 depends-nominal:
@@ -284,15 +257,15 @@ depends-nominal:
 - "s25LosslessStringConvertibleP"
 - "s10MirrorPathP"
 - !private "s17MutableCollectionP"
-- "So8NSCodingP"
-- "So9NSCopyingP"
-- "So21NSItemProviderReadingP"
-- "So21NSItemProviderWritingP"
-- "So16NSMutableCopyingP"
+- !private "So8NSCodingP"
+- !private "So9NSCopyingP"
+- !private "So21NSItemProviderReadingP"
+- !private "So21NSItemProviderWritingP"
+- !private "So16NSMutableCopyingP"
 - !private "So8NSObjectC"
-- "So16NSObjectProtocolP"
-- "So14NSSecureCodingP"
-- "So8NSStringC"
+- !private "So16NSObjectProtocolP"
+- !private "So14NSSecureCodingP"
+- !private "So8NSStringC"
 - "4Node0A13InitializableP"
 - "4Node0A13RepresentableP"
 - "7Routing15ParameterizableP"
@@ -310,7 +283,6 @@ depends-nominal:
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
 - !private "s14_ArrayProtocolP"
-- "s23_BidirectionalIndexableP"
 - !private "s24_DestructorSafeContainerP"
 - !private "s35_ExpressibleByBuiltinBooleanLiteralP"
 - "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
@@ -318,14 +290,9 @@ depends-nominal:
 - "s39_ExpressibleByBuiltinUTF16StringLiteralP"
 - "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - "s33_ExpressibleByStringInterpolationP"
-- "s35_HasCustomAnyHashableRepresentationP"
-- "s10_IndexableP"
-- "s14_IndexableBaseP"
-- "10Foundation27_KeyValueCodingAndObservingP"
-- !private "s17_MutableIndexableP"
+- !private "s35_HasCustomAnyHashableRepresentationP"
+- !private "10Foundation27_KeyValueCodingAndObservingP"
 - "s21_ObjectiveCBridgeableP"
-- !private "s22_RandomAccessIndexableP"
-- "s26_RangeReplaceableIndexableP"
 - "s16_SwiftStringViewP"
 depends-dynamic-lookup:
 depends-external:
@@ -374,4 +341,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CoreGraphics.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
-interface-hash: "ea3412a350dfdbf42baedf1b0f1d620d"
+interface-hash: "8a47bf7b24598d6c350ae45efba76265"

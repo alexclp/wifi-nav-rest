@@ -28,6 +28,7 @@ depends-member:
 - !private ["6Fluent7BuilderP", "fields"]
 - !private ["6Fluent7BuilderP", "foreignKeys"]
 - !private ["6Fluent7BuilderP", "init"]
+- !private ["s7CVarArgP", "_getBuiltinLogicValue"]
 - !private ["6Fluent7CreatorC", "date"]
 - !private ["6Fluent7CreatorC", "deinit"]
 - !private ["6Fluent7CreatorC", "fields"]
@@ -122,6 +123,7 @@ depends-nominal:
 - !private "6Fluent6ActionO"
 - !private "Sb"
 - !private "6Fluent7BuilderP"
+- !private "s7CVarArgP"
 - !private "6Fluent7CreatorC"
 - !private "s29CustomPlaygroundQuickLookableP"
 - !private "s17CustomReflectableP"
