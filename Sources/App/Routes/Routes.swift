@@ -7,6 +7,7 @@ struct LocationConnectionRequestJSON: Decodable {
 
 struct RoomSearchQueryJSON: Decodable {
     let query: String
+    let floorNumber: Int
 }
 
 struct ClosestLocationsJSON: Decodable {
@@ -120,7 +121,7 @@ extension Droplet {
 
         post("rooms", "search") { request in 
             let json = try request.decodeJSONBody(RoomSearchQueryJSON.self)
-            let results = try Room.makeQuery().filter(raw: "name LIKE '\(json.query)%'").all()
+            let results = try Room.makeQuery().filter(raw: "name LIKE '\(json.query)%' AND floorNumber='\(json.floorNumber)'").all()
 
             return try results.makeJSON()
         }
