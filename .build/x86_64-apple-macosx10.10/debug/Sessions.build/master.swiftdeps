@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "5543235cffacf37342b8958fe76ec04d"
-build_time: [1523611307, 353560000]
+build_time: [1523614134, 803892000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/CacheSessions.swift": [1523282746, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/vapor.git-5492988889259800272/Sources/Sessions/MemorySessions.swift": [1523282746, 0]

@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "71745a46a626e6a47b581c14174ad103"
-build_time: [1523611306, 111866000]
+build_time: [1523614082, 9979000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/URI/Model/URI+Byte.swift": [1523282747, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/URI/Model/URI+Modification.swift": [1523282747, 0]

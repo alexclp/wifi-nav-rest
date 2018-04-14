@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "8de31cb9ead27880de54014b63568a7a"
-build_time: [1523611305, 827502000]
+build_time: [1523614078, 711493000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/console.git--2431895819212044213/Sources/Console/Bar/Bar.swift": [1523282744, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/console.git--2431895819212044213/Sources/Console/Bar/Loading/Console+LoadingBar.swift": [1523282744, 0]

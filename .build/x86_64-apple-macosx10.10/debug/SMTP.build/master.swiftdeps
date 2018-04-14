@@ -1,6 +1,6 @@
 version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
 options: "5a34d187257b460dc948041feb2cf1fc"
-build_time: [1523611306, 423826000]
+build_time: [1523614095, 519816000]
 inputs:
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/SMTP/Client/EHLOExtension.swift": [1523282747, 0]
   "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/engine.git-3311994267206676365/Sources/SMTP/Client/SMTPAuthMethod.swift": [1523282747, 0]
