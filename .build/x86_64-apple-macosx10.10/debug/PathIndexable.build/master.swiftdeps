@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.1 (swiftlang-902.0.48 clang-902.0.37.1)"
-options: "526190b61672888731fa9465bd2ddfa3"
-build_time: [1523614073, 265867000]
-inputs:
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/node.git-9175390252000121167/Sources/PathIndexable/PathIndexable+Subscripting.swift": [1523282743, 0]
-  "/Users/alexclp/Documents/KCL/Third/Individual Project/rest-api/.build/checkouts/node.git-9175390252000121167/Sources/PathIndexable/PathIndexable.swift": [1523282743, 0]
